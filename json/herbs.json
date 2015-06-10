@@ -1,0 +1,16 @@
+[
+	{
+		"name" : "Basil",
+		"pricebig" : "$32.95",
+		"pricesmall" : "$17.95",
+		"description" : "The sweet basil flavor of this elegant Tunisian oil comes from crushing the basil leaves at pressing. Delicious with pasta, salad greens, dipping bread and sauces.  Now you can enjoy that fresh basil flavor in all seasons!",
+		"decoimage" : "images/basil-img.png"
+	},
+	{
+		"name" : "Baklouti Green Chili",
+		"pricebig" : "$32.95",
+		"pricesmall" : "$17.95",
+		"description" : "The Baklouti pepper is unique to the Barbary Coast of North Africa. This is the only example of this fruity, aromatic and spicy green chili olive oil in the world. The oil is made by combining a pint of organic extra virgin olive oil with 1.6 pounds of fresh whole Baklouti chilies and crushing them for an amazing fusion.  Use (sparingly) to spice your dishes.",
+		"decoimage" : "images/baklouti-green-chili-img.png"
+	}
+]
