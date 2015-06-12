@@ -1,16 +1,104 @@
 [
 	{
-		"name" : "Basil",
-		"pricebig" : "$32.95",
-		"pricesmall" : "$17.95",
-		"description" : "The sweet basil flavor of this elegant Tunisian oil comes from crushing the basil leaves at pressing. Delicious with pasta, salad greens, dipping bread and sauces.  Now you can enjoy that fresh basil flavor in all seasons!",
+		"name" : "Applewood Smoked Sea Salt",
+		"pricebig" : "$5.95",
+		"description" : "Utilizes sweet applewood from the Yakima Valley to fuel the fires that smoke this sea salt.  Aged applewood is one of the most popular of the fruit woods used in smoking, and creates a delicious, savory flavor.",
+		"decoimage" : "images/yakima.png"
+	},
+	{
+		"name" : "Black Truffle Sea Salt",
+		"pricebig" : "$12.95",
+		"description" : "Impress guests with the unmistakable flavor of black truffles, expertly blended with naturally pure, fine quality sea salt.  Lends an earthy sophistication to egg dishes, potatoes, red meat and even pasta.  Try sprinkling it on popcorn with our buttery olive oil.",
+		"decoimage" : "images/blacktruffle.png"
+	},
+	{
+		"name" : "Cyprus Black Lava Sea Salt",
+		"pricebig" : "$5.95",
+		"description" : "Mediterranean, pyramid-shaped crystal sea salt flakes combined with activated charcoal (natural detoxifier). The dramatic color and texture make it an ideal finishing salt for elegant presentation.",
+		"decoimage" : "images/cyprus-black-lava.png"
+	},
+	{
+		"name" : "Cyprus Flake Sea Salt",
+		"pricebig" : "$5.95",
+		"description" : "Large pyramid-shaped light and fluffy salt crystals that are mild in flavor.  Flake salt is often specifically called for in certain recipes, but it can be used in any dish.",
+		"decoimage" : "images/cyprusflake.png"
+	},
+	{
+		"name" : "Espresso Brava Sea Salt",
+		"pricebig" : "$5.95",
+		"description" : "Fuses espresso with sea salt, not only a delicious addition to chocolates and desserts, but also a complement for rubs and marinades for beef or pork.  A delicious match with a cognac reduction, or anything with nutmeg, anise, vanilla, cherry, hazelnut, raspberry...",
+		"decoimage" : "images/espressobrava.png"
+	},
+	{
+		"name" : "Fleur de Sel (Guérande, France)",
+		"pricebig" : "$5.95",
+		"description" : "Translates as 'Flower of Salt', also known as 'Caviar of Salt', accepted by chefs as the world’s best finishing salt. The name comes from the aroma of violets that develops as the salt dries.  For maximum flavor, sprinkle over foods just before serving.",
+		"decoimage" : "images/fleur-de-sel.png"
+	},
+	{
+		"name" : "Lime Fresco Sea Salt",
+		"pricebig" : "$5.95",
+		"description" : "Tart without being sour.  Use to rim a drink glass (margaritas!), sprinkle on chicken, fish or shellfish before grilling, or add to a crisp salad for a surprising hint of citrus.",
+		"decoimage" : "images/lime-fresco.png"
+	},
+	{
+		"name" : "Matcha (green tea) Sea Salt",
+		"pricebig" : "$5.95",
+		"description" : "Fused with powdered premium green tea leaves from Japan.  Matcha is rich in antioxidants and is becoming a new gourmet taste sensation.  Try this salt with scrambled eggs, steamed fish, bok choy, and soups ... and yes, even chocolate and desserts.",
+		"decoimage" : "images/matcha.png"
+	},
+	{
+		"name" : "Spanish Rosemary Sea Salt",
+		"pricebig" : "$5.95",
+		"description" : "Delivers a straight-from-the-herb-garden flavor.  A perfect pairing with roasted potatoes.  Pork roasts benefit from its addition, and egg dishes are enlivened.",
+		"decoimage" : "images/spanish-rosemary.png"
+	},
+	{
+		"name" : "Sun-Ripened Tomato Sea Salt",
+		"pricebig" : "$5.95",
+		"description" : "Rich tomato flavor is created by a process that incorporates the whole tomato.  Great for soups and sauces, or top a slice of crusty bread with unsalted butter and a sprinkling of this salt.",
+		"decoimage" : "images/sun-ripened-tomato.png"
+	},
+	{
+		"name" : "Thai Ginger Sea Salt",
+		"pricebig" : "$5.95",
+		"description" : "Combines the clean, simple flavor of sea salt with fresh ginger.  Use on grilled vegetables, Asian noodles or fish ... even love it on vanilla ice cream!",
+		"decoimage" : "images/thai-ginger.png"
+	},
+	{
+		"name" : "Vintage Merlot Sea Salt",
+		"pricebig" : "$5.95",
+		"description" : "Fusing full-bodied merlot and sea salt enriches every gourmet meal with the sophisticated taste of wine.  Perfectly suited for soups and sauces, and the lovely wine color makes it ideal for finishing dishes.",
+		"decoimage" : "images/vintage-merlot.png"
+	},
+	{
+		"name" : "Wild Porcini Mushroom Sea Salt",
+		"pricebig" : "$5.95",
+		"description" : "Dried porcini mixed with sea salt has a concentrated flavor and mushroom aroma that is excellent in risotto, soups, and sauces.  Gives salmon a unique taste.",
+		"decoimage" : "images/porcini-mushroom.png"
+	},
+	{
+		"name" : "Herbs for Dipping",
+		"pricebig" : "$2.00",
+		"description" : "A blend of herbs to create a flavorful dipping oil!  Use 2 tablespoons per 1/2 cup of olive oil (try Arbosana or Hojiblanca), let stand for 30 minutes for flavors to blend, and then dip your favorite Italian bread.  Contains garlic, onion, salt, pepper, oregano, rosemary, sage, thyme, and red bell pepper granules.  Also good sprinkled on green vegetables.",
+		"decoimage" : "images/baklouti-green-chili-img.png"
+	},
+	{
+		"name" : "Seasonello",
+		"pricebig" : "$8.50",
+		"description" : "A delicious and Italian way to add flavor to your dishes.  Sea salt is paired with rosemary, garlic, sage and pepper.  This condiment from Bologna will enrich meat, poultry, vegetables, and barbecue dishes.  Caution:  this one is addictive!",
 		"decoimage" : "images/basil-img.png"
 	},
 	{
-		"name" : "Baklouti Green Chili",
-		"pricebig" : "$32.95",
-		"pricesmall" : "$17.95",
-		"description" : "The Baklouti pepper is unique to the Barbary Coast of North Africa. This is the only example of this fruity, aromatic and spicy green chili olive oil in the world. The oil is made by combining a pint of organic extra virgin olive oil with 1.6 pounds of fresh whole Baklouti chilies and crushing them for an amazing fusion.  Use (sparingly) to spice your dishes.",
-		"decoimage" : "images/baklouti-green-chili-img.png"
+		"name" : "Ginger Infused Pure Cane Sugar",
+		"pricebig" : "$3.00",
+		"description" : "Ginger lovers will adore this infused sugar.  It’s perfect on grilled salmon and in Asian dishes calling for ginger.  Top lemon sorbet or pumpkin pie, caramelize on top of crème brûlée, or simply stir it into a cup of tea.",
+		"decoimage" : "images/sugar-ginger.png"
+	},
+	{
+		"name" : "Green Chili Infused Pure Cane Sugar",
+		"pricebig" : "$3.00",
+		"description" : "Combines sweet and hot in a delicious way.  Add a dash to diced melon or pineapple chunks, sprinkle on chocolate ice cream or brownies, or stir into hot chocolate.   Also great sprinkled on pork or chicken before grilling.",
+		"decoimage" : "images/sugar-habanero.png"
 	}
 ]

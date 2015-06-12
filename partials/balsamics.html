@@ -11,11 +11,11 @@
 		<p>Balsamics de Modena</p>
 		<p>Search: <input ng-model="query"></p>
 	</div>
-	<ul ng-repeat="item in product | filter:query" class="primary">
+	<ul ng-repeat="item in product | filter:query" class="productsContainer">
 		<div class="divider"></div>
 		<li>
 			<div>{{item.name}}</div>
-			<div class="productImage right"><img ng-src="{{item.decoimage}}"/></div>
+			<div class="balsamicsImage right"><img ng-src="{{item.decoimage}}"/></div>
 		</li>
 		<li>
 			<div>

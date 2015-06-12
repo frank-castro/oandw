@@ -8,59 +8,38 @@
 </div>
 <div class="layout">
 	<div class="pageTitle displayText">
-		<p>Specialty Oils</p>
+		<p>Herbs & Spices</p>
 	</div>
 
-	<ul ng-repeat="item in product" class="primary">
+	<ul ng-repeat="item in product" class="herbsContainer">
 		<div class="divider"></div>
-		<li>
-			<div>{{item.name}}</div>
-			<div class="productImage right"><img ng-src="{{item.decoimage}}"/></div>
+		<li class="herbsNameImgContainer">
+			<div class="herbsNames">{{item.name}}</div>
+			<div class="herbsImage right"><img ng-src="{{item.decoimage}}"/></div>
 		</li>
-		<li>
-			<div>
-				<div class="buyCtrlsLeft">
-					<div class="bottlesContainer">
-						<svg class="bigBottle" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px">
-							<path fill="none" stroke="#7C5F53" stroke-miterlimit="10" d="M25.1,197.3c-2.3,0-16.9-0.5-19.6-1.7c-2.8-1.2-2.4-4.7-2.4-4.7 S0.8,90.8,0.6,82.6c-0.2-8.2-0.1-10,2.1-17.1C4.8,58.4,14.4,53.8,15.6,52c1.2-1.8,1.5-12.6,1.5-12.6s0.7-26.8,0.7-27.4 c0-0.6-0.7-1.3-0.7-1.3V6.1c0,0,0.5-0.9,0.5-1.4c0-0.5,0.2-2.8,0.9-3.3c0.7-0.5,4.9-0.9,4.9-0.9s0.8-0.1,2.9-0.1 c2.1,0,3.2,0.1,3.2,0.1s4.2,0.4,4.9,0.9c0.7,0.5,0.9,2.8,0.9,3.3c0,0.5,0.5,1.4,0.5,1.4v4.6c0,0-0.7,0.7-0.7,1.3 c0,0.6,0.7,27.4,0.7,27.4s0.3,10.9,1.5,12.6c1.2,1.8,10.8,6.4,12.9,13.5c2.2,7.1,2.3,8.9,2.1,17.1c-0.2,8.2-2.5,108.2-2.5,108.2 s0.4,3.6-2.4,4.7c-2.8,1.2-16.6,1.7-18.9,1.7H25.1z"/>
+		<li class="buyCtrlPackageContainer">
+			<div class="buyCtrlsLeft">
+				<div class="priceText">{{item.pricebig}}</div>
+				<div class="buyContainer">
+					<div class="roundBttnPlus">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+						<path fill="#231F20" d="M19,26.9v-6h-6v-2h6v-6h2v6h6v2h-6v6H19z"/>
 						</svg>
 					</div>
-					<div class="priceText">{{item.pricebig}}</div>
-					<div class="buyContainer">
-						<div class="roundBttnPlus">
-							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
-							<path fill="#231F20" d="M19,26.9v-6h-6v-2h6v-6h2v6h6v2h-6v6H19z"/>
-							</svg>
-						</div>
-						<p>Add Cart</p>
-						<p class="count">0</p>
-						<div class="roundBttnRemove">
-							<svg class="remove" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
-							<path fill="#231F20" d="M19,26.9v-6h-6v-2h6v-6h2v6h6v2h-6v6H19z"/>
-						</div>
-						<p>Remove</p>
+					<p>Add Cart</p>
+					<p class="count">0</p>
+					<div class="roundBttnRemove">
+						<svg class="remove" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+						<path fill="#231F20" d="M19,26.9v-6h-6v-2h6v-6h2v6h6v2h-6v6H19z"/>
 					</div>
-				</div>
-				<div class="buyCtrlsRight">
-
-					<div class="priceText">{{item.pricesmall}}</div>
-					<div class="buyContainer">
-						<div class="roundBttnPlus">
-							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
-							<path fill="#231F20" d="M19,26.9v-6h-6v-2h6v-6h2v6h6v2h-6v6H19z"/>
-							</svg>
-						</div>
-						<p>Add Cart</p>
-						<p class="count">0</p>
-						<div class="roundBttnRemove">
-							<svg class="remove" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
-							<path fill="#231F20" d="M19,26.9v-6h-6v-2h6v-6h2v6h6v2h-6v6H19z"/>
-						</div>
-						<p>Remove</p>
-					</div>
+					<p>Remove</p>
 				</div>
 			</div>
+			<div class="saltsPackageContainer">
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 136 202" xml:space="preserve"><path fill="none" stroke="#9C9E88" d="M68,4.7L1.9,2.5l10.4,173.9c0,0,14,0.4,21,4.4c6.4,3.7,17.6,18.7,37.3,18.7s25.8-15,32.2-18.7c7-4,21-4.4,21-4.4L134.1,2.5L68,4.7z"/>
+				</svg>
+			</div>
 		</li>
-		<li class="description"><p>{{item.description}}</p></li>
+		<div class="description"><p>{{item.description}}</p></div>
 	</ul>
 </div>
