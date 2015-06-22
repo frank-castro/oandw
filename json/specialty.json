@@ -4,34 +4,39 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "A rare find: oil from roasted pressed squash seeds. Use it for sautéing, grilling or roasting vegetables and meats, or as a flavoring oil in prepared dishes. The oil’s nutty taste makes a great replacement for nuts in baked goods or stuffings for those with nut allergies. High in polyunsaturated fats, rich in vitamin E. Smoke point is 425°",
-		"decoimage" : "images/butternut-squash-seed-img.png"
+		"decoimage" : "images/butternut-squash-seed-img.png",
+		"color" : "#957B5A"
 	},
 	{
 		"name" : "Roasted Pumpkin Seed Oil",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "An all-natural, expeller-pressed unrefined oil made with non-GMO pumpkin seeds grown on a family farm in upstate New York. It is a wonderful complement to grilled vegetables, roasted fish, or sautéed leafy greens.  Try it on pasta or squash soup for a rich, distinctive alternative to olive oil. Its smoke point is only 250°, so it is best used for finishing.",
-		"decoimage" : "images/roasted-pumpkin-seed-img.png"
+		"decoimage" : "images/roasted-pumpkin-seed-img.png",
+		"color" : "#D08227"
 	},
 	{
 		"name" : "Roasted Sweet Almond Oil",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "One of the lightest nut oils on the market, with a clean flavor that pairs well with fish, asparagus, cream soups, or light vinaigrettes. Almond oil can also be used for baking to add fruity, nutty flavors to cake, cookies, muffins, or buns. This oil has very high levels of natural antioxidants, and is a great source of omega 6 fatty acids.  Another plus: a smoke point of approx. 430 degrees. Pairs beautifully with Red Apple balsamic!",
-		"decoimage" : "images/roasted-sweet-almond-img.png"
+		"decoimage" : "images/roasted-sweet-almond-img.png",
+		"color" : "#E47421"
 	},
 	{
 		"name" : "Toasted Japanese Sesame Oil",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "This oil lends Asian authenticity to stir-fry or noodle dishes, and  makes a delicious dressing for a Chinese chicken salad. Add a few drops to soups, or drizzle on asparagus, green beans, and other vegetables. Pairs with our Honey Ginger balsamic. Smoke Point: 445° F.",
-		"decoimage" : "images/toasted-japanese-sesame-img.png"
+		"decoimage" : "images/toasted-japanese-sesame-img.png",
+		"color" : "#8C5E19"
 	},
 	{
 		"name" : "White Truffle Oil",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "This smooth oil is a perfect match for white truffles. The earthy bouquet is unmistakable, as is the intensity of the somewhat garlicky white truffle flavor. Finish your meats, soups, potato dishes, risotto or pasta dishes. Take French fries or popcorn to a new level with a few drizzles. This is a rare treat!",
-		"decoimage" : "images/white-truffle-img.png"
+		"decoimage" : "images/white-truffle-img.png",
+		"color" : "#926841"
 	}
 ]

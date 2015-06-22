@@ -4,48 +4,55 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Fruitiness, nutty tones, and medium intensity, with tasting notes of green tomato and almond, describe this California harvest olive oil. Creamy, delicate aftertaste. Drizzle over greens, sauté vegetables, or grill your favorite fish.",
-		"decoimage" : "images/arbosanaimg.png"
+		"decoimage" : "images/arbosanaimg.png",
+		"color" : "#616E28"
 	},
 	{
 		"name" : "Arbequina",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "An award-winning reserve olive oil, very smooth and elegant, with notes of green apple and almond. Savory and smooth throughout the finish. Great for salads, making pesto, or adding light flavor to roasted vegetables.",
-		"decoimage" : "images/arbequinaimg.png"
+		"decoimage" : "images/arbequinaimg.png",
+		"color" : "#782935"
 	},
 	{
 		"name" : "Chemlali",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "From olives hand-harvested in Tunisia, this certified organic oil is rich in flavor and color, and high in antioxidants. It is often referred to as the Chardonnay of olive oils. Try it in any of your recipes calling for olive oil. Pair it with any of our dark balsamics.",
-		"decoimage" : "images/chemlali-img.png"
+		"decoimage" : "images/chemlali-img.png",
+		"color" : "#6F82A8"
 	},
 	{
 		"name" : "Hojiblanca",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Our Spanish  varietal has a robust olive flavor, with notes of ripe banana and a slight hint of apple. The aroma is pure olive. This is Kay’s favorite. Pair it with any of our balsamic vinegars, but especially Traditional, Juniper Berry and Pomegranate.",
-		"decoimage" : "images/hojiblanca-img.png"
+		"decoimage" : "images/hojiblanca-img.png",
+		"color" : "#54806D"
 	},
 	{
 		"name" : "Koroneiki",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "A winner, with exquisite and flavorful aroma. The new harvest has a fresh fruit-of-the-olive taste and aroma with hints of artichoke and fresh grass. Notice the peppery aftertaste. Enjoy on salads, as well as with roasted meats and hearty vegetables.",
-		"decoimage" : "images/koroneikiimg.png"
+		"decoimage" : "images/koroneikiimg.png",
+		"color" : "#BE9F70"
 	},
 	{
 		"name" : "Picual",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "This Australian varietal is an Olive & Well favorite — a smooth, fruity olive oil to use with and on everything. Complex yet well-balanced, with a lovely aroma and lightly grassy aftertaste.",
-		"decoimage" : "images/picual-img.png"
+		"decoimage" : "images/picual-img.png",
+		"color" : "#6A612F"
 	},
 	{
 		"name" : "Pendolino",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "The 2014 southern hemisphere harvest of Pendolino has a strong olive fruity flavor, with a slight hint of apple, which gives it a taste of robust intensity. Savor the peppery finish on this ultra-fresh oil. Perfect for hearty dishes and bold salads.",
-		"decoimage" : "images/pendolino-img.png"
+		"decoimage" : "images/pendolino-img.png",
+		"color" : "#8F707D"
 	}
 ]

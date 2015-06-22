@@ -4,181 +4,207 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Taste the essence of the finest mangos, cultivated in India and known the world over for their sweetness, in this 12-year balsamic.  Pair with Milanese Gremolata olive oil to make salad greens come alive, or grill chicken with a Meyer Lemon/Alfoos Mango marinade.",
-		"decoimage" : "images/alfoos-mango-img.png"
+		"decoimage" : "images/alfoos-mango-img.png",
+		"color" : "#C87C2A"
 	},
 	{
 		"name" : "Black Cherry",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Twelve years Italian balsamic vinegar is blended with fresh black cherries to give an outstanding, complex flavor, delicious as a glaze or on salad greens. Pair with our Meyer Lemon olive oil for poultry marinades, or with Garlic olive oil for flank steak. Try reducing it for an amazing sauce for ice cream.",
-		"decoimage" : "images/black-cherry-img.png"
+		"decoimage" : "images/black-cherry-img.png",
+		"color" : "#473839"
 	},
 	{
 		"name" : "Black Currant",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Twelve years balsamic vinegar and natural black currants are blended in perfect proportion, resulting in a new and unique flavor.  Just one taste and you will understand why this is a store favorite.  Pair with our Meyer Lemon olive oil to make your salad greens come alive.",
-		"decoimage" : "images/black-currant-img.png"
+		"decoimage" : "images/black-currant-img.png",
+		"color" : "#3B383A"
 	},
 	{
 		"name" : "Blenheim Apricot",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "The deep, rich flavor of ripe Blushing Blenheim Apricots makes this full bodied balsamic vinegar an exceptional taste experience for dressings, marinades, and glazes.  Combine it with our Arbosana or Koroneiki olive oils to accentuate true summer-like apricot flavor.  If you really want your taste buds to “pop”, combine it with our Tuscan Herb olive oils.",
-		"decoimage" : "images/blenheim-apricot-img.png"
+		"decoimage" : "images/blenheim-apricot-img.png",
+		"color" : "#B7793D"
 	},
 	{
 		"name" : "Cinnamon Pear",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Twelve years old balsamic vinegar is blended with spicy cinnamon and golden pears, making it an outstanding choice as a glaze for ham, with seared duck breast, in dressings or as a dessert sauce for ice cream.  Pair it with our Roasted Pumpkin Seed or Butternut Squash Seed oils for soups, roasted vegetables or salads.",
-		"decoimage" : "images/cinnamon-pear-img.png"
+		"decoimage" : "images/cinnamon-pear-img.png",
+		"color" : "#A9940D"
 	},
 	{
 		"name" : "Tropical Coconut",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "White balsamic vinegar and coconut are blended for a refreshing flavor straight out of the Caribbean. Pair with our Persian Lime olive oil — it’s like a piña colada for your seafood, shellfish or salad.",
-		"decoimage" : "images/tropical-coconut-img.png"
+		"decoimage" : "images/tropical-coconut-img.png",
+		"color" : "#5A640D"
 	},
 	{
 		"name" : "Cranberry-Pear",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Who knew cranberries and pears, blended with balsamic vinegar could taste so awesome!?!  The cranberries give the balsamic a lovely color, as well as a not-too-sweet taste.  Pair it with any of our citrus-fused olive oils — Blood Orange, Persian Lime or Meyer Lemon.",
-		"decoimage" : "images/cranberry-pear-img.png"
+		"decoimage" : "images/cranberry-pear-img.png",
+		"color" : "#792C0C"
 	},
 	{
 		"name" : "Dark Chocolate",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Rich, thick and resounding with the complexity of three different chocolates, this 12-year balsamic works with sweet as well as savory recipes.  In Mexican dishes, it works with, or in lieu of, mole.   On the sweet side, top vanilla gelato, macerate fresh berries or drizzle it on pound cake.  Get your chocolate “fix” without the calories!",
-		"decoimage" : "images/dark-chocolate-img.png"
+		"decoimage" : "images/dark-chocolate-img.png",
+		"color" : "#4D2D1F"
 	},
 	{
 		"name" : "Espresso",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Robust essence of espresso blends with 12-year balsamic to become a “secret ingredient” in so many recipes. It makes a wonderful marinade for flank steak and perks up meat pan drippings for sauces and gravies. It’s amazing with a simple salad of arugula and shaved parmesan. Top vanilla or coffee ice cream, or macerate fresh berries.",
-		"decoimage" : "images/espresso-img.png"
+		"decoimage" : "images/espresso-img.png",
+		"color" : "#4A2A1D"
 	},
 	{
 		"name" : "Succulent Fig",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "If you love figs, this is 12-year balsamic must be in your kitchen. It is an excellent choice to drizzle over any salad. Pair with our Blood Orange or Basil olive oil for poultry dishes, dressing and marinades.",
-		"decoimage" : "images/succulent-fig-img.png"
+		"decoimage" : "images/succulent-fig-img.png",
+		"color" : "#A75050"
 	},
 	{
 		"name" : "Honey Ginger",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Honey & ginger play beautifully together, bringing a gentle, spicy heat to the moderate, natural acidity of white balsamic vinegar. This vinegar is superlative when paired with our Persian Lime olive oil – try it on salmon. It positively shines with our Japanese Roasted Sesame oil in an Asian stir-fry.",
-		"decoimage" : "images/honey-ginger-img.png"
+		"decoimage" : "images/honey-ginger-img.png",
+		"color" : "#DBB333"
 	},
 	{
 		"name" : "Juniper Berry",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "This 12-year-old starts sweet and finishes tangy, wonderful in salad dressings, on fruit, chicken, pork and wild game. Pair it with our Blood Orange olive oil for a citrusy dressing or marinade. Or combine it with one of our herbaceous olive oils, such as Sweet Basil or Fresh Garlic.",
-		"decoimage" : "images/juniper-berry-img.png"
+		"decoimage" : "images/juniper-berry-img.png",
+		"color" : "#5E6C8B"
 	},
 	{
 		"name" : "Juicy Pineapple",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Tangy pineapple and white balsamic vinegar is a perfect complement to chicken and hearty fish dishes. This one is designed to make salad greens or marinades taste like summer all year long.",
-		"decoimage" : "images/juicy-pineapple-img.png"
+		"decoimage" : "images/juicy-pineapple-img.png",
+		"color" : "#854B26"
 	},
 	{
 		"name" : "Lavender",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Lavender from the fields of France is blended with 18-year balsamic for a taste sensation.  Think of lavender only as a room scent? Think again! Use it with our Herbes de Provence olive oil for salads, marinades, or dips. It makes a wonderful marinade for grilled chicken, equally delicious when drizzled on ice cream, sliced strawberries and other fresh fruits.",
-		"decoimage" : "images/lavender-img.png"
+		"decoimage" : "images/lavender-img.png",
+		"color" : "#7A488A"
 	},
 	{
 		"name" : "Oregano",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Less sweet than the usual balsamics, this one is delicious in vegetable and seafood salads, on grilled vegetables, and in savory marinades. Pair it with our Fresh Garlic or Tuscan Herb olive oils to create a one-of-a-kind vinaigrette.",
-		"decoimage" : "images/oregano-img.png"
+		"decoimage" : "images/oregano-img.png",
+		"color" : "#557841"
 	},
 	{
 		"name" : "Pomegranate",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "The pomegranate essence in this 12-year balsamic means it’s loaded with antioxidants as well as delicious as a glaze or on salad greens. Pair with our Blood Orange olive oil, or Roasted Almond oil for great salads.",
-		"decoimage" : "images/pomegranate-img.png"
+		"decoimage" : "images/pomegranate-img.png",
+		"color" : "#B5182F"
 	},
 	{
 		"name" : "Raspberry",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Ripe red raspberry essence in 12-year aged balsamic adds a pleasing splash of freshness to salads. The aroma is mouth-watering in itself. It can be reduced for a sweet, thick finishing sauce; or delight as a drizzle over fruit and ice cream. Try pairing it with our Meyer Lemon or Persian Lime olive oils.",
-		"decoimage" : "images/raspberry-img.png"
+		"decoimage" : "images/raspberry-img.png",
+		"color" : "#E3485C"
 	},
 	{
 		"name" : "Red Apple",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Pure and natural apple essence gives this blend a great complex flavor, the perfect marriage of tart apple and the sweet tang of 12-year balsamic vinegar. In addition to making a delicious salad with apple pieces, toasted walnuts and bleu or goat cheese crumbles, try this one in pork or veal recipes.",
-		"decoimage" : "images/red-apple-img.png"
+		"decoimage" : "images/red-apple-img.png",
+		"color" : "#8F0012"
 	},
 	{
 		"name" : "Sicilian Lemon",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Combine the tartness of lemons with the sweetness of balsamics to create a WOW flavor addition to your recipes. Pair with our Wild Fernleaf Dill olive oil for a zesty salad vinaigrette or a fish marinade. It is especially delicious drizzled over steamed or sautéed greens like kale, spinach, chard, or collards. Spinach never tasted so good!",
-		"decoimage" : "images/sicilian-lemon-img.png"
+		"decoimage" : "images/sicilian-lemon-img.png",
+		"color" : "#E2B300"
 	},
 	{
 		"name" : "Strawberry",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Pure and natural strawberry essence in this 12-year balsamic adds a pleasing splash of freshness to salads, fruit and ice cream. Its fresh, fruity flavor is both sweet and tart, and the bouquet is mouthwatering. It pairs perfectly with our Persian Lime olive oil.",
-		"decoimage" : "images/strawberry-img.png"
+		"decoimage" : "images/strawberry-img.png",
+		"color" : "#AF1F2F"
 	},
 	{
 		"name" : "Tangerine",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Citrus lovers will find this blend of 12 year balsamic vinegar and pure and natural tangerine essence to their taste. Delicious mixed with our Blood Orange olive oil -- in a salad with halved tangerine segments -- or in a marinade with soy sauce for an orange chicken stir-fry.",
-		"decoimage" : "images/tangerine-img.png"
+		"decoimage" : "images/tangerine-img.png",
+		"color" : "#DD3900"
 	},
 	{
 		"name" : "Traditional 18-Year Old",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Our best seller!  Aged up to 18 years, it compares with much older (and more expensive!) balsamics. This is delicious on and with everything, from appetizers to entrees to desserts. We even know some people who add a dash to sparkling water for a refreshing low-cal drink.",
-		"decoimage" : "images/traditional-img.png"
+		"decoimage" : "images/traditional-img.png",
+		"color" : "#949083"
 	},
 	{
 		"name" : "Madagascar Vanilla",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Taste the difference that Madagascar vanilla beans and 18-year balsamic make in creating a new fusion you will not want to live without! Use it in salads, marinades or to brighten sauces. It makes a fantastic base for grilled chicken. It is equally delicious when drizzled on ice cream, sliced strawberries or other fresh fruits.",
-		"decoimage" : "images/madagascar-vanilla-img.png"
+		"decoimage" : "images/madagascar-vanilla-img.png",
+		"color" : "#724836"
 	},
 	{
 		"name" : "Vermont Maple",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Maple syrup is sooo good, and the idea of blending it with aged balsamic is ingenious. Sweet and tart, it makes a tasty marinade or glaze for ham or pork. Try it in a fall-inspired salad, with pieces of pear or apple; or drizzle it over crepes. Pair it with our Roasted Pumpkin or Butternut Squash Seed oils.",
-		"decoimage" : "images/vermont-maple-img.png"
+		"decoimage" : "images/vermont-maple-img.png",
+		"color" : "#A5501A"
 	},
 	{
 		"name" : "White Peach",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "White balsamic vinegar and juicy peaches make a great sweet-tart combination. Just one taste and your mouth will water. The sweet peach flavor will make alad greens or marinade taste amazing. Enjoy in all recipes that call for white balsamic! Pair with our Blood Orange olive oil.",
-		"decoimage" : "images/white-peach-img.png"
+		"decoimage" : "images/white-peach-img.png",
+		"color" : "#DC9C64"
 	},
 	{
 		"name" : "A-Premium White",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "With an acidity level of 6%, this is the perfect transition from red wine or champagne vinegar into the realm of the balsamic. The residual sweetness takes the edge off the acid, and adds to the wonderful complexity of this unique balsamic vinegar. It pairs well with all of our oils.",
-		"decoimage" : "images/a-premium-img.png"
+		"decoimage" : "images/a-premium-img.png",
+		"color" : "#E2D4AF"
 	}
 ]
