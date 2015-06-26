@@ -94,14 +94,14 @@
 		"name" : "Herbs for Dipping",
 		"pricebig" : "$2.00",
 		"description" : "A blend of herbs to create a flavorful dipping oil!  Use 2 tablespoons per 1/2 cup of olive oil (try Arbosana or Hojiblanca), let stand for 30 minutes for flavors to blend, and then dip your favorite Italian bread.  Contains garlic, onion, salt, pepper, oregano, rosemary, sage, thyme, and red bell pepper granules.  Also good sprinkled on green vegetables.",
-		"decoimage" : "images/baklouti-green-chili-img.png",
+		"decoimage" : "images/dipping-herbs.png",
 		"color" : "#616E28"
 	},
 	{
 		"name" : "Seasonello",
 		"pricebig" : "$8.50",
 		"description" : "A delicious and Italian way to add flavor to your dishes.  Sea salt is paired with rosemary, garlic, sage and pepper.  This condiment from Bologna will enrich meat, poultry, vegetables, and barbecue dishes.  Caution:  this one is addictive!",
-		"decoimage" : "images/basil-img.png",
+		"decoimage" : "images/seasonello.png",
 		"color" : "#616E28"
 	},
 	{
