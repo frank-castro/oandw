@@ -1,59 +1,69 @@
 [
 	{
+		"type" : "twobottles",
 		"name" : "Black Currant Balsamic/Meyer Lemon Olive Oil Gift Box",
 		"pricebig" : "$39.95",
 		"description" : "Black Currant Balsamic de Modena and Meyer Lemon Olive Oil from Tunisia - Two 375 ml bottles in a gift box (gift box design may vary).",
-		"color" : "#957B5A"
+		"color" : "#74632A"
 	},
 	{
+		"type" : "twobottles",
 		"name" : "Fig Balsamic/Blood Orange Olive Oil Gift Box",
 		"pricebig" : "$39.95",
 		"description" : "Fig Balsamic de Modena and Blood Orange Olive Oil from Tunisia - Two 375 ml bottles in a gift box (gift box design may vary).",
-		"color" : "#D08227"
+		"color" : "#74632A"
 	},
 	{
+		"type" : "twobottles",
 		"name" : "18 yr old Traditional Balsamic/Picual Olive Oil Gift Box",
 		"pricebig" : "$39.95",
 		"description" : "18 yr. old Traditional Balsamic de Modena and Best In Class winning Picual Olive Oil from Australia - Two 375 ml bottles in a gift box (gift box design may vary).",
-		"color" : "#E47421"
+		"color" : "#74632A"
 	},
 	{
+		"type" : "fivebottles",
 		"name" : "Flight Tray - Chef's Flight",
 		"pricebig" : "$52.50",
 		"description" : "Five 5 oz. bottles, including our most popular infused oils and aged balsamics.  Olive oils: Meyer Lemon, Fresh Garlic, Blood Orange, and Sweet Basil. Balsamic: 18 yr old Traditional. No chef should be without this assortment!",
-		"color" : "#8C5E19"
+		"color" : "#74632A"
 	},
 	{
+		"type" : "fivebottles",
 		"name" : "Flight Tray - Balsamic Lovers ",
 		"pricebig" : "$52.50",
 		"description" : "Five 5 oz. bottles of our amazing aged Balsamic de Modena vinegars: Cranberry Pear, Pomegranate, White Peach, Black Currant, and 18 yr old Traditional. This is a delicious collection!",
 		"color" : "#926841"
 	},
 	{
+		"type" : "fivebottles",
 		"name" : "Flight Tray – Oil Favorites",
 		"pricebig" : "$52.50",
 		"description" : "Five 5 oz. bottles of our popular extra virgin olive oils: Tuscan Herb, Blood Orange, Wild Mushroom Sage, Smoky Chipotle, Hojiblanca. A little something for every taste.",
 		"color" : "#957B5A"
 	},
 	{
+		"type" : "fivebottles",
 		"name" : "Flight Tray - Custom Flight",
 		"pricebig" : "$52.50",
 		"description" : "Five 5 oz. bottles of your choice. Please enter your five selections (olive oils and/or balsamics only) in the section marked \"Special Instructions\" at Checkout.",
 		"color" : "#D08227"
 	},
 	{
+		"type" : "threebottles",
 		"name" : "One-Two-Three Set",
 		"pricebig" : "$34.95",
 		"description" : "Take one balsamic and two oils, and you have three (or more!) ways to enhance food. This set of three 5 oz bottles has everything needed for flavorful salads, stir-fries, marinades, dips, desserts (and more). Who doesn’t like the taste of lemon or garlic? And our best-seller balsamic enriches everything! Olive Oils: Meyer Lemon, Garlic Balsamic: Traditional 18-Year",
 		"color" : "#E47421"
 	},
 	{
+		"type" : "threebottles",
 		"name" : "Imagination Set",
 		"pricebig" : "$34.95",
 		"description" : "Most people equate olive oil and balsamic vinegar with savory dishes, but taste what happens when they are infused with fruit. This set features a 5 oz bottle of blood orange infused oil, delicious on salads, in marinades (salmon!) and in desserts (brownies!). Now use your imagination in pairing the oil with 5 oz each of our fruity balsamics. Olive Oil: Blood Orange Balsamics: Succulent Fig, Cranberry-Pear.",
 		"color" : "#8C5E19"
 	},
 	{
+		"type" : "threebottles",
 		"name" : "You Pick Three Set",
 		"pricebig" : "$34.95",
 		"description" : "Most people equate olive oil and balsamic vinegar with savory dishes, but taste what happens when they are infused with fruit. This set features a 5 oz bottle of blood orange infused oil, delicious on salads, in marinades (salmon!) and in desserts (brownies!). Now use your imagination in pairing the oil with 5 oz each of our fruity balsamics. Olive Oil: Blood Orange Balsamics: Succulent Fig, Cranberry-Pear.",
