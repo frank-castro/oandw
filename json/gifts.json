@@ -70,18 +70,21 @@
 		"color" : "#957B5A"
 	},
 	{
+		"type" : "threebottles",
 		"name" : "Citrus Trio",
 		"pricebig" : "$34.95",
 		"description" : "2 oz bottles of two citrus-infused olive oils and one fruity balsamic add tasty highlights to salads and more. Sauté vegetables with  Meyer Lemon. Grill salmon with Blood Orange. Pomegranate-infused balsamic adds the finishing touch. Olive Oils: Meyer Lemon, Blood Orange Balsamic: Pomegranate",
 		"color" : "#D08227"
 	},
 	{
+		"type" : "threebottles",
 		"name" : "Herb Trio",
 		"pricebig" : "$34.95",
 		"description" : "2 oz bottles of two olive oils and one balsamic add flavor and fun to food. These oils are great for dipping bread or tossing with salad. Sauté vegetables with a splash of garlic. A drizzle of our aged balsamic will enhance any dish! Olive Oils: Garlic, Herbes de Provence Balsamic: Traditional 18-Year",
 		"color" : "#E47421"
 	},
 	{
+		"type" : "threebottles",
 		"name" : "Six Sampler",
 		"pricebig" : "$39.95",
 		"description" : "Sample some of our favorite combinations from a set that includes 2 oz bottles of three olive oils and three balsamics. Try them with salads. Sauté vegetables, marinate poultry, meat or seafood, dip bread, or just drizzle over a finished dish for extra wow! Olive Oils: Meyer Lemon, Garlic, Picual Gold Reserve. Balsamics:  Black Currant, Traditional, Cranberry-Pear ",
