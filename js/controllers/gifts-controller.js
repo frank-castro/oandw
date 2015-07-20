@@ -1,6 +1,6 @@
 angular.module('storeProducts')
 
-	// $scope and $http after bracket protects this function from issues with minification, the bracket close at the bottom
+	// $scope and $http after bracket protects this function from issues with minification, the bracket close at the end
 
 .controller('giftsList', ['$scope', '$http', function($scope, $http) {
 	var list = this;
