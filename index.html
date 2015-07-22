@@ -1,52 +1,50 @@
 <!doctype html>
 <html lang="en" ng-app="oandwApp" class="no-js">
-<head>
-	<meta charset="UTF-8">
-	<title>Olive and Well</title>
-	<link rel="stylesheet" href="css/styles.css">
-	<script type="text/javascript" src="js/angular.min.js"></script>
-	<script type="text/javascript" src="js/angular-route.min.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
-	<script type="text/javascript" src="js/routes.js"></script>
-	<script type="text/javascript" src="js/modernizr.js"></script>
+	<head>
+		<meta charset="UTF-8">
+		<title>Olive and Well</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<script type="text/javascript" src="js/angular.min.js"></script>
+		<script type="text/javascript" src="js/angular-route.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/routes.js"></script>
+		<script type="text/javascript" src="js/modernizr.js"></script>
 
-	<!-- Controllers -->
-	<script type="text/javascript" src="js/controllers/balsamics-controller.js"></script>
-	<script type="text/javascript" src="js/controllers/infuse-controller.js"></script>
-	<script type="text/javascript" src="js/controllers/specialty-controller.js"></script>
-	<script type="text/javascript" src="js/controllers/herbs-controller.js"></script>
-	<script type="text/javascript" src="js/controllers/varietal-controller.js"></script>
-	<script type="text/javascript" src="js/controllers/gifts-controller.js"></script>
+		<!-- Controllers -->
+		<script type="text/javascript" src="js/controllers/balsamics-controller.js"></script>
+		<script type="text/javascript" src="js/controllers/infuse-controller.js"></script>
+		<script type="text/javascript" src="js/controllers/specialty-controller.js"></script>
+		<script type="text/javascript" src="js/controllers/herbs-controller.js"></script>
+		<script type="text/javascript" src="js/controllers/varietal-controller.js"></script>
+		<script type="text/javascript" src="js/controllers/gifts-controller.js"></script>
 
-	<!-- Directives -->
-	<script type="text/javascript" src="js/directives/nav-menu.js"></script>
-	<script type="text/javascript" src="js/directives/gifts-container.js"></script>
-	<script type="text/javascript" src="js/directives/big-bottle.js"></script>
-	<script type="text/javascript" src="js/directives/small-bottle.js"></script>
-	<script type="text/javascript" src="js/directives/bttns-left.js"></script>
-	<script type="text/javascript" src="js/directives/bttns-right.js"></script>
+		<!-- Directives -->
+		<script type="text/javascript" src="js/directives/nav-menu.js"></script>
+		<script type="text/javascript" src="js/directives/gifts-container.js"></script>
+		<script type="text/javascript" src="js/directives/big-bottle.js"></script>
+		<script type="text/javascript" src="js/directives/small-bottle.js"></script>
+		<script type="text/javascript" src="js/directives/bttns-left.js"></script>
+		<script type="text/javascript" src="js/directives/bttns-right.js"></script>
+	</head>
 
-</head>
+	<body>
+		<div class="logo"><img src="images/oandw-logo.png" alt="Olive and Well"></div>
+		<nav class="sitemenu">
+			<div class="navwrapper">
 
-<body>
-	<div class="logo"><img src="images/oandw-logo.png" alt="Olive and Well"></div>
-	<nav class="sitemenu">
-		<div class="navwrapper">
+				<ul nav-menu="active">
+					<li><a href="#/varietal">Single Varietal Olive Oils</a></li>
+					<li><a href="#/infuse">Fused & Infused Olive Oils</a></li>
+					<li><a href="#/specialty">Specialty Oils</a></li>
+					<li><a href="#/balsamics">Balsamics</a></li>
+					<li><a href="#/herbs">Herbs & Spices</a></li>
+					<li><a href="#/gifts">Gift Assortments</a></li>
+				</ul>
 
-			<ul nav-menu="active">
-				<li><a href="#/varietal">Single Varietal Olive Oils</a></li>
-				<li><a href="#/infuse">Infuse Olive Oils</a></li>
-				<li><a href="#/specialty">Specialty Oils</a></li>
-				<li><a href="#/balsamics">Balsamics</a></li>
-				<li><a href="#/herbs">Herbs & Spices</a></li>
-				<li><a href="#/gifts">Gift Assortments</a></li>
-			</ul>
-
-		</div>
-	</nav>
-	<div ng-view></div>
-
-	<script src="js/script.min.js"></script>
-	<script src="http://localhost:35729/livereload.js"></script>
-</body>
+			</div>
+		</nav>
+		<div ng-view></div>
+		<script src="js/script.min.js"></script>
+		<script src="http://localhost:35729/livereload.js"></script>
+	</body>
 </html>

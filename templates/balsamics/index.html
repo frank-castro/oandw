@@ -13,9 +13,9 @@
 	</div>
 	<ul ng-repeat="item in product | filter:query" class="productsContainer">
 		<div class="divider"></div>
-		<li>
-			<div>{{item.name}}</div>
-			<div class="balsamicsImage right"><img ng-src="{{item.decoimage}}"/></div>
+		<li class="oilsNameImgContainer">
+			<div class="oilsName left">{{item.name}}</div>
+			<div class="oilsImage right"><img ng-src="{{item.decoimage}}"/></div>
 		</li>
 		<li>
 			<div>

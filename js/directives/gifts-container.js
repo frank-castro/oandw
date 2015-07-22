@@ -10,6 +10,10 @@ angular.module('storeProducts')
 					return "templates/directives/gifts-twobottles.html";
 				if ($scope.item.type == "fivebottles")
 					return "templates/directives/gifts-fivebottles.html";
+				if ($scope.item.type == "threebottles")
+					return "templates/directives/gifts-threebottles.html";
+				if ($scope.item.type == "sampler")
+					return "templates/directives/gifts-sampler.html";
 			}
 		}
 	};
