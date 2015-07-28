@@ -26,6 +26,10 @@ angular.module('oandwApp')
 		templateUrl: 'templates/gifts/index.html',
 		controller: 'giftsList'
 	}).
+	when('/accessories', {
+		templateUrl: 'templates/accessories/index.html',
+		controller: 'accessorList'
+	}).
 	otherwise({
 		redirectTo: '/varietal'
 	});
