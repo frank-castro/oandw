@@ -10,16 +10,12 @@
 	<div class="pageTitle displayText">
 		<p>Gift Assortments</p>
 	</div>
-
 	<ul ng-repeat="item in product" class="giftsContainer">
 		<div class="divider"></div>
 		<li class="giftsNameContainer">
 			<div>{{item.name}}</div>
 		</li>
 		<li class="buyCtrlPackageContainer">
-			<div class="buyCtrlsLeftGifts">
-				<bttns-left></bttns-left>
-			</div>
 			<gifts-container></gifts-container><!-- directive for the div with the svg in templates -->
 		</li>
 		<div class="description"><p>{{item.description}}</p></div>

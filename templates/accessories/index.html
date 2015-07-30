@@ -10,16 +10,17 @@
 	<div class="pageTitle displayText">
 		<p>Tabletop & Accessories</p>
 	</div>
-	<ul ng-repeat="item in product" class="productsContainer">
+	<ul ng-repeat="item in product" class="accessoriesContainer">
 		<div class="divider"></div>
-		<li class="oilsNameImgContainer">
-			<div class="oilsName left">{{item.name}}</div>
-			<div class="oilsImage right"><img ng-src="{{item.decoimage}}"/></div>
-		</li>
 		<li>
-			<div class="buyCtrlsLeft">
-				<bttns-left></bttns-left>
+			<div class="accessoriesNameContainer">{{item.name}}</div>
+			<div class="horizontalImage"><img ng-src="{{item.decoimage}}"/></div>
+		</li>
+		<li class="horizontalCtrls">
+			<div class="buyBttns left">
+				<bttns-hor></bttns-hor>
 			</div>
+			<div class="price right">{{item.price}}</div>
 		</li>
 		<li class="description"><p>{{item.description}}</p></li>
 	</ul>

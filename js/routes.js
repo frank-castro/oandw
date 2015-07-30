@@ -19,7 +19,7 @@ angular.module('oandwApp')
 		controller: 'balsamicsList'
 	}).
 	when('/herbs', {
-		templateUrl: 'templates/herbs/index.html',
+		templateUrl: 'templates/sprinkles/index.html',
 		controller: 'herbsList'
 	}).
 	when('/gifts', {
