@@ -18,9 +18,9 @@ angular.module('oandwApp')
 		templateUrl: 'templates/balsamics/index.html',
 		controller: 'balsamicsList'
 	}).
-	when('/herbs', {
-		templateUrl: 'templates/sprinkles/index.html',
-		controller: 'herbsList'
+	when('/seasonings', {
+		templateUrl: 'templates/seasonings/index.html',
+		controller: 'seasoningsList'
 	}).
 	when('/gifts', {
 		templateUrl: 'templates/gifts/index.html',
