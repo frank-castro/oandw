@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>Olive and Well</title>
 		<link rel="stylesheet" href="css/styles.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/angular.min.js"></script>
 		<script type="text/javascript" src="js/angular-route.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
@@ -141,42 +142,44 @@
 				<path fill="#B8CD47" d="M37.2,8.2c-1.5,0-1.6,2.6,0,2.5C38.7,10.6,38.8,8.2,37.2,8.2z"/>
 				</svg>
 			</div>
-			<div class="barsWrapper" ng-click="menuToggle='menuBttn'">
+			<div class="barsWrapper">
 				<div class="bar"></div>
 				<div class="bar"></div>
 				<div class="bar"></div>
 			</div>
-			<div class="infoIcon">
+			<a class="infoIcon">
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
 					<path fill="#B8CD47" d="M9,15h2V9H9V15z M10,0C4.5,0,0,4.5,0,10s4.5,10,10,10s10-4.5,10-10S15.5,0,10,0z M10,18c-4.4,0-8-3.6-8-8s3.6-8,8-8 s8,3.6,8,8S14.4,18,10,18z M9,7h2V5H9V7z"/>
 				</svg>
-			</div>
+			</a>
 		</div>
 
 		<div class="imgText displayText">Gourmet Olive Oils, Aged Balsamics & Related Products</div>
 
-		<nav class="sitemenu" ng-class="menuToggle">
+		<nav class="sitemenu " ng-class="close">
 			<div class="navwrapper">
-
 				<ul nav-menu="active">
-					<li><a href="#/varietal" ng-click="menuToggle=''">Single Varietals</a></li>
-					<li><a href="#/infuse" ng-click="menuToggle=''">Fused & Infused</a></li>
-					<li><a href="#/specialty" ng-click="menuToggle=''">Specialty Oils</a></li>
-					<li><a href="#/balsamics" ng-click="menuToggle=''">Balsamics</a></li>
-					<li><a href="#/seasonings" ng-click="menuToggle=''">Seasonings</a></li>
-					<li><a href="#/gifts" ng-click="menuToggle=''">Gifts</a></li>
-					<li><a href="#/accessories" ng-click="menuToggle=''">Accessories</a></li>
+					<li><a href="#/varietal">Single Varietals</a></li>
+					<li><a href="#/infuse">Fused & Infused</a></li>
+					<li><a href="#/specialty">Specialty Oils</a></li>
+					<li><a href="#/balsamics">Balsamics</a></li>
+					<li><a href="#/seasonings">Seasonings</a></li>
+					<li><a href="#/gifts">Gifts</a></li>
+					<li><a href="#/accessories">Accessories</a></li>
 				</ul>
-
 			</div>
 		</nav>
+
+		<div class="popup hidden">this is where contact and about will show up</div>
+
 		<div ng-view></div>
+
 		<div class="cartbanner">
 			<div class="motto">Where Healthy Tastes Great</div>
 			<div class="cartinfo">Your Cart</div>
 			<div class="totalprice">Total and Checkout bttn</div>
 		</div>
-		<footer>Contact and About link here... may be a small map</footer>
+		<footer>may be a small map</footer>
 		<script src="js/script.min.js"></script>
 		<script src="http://localhost:35729/livereload.js"></script>
 	</body>
