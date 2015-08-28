@@ -1,7 +1,13 @@
 $('.barsWrapper').on('click', function(){
-  $('.sitemenu').toggleClass('hidden');
+  $('.sitemenu, .navwrapper a').toggleClass('hidden');
   
   return false;
+});
+
+$('.navwrapper a').on('click', function(){
+  $('.sitemenu').toggleClass('hidden');
+  
+  return true;
 });
 
 $('.infoIcon').on('click', function(){
