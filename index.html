@@ -11,6 +11,10 @@
 		<script type="text/javascript" src="js/routes.js"></script>
 		<script type="text/javascript" src="js/modernizr.js"></script>
 
+		<!-- creative cloud fonts -->
+		<script src="https://use.typekit.net/shf4hgt.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
 		<!-- Controllers -->
 		<script type="text/javascript" src="js/controllers/balsamics-controller.js"></script>
 		<script type="text/javascript" src="js/controllers/infuse-controller.js"></script>
@@ -180,13 +184,32 @@
 
 		<div ng-view></div>
 
+		<nav class="submenu hidden">
+			<div class="navwrapper">
+				<ul nav-menu="active">
+					<li><a href="#/varietal">Single Varietals</a></li>
+					<li><a href="#/infuse">Fused & Infused</a></li>
+					<li><a href="#/specialty">Specialty Oils</a></li>
+					<li><a href="#/balsamics">Balsamics</a></li>
+					<li><a href="#/seasonings">Seasonings</a></li>
+					<li><a href="#/gifts">Gifts</a></li>
+					<li><a href="#/accessories">Accessories</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<footer><p><a>Store Policies & Terms</a> | © 2015 | Olive & Well, Inc. | 133 N. Oak Park Ave. Oak Park, IL 60301 | P: 708.848.4230 | E: info@oliveandwell.com</p></footer>
+
+		<div id="map"></div>
+
 		<div class="cartbanner">
 			<div class="motto">Where Healthy Tastes Great</div>
-			<div class="cartinfo">Your Cart</div>
-			<div class="totalprice">Total and Checkout bttn</div>
+			<div class="cartinfo">3 Items Added to Your Cart</div>
+			<div class="totalprice">Checkout</div>
 		</div>
-		<footer>may be a small map</footer>
 		<script src="js/script.min.js"></script>
+    	<script async defer
+			src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>
 		<script src="http://localhost:35729/livereload.js"></script>
 	</body>
 </html>
