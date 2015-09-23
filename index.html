@@ -3,7 +3,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Olive and Well</title>
+
+		<!-- css -->
 		<link rel="stylesheet" href="css/styles.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/angular.min.js"></script>
 		<script type="text/javascript" src="js/angular-route.min.js"></script>
@@ -202,10 +207,16 @@
 
 		<div id="map"></div>
 
-		<div class="cartbanner">
-			<div class="motto">Where Healthy Tastes Great</div>
-			<div class="cartinfo">3 Items Added to Your Cart</div>
-			<div class="totalprice">Checkout</div>
+		<div class="cartBttn cartBanner">
+			<div class="maticon shopping_cart"><i class="material-icons">shopping_cart</i></div>
+			<div class="cartBannerContent hidden">
+<!-- 				<div class="maticon clear"><i class="material-icons">clear</i></div> -->
+				<div class="motto">Where Healthy Tastes Great</div>
+				<div class="maticon"><i class="material-icons">visibility</i></div>
+				<div class="cartinfo">3 Items Added to Your Cart -<a class="totalprice" href=""> Total $145.90</a></div>
+				<div class="actionText"><a href="">Checkout</a></div>
+				<div class="maticon"><i class="material-icons">arrow_forward</i></div>
+			</div>
 		</div>
 		<script src="js/script.min.js"></script>
     	<script async defer

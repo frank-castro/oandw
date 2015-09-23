@@ -12,6 +12,11 @@ $('.infoIcon, .about').on('click', function(){
 	$('.sitemenu').addClass('hidden');
 });
 
+$('.shopping_cart').on('click', function(){
+	$('.cartBanner').toggleClass('cartBttn');
+	$('.cartBannerContent').toggleClass('hidden');
+});
+
 // $(document).scroll(function () {
 //     var y = $(this).scrollTop();
 //     if (y > 300) {
