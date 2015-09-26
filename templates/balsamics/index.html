@@ -2,7 +2,7 @@
 <div class="layout">
 	<div class="pageTitle displayText">
 		<p>Balsamics de Modena</p>
-		<p>Search: <input ng-model="query"></p>
+<!-- 		<p>Search: <input ng-model="query"></p> -->
 	</div>
 	<ul ng-repeat="item in product | filter:query" class="productsContainer">
 		<div class="divider"></div>
@@ -10,16 +10,14 @@
 			<div class="oilsName left">{{item.name}}</div>
 			<div class="oilsImage right"><img ng-src="{{item.decoimage}}"/></div>
 		</li>
-		<li>
-			<div>
-				<div class="buyCtrlsLeft">
-					<big-bottle></big-bottle>
-					<bttns-left></bttns-left>
-				</div>
-				<div class="buyCtrlsRight">
-					<small-bottle></small-bottle>
-					<bttns-right></bttns-right>
-				</div>
+		<li class="ctrlsContainer">
+			<div class="buyCtrlsLeft">
+				<big-bottle></big-bottle>
+				<bttns-left></bttns-left>
+			</div>
+			<div class="buyCtrlsRight">
+				<small-bottle></small-bottle>
+				<bttns-right></bttns-right>
 			</div>
 		</li>
 		<li class="description"><p>{{item.description}}</p></li>
