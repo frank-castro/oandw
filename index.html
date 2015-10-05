@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en" ng-app="oandwApp" class="no-js">
 	<head>
 		<meta charset="UTF-8">
@@ -20,6 +20,9 @@
 		<script src="https://use.typekit.net/shf4hgt.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+		<!-- Services -->
+		<script type="text/javascript" src="js/services/orderService.js"></script>
+
 		<!-- Controllers -->
 		<script type="text/javascript" src="js/controllers/balsamics-controller.js"></script>
 		<script type="text/javascript" src="js/controllers/infuse-controller.js"></script>
@@ -28,6 +31,7 @@
 		<script type="text/javascript" src="js/controllers/varietal-controller.js"></script>
 		<script type="text/javascript" src="js/controllers/gifts-controller.js"></script>
 		<script type="text/javascript" src="js/controllers/accessor-controller.js"></script>
+		<script type="text/javascript" src="js/controllers/order-controller.js"></script>
 
 		<!-- Directives -->
 		<script type="text/javascript" src="js/directives/nav-menu.js"></script>
@@ -207,24 +211,34 @@
 
 		<div id="map"></div>
 
-		<div class="cartBttn cartBanner">
-			<div class="maticon shopping_cart"><i class="material-icons">shopping_cart</i></div>
+		<div class="cartBttn cartBanner" ng-controller="orderController as model">
+			<div class="maticon shopping_cart">
+				<i class="material-icons">shopping_cart</i>
+			</div>
+			<div ng-class="{'circleAnim': model.recentlyChanged, 'circleTotal': model.hasItems}">
+				<ul>
+					<li>
+						<span ng-show="model.hasItems">{{model.itemCount}}</span>
+					</li>
+				</ul>
+			</div>
+
 			<div class="cartBannerContent hidden">
-<!-- 				<div class="maticon clear"><i class="material-icons">clear</i></div> -->
+					<ul class="cartProductList hidden">
+						<li ng-repeat="item in model.items">
+							<span>{{item.count}}</span> - <span>{{item.name}}</span>
+						</li>
+					</ul>
 				<div class="motto">Where Healthy Tastes Great</div>
-				<div class="maticon"><i class="material-icons">visibility</i></div>
-				<div class="cartinfo">3 Items Added to Your Cart -<a class="totalprice" href=""> Total $145.90</a></div>
-				<div class="actionText"><a href="">Checkout</a></div>
-				<div class="maticon"><i class="material-icons">arrow_forward</i></div>
+				<div class="cartinfo"><span ng-show="model.hasItems">{{model.itemCount}} Item(s)</span><span ng-hide="model.hasItems">Nothing</span> Added to Your Cart -<a class="totalprice" href=""> Total {{model.total | currency}}</a></div>
+				<div class="actionText"><a href="">Checkout <i class="material-icons maticon">arrow_forward</i></a></div>
 			</div>
 		</div>
 
 		<div class="cartPerinfo hidden">
-			<div class="cartPerinfoContent hidden">
-				<div><p>Contact Information</p></div>
-				<div>Shipping Address</div>
-				<div>Payment Option</div>
-			</div>
+			<div><p>Contact Information</p></div>
+			<div>Shipping Address</div>
+			<div>Payment Option</div>
 		</div>
 
 		<script src="js/script.min.js"></script>

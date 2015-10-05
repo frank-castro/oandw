@@ -17,13 +17,6 @@ $('.shopping_cart').on('click', function(){
 	$('.cartBannerContent').toggleClass('hidden');
 });
 
-// $(document).scroll(function () {
-//     var y = $(this).scrollTop();
-//     if (y > 300) {
-//         $('.popup').addClass('closed');
-//     } 
-// });
-
 $(window).scroll(function(){
   var windowHeight = $(this).height();
   var topOfWindow = $(this).scrollTop();
