@@ -7,7 +7,7 @@
 		<!-- css -->
 		<link rel="stylesheet" href="css/styles.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+	  rel="stylesheet">
 
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/angular.min.js"></script>
@@ -223,15 +223,140 @@
 				</ul>
 			</div>
 
+
 			<div class="cartBannerContent hidden">
-					<ul class="cartProductList hidden">
-						<li ng-repeat="item in model.items">
-							<span>{{item.count}}</span> - <span>{{item.name}}</span>
-						</li>
-					</ul>
+
+
+<!-- 				<ul class="cartProductList hidden">
+					<li ng-repeat="item in model.items">
+						<span>{{item.count}}</span> - <span>{{item.name}}</span>
+					</li>
+				</ul>
+				
 				<div class="motto">Where Healthy Tastes Great</div>
+				
 				<div class="cartinfo"><span ng-show="model.hasItems">{{model.itemCount}} Item(s)</span><span ng-hide="model.hasItems">Nothing</span> Added to Your Cart -<a class="totalprice" href=""> Total {{model.total | currency}}</a></div>
+
 				<div class="actionText"><a href="">Checkout <i class="material-icons maticon">arrow_forward</i></a></div>
+ -->
+
+
+			<!--Step 1-->
+				<div class="cartProductList" id="cart-items" ng-show="model.step == 1">
+					<h4>{{model.itemCount}} Items in your Cart</h4>
+					<br>
+
+
+<!-- 					<ul class="hidden">
+						<li ng-repeat="item in model.items">
+							<div class="addRemoveBttn" ng-click="model.add(item.name)">+</div>
+							<span>{{item.count}}</span>
+							<div class="addRemoveBttn" ng-click="model.remove(item.name)">-</div>
+							<span>{{item.name}}</span>
+							<span>{{item.total | currency}}</span>
+						</li>
+					</ul> -->
+
+					<table class="hidden">
+						<tr>
+							<td colspan="3">Quantity</td>
+							<td>Name</td>
+							<td>Subtotal</td>
+						</tr>
+						<tr ng-repeat="item in model.items">
+							<td><div class="addRemoveBttn" ng-click="model.add(item.name)">+</div></td>
+							<td>{{item.count}}</td>
+							<td><div class="addRemoveBttn" ng-click="model.remove(item.name)">-</div></td>
+							<td>{{item.name}}</td>
+							<td>{{item.total | currency}}</td>
+						</tr>
+					</table>
+
+					<br>
+					<span>Total: {{model.total | currency}}</span>
+					<br>
+					<div>The total does not include shipping and taxes.</div>
+					<br>
+					<div>Keep Shopping</div>
+					<br>
+					<div class="actionText" ng-click="model.step = 2" ng-disabled="!model.hasItems">
+						Checkout <i class="material-icons maticon">arrow_forward</i></div>
+					<br>
+				</div>
+
+				<!--Step 2-->
+				<div id="ship-n-pay" ng-show="model.step == 2">
+					<h3>{{model.order.firstName}} {{model.order.lastName}} pleace provide the following information</h3>
+
+					<table style="margin: 12px">
+						<tr>
+							<th>Contact information</th>
+							<th>Shipping information</th>
+							<th>Credit Card information</th>
+							<th>Shipping type</th>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>
+								<select ng-model="model.order.cardType">
+									<option selected>Visa</option>
+									<option>Master Card</option>
+								</select>
+							</td>
+							<td>
+								<select ng-model="model.order.shippingType">
+									<option>Standard</option>
+									<option>Express</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="text" ng-model="model.order.firstName" placeholder="First Name" /></td>
+							<td><input type="text" ng-model="model.order.address" placeholder="Address" /></td>
+							<td><input type="text" ng-model="model.order.cardHolder" placeholder="Name on card" /></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td> <input type="text" ng-model="model.order.lastName" placeholder="Last Name" /></td>
+							<td><input type="text" ng-model="model.order.city" placeholder="City" /></td>
+							<td><input type="text" ng-model="model.order.cardNumber" placeholder="Card number" /></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td> <input type="email" ng-model="model.order.email" placeholder="Email" /></td>
+							<td><input type="text" ng-model="model.order.state" placeholder="State" /></td>
+							<td><input type="text" ng-model="model.order.cardExpiration" placeholder="Expiration date" /></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td> <input type="text" ng-model="model.order.phone" placeholder="Phone" /></td>
+							<td><input type="text" ng-model="model.order.zip" placeholder="Zip" /></td>
+							<td><input type="text" ng-model="model.order.cardSecurityCode" placeholder="Security code" /></td>
+							<td></td>
+						</tr>
+					</table>
+
+					<button class="btn" ng-click="model.step = 1">Back</button>
+					<button class="btn" ng-click="model.step = 3">Next</button>
+				</div>
+
+				<!--Step 3-->
+				<div id="verify-order" ng-show="model.step == 3">
+					<h3>Order of {{model.itemCount}} products, total price {{model.total | currency}}</h3>
+					<br />
+					Name: {{model.order.firstName}}, {{model.order.lastName}}, Email: {{model.order.email}}, Phone: {{model.order.phone}}.
+					<br />
+					Shipping: {{model.order.address}}, {{model.order.city}}, {{model.order.state}}, {{model.order.zip}}, {{model.order.shippingType}}
+					<br />
+					Payment: {{model.order.cardType}}, {{model.order.cardHolder}}, {{model.order.cardNumber}}, {{model.order.cardExpiration}}, {{model.order.cardSecurityCode}}
+					<br />
+					<button class="btn" ng-click="model.step = 2">Back</button>
+					<button class="btn" ng-click="model.submit()">Place order</button>
+				</div>
+
+
+
 			</div>
 		</div>
 
@@ -242,7 +367,7 @@
 		</div>
 
 		<script src="js/script.min.js"></script>
-    	<script async defer
+		<script async defer
 			src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>
 		<script src="http://localhost:35729/livereload.js"></script>
 	</body>
