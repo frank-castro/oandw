@@ -1,3 +1,7 @@
+// $('.ctaIntro').on('click', function(){
+// 	$('.header').removeClass('headerIntro');
+// });
+
 $('.barsWrapper').on('click', function(){
 	$('.sitemenu').toggleClass('hidden visible');
 	$('.popup').addClass('closed');
@@ -23,7 +27,8 @@ $(window).scroll(function(){
 
     if (topOfWindow > 300) {
         $('.popup').addClass('closed');
-    }
+    } //this is for the About pop up... you won't need this once you move About to the footer... do not delete this chunk.
+
   
   $('.submenu').each(function() {
     var elemPosit = $(this).offset().top;
