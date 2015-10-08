@@ -1,30 +1,29 @@
-<div class="header headerIntro"></div>
+<div class="{{headerClass()}}"></div>
 
 <div class="layout">
+    <div class="ctaIntro" ng-click="closeSplash()" ng-show="splashOn">Shop Now</div>
 
-	<div class="ctaIntro" change-height>Shop Now</div>
+    <div class="pageTitle displayText">
+        <p>Single Varietals Ultra Premium</p>
+        <p>Extra Virgin Olive Oils</p>
+    </div>
 
-	<div class="pageTitle displayText">
-		<p>Single Varietals Ultra Premium</p>
-		<p>Extra Virgin Olive Oils</p>
-	</div>
-
-	<ul ng-repeat="item in product" class="productsContainer">
-		<div class="divider"></div>
-		<li class="oilsNameImgContainer">
-			<div class="oilsName left">{{item.name}}</div>
-			<div class="oilsImage right"><img ng-src="{{item.decoimage}}"/></div>
-		</li>
-		<li class="ctrlsContainer">
-			<div class="buyCtrlsLeft">
-				<big-bottle></big-bottle>
-				<bttns-left></bttns-left>
-			</div>
-			<div class="buyCtrlsRight">
-				<small-bottle></small-bottle>
-				<bttns-right></bttns-right>
-			</div>
-		</li>
-		<li class="description"><p>{{item.description}}</p></li>
-	</ul>
+    <ul ng-repeat="item in product" class="productsContainer">
+        <div class="divider"></div>
+        <li class="oilsNameImgContainer">
+            <div class="oilsName left">{{item.name}}</div>
+            <div class="oilsImage right"><img ng-src="{{item.decoimage}}" /></div>
+        </li>
+        <li class="ctrlsContainer">
+            <div class="buyCtrlsLeft">
+                <big-bottle></big-bottle>
+                <bttns-left></bttns-left>
+            </div>
+            <div class="buyCtrlsRight">
+                <small-bottle></small-bottle>
+                <bttns-right></bttns-right>
+            </div>
+        </li>
+        <li class="description"><p>{{item.description}}</p></li>
+    </ul>
 </div>
