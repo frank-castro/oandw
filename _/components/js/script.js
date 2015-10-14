@@ -21,6 +21,10 @@ $('.shopping_cart').on('click', function(){
 	$('.cartBannerContent').toggleClass('hidden');
 });
 
+// $('.mapButton').on('click', function(){
+	// $('#map').toggleClass('mapOpen');
+// });
+
 $(window).scroll(function(){
   var windowHeight = $(this).height();
   var topOfWindow = $(this).scrollTop();
