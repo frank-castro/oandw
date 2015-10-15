@@ -1,19 +1,17 @@
-// $('.ctaIntro').on('click', function(){
-// 	$('.header').removeClass('headerIntro');
-// });
-
 $('.barsWrapper').on('click', function(){
 	$('.sitemenu').toggleClass('hidden visible');
-	$('.popup').addClass('closed');
 });
 
 $('.navwrapper a').on('click', function(){
 	$('.sitemenu').toggleClass('hidden visible');
 });
 
-$('.infoIcon, .about').on('click', function(){
-	$('.popup').toggleClass('closed opened');
-	$('.sitemenu').addClass('hidden');
+$('.about').on('click', function(){
+	$('.aboutUs').removeClass('closed');
+});
+
+$('.closeBttn').on('click', function(){
+	$('.aboutUs').addClass('closed');
 });
 
 $('.shopping_cart').on('click', function(){
@@ -21,17 +19,13 @@ $('.shopping_cart').on('click', function(){
 	$('.cartBannerContent').toggleClass('hidden');
 });
 
-// $('.mapButton').on('click', function(){
-	// $('#map').toggleClass('mapOpen');
-// });
-
 $(window).scroll(function(){
   var windowHeight = $(this).height();
   var topOfWindow = $(this).scrollTop();
 
-    if (topOfWindow > 300) {
-        $('.popup').addClass('closed');
-    } //this is for the About pop up... you won't need this once you move About to the footer... do not delete this chunk.
+	// if (topOfWindow > 300) {
+	// 	$('.aboutUs').addClass('closed');
+	// }
 
   
   $('.submenu').each(function() {
@@ -45,60 +39,3 @@ $(window).scroll(function(){
     
   });
 });
-
-function initMap() {
-	var myLatLng = {lat: 41.8881516, lng: -87.7948077};
-
-	// Create an array of styles.
-	var styles = [
-		{
-			stylers: [
-				{ hue: "#321A0E" },
-				{ saturation: 10 },
-				{ invert_lightness: true }
-			]
-		},{
-			featureType: "road",
-			elementType: "geometry",
-			stylers: [
-				{ lightness: 30 },
-				{ visibility: "simplified" }
-			]
-		},{
-			featureType: "landscape.man_made",
-			elementType: "geometry.fill",
-			stylers: [
-				{ lightness: 10 },
-				{ hue: "#321A0E" }
-			]
-		}
-	];
-
-	// Create a new StyledMapType object, passing it the array of styles,
-	// as well as the name to be displayed on the map type control.
-	var styledMap = new google.maps.StyledMapType(styles,
-		{name: "Styled Map"});
-
-
-	var map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 15,
-		center: myLatLng,
-		scrollwheel: false,
-
-		mapTypeControlOptions: {
-			mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
-		}
-
- 	});
-
-	var marker = new google.maps.Marker({
-		position: myLatLng,
-		map: map,
-		title: 'Olive and Well!'
-	});
-
-	//Associate the styled map with the MapTypeId and set it to display.
-	map.mapTypes.set('map_style', styledMap);
-	map.setMapTypeId('map_style');
-
-}

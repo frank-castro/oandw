@@ -160,12 +160,6 @@
 				<div class="bar"></div>
 				<div class="bar"></div>
 			</div>
-			<a class="infoIcon">
-				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
-					<path d="M9,15h2V9H9V15z M10,0C4.5,0,0,4.5,0,10s4.5,10,10,10s10-4.5,10-10S15.5,0,10,0z M10,18c-4.4,0-8-3.6-8-8s3.6-8,8-8 s8,3.6,8,8S14.4,18,10,18z M9,7h2V5H9V7z"/>
-				</svg>
-			</a>
-			<div class="about"><a>About Us</a></div>
 		</div>
 
 		<div class="imgText">Gourmet Olive Oils, Aged Balsamics<br /> & Related Products</div>
@@ -184,11 +178,51 @@
 			</div>
 		</nav>
 
-		<div class="popup closed">
-				<p>Olive & Well is a specialty food store that brings you the finest Extra Virgin Olive Oils and Balsamic Vinegars from around the world.</p><br/>
-				<p>We are unique because customers are able to taste our olive oils and balsamic vinegars before deciding on their favorites. Their selection is bottled from the same Fusti (stainless steel tank) that they sample, so they know they are taking home the freshest, most delicious products to enhance their recipes and tantalize taste buds.</p><br/>
-				<p>Olive & Well is located in the heart of historic Oak Park, Illinois in the Scoville Square Building at Oak Park Avenue and Lake Street. For more information on Oak Park, visit Oak Park’s tourism site, click here.</p><br/>
-				<p>Even if you have not yet had the opportunity to visit us in person to experience our tasting opportunities, you can order online and rest assured that you will be getting the same quality, fresh products that our in-store customers try.</p>
+<!-- 		<div class="storePolicies closed">
+				<p>What credit cards do you accept?
+				Visa, MasterCard, and Discover Card
+
+				Can I order free samples?
+				We do not offer free samples of our products. For safety reasons we can not open them in order to ship "tasting samples".
+
+				Do you offer coupons or discounts?
+				As a rule, we price our products competitively. We prefer to offer our products at a fair price on a daily basis than repeatedly offer sales or discounts. We do however, offer special promotions and coupons (such as free shipping or gift with purchase) to our previous customers and mailing list subscribers. If you would like to have your name added to our list for future offers, please click here and include your name, address and email. Once you submit	your	request,	your information will be added to our database within the month.
+
+				Do you offer bulk discounts?
+				You may contact us with an inquiry by emailing info@oliveandwell.com or calling us at 708.848.4230.
+
+				Can I pay for my order by check?
+				Sorry, we do not accept checks at this time.
+
+				How can I redeem my gift certificate?
+				If you wish to use a gift certificate simply fill your cart with the items you wish to purchase and proceed through checkout. When you come to the payment methods menu, select "gift certificate" and follow the prompts. You will need to provide credit card information if your order total exceeds the gift certificate amount.
+
+				Do you gift wrap?
+				Yes, for a cost of $4.25 per item.
+
+				How can I order a custom gift basket?
+				Please see our gift basket selections or contact us at 708.848.4230 for a custom basket.
+
+				How is sales tax calculated?
+				Sales tax is calculated based on local tax tables. All Illinois orders will be charged tax.
+
+				What is your return policy?
+				Due to the nature of the products we offer, returns will only be accepted within 5 days of delivery (dates confirmed by our shipping agents) and must reference the original order number. If you wish to return an item, please contact us prior to shipping anything back, for proper authorization. No returns will be accepted without such authorization. If items are returned sealed in their original packaging, completely in-tact and in resaleable condition, a refund or exchange will be offered – solely at the discretion of management. If an item is open, but proven to be defective, we will work to replace it. If a replacement is not available, we will offer a refund or exchange. Items sold as gift baskets or collections must be returned in their entirety, including the basket, pail or other container they were originally packaged in. No individual items may be removed or exchanged separately unless an item is found to be defective. Wedding and event favors are not returnable. Personalized or custom created items are not returnable, this includes all event favors. No shipping costs will be refunded for products returned to Olive & Well unless we are responsible for the error. Returns on orders that shipped free (ie. orders that utilized a promotion coupon/offer) invalidate the free shipping option and will be refunded the product amount(s) less the cost of applicable shipping and handling charges. REFUSED SHIPMENTS/DELIVERY FAILURE DUE TO LACK OF AVAILABILITY: Any shipments that are returned to Olive & Well by shipping carriers due to: refusal of delivery; incorrect address supplied by customer or delivery failure due to lack of availability on recipient's part will not be automatically refunded. Refunds that are requested and approved by management will automatically incur the following deductions: 30% restocking fee and no shipping and handling charges will be refunded. Please contact customer service for more information on returning an item by calling 708.848.4230. We will work to make your return as easy as possible.</p>
+			<div class="closeBttn">
+				<i class="material-icons">close</i>
+			</div>
+		</div> -->
+
+		<div class="aboutUs closed">
+
+			<p>Olive & Well is a specialty food store that brings you the finest Extra Virgin Olive Oils and Balsamic Vinegars from around the world.</p><br/>
+			<p>We are unique because customers are able to taste our olive oils and balsamic vinegars before deciding on their favorites. Their selection is bottled from the same Fusti (stainless steel tank) that they sample, so they know they are taking home the freshest, most delicious products to enhance their recipes and tantalize taste buds.</p><br/>
+			<p>Olive & Well is located in the heart of historic Oak Park, Illinois in the Scoville Square Building at Oak Park Avenue and Lake Street. For more information on Oak Park, visit Oak Park’s tourism site, click here.</p><br/>
+			<p>Even if you have not yet had the opportunity to visit us in person to experience our tasting opportunities, you can order online and rest assured that you will be getting the same quality, fresh products that our in-store customers try.</p>
+
+			<div class="closeBttn">
+				<i class="material-icons">close</i>
+			</div>
 		</div>
 
 		<div ng-view></div>
@@ -207,9 +241,12 @@
 			</div>
 		</nav>
 
-		<footer><p><a>Store Policies & Terms</a> | © 2015 | Olive & Well, Inc. <br /> 133 N. Oak Park Ave. Oak Park, IL 60301 | <a class="mapButton">Map</a> | P: 708.848.4230 | E: info@oliveandwell.com</p></footer>
+		<footer>
+			<p><a>Store Policies & Terms</a> | <a class="about">About Us</a></p> 
+			<p>133 N. Oak Park Ave. Oak Park, IL 60301 | Phone: 708.848.4230 | info@oliveandwell.com</p>
+			<p>© 2015 | Olive & Well, Inc.</p>
 
-		<div id="map"></div>
+		</footer>
 
 		<div class="cartBttn cartBanner" ng-controller="orderController as model">
 			<div class="maticon shopping_cart">
@@ -328,19 +365,10 @@
 				</div>
 
 
-
 			</div>
 		</div>
 
-<!-- 		<div class="cartPerinfo hidden">
-			<div><p>Contact Information</p></div>
-			<div>Shipping Address</div>
-			<div>Payment Option</div>
-		</div> -->
-
 		<script src="js/script.min.js"></script>
-		<script async defer
-			src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>
 		<script src="http://localhost:35729/livereload.js"></script>
 	</body>
 </html>
