@@ -26,7 +26,6 @@ $(window).scroll(function(){
 	// if (topOfWindow > 300) {
 	// 	$('.aboutUs').addClass('closed');
 	// }
-
   
   $('.submenu').each(function() {
     var elemPosit = $(this).offset().top;

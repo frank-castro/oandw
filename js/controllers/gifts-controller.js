@@ -10,8 +10,8 @@ angular.module('storeProducts')
 	});
 
 //cart functionality
-	$scope.add = function (prod, vol, price) {
-	    orderService.add(prod, vol, price);
+	$scope.add = function (prod, price) {
+	    orderService.add(prod, null, price);
 	}
 
 	$scope.remove = function (prod) {
