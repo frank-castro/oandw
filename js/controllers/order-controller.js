@@ -1,0 +1,76 @@
+"use strict";
+var Controllers;
+(function (Controllers) {
+    var OrderController = (function () {
+        function OrderController($scope, $timeout, orderService) {
+            var _this = this;
+            this.$scope = $scope;
+            this.$timeout = $timeout;
+            this.orderService = orderService;
+            // wizard step
+            this.step = 1;
+            //#region Cart
+            this.recentlyChanged = false;
+            this.maximized = false;
+            $scope.$watch(function () { return _this.itemCount; }, function () { return _this.triggerChange(); });
+        }
+        Object.defineProperty(OrderController.prototype, "order", {
+            // order accessor
+            get: function () {
+                return this.orderService.order;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        OrderController.prototype.toggle = function () {
+            this.maximized = !this.maximized;
+        };
+        Object.defineProperty(OrderController.prototype, "total", {
+            get: function () {
+                return this.orderService.order.total;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        Object.defineProperty(OrderController.prototype, "items", {
+            get: function () {
+                return this.orderService.order.items;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        Object.defineProperty(OrderController.prototype, "itemCount", {
+            get: function () {
+                return this.orderService.order.itemCount;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        Object.defineProperty(OrderController.prototype, "hasItems", {
+            get: function () {
+                return this.itemCount > 0;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        OrderController.prototype.add = function (prodId) {
+            return this.orderService.addById(prodId);
+        };
+        OrderController.prototype.remove = function (prodId) {
+            return this.orderService.removeById(prodId);
+        };
+        OrderController.prototype.submit = function () {
+            this.orderService.submit();
+        };
+        OrderController.prototype.triggerChange = function () {
+            var self = this;
+            this.recentlyChanged = true;
+            this.$timeout(function () { self.recentlyChanged = false; }, 600);
+        };
+        return OrderController;
+    })();
+    Controllers.OrderController = OrderController;
+    angular.module('storeProducts').controller('orderController', ['$scope', '$timeout', 'orderService',
+        function ($scope, $timeout, orderService) { return new OrderController($scope, $timeout, orderService); }]);
+})(Controllers || (Controllers = {}));
+//# sourceMappingURL=order-controller.js.map
