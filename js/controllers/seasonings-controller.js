@@ -28,4 +28,12 @@ angular.module('storeProducts')
 	    return orderService.submit();
 	}
 
+	activate();
+
+	function activate() {
+	    orderService.splashOn = false;
+	    $('.sitemenu').removeClass('sitemenuIntro');
+	    $('.imgText').addClass('imgTextIntro');
+	    $('.logo').removeClass('logoIntro');
+	}
 }]);

@@ -8,8 +8,8 @@ angular.module('storeProducts')
 	});
 
 //cart functionality
-	$scope.add = function (prod, price) {
-	    orderService.add(prod, null, price);
+	$scope.add = function (prod, vol, price) {
+	    orderService.add(prod, vol, price);
 	}
 
 	$scope.remove = function (prod) {
@@ -28,4 +28,12 @@ angular.module('storeProducts')
 	    return orderService.submit();
 	}
 
+	activate();
+
+	function activate() {
+	    orderService.splashOn = false;
+	    $('.sitemenu').removeClass('sitemenuIntro');
+	    $('.imgText').addClass('imgTextIntro');
+	    $('.logo').removeClass('logoIntro');
+	}
 }]);
