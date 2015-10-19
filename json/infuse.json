@@ -134,8 +134,8 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Like fresh-picked from the garden.  Add a dash to meat or pasta; drizzle over  potatoes; rub it into chicken before roasting.  Pair with Honey Ginger balsamic for a flavor burst.",
-		"decoimage" : "images/wild-fernleaf-dill-img.png",
-		"color" : "#285220",
+		"decoimage" : "images/wild-rosemary-img.png",
+		"color" : "#5d7432",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
 	}

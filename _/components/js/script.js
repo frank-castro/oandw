@@ -14,7 +14,7 @@ $('.closeBttn').on('click', function(){
 	$('.aboutUs').addClass('closed');
 });
 
-$('.shopping_cart').on('click', function(){
+$('.shopping_cart, #keepShopping').on('click', function(){
 	$('.cartBanner').toggleClass('cartBttn');
 	$('.cartBannerContent').toggleClass('hidden');
 });
