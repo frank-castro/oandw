@@ -1,13 +1,14 @@
 <div class="oilsBuyContainerLeft">
-	<div class="bigPlusBttn" style="background-color: {{item.color}};" ng-click="add(item.name, item.bigbottle, item.pricebig)">
+	<div class="bigPlusBttn" ng-attr-style="background-color: {{item.color}};" ng-click="add(item.name, item.bigbottle, item.pricebig)">
+		<img src="images/svg/bigplusbttn.svg"/>
 
-    <!-- test code (please use ng-click example)-->
-<!--     <button ng-click="add(item.name, item.bigbottle, item.pricebig)">Add {{item.name}} / {{getTotal() | currency}}</button><br /> -->
-    <!-- test code -->
+	<!-- <div class="bigPlusBttn" style="background-color: {{item.color}};" ng-click="add(item.name, item.bigbottle, item.pricebig)"> -->
 
-		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 58 58" enable-background="new 0 0 58 58" xml:space="preserve">
+
+<!-- 		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 58 58"  xml:space="preserve">
 			<path d="M29.5,28.5h11v1h-11v11h-1v-11h-11v-1h11v-11h1V28.5z"/>
-		</svg>
+		</svg> -->
+
 	</div>
 	<p>Add to Cart</p>
 	<div class="sizeText">{{item.bigbottle}}</div>

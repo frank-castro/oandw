@@ -4,7 +4,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Fruity, nutty tones, with tasting notes of green tomato and almond. Creamy, delicate aftertaste. Drizzle over greens, sauté vegetables, or grill fish. (California)",
-		"decoimage" : "images/arbosanaimg.png",
+		"decoimage" : "images/varietal/arbosanaimg.png",
 		"color" : "#616E28",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -14,7 +14,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Smooth and elegant, with notes of green apple and almond. Great for salads, making pesto, or adding light flavor to roasted vegetables. (Chile)",
-		"decoimage" : "images/arbequinaimg.png",
+		"decoimage" : "images/varietal/arbequinaimg.png",
 		"color" : "#782935",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -24,7 +24,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Certified organic from olives hand-harvested in Tunisia, rich in flavor and color, and high in antioxidants. Often referred to as the Chardonnay of olive oils. (Tunisia)",
-		"decoimage" : "images/chemlali-img.png",
+		"decoimage" : "images/varietal/chemlali-img.png",
 		"color" : "#6F82A8",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -34,7 +34,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Highly complex, made from hand-picked olives. Displays herbaceous qualities and notes of green apple. Unique, floral finish. Clean, crisp and pungent. (Italy)",
-		"decoimage" : "images/coratina-grand-cru-img.png",
+		"decoimage" : "images/varietal/coratina-grand-cru-img.png",
 		"color" : "#417348",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -44,7 +44,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Displays a creamy, malty center & notes of green grass and wildflowers. Light yet fruity olive aroma. Turns even ordinary greens into gourmet delights. (Italy)",
-		"decoimage" : "images/frantoio-leccino-img.png",
+		"decoimage" : "images/varietal/frantoio-leccino-img.png",
 		"color" : "#496392",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -54,7 +54,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Robust olive flavor and aroma, with notes of ripe banana and apple. Pair with any balsamic vinegar, but especially Traditional, Juniper Berry or Pomegranate. (Spain)",
-		"decoimage" : "images/hojiblanca-img.png",
+		"decoimage" : "images/varietal/hojiblanca-img.png",
 		"color" : "#54806D",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -64,7 +64,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Exquisite and flavorful aroma. Fresh fruit-of-the-olive taste, with hints of artichoke and fresh grass.  Peppery aftertaste. Enjoy on salads, roasted meats, hearty vegetables. (Greece)",
-		"decoimage" : "images/koroneikiimg.png",
+		"decoimage" : "images/varietal/koroneikiimg.png",
 		"color" : "#BE9F70",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -74,7 +74,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Smooth, fruity olive oil for use with and on everything. Complex yet well-balanced, with a lovely aroma and lightly grassy aftertaste. (Australia)",
-		"decoimage" : "images/picual-img.png",
+		"decoimage" : "images/varietal/picual-img.png",
 		"color" : "#6A612F",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -84,7 +84,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Strong olive fruity flavor, with a slight hint of apple, and a peppery finish. Perfect for hearty dishes and bold salads. (Australia)",
-		"decoimage" : "images/pendolino-img.png",
+		"decoimage" : "images/varietal/pendolino-img.png",
 		"color" : "#8F707D",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"

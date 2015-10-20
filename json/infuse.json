@@ -4,7 +4,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "The essence of fresh basil leaves, available in all seasons. Delicious with pasta, salad greens, dipping bread and sauces.",
-		"decoimage" : "images/basil-img.png",
+		"decoimage" : "images/fused/basil-img.png",
 		"color" : "#6B7B36",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -14,7 +14,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Made by combining a pint of organic extra virgin olive oil with 1.6 pounds of fresh whole Baklouti chilies and crushing them for an amazing fusion.  Use (sparingly) to spice your dishes.",
-		"decoimage" : "images/baklouti-green-chili-img.png",
+		"decoimage" : "images/fused/baklouti-green-chili-img.png",
 		"color" : "#3C4F12",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -24,7 +24,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Product of crushing just-picked oranges with just-picked olives. Toss with spinach for a light salad, rub on poultry, or use as a base for citrus mayonnaise. Pair with Succulent Fig, White Peach or Cranberry~Pear balsamics.",
-		"decoimage" : "images/bloodorange-img.png",
+		"decoimage" : "images/fused/bloodorange-img.png",
 		"color" : "#7A2414",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -34,7 +34,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Butter taste with all the health benefits of olive oil.  Use in baking to replace butter, make mashed potatoes, sauté vegetables or grill fish or meat.  Fabulous drizzled over popcorn!",
-		"decoimage" : "images/buttery-img.png",
+		"decoimage" : "images/fused/buttery-img.png",
 		"color" : "#8B5B17",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -44,7 +44,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "TJust the right amount of garlic intensity. Toss with pasta; use in place of butter to make garlic bread; drizzle on steaks, soups and vegetables.  Pair with any aged balsamics.",
-		"decoimage" : "images/freshgarlic-img.png",
+		"decoimage" : "images/fused/freshgarlic-img.png",
 		"color" : "#B19981",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -54,7 +54,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Gremolata is a traditional Italian blend of lemon zest, garlic, parsley and mint. The infused olive oil is ideal for marinating poultry, veal or fish; in dressings paired with Alfoos Mango or Oregano balsamics; or tossed with pasta.",
-		"decoimage" : "images/gremolata-img.png",
+		"decoimage" : "images/fused/gremolata-img.png",
 		"color" : "#4A531C",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -64,7 +64,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Infused with notes of savory, thyme, basil, lavender and a hint of fennel.  Drizzle over grilled meat or fish, or create a salad dressing, paired with Lavender balsamic.",
-		"decoimage" : "images/provence-img.png",
+		"decoimage" : "images/fused/provence-img.png",
 		"color" : "#696A2D",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -74,7 +74,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Olives crushed with Meyer lemons, delicious with fish, chicken, and vegetables.  Pair with Black Currant or Pomegranate balsamic to create a salad sensation.",
-		"decoimage" : "images/meyer-lemon-img.png",
+		"decoimage" : "images/fused/meyer-lemon-img.png",
 		"color" : "#AA8B1F",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -84,7 +84,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Essence of limes perfects Mexican dishes, spicy Thai dishes, salads, and seafood.  Drizzle on an avocado. Substitute for butter in mashed sweet potatoes.  Pair with Honey Ginger balsamic for an Asian-fusion sensation.",
-		"decoimage" : "images/persian-lime-img.png",
+		"decoimage" : "images/fused/persian-lime-img.png",
 		"color" : "#405700",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -94,7 +94,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Just the right amount of zip for Mexican dishes.  Also spices up pasta, sauces, and grilled vegetables.  Brush on grilled chicken, beef, or seafood.   Awesome on pizza!",
-		"decoimage" : "images/smokey-chipotle-img.png",
+		"decoimage" : "images/fused/smokey-chipotle-img.png",
 		"color" : "#733215",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -104,7 +104,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Fruity olive oil and the vibrant flavor of Tuscan herbs -- basil, rosemary, garlic, marjoram, and parsley.  Pair with pasta, dip bread, toss with salads, drizzle on grilled vegetables.",
-		"decoimage" : "images/tuscan-herbs-img.png",
+		"decoimage" : "images/fused/tuscan-herbs-img.png",
 		"color" : "#C8984E",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -114,7 +114,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Subtle wild mushroom flavor, with savory hints of sage.  Ideal for potato and rice dishes, as well as roasted meats, pasta dishes, eggs, and savory dressings.",
-		"decoimage" : "images/wild-mushroom-sage-img.png",
+		"decoimage" : "images/fused/wild-mushroom-sage-img.png",
 		"color" : "#A57045",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -124,7 +124,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Fresh dill flavor, especially good on salmon, in egg dishes, on green beans, and drizzled over roasted or boiled baby potatoes.  Pair with Sicilian Lemon balsamic.",
-		"decoimage" : "images/wild-fernleaf-dill-img.png",
+		"decoimage" : "images/fused/wild-fernleaf-dill-img.png",
 		"color" : "#285220",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -134,7 +134,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Like fresh-picked from the garden.  Add a dash to meat or pasta; drizzle over  potatoes; rub it into chicken before roasting.  Pair with Honey Ginger balsamic for a flavor burst.",
-		"decoimage" : "images/wild-rosemary-img.png",
+		"decoimage" : "images/fused/wild-rosemary-img.png",
 		"color" : "#5d7432",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
