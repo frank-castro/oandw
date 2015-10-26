@@ -121,7 +121,7 @@
 
 			<div class="cartBannerContent hidden">
 
-			<!--Step 1-->
+<!--Step 1-->
 				<div class="cartProductList" id="cart-items" ng-show="model.step == 1">
 					<div class="cartBigText">{{model.itemCount}} Items in your Cart</div>
 					<table class="hidden">
@@ -131,9 +131,17 @@
 							<td>Subtotal</td>
 						</tr>
 						<tr ng-repeat="item in model.items">
-							<td><div class="addRemoveBttn" ng-click="model.add(item.name)">+</div></td>
+							<td>
+								<div class="addRemoveBttn" ng-click="model.add(item.name)">
+									<img src="images/svg/bigplusbttn.svg"/>
+								</div>
+							</td>
 							<td>{{item.count}}</td>
-							<td><div class="addRemoveBttn" ng-click="model.remove(item.name)">-</div></td>
+							<td>
+								<div class="addRemoveBttn" ng-click="model.remove(item.name)">
+									<img src="images/svg/cartminusbttn.svg"/>
+								</div>
+							</td>
 							<td>{{item.name}}</td>
 							<td>{{item.total | currency}}</td>
 						</tr>
@@ -149,11 +157,11 @@
 					</table>
 				</div>
 
-				<!--Step 2-->
-				<div id="ship-n-pay" ng-show="model.step == 2">
-					<div>{{model.order.firstName}} {{model.order.lastName}} pleace provide the following information</div>
+<!--Step 2-->
+				<div class="cartProductList" id="ship-n-pay" ng-show="model.step == 2">
+					<div>{{model.order.firstName}} {{model.order.lastName}} Please provide the following information</div>
 
-					<table style="margin: 12px">
+					<table>
 						<tr>
 							<th>Contact information</th>
 							<th>Shipping information</th>
@@ -206,7 +214,7 @@
 					<button class="btn" ng-click="model.step = 3">Next</button>
 				</div>
 
-				<!--Step 3-->
+<!--Step 3-->
 				<div id="verify-order" ng-show="model.step == 3">
 					<div>Order of {{model.itemCount}} products, total price {{model.total | currency}}</div>
 					<br />
@@ -219,7 +227,6 @@
 					<button class="btn" ng-click="model.step = 2">Back</button>
 					<button class="btn" ng-click="model.submit()">Place order</button>
 				</div>
-
 
 			</div>
 		</div>
