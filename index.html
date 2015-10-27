@@ -132,14 +132,14 @@
 						</tr>
 						<tr ng-repeat="item in model.items">
 							<td>
-								<div class="addRemoveBttn" ng-click="model.add(item.name)">
-									<img src="images/svg/bigplusbttn.svg"/>
+								<div class="addRemoveBttn" ng-click="model.remove(item.name)">
+									<img src="images/svg/cartminusbttn.svg"/>
 								</div>
 							</td>
 							<td>{{item.count}}</td>
 							<td>
-								<div class="addRemoveBttn" ng-click="model.remove(item.name)">
-									<img src="images/svg/cartminusbttn.svg"/>
+								<div class="addRemoveBttn" ng-click="model.add(item.name)">
+									<img src="images/svg/bigplusbttn.svg"/>
 								</div>
 							</td>
 							<td>{{item.name}}</td>
