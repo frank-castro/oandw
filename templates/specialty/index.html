@@ -11,14 +11,15 @@
 			<div class="oilsImage right"><img ng-src="{{item.decoimage}}"/></div>
 		</li>
 		<li class="ctrlsContainer">
-			<div class="buyCtrlsLeft">
+			<specialty-container></specialty-container><!-- directive for the div with the svg in templates -->
+<!-- 			<div class="buyCtrlsLeft">
 				<big-bottle></big-bottle>
 				<bttns-left></bttns-left>
 			</div>
 			<div class="buyCtrlsRight">
 				<small-bottle></small-bottle>
 				<bttns-right></bttns-right>
-			</div>
+			</div> -->
 		</li>
 		<li class="description"><p>{{item.description}}</p></li>
 	</ul>

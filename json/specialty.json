@@ -1,26 +1,25 @@
 [
 	{
 		"name" : "Butternut Squash Seed Oil",
-		"pricebig" : "$32.95",
-		"pricesmall" : "$17.95",
+		"type" : "specialbottle",
+		"pricesmall" : "$12.00",
 		"description" : "A rare find: oil from roasted pressed squash seeds.  Use for sautéing, grilling or roasting vegetables and meats, or as a flavoring oil in prepared dishes.  The nutty taste makes a great replacement for nuts for those with allergies.  High in polyunsaturated fats, rich in vitamin E.  Smoke point is 425°.",
 		"decoimage" : "images/specialty/butternut-squash-seed-img.png",
 		"color" : "#957B5A",
-		"bigbottle": "750 ml",
-		"smallbottle": "375 ml"
+		"smallbottle": "150 ml"
 	},
 	{
 		"name" : "Roasted Pumpkin Seed Oil",
-		"pricebig" : "$32.95",
-		"pricesmall" : "$17.95",
+		"type" : "specialbottle",
+		"pricesmall" : "$12.00",
 		"description" : "All-natural, expeller-pressed unrefined oil made with non-GMO pumpkin seeds grown on a family farm in upstate New York -- complements grilled vegetables, roasted fish, sautéed leafy greens. Drizzle on pasta, squash soup. Low smoke point, so best used for finishing.",
 		"decoimage" : "images/specialty/roasted-pumpkin-seed-img.png",
 		"color" : "#D08227",
-		"bigbottle": "750 ml",
-		"smallbottle": "375 ml"
+		"smallbottle": "150 ml"
 	},
 	{
 		"name" : "Roasted Sweet Almond Oil",
+		"type" : "normalbottle",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Clean nut flavor complements fish, asparagus, cream soups, or light vinaigrettes.  Can also be used for baking.  High in antioxidants, and a great source of omega 6 fatty acids.  Smoke point is 430°.  Pairs beautifully with Red Apple balsamic.",
@@ -31,6 +30,7 @@
 	},
 	{
 		"name" : "Toasted Japanese Sesame Oil",
+		"type" : "normalbottle",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Lends Asian authenticity to stir-fry or noodle dishes, and  makes a delicious dressing for a Chinese chicken salad.   Drizzle on asparagus, green beans, and other vegetables.  Pair with Honey Ginger balsamic.  Smoke point is 445°.",
@@ -41,12 +41,11 @@
 	},
 	{
 		"name" : "White Truffle Oil",
-		"pricebig" : "$32.95",
-		"pricesmall" : "$17.95",
+		"type" : "specialbottle",
+		"pricesmall" : "$29.95",
 		"description" : "Earthy bouquet and intense somewhat garlicky white truffle flavor.  Finish meats, soups, potato dishes, risotto or pasta dishes.  Take French fries or popcorn to a new level with a few drizzles. This is a rare treat!",
 		"decoimage" : "images/specialty/white-truffle-img.png",
 		"color" : "#926841",
-		"bigbottle": "750 ml",
-		"smallbottle": "375 ml"
+		"smallbottle": "150 ml"
 	}
 ]

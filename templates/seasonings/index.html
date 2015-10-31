@@ -12,12 +12,13 @@
 			<div class="seasoningsImage right"><img ng-src="{{item.decoimage}}"/></div>
 		</li>
 		<li class="seasoningsCtrlSvgWrapper">
-			<div class="seasoningsPackageContainer">
+			<seasoning-container></seasoning-container><!-- directive for the div with the svg in templates -->
+<!-- 			<div class="seasoningsPackageContainer">
 				<img src="images/svg/seasonings.svg"/>
 			</div>
 			<div class="buyCtrlsLeft">
 				<bttns-left></bttns-left>
-			</div>
+			</div> -->
 		</li>
 		<div class="description"><p>{{item.description}}</p></div>
 	</ul>
