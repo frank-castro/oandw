@@ -3,7 +3,7 @@
 		"name" : "Applewood Smoked Sea Salt",
 		"type" : "package1",
 		"pricebig" : "$5.95",
-		"description" : "Utilizes sweet applewood from the Yakima Valley to fuel the fires that smoke this sea salt.  Aged applewood is one of the most popular of the fruit woods used in smoking, and creates a delicious, savory flavor.",
+		"description" : "Utilizes sweet applewood from the Yakima Valley to fuel the fires that smoke this sea salt.  Aged applewood, one of the most popular of fruit woods used in smoking, creates a delicious, savory flavor",
 		"decoimage" : "images/seasonings/yakima-salt.png",
 		"color" : "#90754C",
 		"bigbottle": "2 oz"
@@ -12,7 +12,7 @@
 		"name" : "Black Truffle Sea Salt",
 		"type" : "package1",
 		"pricebig" : "$12.95",
-		"description" : "Impress guests with the unmistakable flavor of black truffles, expertly blended with naturally pure, fine quality sea salt.  Lends an earthy sophistication to egg dishes, potatoes, red meat and even pasta.  Try sprinkling it on popcorn with our buttery olive oil.",
+		"description" : "Black truffles, expertly blended with naturally pure, fine quality sea salt.  Lends an earthy sophistication to egg dishes, potatoes, red meat and even pasta.  Sprinkle on popcorn with Buttery olive oil.",
 		"decoimage" : "images/seasonings/black-truffle-salt.png",
 		"color" : "#A99984",
 		"bigbottle": "2 oz"
@@ -21,7 +21,7 @@
 		"name" : "Cyprus Black Lava Sea Salt",
 		"type" : "package1",
 		"pricebig" : "$5.95",
-		"description" : "Mediterranean, pyramid-shaped crystal sea salt flakes combined with activated charcoal (natural detoxifier). The dramatic color and texture make it an ideal finishing salt for elegant presentation.",
+		"description" : "Mediterranean, pyramid-shaped crystal sea salt flakes combined with activated charcoal (natural detoxifier).  Dramatic color and texture make it an ideal finishing salt.",
 		"decoimage" : "images/seasonings/cyprus-black-lava-salt.png",
 		"color" : "#575152",
 		"bigbottle": "2 oz"
@@ -30,7 +30,7 @@
 		"name" : "Cyprus Flake Sea Salt",
 		"type" : "package1",
 		"pricebig" : "$5.95",
-		"description" : "Large pyramid-shaped light and fluffy salt crystals that are mild in flavor.  Flake salt is often specifically called for in certain recipes, but it can be used in any dish.",
+		"description" : "Large pyramid-shaped light and fluffy salt crystals, mild in flavor.  Flake salt is often specifically called for in certain recipes, but can be used in any dish.",
 		"decoimage" : "images/seasonings/cyprus-flake-sea-salt.png",
 		"color" : "#CBBBBB",
 		"bigbottle": "2 oz"
@@ -39,7 +39,7 @@
 		"name" : "Espresso Brava Sea Salt",
 		"type" : "package1",
 		"pricebig" : "$5.95",
-		"description" : "Fuses espresso with sea salt, not only a delicious addition to chocolates and desserts, but also a complement for rubs and marinades for beef or pork.  A delicious match with a cognac reduction, or anything with nutmeg, anise, vanilla, cherry, hazelnut, raspberry...",
+		"description" : "Fuses espresso with sea salt, not only a delicious addition to chocolates and desserts, but also a complement for rubs and marinades for beef or pork.  A delicious match with a cognac reduction, or anything with nutmeg, anise, vanilla,  or cherry.",
 		"decoimage" : "images/seasonings/espresso-brava-sea-salt.png",
 		"color" : "#7C573F",
 		"bigbottle": "2 oz"
@@ -48,7 +48,7 @@
 		"name" : "Fleur de Sel (Guérande, France)",
 		"type" : "package1",
 		"pricebig" : "$5.95",
-		"description" : "Translates as 'Flower of Salt', also known as 'Caviar of Salt', accepted by chefs as the world’s best finishing salt. The name comes from the aroma of violets that develops as the salt dries.  For maximum flavor, sprinkle over foods just before serving.",
+		"description" : "\"Flower of Salt\", also known as \"Caviar of Salt\", accepted by chefs as the world’s best finishing salt. The name comes from the aroma of violets that develops as the salt dries.  Best sprinkled over foods just before serving.",
 		"decoimage" : "images/seasonings/fleur-de-sel.png",
 		"color" : "#D6C6B2",
 		"bigbottle": "2 oz"
@@ -63,10 +63,10 @@
 		"bigbottle": "2 oz"
 	},
 	{
-		"name" : "Matcha (green tea) Sea Salt",
+		"name" : "Matcha Sea Salt",
 		"type" : "package1",
 		"pricebig" : "$5.95",
-		"description" : "Fused with powdered premium green tea leaves from Japan.  Matcha is rich in antioxidants and is becoming a new gourmet taste sensation.  Try this salt with scrambled eggs, steamed fish, bok choy, and soups ... and yes, even chocolate and desserts.",
+		"description" : "Fused with powdered premium green tea leaves from Japan.  Matcha is rich in antioxidants and is becoming a new gourmet taste sensation.  Try with scrambled eggs, steamed fish, bok choy, and soups ... and yes, even chocolate and desserts.",
 		"decoimage" : "images/seasonings/matcha.png",
 		"color" : "#A6A166",
 		"bigbottle": "2 oz"
@@ -84,7 +84,7 @@
 		"name" : "Sun-Ripened Tomato Sea Salt",
 		"type" : "package1",
 		"pricebig" : "$5.95",
-		"description" : "Rich tomato flavor is created by a process that incorporates the whole tomato.  Great for soups and sauces, or top a slice of crusty bread with unsalted butter and a sprinkling of this salt.",
+		"description" : "Rich tomato flavor created by a process that incorporates the whole tomato.  Great for soups and sauces, or top a slice of crusty bread with unsalted butter and a sprinkling of this salt.",
 		"decoimage" : "images/seasonings/sun-ripened-tomato.png",
 		"color" : "#D47550",
 		"bigbottle": "2 oz"
@@ -93,7 +93,7 @@
 		"name" : "Thai Ginger Sea Salt",
 		"type" : "package1",
 		"pricebig" : "$5.95",
-		"description" : "Combines the clean, simple flavor of sea salt with fresh ginger.  Use on grilled vegetables, Asian noodles or fish ... even love it on vanilla ice cream!",
+		"description" : "Combines the clean, simple flavor of sea salt with fresh ginger.  Use on grilled vegetables, Asian noodles or fish ... even love it on vanilla ice cream.",
 		"decoimage" : "images/seasonings/thai-ginger-sea-salt.png",
 		"color" : "#D6BB64",
 		"bigbottle": "2 oz"
@@ -102,7 +102,7 @@
 		"name" : "Vintage Merlot Sea Salt",
 		"type" : "package1",
 		"pricebig" : "$5.95",
-		"description" : "Fusing full-bodied merlot and sea salt enriches every gourmet meal with the sophisticated taste of wine.  Perfectly suited for soups and sauces, and the lovely wine color makes it ideal for finishing dishes.",
+		"description" : "Fusing full-bodied merlot and sea salt enriches gourmet meals with the sophisticated taste of wine. Perfectly suited for soups and sauces, and the lovely wine color makes it ideal for finishing dishes.",
 		"decoimage" : "images/seasonings/vintage-merlot-sea-salt.png",
 		"color" : "#BB4E5D",
 		"bigbottle": "2 oz"
@@ -120,7 +120,7 @@
 		"name" : "Herbs for Dipping",
 		"type" : "package2",
 		"pricebig" : "$2.00",
-		"description" : "A blend of herbs to create a flavorful dipping oil!  Use 2 tablespoons per 1/2 cup of olive oil (try Arbosana or Hojiblanca), let stand for 30 minutes for flavors to blend, and then dip your favorite Italian bread.  Contains garlic, onion, salt, pepper, oregano, rosemary, sage, thyme, and red bell pepper granules.  Also good sprinkled on green vegetables.",
+		"description" : "A blend of oregano, rosemary, sage and thyme, as well as onion, garlic, bell pepper and salt, creates a flavorful dipping oil.  Use 2 tbsp per 1/2 cup of olive oil, let stand for 30 minutes, and then dip your favorite bread.  Also good sprinkled on green vegetables.",
 		"decoimage" : "images/seasonings/dipping-herbs.png",
 		"color" : "#616E28",
 		"bigbottle": "4 tbs"
@@ -129,7 +129,7 @@
 		"name" : "Seasonello",
 		"type" : "jar",
 		"pricebig" : "$8.50",
-		"description" : "A delicious and Italian way to add flavor to your dishes.  Sea salt is paired with rosemary, garlic, sage and pepper.  This condiment from Bologna will enrich meat, poultry, vegetables, and barbecue dishes.  Caution:  this one is addictive!",
+		"description" : "A delicious and Italian way to add flavor to dishes.  Sea salt is paired with rosemary, garlic, sage and pepper.  Enriches meat, poultry, vegetables, and barbecue dishes.  Caution:  this one is addictive!",
 		"decoimage" : "images/seasonings/seasonello.png",
 		"color" : "#616E28",
 		"bigbottle": "10.58 oz"
@@ -138,7 +138,7 @@
 		"name" : "Ginger Infused Pure Cane Sugar",
 		"type" : "package1",
 		"pricebig" : "$3.00",
-		"description" : "Ginger lovers will adore this infused sugar.  It’s perfect on grilled salmon and in Asian dishes calling for ginger.  Top lemon sorbet or pumpkin pie, caramelize on top of crème brûlée, or simply stir it into a cup of tea.",
+		"description" : "Powerful ginger flavor.  It’s perfect on grilled salmon and in Asian dishes calling for ginger.  Top lemon sorbet or pumpkin pie, caramelize on top of crème brûlée, or simply stir it into a cup of tea.",
 		"decoimage" : "images/seasonings/ginger-infused-cane-sugar.png",
 		"color" : "#BE9A57",
 		"bigbottle": "2 oz"
