@@ -1,0 +1,17 @@
+<div class="buyCtrlsSpecial">
+	<div class="bottleContainerSpecial">
+		<img src="images/svg/specialbottle.svg"/>
+	</div>
+	<!-- <bttns-right></bttns-right> -->
+	<div class="oilsBuyContainer">
+		<div class="roundBttnPlus" ng-attr-style="background-color: {{item.color}};" ng-click="add(item.name, item.smallbottle, item.pricesmall)">
+
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+				<path d="M24.5,23.5h11v1h-11v11h-1v-11h-11v-1h11v-11h1V23.5z"/>
+			</svg>
+		</div>
+		<p>Add to Cart</p>
+		<div class="sizeText">{{item.smallbottle}}</div>
+		<div class="priceText special">{{item.pricesmall}}</div>
+	</div>
+</div>
