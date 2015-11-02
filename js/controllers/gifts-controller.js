@@ -34,8 +34,7 @@ angular.module('storeProducts')
 
 	function activate() {
 	    orderService.splashOn = false;
-	    $('.sitemenu').removeClass('sitemenuIntro');
-	    $('.imgText').addClass('imgTextIntro');
-	    $('.logo').removeClass('logoIntro');
+		$('.sitemenu, .logo').removeClass('sitemenuIntro logoIntro');
+		$('.imgText, .slogan').addClass('imgTextIntro sloganIntro');
 	}
 }]);

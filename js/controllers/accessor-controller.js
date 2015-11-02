@@ -7,9 +7,10 @@ angular.module('storeProducts')
 		$scope.product = data;
 	});
 
-//cart functionality
+    //cart functionality
+
 	$scope.add = function (prod, price) {
-	    orderService.add(prod, null, price);
+	    orderService.addItem(prod, price);
 	}
 
 	$scope.remove = function (prod) {
@@ -32,8 +33,7 @@ angular.module('storeProducts')
 
 	function activate() {
 	    orderService.splashOn = false;
-	    $('.sitemenu').removeClass('sitemenuIntro');
-	    $('.imgText').addClass('imgTextIntro');
-	    $('.logo').removeClass('logoIntro');
+		$('.sitemenu, .logo').removeClass('sitemenuIntro logoIntro');
+		$('.imgText, .slogan').addClass('imgTextIntro sloganIntro');
 	}
 }]);

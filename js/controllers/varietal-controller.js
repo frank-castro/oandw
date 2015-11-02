@@ -43,9 +43,8 @@ angular.module('storeProducts')
 	$scope.closeSplash = function () {
 	    orderService.splashOn = false;
 	    $scope.splashOn = false;
-	    $('.sitemenu').removeClass('sitemenuIntro');
-	    $('.imgText').addClass('imgTextIntro');
-	    $('.logo').removeClass('logoIntro');
+		$('.sitemenu, .logo').removeClass('sitemenuIntro logoIntro');
+		$('.imgText, .slogan').addClass('imgTextIntro sloganIntro');
 	}
 
 	$(window).scroll(function () {

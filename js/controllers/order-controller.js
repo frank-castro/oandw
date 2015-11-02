@@ -25,23 +25,44 @@ var Controllers;
         OrderController.prototype.toggle = function () {
             this.maximized = !this.maximized;
         };
+        Object.defineProperty(OrderController.prototype, "subTotal", {
+            get: function () {
+                return this.order.subTotal;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        Object.defineProperty(OrderController.prototype, "shippingPrice", {
+            get: function () {
+                return this.order.shippingPrice;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        Object.defineProperty(OrderController.prototype, "totalTax", {
+            get: function () {
+                return this.order.totalTax;
+            },
+            enumerable: true,
+            configurable: true
+        });
         Object.defineProperty(OrderController.prototype, "total", {
             get: function () {
-                return this.orderService.order.total;
+                return this.order.total;
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(OrderController.prototype, "items", {
             get: function () {
-                return this.orderService.order.items;
+                return this.order.items;
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(OrderController.prototype, "itemCount", {
             get: function () {
-                return this.orderService.order.itemCount;
+                return this.order.itemCount;
             },
             enumerable: true,
             configurable: true
@@ -54,10 +75,10 @@ var Controllers;
             configurable: true
         });
         OrderController.prototype.add = function (prodId) {
-            return this.orderService.addById(prodId);
+            return this.order.addById(prodId);
         };
         OrderController.prototype.remove = function (prodId) {
-            return this.orderService.removeById(prodId);
+            return this.order.removeById(prodId);
         };
         OrderController.prototype.submit = function () {
             this.orderService.submit();
