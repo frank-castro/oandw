@@ -62,7 +62,7 @@
 
 		<div class="imgText">Gourmet Olive Oils,<br />Aged Balsamics<br />& Related Products</div>
 
-		<div class="slogan">Where Healthy Tastes Great</div>
+		<div class="slogan">"Where Healthy Tastes Great"</div>
 
 		<nav class="sitemenu hidden sitemenuIntro">
 			<div class="closeBttnMenu">
@@ -177,23 +177,16 @@
 
 <!--Step 2-->
 				<div class="cartProductList" id="ship-n-pay" ng-show="model.step == 2">
-					<div>{{model.order.firstName}} {{model.order.lastName}} <p>Please provide the following information</p></div>
+					<div>{{model.order.firstName}} {{model.order.lastName}}</div>
 
 					<div class="form">
-						<p>(All fields are required, shipping inside United States Only)</p>
-						<h4>General Information</h4>
+						<h2>General Information</h2>
 						<input type="text" ng-model="model.order.firstName" placeholder="First Name" />
 						<input type="text" ng-model="model.order.lastName" placeholder="Last Name" />
 						<input type="email" ng-model="model.order.email" placeholder="Email" />
-						<div>
-							<h4>Shipping Type</h4>
-							<select ng-options="option.name for option in model.shippingOptions track by option.value" ng-model="model.shippingOption"></select>
-						</div>
-						<input type="email" ng-model="model.order.email" placeholder="Gift Note" />
-						<input type="email" ng-model="model.order.email" placeholder="Gift Recipient's Phone Number" />
-						<input type="email" ng-model="model.order.email" placeholder="Special Instructions" />
 
-						<h4>Billing Information</h4>
+						<h2>Billing Information</h2>
+						<p>United States Only</p>
 						<input type="text" ng-model="model.order.firstName" placeholder="Address" />
 						<input type="text" ng-model="model.order.lastName" placeholder="City" />
 						<select ng-model="">
@@ -201,8 +194,15 @@
 							<option>States listed here</option>
 						</select>
 						<input type="text" ng-model="model.order.lastName" placeholder="Zip" />
-						<p>United States</p>
 						<input type="text" ng-model="model.order.lastName" placeholder="Phone" />
+
+						<div>
+							<h4>Shipping Type</h4>
+							<select ng-options="option.name for option in model.shippingOptions track by option.value" ng-model="model.shippingOption"></select>
+						</div>
+						<input type="email" ng-model="model.order.email" placeholder="Gift Note" />
+						<input type="email" ng-model="model.order.email" placeholder="Gift Recipient's Phone Number" />
+						<input type="email" ng-model="model.order.email" placeholder="Special Instructions" />
 
 						<h4>Shipping Information</h4>
 						<p>Preselected checkbox goes here</p><p>Same as billing address</p>
