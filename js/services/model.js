@@ -38,6 +38,15 @@ var Model;
             this.cardExpiration = '';
             this.cardSecurityCode = '';
         }
+        Object.defineProperty(Order.prototype, "validCard", {
+            //#endregion
+            //#region verify card
+            get: function () {
+                return false; //checkCreditCard(this.cardNumber, this.cardType);
+            },
+            enumerable: true,
+            configurable: true
+        });
         Object.defineProperty(Order.prototype, "firstName", {
             //#endregion
             //#region virtual properties
@@ -109,6 +118,9 @@ var Model;
         });
         Object.defineProperty(Order.prototype, "shippingPrice", {
             get: function () {
+                var price = this.subTotal;
+                if (price <= 0)
+                    return 0;
                 var shipType = this.shippingType || 0;
                 // 3er business day
                 if (shipType == 1)
@@ -117,7 +129,6 @@ var Model;
                 if (shipType == 2)
                     return ship2ndBusinessDayPrice;
                 // standard
-                var price = this.subTotal;
                 var count = shippingRanges.length;
                 for (var i = 0; i < count; i++) {
                     var range = shippingRanges[i];
@@ -282,4 +293,3 @@ var Model;
     })();
     Model.OrderPartial = OrderPartial;
 })(Model || (Model = {}));
-//# sourceMappingURL=model.js.map
