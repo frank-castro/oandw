@@ -38,8 +38,11 @@ var Model;
             this.cardExpiration = '';
             this.cardSecurityCode = '';
         }
+        //#endregion
+        Order.prototype.isValid = function () {
+            return this.billingAddress.isValidAll() && (this.shipToBillingAddress || this.shippingAddress.isValid());
+        };
         Object.defineProperty(Order.prototype, "validCard", {
-            //#endregion
             //#region verify card
             get: function () {
                 return false; //checkCreditCard(this.cardNumber, this.cardType);
@@ -278,6 +281,18 @@ var Model;
             this.email = '';
             this.phone = '';
         }
+        Address.prototype.isValid = function () {
+            return this.firstName && this.lastName && this.address && this.city && this.zip && this.state;
+        };
+        Address.prototype.isValidAll = function () {
+            return this.firstName && this.lastName && this.address && this.city && this.zip && this.state && this.emailValid() && this.phoneValid();
+        };
+        Address.prototype.emailValid = function () {
+            return validEmail(this.email);
+        };
+        Address.prototype.phoneValid = function () {
+            return validPhone(this.phone);
+        };
         return Address;
     })();
     Model.Address = Address;
@@ -292,4 +307,12 @@ var Model;
         return OrderPartial;
     })();
     Model.OrderPartial = OrderPartial;
+    function validEmail(email) {
+        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+        return re.test(email);
+    }
+    function validPhone(phone) {
+        var re = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+        return re.test(phone);
+    }
 })(Model || (Model = {}));

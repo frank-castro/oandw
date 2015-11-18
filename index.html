@@ -210,7 +210,7 @@
                             <div class="select">
                                 <select ng-options="option.name for option in model.usStates track by option.value" ng-model="model.shippingState"></select>
                             </div>
-                            <input class="zip" type="text" ng-model="model.order.shippingAddress.lastName" placeholder="Zip" />
+                            <input class="zip" type="text" ng-model="model.order.shippingAddress.zip" placeholder="Zip" />
 							<p>United States</p>
 						</div>
 						<div class="type">
@@ -218,6 +218,7 @@
 	                        <div class="select">
 	                            <select ng-options="option.name for option in model.shippingOptions track by option.value" ng-model="model.shippingOption"></select>
 	                        </div>
+	                        <h2>Gift Information (Optional)</h2>
 	                        <input type="text" ng-model="model.order.giftNote" placeholder="Gift Note" />
 	                        <input class="phone" type="text" ng-model="model.order.giftRecipientPhone" placeholder="Gift Recipient's Phone Number" />
 	                        <input type="text" ng-model="model.order.giftInstructions" placeholder="Special Instructions" />
@@ -230,17 +231,53 @@
 				</div>
 
 <!--Step 3-->
-				<div id="verify-order" ng-show="model.step == 3">
-					<div>Order of {{model.itemCount}} products, total price {{model.total | currency}}</div>
-					<br />
-					Name: {{model.order.firstName}}, {{model.order.lastName}}, Email: {{model.order.email}}, Phone: {{model.order.phone}}.
-					<br />
-					Shipping: {{model.order.address}}, {{model.order.city}}, {{model.order.state}}, {{model.order.zip}}, {{model.order.shippingType}}
-					<br />
-					Payment: {{model.order.cardType}}, {{model.order.cardHolder}}, {{model.order.cardNumber}}, {{model.order.cardExpiration}}, {{model.order.cardSecurityCode}}
-					<br />
+				<div class="cartProductList" id="verify-order" ng-show="model.step == 3">
+					<div>
+						<h2>Confirm Your Order</h2>
+						<p>Order Summary</p>
+						<div class="divider"></div>
+						<p>Order of {{model.itemCount}} products</p>
+						<div class="divider"></div>
+						<p>Shipping Type: {{model.order.shippingType}}</p>
+						<p>Total {{model.total | currency}}</p>
+					</div>
+					<div>
+						<div class="divider"></div>
+						<h2>General Information</h2>
+						<p>First Name: {{model.order.billingAddress.firstName}}</p>
+						<p>Last Name: {{model.order.billingAddress.lastName}}</p>
+						<p>Email: {{model.order.billingAddress.email}}</p>
+					</div>
+					<div>
+						<div class="divider"></div>
+						<h2>Billing Information</h2>
+						<p>Address: {{model.order.billingAddress.address}}</p>
+						<p>City: {{model.order.billingAddress.city}}</p>
+						<p>State: {{model.order.billingAddress.state}}</p>
+						<p>Zip: {{model.order.billingAddress.zip}}</p>
+						<p>Phone: {{model.order.billingAddress.phone}}</p>
+					</div>
+					<div>
+						<div class="divider"></div>
+						<h2>Shipping Information</h2>
+						<p>Same as Billing Address</p>
+					</div>
+					<div ng-hide="model.order.shipToBillingAddress">
+						<p>First Name: {{model.order.shippingAddress.firstName}}</p>
+						<p>Last Name: {{model.order.shippingAddress.lastName}}</p>
+						<p>Address: {{model.order.shippingAddress.address}}</p>
+						<p>City: {{model.order.shippingAddress.city}}</p>
+						<p>State: {{model.order.shippingAddress.state}}</p>
+						<p>Zip: {{model.order.shippingAddress.zip}}</p>
+					</div>
+					
+<!-- 					Payment: {{model.order.cardType}}, {{model.order.cardHolder}}, {{model.order.cardNumber}}, {{model.order.cardExpiration}}, {{model.order.cardSecurityCode}} -->
+					<div>
+						<div class="divider"></div>
+						<h2>Credit Card Information</h2>
+					</div>
 <!-- show here images of accepted credit cards -->
-					<div class="ccform">
+					<div class="form">
 						<input type="text" ng-model="model.order.cardHolder" placeholder="Name on card" />
 						<input type="text" ng-model="model.order.cardNumber" placeholder="Card number" />
 						<input type="text" ng-model="model.order.cardExpiration" placeholder="Expiration date" />
