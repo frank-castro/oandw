@@ -91,6 +91,14 @@ var Controllers;
             enumerable: true,
             configurable: true
         });
+        Object.defineProperty(OrderController.prototype, "shippingTypeLabel", {
+            get: function () {
+                var idx = this.order.shippingType || 0;
+                return this.shippingOptions[idx].name;
+            },
+            enumerable: true,
+            configurable: true
+        });
         Object.defineProperty(OrderController.prototype, "billingState", {
             get: function () {
                 return this.getState(this.order.billingAddress.state);
