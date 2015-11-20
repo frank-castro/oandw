@@ -125,21 +125,24 @@ var Model;
                 if (price <= 0)
                     return 0;
                 var shipType = this.shippingType || 0;
-                // 3er business day
-                if (shipType == 1)
-                    return ship3rdBusinessDayPrice;
-                // 2nd business day
-                if (shipType == 2)
-                    return ship2ndBusinessDayPrice;
+                var basePrice = 0;
+                if (shipType == 1) {
+                    // 3er business day
+                    basePrice = ship3rdBusinessDayPrice;
+                }
+                else if (shipType == 2) {
+                    // 2nd business day
+                    basePrice = ship2ndBusinessDayPrice;
+                }
                 // standard
                 var count = shippingRanges.length;
                 for (var i = 0; i < count; i++) {
                     var range = shippingRanges[i];
                     if (!range.to || price < range.to) {
-                        return range.price;
+                        return basePrice + range.price;
                     }
                 }
-                return shipLargeOrderPrice;
+                return basePrice + shipLargeOrderPrice;
             },
             enumerable: true,
             configurable: true

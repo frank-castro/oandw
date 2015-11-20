@@ -1,4 +1,40 @@
-<!-- <div class="cartBannerContent"> -->
+<div class="cartBannerContent hidden">
+
+<!--Step 1-->
+	<div class="cartProductList" id="cart-items" ng-show="model.step == 1">
+		<div class="cartBigText">{{model.itemCount}} Items in your Cart</div>
+		<table class="hidden">
+			<tr>
+				<td colspan="3">Quantity</td>
+				<td>Name</td>
+				<td>Subtotal</td>
+			</tr>
+			<tr ng-repeat="item in model.items">
+				<td>
+					<div class="addRemoveBttn" ng-click="model.remove(item.name)">
+						<img src="images/svg/cartminusbttn.svg"/>
+					</div>
+				</td>
+				<td>{{item.count}}</td>
+				<td>
+					<div class="addRemoveBttn" ng-click="model.add(item.name)">
+						<img src="images/svg/bigplusbttn.svg"/>
+					</div>
+				</td>
+				<td>{{item.name}}</td>
+				<td>{{item.total | currency}}</td>
+			</tr>
+			<tr>
+				<td colspan="5" class="cartTotal">Total: {{model.total | currency}}</td>
+			</tr>
+		</table>
+		<table class="cartCTA">
+			<tr>
+				<td class="cartCTAback" id="keepShopping"><i class="material-icons maticon">arrow_back</i> Keep Shopping</td>
+				<td class="cartCTAforward" ng-click="model.step = 2" ng-disabled="!model.hasItems">Checkout <i class="material-icons maticon">arrow_forward</i></td>
+			</tr>
+		</table>
+	</div>
 <!--Step 2-->
 	<div class="cartProductList" id="ship-n-pay" ng-show="model.step == 2">
 		<div class="form">
@@ -125,4 +161,5 @@
 		<button ng-click="model.step = 2">Back</button>
 		<button ng-click="model.submit()">Place order</button>
 	</div>
-<!-- </div> -->
+	
+</div>

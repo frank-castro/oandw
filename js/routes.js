@@ -31,8 +31,7 @@ angular.module('oandwApp')
 		controller: 'accessorList'
 	}).
 	when('/checkout', {
-		templateUrl: 'templates/checkout.html',
-		controller: 'accessorList'
+		templateUrl: 'templates/checkout.html'
 	}).
 	otherwise({
 		redirectTo: '/varietal'

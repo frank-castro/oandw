@@ -127,7 +127,7 @@
 
 		<div class="cartBttn cartBanner" ng-controller="orderController as model">
 			<div class="maticon shopping_cart">
-				<i class="material-icons">shopping_cart</i>
+				<!-- <a href="#/checkout"> --><i class="material-icons">shopping_cart</i><!-- </a> -->
 			</div>
 			<div ng-class="{'circleAnim': model.recentlyChanged, 'circleTotal': model.hasItems}">
 				<ul>
@@ -136,6 +136,9 @@
 					</li>
 				</ul>
 			</div>
+
+
+<!-- this part starting here is in a new template -->
 
 			<div class="cartBannerContent hidden">
 
@@ -170,21 +173,23 @@
 					<table class="cartCTA">
 						<tr>
 							<td class="cartCTAback" id="keepShopping"><i class="material-icons maticon">arrow_back</i> Keep Shopping</td>
-<!-- 							<td class="cartCTAforward" ng-click="model.step = 2" ng-disabled="!model.hasItems">Checkout <i class="material-icons maticon">arrow_forward</i></td> -->
-							<td class="cartCTAforward"><a href="#/checkout">Checkout <i class="material-icons maticon">arrow_forward</i></a></td>
+							<td class="cartCTAforward" ng-click="model.step = 2" ng-disabled="!model.hasItems">Checkout <i class="material-icons maticon">arrow_forward</i></td>
 						</tr>
 					</table>
 				</div>
 
-<!-- this part starting here is in a new directive -->
 <!--Step 2-->
-<!-- 				<div class="cartProductList" id="ship-n-pay" ng-show="model.step == 2">
+				<div class="cartProductList" id="ship-n-pay" ng-show="model.step == 2">
 					<div class="form">
 						<div class="general">
                         	<h2>General Information</h2>
-							<input type="text" ng-model="model.order.billingAddress.firstName" placeholder="First Name" />
+							<!-- <input type="text" ng-model="model.order.billingAddress.firstName" placeholder="First Name" /> -->
+							<input type="text" ng-model="model.order.billingAddress.firstName" ng-class="{input-error: !model.order.billingAddress.firstName}" placeholder="First Name" required/>
+
 							<input type="text" ng-model="model.order.billingAddress.lastName" placeholder="Last Name" />
-							<input type="email" ng-model="model.order.billingAddress.email" placeholder="Email" />
+
+							<!-- <input type="email" ng-model="model.order.billingAddress.email" placeholder="Email" /> -->
+							<input type="text" ng-model="model.order.billingAddress.email" ng-class="{input-error: !model.order.billingAddress.emailValid()}" placeholder="Email" required/>
 						</div>
 						<div class="billing">
 							<h2>Billing Information</h2>
@@ -202,7 +207,9 @@
 						<div class="shipping">
 							<h2>Shipping Information</h2>
                             <input type="checkbox" ng-model="model.order.shipToBillingAddress" />
-                            <p>Same as billing address</p>
+                            <div>
+                            	<p>Same as billing address</p>
+                            </div>
                         </div>
                         <div ng-hide="model.order.shipToBillingAddress">
                             <input type="text" ng-model="model.order.shippingAddress.firstName" placeholder="First Name" />
@@ -227,13 +234,13 @@
 						</div>
 						<div class="cartCTA">
 							<div class="cartCTAback" ng-click="model.step = 1"><i class="material-icons maticon">arrow_back</i> Cart Items</div>
-							<div class="cartCTAforward" ng-click="model.step = 3">Confirm <i class="material-icons maticon">arrow_forward</i></div>
+							<div class="cartCTAforward" ng-click="model.step = 3" ng-show="model.order.isValid()">Confirm <i class="material-icons maticon">arrow_forward</i></div>
 						</div>
 					</div>
-				</div> -->
+				</div>
 
 <!--Step 3-->
-<!-- 				<div class="cartProductList" id="verify-order" ng-show="model.step == 3">
+				<div class="cartProductList" id="verify-order" ng-show="model.step == 3">
 					<div>
 						<h2>Confirm Your Order</h2>
 						<p>Order Summary</p>
@@ -272,7 +279,9 @@
 					<div>
 						<div class="divider"></div>
 						<h2>Shipping Information</h2>
-						<p>Same as Billing Address</p>
+						<div>
+							<p ng-show="model.order.shipToBillingAddress">Same as Billing Address</p>
+						</div>
 					</div>
 					<div ng-hide="model.order.shipToBillingAddress">
 						<p>First Name: {{model.order.shippingAddress.firstName}}</p>
@@ -291,9 +300,9 @@
 					<div>
 						<div class="divider"></div>
 						<h2>Credit Card Information</h2>
-					</div> -->
+					</div>
 <!-- show here images of accepted credit cards -->
-<!-- 					<div class="form">
+					<div class="form">
 						<input type="text" ng-model="model.order.cardHolder" placeholder="Name on card" />
 						<input type="text" ng-model="model.order.cardNumber" placeholder="Card number" />
 						<input type="text" ng-model="model.order.cardExpiration" placeholder="Expiration date" />
@@ -302,10 +311,12 @@
 
 					<button ng-click="model.step = 2">Back</button>
 					<button ng-click="model.submit()">Place order</button>
-				</div> -->
-<!-- this part starting here is in a new directive -->
-
+				</div>
 			</div>
+
+<!-- this part starting here is in a new template -->
+
+
 		</div>
 
 		<script src="js/script.min.js"></script>
