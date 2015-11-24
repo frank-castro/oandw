@@ -183,7 +183,8 @@ var Controllers;
             return this.order.removeById(prodId);
         };
         OrderController.prototype.submit = function () {
-            this.orderService.submit();
+            var _this = this;
+            this.orderService.submit().then(function () { return _this.step = 4; }).fail(function () { return _this.step = 5; });
         };
         OrderController.prototype.triggerChange = function () {
             var self = this;
@@ -196,3 +197,4 @@ var Controllers;
     angular.module('storeProducts').controller('orderController', ['$scope', '$timeout', 'orderService',
         function ($scope, $timeout, orderService) { return new OrderController($scope, $timeout, orderService); }]);
 })(Controllers || (Controllers = {}));
+//# sourceMappingURL=order-controller.js.map

@@ -21,7 +21,7 @@ var Model;
     var Order = (function () {
         function Order() {
             //#region order fields
-            this.id = '';
+            this.id = '0';
             this.created = '';
             this.items = [];
             this.billingAddress = new Address();
@@ -32,7 +32,7 @@ var Model;
             this.giftNote = '';
             this.giftRecipientPhone = '';
             this.giftInstructions = '';
-            this.cardType = 'Visa';
+            this.cardType = '';
             this.cardHolder = '';
             this.cardNumber = '';
             this.cardExpiration = '';
@@ -42,14 +42,29 @@ var Model;
         Order.prototype.isValid = function () {
             return this.billingAddress.isValidAll() && (this.shipToBillingAddress || this.shippingAddress.isValid());
         };
-        Object.defineProperty(Order.prototype, "validCard", {
-            //#region verify card
-            get: function () {
-                return false; //checkCreditCard(this.cardNumber, this.cardType);
-            },
-            enumerable: true,
-            configurable: true
-        });
+        //#region verify card
+        Order.prototype.validPayment = function () {
+            return this.cardHolder && this.cardExpiration && this.cardSecurityCode && this.validCardNumber();
+        };
+        Order.prototype.validCardNumber = function () {
+            var card = this.cardNumber;
+            if (Model.checkCreditCard(card, 'Visa') == null) {
+                this.cardType = 'Visa';
+                return true;
+            }
+            else if (Model.checkCreditCard(card, 'MasterCard') == null) {
+                this.cardType = 'MasterCard';
+                return true;
+            }
+            else if (Model.checkCreditCard(card, 'Discover') == null) {
+                this.cardType = 'Discover';
+                return true;
+            }
+            else {
+                this.cardType = '';
+                return false;
+            }
+        };
         Object.defineProperty(Order.prototype, "firstName", {
             //#endregion
             //#region virtual properties
@@ -319,3 +334,4 @@ var Model;
         return re.test(phone);
     }
 })(Model || (Model = {}));
+//# sourceMappingURL=model.js.map

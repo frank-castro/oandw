@@ -1,165 +1,173 @@
-<div class="cartBannerContent hidden">
+			<div class="cartBannerContent hidden">
 
 <!--Step 1-->
-	<div class="cartProductList" id="cart-items" ng-show="model.step == 1">
-		<div class="cartBigText">{{model.itemCount}} Items in your Cart</div>
-		<table class="hidden">
-			<tr>
-				<td colspan="3">Quantity</td>
-				<td>Name</td>
-				<td>Subtotal</td>
-			</tr>
-			<tr ng-repeat="item in model.items">
-				<td>
-					<div class="addRemoveBttn" ng-click="model.remove(item.name)">
-						<img src="images/svg/cartminusbttn.svg"/>
-					</div>
-				</td>
-				<td>{{item.count}}</td>
-				<td>
-					<div class="addRemoveBttn" ng-click="model.add(item.name)">
-						<img src="images/svg/bigplusbttn.svg"/>
-					</div>
-				</td>
-				<td>{{item.name}}</td>
-				<td>{{item.total | currency}}</td>
-			</tr>
-			<tr>
-				<td colspan="5" class="cartTotal">Total: {{model.total | currency}}</td>
-			</tr>
-		</table>
-		<table class="cartCTA">
-			<tr>
-				<td class="cartCTAback" id="keepShopping"><i class="material-icons maticon">arrow_back</i> Keep Shopping</td>
-				<td class="cartCTAforward" ng-click="model.step = 2" ng-disabled="!model.hasItems">Checkout <i class="material-icons maticon">arrow_forward</i></td>
-			</tr>
-		</table>
-	</div>
+				<div class="cartProductList" id="cart-items" ng-show="model.step == 1">
+					<div class="cartBigText">{{model.itemCount}} Items in your Cart</div>
+					<table class="hidden">
+						<tr>
+							<td colspan="3">Quantity</td>
+							<td>Name</td>
+							<td>Subtotal</td>
+						</tr>
+						<tr ng-repeat="item in model.items">
+							<td>
+								<div class="addRemoveBttn" ng-click="model.remove(item.name)">
+									<img src="images/svg/cartminusbttn.svg"/>
+								</div>
+							</td>
+							<td>{{item.count}}</td>
+							<td>
+								<div class="addRemoveBttn" ng-click="model.add(item.name)">
+									<img src="images/svg/bigplusbttn.svg"/>
+								</div>
+							</td>
+							<td>{{item.name}}</td>
+							<td>{{item.total | currency}}</td>
+						</tr>
+						<tr>
+							<td colspan="5" class="cartTotal">Total: {{model.total | currency}}</td>
+						</tr>
+					</table>
+					<table class="cartCTA">
+						<tr>
+							<td class="cartCTAback" id="keepShopping"><i class="material-icons maticon">arrow_back</i> Keep Shopping</td>
+							<td class="cartCTAforward" ng-click="model.step = 2" ng-disabled="!model.hasItems">Checkout <i class="material-icons maticon">arrow_forward</i></td>
+						</tr>
+					</table>
+				</div>
+
 <!--Step 2-->
-	<div class="cartProductList" id="ship-n-pay" ng-show="model.step == 2">
-		<div class="form">
-			<div class="general">
-				<h2>General Information</h2>
-				<input type="text" ng-model="model.order.billingAddress.firstName" placeholder="First Name" />
-				<input type="text" ng-model="model.order.billingAddress.lastName" placeholder="Last Name" />
-				<input type="email" ng-model="model.order.billingAddress.email" placeholder="Email" />
-			</div>
-			<div class="billing">
-				<h2>Billing Information</h2>
-				<p>United States Only</p>
-				<input type="text" ng-model="model.order.billingAddress.address" placeholder="Address" />
-				<input type="text" ng-model="model.order.billingAddress.city" placeholder="City" />
-				<div class="select">
-					<select ng-options="option.name for option in model.usStates track by option.value" ng-model="model.billingState"></select>
+				<div class="cartProductList" id="ship-n-pay" ng-show="model.step == 2">
+					<div class="form">
+						<div class="general">
+                        	<h2>General Information</h2>
+							<!-- <input type="text" ng-model="model.order.billingAddress.firstName" placeholder="First Name" /> -->
+							<input type="text" ng-model="model.order.billingAddress.firstName" ng-class="{input-error: !model.order.billingAddress.firstName}" placeholder="First Name" required/>
+
+							<input type="text" ng-model="model.order.billingAddress.lastName" placeholder="Last Name" />
+
+							<!-- <input type="email" ng-model="model.order.billingAddress.email" placeholder="Email" /> -->
+							<input type="text" ng-model="model.order.billingAddress.email" ng-class="{input-error: !model.order.billingAddress.emailValid()}" placeholder="Email" required/>
+						</div>
+						<div class="billing">
+							<h2>Billing Information</h2>
+							<p>United States Only</p>
+							<input type="text" ng-model="model.order.billingAddress.address" placeholder="Address" />
+							<input type="text" ng-model="model.order.billingAddress.city" placeholder="City" />
+							<div class="select">
+								<select ng-options="option.name for option in model.usStates track by option.value" ng-model="model.billingState"></select>
+							</div>
+							<input class="zip" type="text" ng-model="model.order.billingAddress.zip" placeholder="Zip" />
+							<div>
+								<input class="phone" type="text" ng-model="model.order.billingAddress.phone" placeholder="Phone" />
+							</div>
+						</div>
+						<div class="shipping">
+							<h2>Shipping Information</h2>
+                            <input type="checkbox" ng-model="model.order.shipToBillingAddress" />
+                            <div>
+                            	<p>Same as billing address</p>
+                            </div>
+                        </div>
+                        <div ng-hide="model.order.shipToBillingAddress">
+                            <input type="text" ng-model="model.order.shippingAddress.firstName" placeholder="First Name" />
+                            <input type="text" ng-model="model.order.shippingAddress.lastName" placeholder="Last Name" />
+                            <input type="text" ng-model="model.order.shippingAddress.address" placeholder="Address" />
+                            <input type="text" ng-model="model.order.shippingAddress.city" placeholder="City" />
+                            <div class="select">
+                                <select ng-options="option.name for option in model.usStates track by option.value" ng-model="model.shippingState"></select>
+                            </div>
+                            <input class="zip" type="text" ng-model="model.order.shippingAddress.zip" placeholder="Zip" />
+							<p>United States</p>
+						</div>
+						<div class="type">
+							<h2>Shipping Type</h2>
+	                        <div class="select">
+	                            <select ng-options="option.name for option in model.shippingOptions track by option.value" ng-model="model.shippingOption"></select>
+	                        </div>
+	                        <h2>Gift Information (Optional)</h2>
+	                        <input type="text" ng-model="model.order.giftNote" placeholder="Gift Note" />
+	                        <input class="phone" type="text" ng-model="model.order.giftRecipientPhone" placeholder="Gift Recipient's Phone Number" />
+	                        <input type="text" ng-model="model.order.giftInstructions" placeholder="Special Instructions" />
+						</div>
+						<div class="cartCTA">
+							<div class="cartCTAback" ng-click="model.step = 1"><i class="material-icons maticon">arrow_back</i> Cart Items</div>
+							<div class="cartCTAforward" ng-click="model.step = 3" ng-show="model.order.isValid()">Confirm <i class="material-icons maticon">arrow_forward</i></div>
+						</div>
+					</div>
 				</div>
-				<input class="zip" type="text" ng-model="model.order.billingAddress.zip" placeholder="Zip" />
-				<div>
-					<input class="phone" type="text" ng-model="model.order.billingAddress.phone" placeholder="Phone" />
-				</div>
-			</div>
-			<div class="shipping">
-				<h2>Shipping Information</h2>
-				<input type="checkbox" ng-model="model.order.shipToBillingAddress" />
-				<p>Same as billing address</p>
-			</div>
-			<div ng-hide="model.order.shipToBillingAddress">
-				<input type="text" ng-model="model.order.shippingAddress.firstName" placeholder="First Name" />
-				<input type="text" ng-model="model.order.shippingAddress.lastName" placeholder="Last Name" />
-				<input type="text" ng-model="model.order.shippingAddress.address" placeholder="Address" />
-				<input type="text" ng-model="model.order.shippingAddress.city" placeholder="City" />
-				<div class="select">
-					<select ng-options="option.name for option in model.usStates track by option.value" ng-model="model.shippingState"></select>
-				</div>
-				<input class="zip" type="text" ng-model="model.order.shippingAddress.zip" placeholder="Zip" />
-				<p>United States</p>
-			</div>
-			<div class="type">
-				<h2>Shipping Type</h2>
-				<div class="select">
-					<select ng-options="option.name for option in model.shippingOptions track by option.value" ng-model="model.shippingOption"></select>
-				</div>
-				<h2>Gift Information (Optional)</h2>
-				<input type="text" ng-model="model.order.giftNote" placeholder="Gift Note" />
-				<input class="phone" type="text" ng-model="model.order.giftRecipientPhone" placeholder="Gift Recipient's Phone Number" />
-				<input type="text" ng-model="model.order.giftInstructions" placeholder="Special Instructions" />
-			</div>
-			<div class="cartCTA">
-				<div class="cartCTAback" ng-click="model.step = 1"><i class="material-icons maticon">arrow_back</i> Cart Items</div>
-				<div class="cartCTAforward" ng-click="model.step = 3">Confirm <i class="material-icons maticon">arrow_forward</i></div>
-			</div>
-		</div>
-	</div>
 
 <!--Step 3-->
-	<div class="cartProductList" id="verify-order" ng-show="model.step == 3">
-		<div>
-			<h2>Confirm Your Order</h2>
-			<p>Order Summary</p>
-			<div class="divider"></div>
-			<div>
-				<table>
-					<tr ng-repeat="item in model.order.items">
-						<td>{{item.count}}</td>
-						<td>{{item.name}}</td>
-						<td>{{item.total | currency}}</td>
-					</tr>
-				</table>
-			</div>
-			<p>Tax: {{model.order.totalTax | currency}}</p>
-			<p>Shipping - {{model.shippingTypeLabel}}: {{model.order.shippingPrice | currency}}</p>
-			<p>Subtotal: {{model.order.subTotal | currency}}</p>
-			<div class="divider"></div>
-			<p>Total: {{model.total | currency}}</p>
-		</div>
-		<div>
-			<div class="divider"></div>
-			<h2>General Information</h2>
-			<p>First Name: {{model.order.billingAddress.firstName}}</p>
-			<p>Last Name: {{model.order.billingAddress.lastName}}</p>
-			<p>Email: {{model.order.billingAddress.email}}</p>
-		</div>
-		<div>
-			<div class="divider"></div>
-			<h2>Billing Information</h2>
-			<p>Address: {{model.order.billingAddress.address}}</p>
-			<p>City: {{model.order.billingAddress.city}}</p>
-			<p>State: {{model.order.billingAddress.state}}</p>
-			<p>Zip: {{model.order.billingAddress.zip}}</p>
-			<p>Phone: {{model.order.billingAddress.phone}}</p>
-		</div>
-		<div>
-			<div class="divider"></div>
-			<h2>Shipping Information</h2>
-			<p>Same as Billing Address</p>
-		</div>
-		<div ng-hide="model.order.shipToBillingAddress">
-			<p>First Name: {{model.order.shippingAddress.firstName}}</p>
-			<p>Last Name: {{model.order.shippingAddress.lastName}}</p>
-			<p>Address: {{model.order.shippingAddress.address}}</p>
-			<p>City: {{model.order.shippingAddress.city}}</p>
-			<p>State: {{model.order.shippingAddress.state}}</p>
-			<p>Zip: {{model.order.shippingAddress.zip}}</p>
-			<p>Gift Note: {{model.order.giftNote}}</p>
-			<p>Gift Recipient's Phone: {{model.order.giftRecipientPhone}}</p>
-		</div>
-		<div>
-			<div class="divider"></div>
-			<p>Special Instructions: {{model.order.giftInstructions}}</p>
-		</div>
-		<div>
-			<div class="divider"></div>
-			<h2>Credit Card Information</h2>
-		</div>
+				<div class="cartProductList" id="verify-order" ng-show="model.step == 3">
+					<div>
+						<h2>Confirm Your Order</h2>
+						<p>Order Summary</p>
+						<div class="divider"></div>
+						<div>
+							<table>
+								<tr ng-repeat="item in model.order.items">
+									<td>{{item.count}}</td>
+									<td>{{item.name}}</td>
+									<td>{{item.total | currency}}</td>
+								</tr>
+							</table>
+						</div>
+						<p>Tax: {{model.order.totalTax | currency}}</p>
+						<p>Shipping - {{model.shippingTypeLabel}}: {{model.order.shippingPrice | currency}}</p>
+						<p>Subtotal: {{model.order.subTotal | currency}}</p>
+						<div class="divider"></div>
+						<p>Total: {{model.total | currency}}</p>
+					</div>
+					<div>
+						<div class="divider"></div>
+						<h2>General Information</h2>
+						<p>First Name: {{model.order.billingAddress.firstName}}</p>
+						<p>Last Name: {{model.order.billingAddress.lastName}}</p>
+						<p>Email: {{model.order.billingAddress.email}}</p>
+					</div>
+					<div>
+						<div class="divider"></div>
+						<h2>Billing Information</h2>
+						<p>Address: {{model.order.billingAddress.address}}</p>
+						<p>City: {{model.order.billingAddress.city}}</p>
+						<p>State: {{model.order.billingAddress.state}}</p>
+						<p>Zip: {{model.order.billingAddress.zip}}</p>
+						<p>Phone: {{model.order.billingAddress.phone}}</p>
+					</div>
+					<div>
+						<div class="divider"></div>
+						<h2>Shipping Information</h2>
+						<div>
+							<p ng-show="model.order.shipToBillingAddress">Same as Billing Address</p>
+						</div>
+					</div>
+					<div ng-hide="model.order.shipToBillingAddress">
+						<p>First Name: {{model.order.shippingAddress.firstName}}</p>
+						<p>Last Name: {{model.order.shippingAddress.lastName}}</p>
+						<p>Address: {{model.order.shippingAddress.address}}</p>
+						<p>City: {{model.order.shippingAddress.city}}</p>
+						<p>State: {{model.order.shippingAddress.state}}</p>
+						<p>Zip: {{model.order.shippingAddress.zip}}</p>
+						<p>Gift Note: {{model.order.giftNote}}</p>
+						<p>Gift Recipient's Phone: {{model.order.giftRecipientPhone}}</p>
+					</div>
+					<div>
+						<div class="divider"></div>
+						<p>Special Instructions: {{model.order.giftInstructions}}</p>
+					</div>
+					<div>
+						<div class="divider"></div>
+						<h2>Credit Card Information</h2>
+					</div>
 <!-- show here images of accepted credit cards -->
-		<div class="form">
-			<input type="text" ng-model="model.order.cardHolder" placeholder="Name on card" />
-			<input type="text" ng-model="model.order.cardNumber" placeholder="Card number" />
-			<input type="text" ng-model="model.order.cardExpiration" placeholder="Expiration date" />
-			<input type="text" ng-model="model.order.cardSecurityCode" placeholder="Security code" />
-		</div>
+					<div class="form">
+						<input type="text" ng-model="model.order.cardHolder" placeholder="Name on card" />
+						<input type="text" ng-model="model.order.cardNumber" placeholder="Card number" />
+						<input type="text" ng-model="model.order.cardExpiration" placeholder="Expiration date" />
+						<input type="text" ng-model="model.order.cardSecurityCode" placeholder="Security code" />
+					</div>
 
-		<button ng-click="model.step = 2">Back</button>
-		<button ng-click="model.submit()">Place order</button>
-	</div>
-	
-</div>
+					<button ng-click="model.step = 2">Back</button>
+					<button ng-click="model.submit()">Place order</button>
+				</div>
+			</div>
