@@ -184,7 +184,12 @@ var Controllers;
         };
         OrderController.prototype.submit = function () {
             var _this = this;
-            this.orderService.submit().then(function () { return _this.step = 4; }).fail(function () { return _this.step = 5; });
+            this.orderService.submit().then(function () { return _this.step = 4; }, function () { return _this.step = 5; });
+        };
+        OrderController.prototype.hideCart = function () {
+            $('.cartBanner').toggleClass('cartBttn');
+            $('.cartBannerContent').toggleClass('hidden');
+            this.step = 1;
         };
         OrderController.prototype.triggerChange = function () {
             var self = this;

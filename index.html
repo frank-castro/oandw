@@ -168,13 +168,13 @@
 							<td>{{item.total | currency}}</td>
 						</tr>
 						<tr>
-							<td colspan="5" class="cartTotal">Total: {{model.total | currency}}</td>
+							<td colspan="5" class="cartTotal">Total: {{model.subTotal | currency}}</td>
 						</tr>
 					</table>
 					<table class="cartCTA">
 						<tr>
 							<td class="cartCTAback" id="keepShopping"><i class="material-icons maticon">arrow_back</i> Keep Shopping</td>
-							<td class="cartCTAforward" ng-click="model.step = 2" ng-disabled="!model.hasItems">Checkout <i class="material-icons maticon">arrow_forward</i></td>
+							<td class="cartCTAforward" ng-click="model.step = 2" ng-show="model.hasItems">Checkout <i class="material-icons maticon">arrow_forward</i></td>
 						</tr>
 					</table>
 				</div>
@@ -370,6 +370,10 @@
 				<div class="cartProductList" id="order-submitted" ng-show="model.step == 4">
 					<p>Thank you!</p>
 					<p>Your order is being process!</p>
+                    <br/>
+                    <div ng-click="model.hideCart()">
+                        <i class="material-icons maticon">arrow_back</i>Keep Shopping
+                    </div>
 				</div>
 
 				<!--Step 5-->
