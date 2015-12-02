@@ -92,7 +92,11 @@
 			 
 			<p>Even if you have not yet had the opportunity to visit us in person to experience our tasting opportunities, you can order online and rest assured that you will be getting the same quality, fresh products that our in-store customers try.</p><br />
 
-			<address class="extraAddress"><a href="https://www.google.com/maps?ll=41.888152,-87.794808&z=16&t=m&hl=en-US&gl=US&mapclient=embed&q=133+N+Oak+Park+Ave+Oak+Park,+IL+60301" target="_blank">133 N. Oak Park Ave. Oak Park, IL 60301</a> | Phone: 708.848.4230 | info@oliveandwell.com</address><br />
+			<address class="extraAddress">
+				<p><a href="https://www.google.com/maps?ll=41.888152,-87.794808&z=16&t=m&hl=en-US&gl=US&mapclient=embed&q=133+N+Oak+Park+Ave+Oak+Park,+IL+60301" target="_blank">133 N. Oak Park Ave. Oak Park, IL 60301</a></p>
+				<p>Phone: 708.848.4230</p>
+				<p>info@oliveandwell.com</p>
+			</address><br />
 
 			<p class="bold">Business Hours</p>
 			<p>Monday: 11 am - 6:00 pm</p>
@@ -184,45 +188,30 @@
 					<div class="form">
 						<div class="general">
 							<h2>General Information</h2>
-							<!-- <input type="text" ng-model="model.order.billingAddress.firstName" placeholder="First Name" /> -->
-							<!-- <input type="text" ng-model="model.order.billingAddress.firstName" ng-class="{input-error: !model.order.billingAddress.firstName}" placeholder="First Name" required/> -->
 							<input type="text" ng-model="model.order.billingAddress.firstName" placeholder="First Name"/><span class="input-error" ng-show="!model.order.billingAddress.firstName">*</span>
 
-							<!-- <input type="text" ng-model="model.order.billingAddress.lastName" placeholder="Last Name" /> -->
-							<!-- <input type="text" ng-model="model.order.billingAddress.lastName" ng-class="{input-error: !model.order.billingAddress.lastName}" placeholder="Last Name" required/> -->
 							<input type="text" ng-model="model.order.billingAddress.lastName" placeholder="Last Name"/><span class="input-error" ng-show="!model.order.billingAddress.lastName">*</span>
 
-							<!-- <input type="email" ng-model="model.order.billingAddress.email" placeholder="Email" /> -->
-							<!-- <input type="text" ng-model="model.order.billingAddress.email" ng-class="{input-error: !model.order.billingAddress.emailValid()}" placeholder="Email" required/> -->
 							<input type="text" ng-model="model.order.billingAddress.email" placeholder="Email"/><span class="input-error" ng-show="!model.order.billingAddress.emailValid()">*</span>
 						</div>
 						<div class="billing">
-							<!-- <div class="divider"></div> -->
 							<h2>Billing Information</h2>
 							<p>United States Only</p>
-							<!-- <input type="text" ng-model="model.order.billingAddress.address" placeholder="Address" /> -->
 							<input type="text" ng-model="model.order.billingAddress.address" placeholder="Address" /><span class="input-error" ng-show="!model.order.billingAddress.address">*</span>
 
-							<!-- <input type="text" ng-model="model.order.billingAddress.city" placeholder="City" /> -->
 							<input type="text" ng-model="model.order.billingAddress.city" placeholder="City" /><span class="input-error" ng-show="!model.order.billingAddress.city">*</span>
 
-<!-- 							<div class="select">
-								<select ng-options="option.name for option in model.usStates track by option.value" ng-model="model.billingState"></select>
-							</div> -->
 							<div class="select">
 								<select ng-options="option.name for option in model.usStates track by option.value" ng-model="model.billingState"></select><span class="input-error" ng-show="!model.order.billingAddress.state">*</span>
 							</div>
 
-							<!-- <input class="zip" type="text" ng-model="model.order.billingAddress.zip" placeholder="Zip" /> -->
 							<input class="zip" type="text" ng-model="model.order.billingAddress.zip" placeholder="Zip" /><span class="input-error" ng-show="!model.order.billingAddress.zip">*</span>
 
 							<div>
-								<!-- <input class="phone" type="text" ng-model="model.order.billingAddress.phone" placeholder="Phone" /> -->
 								<input class="phone" type="text" ng-model="model.order.billingAddress.phone" placeholder="Phone" /><span class="input-error" ng-show="!model.order.billingAddress.phoneValid()">*</span>
 							</div>
 						</div>
 						<div class="shipping">
-							<!-- <div class="divider"></div> -->
 							<h2>Shipping Information</h2>
 							<input type="checkbox" ng-model="model.order.shipToBillingAddress" />
 							<div>
@@ -230,33 +219,25 @@
 							</div>
 						</div>
 						<div ng-hide="model.order.shipToBillingAddress">
-							<!-- <input type="text" ng-model="model.order.shippingAddress.firstName" placeholder="First Name" /> -->
 							<input type="text" ng-model="model.order.shippingAddress.firstName" placeholder="First Name" /><span class="input-error" ng-show="!model.order.shippingAddress.firstName">*</span>
 
-							<!-- <input type="text" ng-model="model.order.shippingAddress.lastName" placeholder="Last Name" /> -->
 							<input type="text" ng-model="model.order.shippingAddress.lastName" placeholder="Last Name" /><span class="input-error" ng-show="!model.order.shippingAddress.lastName">*</span>
 
-							<!-- <input type="text" ng-model="model.order.shippingAddress.address" placeholder="Address" /> -->
 							<input type="text" ng-model="model.order.shippingAddress.address" placeholder="Address" /><span class="input-error" ng-show="!model.order.shippingAddress.address">*</span>
 
-							<!-- <input type="text" ng-model="model.order.shippingAddress.city" placeholder="City" /> -->
 							<input type="text" ng-model="model.order.shippingAddress.city" placeholder="City" /><span class="input-error" ng-show="!model.order.shippingAddress.city">*</span>
 
 							<div class="select">
-								<!-- <select ng-options="option.name for option in model.usStates track by option.value" ng-model="model.shippingState"></select> -->
 								<select ng-options="option.name for option in model.usStates track by option.value" ng-model="model.shippingState"></select><span class="input-error" ng-show="!model.order.shippingAddress.state">*</span>
 							</div>
-							<!-- <input class="zip" type="text" ng-model="model.order.shippingAddress.zip" placeholder="Zip" /> -->
 							<input class="zip" type="text" ng-model="model.order.shippingAddress.zip" placeholder="Zip" /><span class="input-error" ng-show="!model.order.shippingAddress.zip">*</span>
 							<p>United States</p>
 						</div>
 						<div class="type">
-							<!-- <div class="divider"></div> -->
 							<h2>Shipping Type</h2>
 							<div class="select">
 								<select ng-options="option.name for option in model.shippingOptions track by option.value" ng-model="model.shippingOption"></select>
 							</div>
-							<!-- <div class="divider"></div> -->
 							<h2>Gift Information (Optional)</h2>
 							<input type="text" ng-model="model.order.giftNote" placeholder="Gift Note" />
 							<input class="phone" type="text" ng-model="model.order.giftRecipientPhone" placeholder="Gift Recipient's Phone Number" />
@@ -332,34 +313,19 @@
 						<h2>Credit Card Information</h2>
 					</div>
 <!-- show here images of accepted credit cards -->
-<!-- 					<div class="form">
-						<input type="text" ng-model="model.order.cardHolder" placeholder="Name on card" />
-						<input type="text" ng-model="model.order.cardNumber" placeholder="Card number" />
-						<input type="text" ng-model="model.order.cardExpiration" placeholder="Expiration date" />
-						<input type="text" ng-model="model.order.cardSecurityCode" placeholder="Security code" />
-					</div>
-
-					<button ng-click="model.step = 2">Back</button>
-					<button ng-click="model.submit()">Place order</button>
-				</div> -->
+					<div><img src="images/credit-cards.jpg" alt="Credit Card types accepted" height="32" width="152"></div>
 					<div class="form tarjetaInformation">
-						<!-- <input type="text" ng-model="model.order.cardHolder" placeholder="Name on card" ng-class="{input-error: !model.order.cardHolder}" required /> -->
 						<input type="text" ng-model="model.order.cardHolder" placeholder="Name on card"/><span class="input-error" ng-show="!model.order.cardHolder">*</span>
 
-						<!-- <input type="text" ng-model="model.order.cardNumber" placeholder="Card number" ng-class="{input-error: !model.order.validCardNumber()}" required /> -->
 						<input type="text" ng-model="model.order.cardNumber" placeholder="Card number"/><span class="input-error" ng-show="!model.order.validCardNumber()">*</span>
 
 						<div>
-							<!-- <input type="text" ng-model="model.order.cardExpiration" placeholder="Expiration date" ng-class="{input-error: !model.order.cardExpiration}" required /> -->
 							<input class="shortfield" type="text" ng-model="model.order.cardExpiration" placeholder="Expiration date"/><span class="input-error" ng-show="!model.order.cardExpiration">* </span><span class="input-sample"> e.g. 03/17</span>
 						</div>
 
-						<!-- <input type="text" ng-model="model.order.cardSecurityCode" placeholder="Security code" ng-class="{input-error: !model.order.cardSecurityCode}" required /> -->
 						<input class="shortfield" type="text" ng-model="model.order.cardSecurityCode" placeholder="Security code"/><span class="input-error" ng-show="!model.order.cardSecurityCode">*</span>
 					</div>
 
-<!-- 					<button ng-click="model.step = 2">Back</button>
-					<button ng-click="model.submit()" ng-show="model.order.validPayment()">Place order</button> -->
 					<div class="cartCTA">
 						<div class="cartCTAback" ng-click="model.step = 2"><i class="material-icons maticon">arrow_back</i> Delivery</div>
 						<div class="cartCTAforward" ng-click="model.submit()" ng-show="model.order.validPayment()">Place Order <i class="material-icons maticon">arrow_forward</i></div>
