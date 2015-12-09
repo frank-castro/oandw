@@ -328,7 +328,9 @@
 
 					<div class="cartCTA">
 						<div class="cartCTAback" ng-click="model.step = 2"><i class="material-icons maticon">arrow_back</i> Delivery</div>
-						<div class="cartCTAforward" ng-click="model.submit()" ng-show="model.order.validPayment()">Place Order <i class="material-icons maticon">arrow_forward</i></div>
+						<div class="cartCTAforward" ng-click="model.submit()" ng-show="!model.submitting && model.order.validPayment()">Place Order <i class="material-icons maticon">arrow_forward</i></div>
+
+						<div class="cartCTAforward" ng-show="model.submitting">...</div>
 					</div>
 				</div>
 
@@ -344,7 +346,9 @@
 
 				<!--Step 5-->
 				<div class="cartProductList" id="order-submit-failed" ng-show="model.step == 5">
-					<p>Order submit failed!!</p>
+					<p>Order submit failed!</p>
+					<p>Please try again in a few minutes</p>
+					<div class="cartCTAback" ng-click="model.step = 3"><i class="material-icons maticon">arrow_back</i>Back to Place Order</div>
 				</div>
 			</div>
 
@@ -354,6 +358,5 @@
 		</div>
 
 		<script src="js/script.min.js"></script>
-		<script src="http://localhost:35729/livereload.js"></script>
 	</body>
 </html>

@@ -70,6 +70,7 @@ var Controllers;
             //#region Cart
             this.recentlyChanged = false;
             this.maximized = false;
+            this.submitting = false;
             $scope.$watch(function () { return _this.itemCount; }, function () { return _this.triggerChange(); });
         }
         Object.defineProperty(OrderController.prototype, "order", {
@@ -184,7 +185,8 @@ var Controllers;
         };
         OrderController.prototype.submit = function () {
             var _this = this;
-            this.orderService.submit().then(function () { return _this.step = 4; }, function () { return _this.step = 5; });
+            this.submitting = true;
+            this.orderService.submit().then(function () { return _this.step = 4; }, function () { return _this.step = 5; }).finally(function () { return _this.submitting = false; });
         };
         OrderController.prototype.hideCart = function () {
             $('.cartBanner').toggleClass('cartBttn');
@@ -202,4 +204,3 @@ var Controllers;
     angular.module('storeProducts').controller('orderController', ['$scope', '$timeout', 'orderService',
         function ($scope, $timeout, orderService) { return new OrderController($scope, $timeout, orderService); }]);
 })(Controllers || (Controllers = {}));
-//# sourceMappingURL=order-controller.js.map
