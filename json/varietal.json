@@ -20,16 +20,6 @@
 		"smallbottle": "375 ml"
 	},
 	{
-		"name" : "Chemlali",
-		"pricebig" : "$32.95",
-		"pricesmall" : "$17.95",
-		"description" : "Certified organic from olives hand-harvested in Tunisia, rich in flavor and color, and high in antioxidants. Often referred to as the Chardonnay of olive oils. (Tunisia)",
-		"decoimage" : "images/varietal/chemlali-img.png",
-		"color" : "#6F82A8",
-		"bigbottle": "750 ml",
-		"smallbottle": "375 ml"
-	},
-	{
 		"name" : "Coratina Gran Cru",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
@@ -50,22 +40,22 @@
 		"smallbottle": "375 ml"
 	},
 	{
-		"name" : "Hojiblanca",
-		"pricebig" : "$32.95",
-		"pricesmall" : "$17.95",
-		"description" : "Robust olive flavor and aroma, with notes of ripe banana and apple. Pair with any balsamic vinegar, but especially Traditional, Juniper Berry or Pomegranate. (Spain)",
-		"decoimage" : "images/varietal/hojiblanca-img.png",
-		"color" : "#54806D",
-		"bigbottle": "750 ml",
-		"smallbottle": "375 ml"
-	},
-	{
 		"name" : "Koroneiki",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Exquisite and flavorful aroma. Fresh fruit-of-the-olive taste, with hints of artichoke and fresh grass.  Peppery aftertaste. Enjoy on salads, roasted meats, hearty vegetables. (Greece)",
 		"decoimage" : "images/varietal/koroneikiimg.png",
 		"color" : "#BE9F70",
+		"bigbottle": "750 ml",
+		"smallbottle": "375 ml"
+	},
+	{
+		"name" : "Mission",
+		"pricebig" : "$32.95",
+		"pricesmall" : "$17.95",
+		"description" : "Developed by early California missionaries, this olive produces a bold oil, very high in antioxidant polyphenols, and favored by the health-conscious. Flavors are layered and complex, with a fleeting bitter center. (California)",
+		"decoimage" : "images/varietal/mission-img.png",
+		"color" : "#88355E",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
 	},
