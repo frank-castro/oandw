@@ -40,6 +40,16 @@
 		"smallbottle": "375 ml"
 	},
 	{
+		"name" : "Hojiblanca",
+		"pricebig" : "$32.95",
+		"pricesmall" : "$17.95",
+		"description" : "Robust olive flavor and aroma, with notes of ripe banana and apple. Pair with any balsamic vinegar, but especially Traditional, Juniper Berry or Pomegranate. (Spain)",
+		"decoimage" : "images/varietal/hojiblanca-img.png",
+		"color" : "#54806D",
+		"bigbottle": "750 ml",
+		"smallbottle": "375 ml"
+	},
+	{
 		"name" : "Koroneiki",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
