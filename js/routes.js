@@ -2,6 +2,9 @@ angular.module('oandwApp')
 
 .config(['$routeProvider', function($routeProvider) {
 	$routeProvider.
+	when('/home', {
+		templateUrl: 'templates/home/index.html'
+	}).
 	when('/varietal', {
 		templateUrl: 'templates/varietal/index.html',
 		controller: 'varietalList'
@@ -34,6 +37,6 @@ angular.module('oandwApp')
 		templateUrl: 'templates/checkout.html'
 	}).
 	otherwise({
-		redirectTo: '/varietal'
+		redirectTo: '/home'
 	});
 }]);

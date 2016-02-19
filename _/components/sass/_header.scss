@@ -1,0 +1,415 @@
+@mixin bg-properties {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	@include single-transition(all, 1s, ease-out);
+}
+
+.aboutUs {
+	@include susy-breakpoint($xsmall) {
+		@include single-transition(all, 0.5s, ease-out);
+		background: linear-gradient(to bottom left, rgba($green, 0.95), rgba($textColor, 1));
+		font-family: $desc-font;
+		font-size: $font-small;
+		line-height: $line-height-small;
+		text-align: center;
+		color: $bg01;
+		padding: 60px 0 0;
+		position: fixed;
+		top: 0px;
+		width: 100%;
+		height: 100vh;
+		z-index: 3000;
+		overflow: scroll;
+
+		&.closed {
+			display: inline;
+			@include transform(translateY(-2000px));
+			opacity: 0;
+		}
+
+		.closeBttn {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			cursor: pointer;
+		}
+
+		p {
+			width: 300px;
+			@include transform (translateX(-50%));
+			left: 50%;
+			position: relative;
+		}
+
+		.extraAddress {
+			display: none;
+		}
+	}
+
+	@include susy-breakpoint($small) {
+		@include single-transition(all, 0.5s, ease-out);
+
+		.closeBttn {
+			top: 24px;
+			right: 24px;
+		}
+
+		p {
+			width: 530px;
+			@include transform (translateX(-50%));
+			left: 50%;
+			position: relative;
+		}
+	}
+
+	@include susy-breakpoint($medium) {
+		@include single-transition(all, 0.5s, ease-out);
+	}
+
+	@include susy-breakpoint($large) {
+		@include single-transition(all, 0.5s, ease-out);
+
+		.closeBttn {
+			top: 24px;
+			right: 114px;
+		}
+
+		.extraAddress {
+			display: block;
+		}
+	}
+
+	@include susy-breakpoint($xlarge) {
+		@include single-transition(all, 0.5s, ease-out);
+	}
+}
+
+.logoBar {
+	@include susy-breakpoint($xsmall) {
+		@include single-transition(all, 1s, ease-out);
+		z-index: 1040;
+		width: 100%;
+		background-color: rgba($bg01, 0.6);
+
+		.logo {
+			@include transform (translate(-50%, 16px));
+			left: 50%;
+			position: absolute;
+			width: 170px;
+		}
+
+		.barsWrapper {
+			top: 26px;
+			left: 30px;
+			position: absolute;
+			cursor: pointer;
+			z-index: 1050;
+		}
+
+		.bar {
+			background-color: $primaryColor;
+			height: 1px;
+			width: 26px;
+			margin: 4px 0px;
+			display: table;
+		}
+
+// these are needed for scroll functionality
+		&.show {
+			@include transform (translateY(0px));
+			position: fixed;
+			height: 70px;
+			width: 100%;
+		}
+
+		.hide {
+			@include transform (translateY(-80px));
+		}
+	}
+
+	@include susy-breakpoint($small) {
+		@include single-transition(all, 1s, ease-out);
+
+		.logo {
+			@include transform (translate(-50%, 16px));
+			left: 50%;
+			position: absolute;
+			width: 190px;
+		}
+	}
+
+	@include susy-breakpoint($medium) {
+		@include single-transition(all, 1s, ease-out);
+
+		.logo {
+			@include transform (translate(-50%, 16px));
+			left: 50%;
+		}
+	}
+
+	@include susy-breakpoint($large) {
+		@include single-transition(all, 1s, ease-out);
+		background-color: transparent;
+
+		.logo {
+			@include transform (translateY(16px));
+			left: 30px;
+			position: absolute;
+			width: 180px;
+			z-index: 1000;
+
+			&.logoIntro {
+				@include transform(translate(-50%, -50%));
+				width: 45vh;
+				left: 50%;
+				top: 35%;
+				position: fixed;
+			}
+		}
+
+		.barsWrapper {
+			display: none;
+		}
+
+		.bar {
+			display: none;
+		}
+
+		&.show {
+			position: absolute;
+		}
+
+		.hide {
+			@include transform (translateY(0px));
+		}
+	}
+
+	@include susy-breakpoint($xlarge) {
+		@include single-transition(all, 1s, ease-out);
+
+		.logo {
+
+			&.logoIntro {
+				@include transform(translate(-50%, -50%));
+				width: 50vh;
+				left: 50%;
+				position: fixed;
+			}
+		}
+	}
+}
+
+//header variables
+$xsmall-height: 25vh;
+$small-height: 25vh;
+$medium-height: 25vh;
+$large-height: 37vh;
+$xlarge-height: 29vh;
+
+.header {
+	@include susy-breakpoint($xsmall) {
+		@include single-transition(all, 1s, ease-out);
+		@include background($bannerLargeVarietal);
+		@include bg-properties;
+		width: 100%;
+		min-width: 360px;
+		height: $xsmall-height;
+		opacity: 0.3;
+	}
+
+	@include susy-breakpoint($small) {
+		height: $small-height;
+	}
+
+	@include susy-breakpoint($medium) {
+		height: $medium-height;
+	}
+
+	@include susy-breakpoint($large) {
+		height: $large-height;
+		opacity: 0.5;
+
+		&.headerIntro {
+			height: 95vh;
+		}
+	}
+
+	@include susy-breakpoint($xlarge) {
+		height: $xlarge-height;
+
+		&.headerIntro {
+			height: 95vh;
+		}
+	}
+}
+
+.headerSeasonings {
+	@include susy-breakpoint($xsmall) {
+		@include single-transition(all, 1s, ease-out);
+		@include background($bannerLargeSeasonings);
+		@include bg-properties;
+		width: 100%;
+		min-width: 360px;
+		height: $xsmall-height;
+		opacity: 0.3;
+	}
+
+	@include susy-breakpoint($small) {
+		height: $small-height;
+	}
+
+	@include susy-breakpoint($medium) {
+		height: $medium-height;
+	}
+
+	@include susy-breakpoint($large) {
+		height: $large-height;
+	}
+
+	@include susy-breakpoint($xlarge) {
+		height: $xlarge-height;
+	}
+}
+
+.headerGifts {
+	@include susy-breakpoint($xsmall) {
+		@include single-transition(all, 1s, ease-out);
+		@include background($bannerLargeGifts);
+		@include bg-properties;
+		width: 100%;
+		min-width: 360px;
+		height: $xsmall-height;
+		opacity: 0.4;
+	}
+
+	@include susy-breakpoint($small) {
+		height: $small-height;
+	}
+
+	@include susy-breakpoint($medium) {
+		height: $medium-height;
+	}
+
+	@include susy-breakpoint($large) {
+		height: $large-height;
+	}
+
+	@include susy-breakpoint($xlarge) {
+		height: $xlarge-height;
+	}
+}
+
+.headerAccessories {
+	@include susy-breakpoint($xsmall) {
+		@include single-transition(all, 1s, ease-out);
+		@include background($bannerLargeAccessories);
+		@include bg-properties;
+		width: 100%;
+		min-width: 360px;
+		height: $xsmall-height;
+		opacity: 0.5;
+	}
+
+	@include susy-breakpoint($small) {
+		height: $small-height;
+	}
+
+	@include susy-breakpoint($medium) {
+		height: $medium-height;
+	}
+
+	@include susy-breakpoint($large) {
+		height: $large-height;
+	}
+
+	@include susy-breakpoint($xlarge) {
+		height: $xlarge-height;
+	}
+}
+
+.headerSpecialty {
+	@include susy-breakpoint($xsmall) {
+		@include single-transition(all, 1s, ease-out);
+		@include background($bannerLargeSpecialty);
+		@include bg-properties;
+		width: 100%;
+		min-width: 360px;
+		height: $xsmall-height;
+		opacity: 0.3;
+	}
+
+	@include susy-breakpoint($small) {
+		height: $small-height;
+	}
+
+	@include susy-breakpoint($medium) {
+		height: $medium-height;
+	}
+
+	@include susy-breakpoint($large) {
+		height: $large-height;
+	}
+
+	@include susy-breakpoint($xlarge) {
+		height: $xlarge-height;
+	}
+}
+
+.headerBalsamics {
+	@include susy-breakpoint($xsmall) {
+		@include single-transition(all, 1s, ease-out);
+		@include background($bannerLargeBalsamics);
+		@include bg-properties;
+		width: 100%;
+		min-width: 360px;
+		height: $xsmall-height;
+		opacity: 0.4;
+	}
+
+	@include susy-breakpoint($small) {
+		height: $small-height;
+	}
+
+	@include susy-breakpoint($medium) {
+		height: $medium-height;
+	}
+
+	@include susy-breakpoint($large) {
+		height: $large-height;
+	}
+
+	@include susy-breakpoint($xlarge) {
+		height: $xlarge-height;
+	}
+}
+
+.headerInfuse {
+	@include susy-breakpoint($xsmall) {
+		@include single-transition(all, 1s, ease-out);
+		@include background($bannerLargeInfuse);
+		@include bg-properties;
+		width: 100%;
+		min-width: 360px;
+		height: $xsmall-height;
+		opacity: 0.3;
+	}
+
+	@include susy-breakpoint($small) {
+		height: $small-height;
+	}
+
+	@include susy-breakpoint($medium) {
+		height: $medium-height;
+	}
+
+	@include susy-breakpoint($large) {
+		height: $large-height;
+	}
+
+	@include susy-breakpoint($xlarge) {
+		height: $xlarge-height;
+	}
+}

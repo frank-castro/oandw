@@ -68,15 +68,5 @@
 		"color" : "#6A612F",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
-	},
-	{
-		"name" : "Pendolino",
-		"pricebig" : "$32.95",
-		"pricesmall" : "$17.95",
-		"description" : "Strong olive fruity flavor, with a slight hint of apple, and a peppery finish. Perfect for hearty dishes and bold salads. (Australia)",
-		"decoimage" : "images/varietal/pendolino-img.png",
-		"color" : "#8F707D",
-		"bigbottle": "750 ml",
-		"smallbottle": "375 ml"
 	}
 ]

@@ -1,0 +1,1337 @@
+$susy: (
+	columns: 12,
+	gutters: .7,
+	math: fluid,
+	output: float,
+	gutter-position: inside,
+	container: auto,
+	container-position: center,
+	debug: (
+		image: hide,
+		color: rgba(#66f, .25),
+		output: background,
+		toggle: top right,	
+	)
+);
+
+$xsmall: 320px; //one column narrow
+$small: 760px; //one column wide
+$medium: 970px; //two columns
+$large: 1200px; //three columns
+$xlarge: 1900px; //four columns
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.divider {
+	height: 1px;
+	width: 100%;
+	display: block;
+	opacity: 0.6;
+	margin-bottom: 10px;
+	background-color: $textColor;
+}
+
+.sitemenu {
+	@include susy-breakpoint($xsmall) {
+		@include single-transition(all, 0.5s, ease-out);
+		width: 100%;
+		height: 100vh;
+		text-align: center;
+		position: fixed;
+		background-color: $bg02;
+		z-index: 1090;
+
+		&.hidden {
+			display: none;
+		}
+
+		&.visible {
+			display: block;
+		}
+
+		a {
+			@include single-text-shadow;
+			display: block;
+			text-decoration: none;
+			font-family: $primary-font;
+			font-size: $font-small;
+			line-height: 2rem;
+			padding: 3px 0 7px;
+			color: $primaryColor;
+			text-transform: uppercase;
+			text-align: center;
+		}
+
+		.active {
+			font-family: $primary-fontlight;
+			opacity: 0.4;
+			border-top: 1px solid $green;
+			border-bottom: 1px solid $green;
+			margin: 10px 0%;
+		}
+
+		.navwrapper {
+			@include transform (translateY(-50%));
+			top: 50%;
+			position: relative;
+		}
+
+		.closeBttnMenu {
+			position: fixed;
+			top: 24px;
+			left: 30px;
+			cursor: pointer;
+			background-color: none;
+			z-index: 2000;
+
+			i {
+				color: $green;
+			}
+		}
+	}
+
+	@include susy-breakpoint($small) {
+		@include single-transition(all, 0.5s, ease-out);
+
+		a {
+			font-size: $font-medium;
+			line-height: 3.3rem;
+			padding: 20px 0;
+		}
+	}
+
+	@include susy-breakpoint($medium) {
+		@include single-transition(all, 0.5s, ease-out);
+
+		a {
+			font-size: $font-medium;
+			padding: 24px 0;
+		}
+	}
+
+	@include susy-breakpoint($large) {
+		@include single-transition(all, 1s, ease-out);
+		height: 70px;
+		top: 25vh;
+		position: absolute;
+		background-color: transparent;
+		z-index: 1040;
+
+		&.hidden {
+			display: block;
+		}
+
+		a {
+			font-size: $font-small;
+			line-height: $line-height-small;
+			padding: 2px 28px;
+			letter-spacing: 0.1rem
+		}
+
+		.active {
+			border-top: 0px;
+			border-bottom: 1px solid $green;
+			margin: 0px;
+		}
+
+		.navwrapper {
+			display: table;
+			margin: 0 auto;
+		}
+
+		.closeBttnMenu {
+			display: none;
+		}
+
+		ul li {
+			float: left;
+		}
+
+		&.sitemenuIntro {
+			visibility: hidden;
+			z-index: 0;
+		}
+
+		.closeBttn {
+			display: none;
+		}
+	}
+
+	@include susy-breakpoint($xlarge) {
+		@include single-transition(all, 1s, ease-out);
+		z-index: 1040;
+		top: 22vh;
+	}
+}
+
+.bigPlusBttn {
+	width: 58px;
+	height: 58px;
+	@include border-radius(50%);
+	@include transform (translate(-50%, -62px));
+  	margin-left: 50%;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+	margin-bottom: 5px;
+	cursor: pointer;
+	
+	path {
+		fill: #1E0F0F;
+	}
+}
+
+.roundBttnPlus {
+	width: 48px;
+	height: 48px;
+	@include border-radius (24px);
+	@include transform (translateX(-50%));
+  	margin-left: 50%;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+	margin-bottom: 5px;
+	cursor: pointer;
+	
+	path {
+		fill: #1E0F0F;
+	}
+}
+
+.layout {
+
+
+// -------------------------- XSMALL --------------------------
+
+	@include susy-breakpoint($xsmall){
+		@include single-transition(all, 1s, ease-out);
+		@include container;
+	  	max-width: 320px;
+	  	color: $textColor;
+
+		.pageTitle {
+			padding: 80px 5% 30px;
+			font-family: $page-title;
+			font-size: $font-medium;
+			line-height: 2.3rem;
+			font-weight: 300;
+			letter-spacing: 0.4rem;
+			opacity: 0.9;
+
+			.search {
+				opacity: 0.8;
+				font-size: $font-medium;
+				text-transform: lowercase;
+			}
+
+			input {
+				width: 180px;
+				height: 24px;
+				background-color: rgba(white, 0.7);
+				border: 0px solid;
+				@include border-radius (4px);
+				padding: 6px;
+				font-size: $font-small;
+				margin: 32px 2px 4px;
+			}
+		}
+
+		.productsContainer {
+			@include clearfix;
+			@include single-transition(all, 1s, ease-out);
+			@include span(12 of 12);
+			padding: 10px 5%;
+			font-family: $primary-font;
+			font-size: $font-small;
+			line-height: 1.3em;
+			text-align: center;
+
+			li:nth-child(2) {
+				font-family: $product-title;
+				font-size: 1.7rem;
+				padding: 10px 0px;
+				text-align: left;
+				height: 120px;
+			} // product name selected by root position
+		}
+
+		.oilsNameImgContainer {
+			height: 70px; // use this height to move the bottles up
+
+			.oilsName {
+				width: 60%;
+				font-family: $primary-fontlight;
+				font-size: $product-name-xsmall;
+				line-height: 1.3em;
+				text-align: left;
+			}
+
+			.oilsImage {
+				width: 40%;
+				height: 50px; // this height is needed to even the two bottles
+				opacity: 0.9;
+				text-align: right;
+				@include transform (scale(0.7));
+			}
+		}
+
+		.ctrlsContainer {
+			height: 490px;
+
+			.buyCtrlsLeft {
+				float: left;
+				width: 108px;
+				padding-left: 18px;
+			} // left side div with big bottle, price and buttons
+
+			.buyCtrlsRight {
+				padding-right: 18px;
+				float: right;
+				width: 108px;
+			} // right side div with big bottle, price and buttons
+
+			.buyCtrlsSpecial {
+				width: 80px;
+				position: relative;
+				top: 110px;
+				left: 50%;
+				@include transform (translateX(-50%));
+				
+				.bottleContainerSpecial {
+					height: 100px;
+					opacity: $svgLinesOpacity;
+				} // container for the svg
+
+				.special {
+					padding-top: 90px;
+				}
+			} // special bottle, price and buttons in Specialty
+		}
+
+		.oilsBuyContainerLeft p {
+			padding: 5px 0px 38px;
+			font-size: 0.8rem;
+			@include transform (translateY(-62px));
+		} // container for plus bttn and texts for the big bottle, only for add to cart
+
+		.oilsBuyContainer p {
+			padding: 5px 0px 48px;
+			font-size: 0.8rem;
+		} // container for plus bttn and texts for the small bottle, only for add to cart
+
+		.bottlesContainer {
+			height: 240px;
+			opacity: $svgLinesOpacity;
+		} // container for the svg
+
+		.description {
+			font-family: $desc-font;
+			font-size: $font-small;
+			line-height: 1.6em;
+			letter-spacing: 0.03rem;
+			text-align: left;
+			opacity: 0.9;
+		}
+
+		.description ::first-letter {
+			font-size: 200%;
+			font-family: $desc-font;
+		}
+
+//Seasonings Section
+
+		.seasoningsContainer {
+			@include clearfix;
+			@include single-transition(all, 1s, ease-out);
+			@include span(12 of 12);
+			padding: 10px 5%;
+			// this font values are for buy ctrls texts
+			font-family: $primary-font;
+			font-size: 1rem;
+			line-height: 1.3em;
+			text-align: center;
+
+			// Product Name (it's being selected by root position)
+			li:nth-child(2) {
+				font-family: $product-title;
+				font-size: 1.7rem;
+				padding: 10px 0px 20px;
+				text-align: left;
+			}
+		}
+
+		.seasoningsCtrlSvgWrapper {
+			height: 280px;
+	
+			.oilsBuyContainerLeft p {
+				@include transform (translateY(2px));
+				padding-bottom: 48px;
+			}
+
+			.bigPlusBttn {
+				@include transform (translate(-50%, 2px));
+			}
+
+			.priceText {
+				padding-top: 56px;
+			}
+		}
+
+		.seasoningsNameImgContainer {
+			height: 120px;
+		}
+
+		.seasoningsNames {
+			width: 55%;
+			float: left;
+			font-family: $primary-fontlight;
+			font-size: $product-name-xsmall;
+			line-height: 1.3em;
+			text-align: left;
+		}
+
+		.seasoningsImage {
+			width: 45%;
+			float: right;
+		}
+
+		.seasoningsPackageContainer {
+			width: 140px;
+			height: 30px;
+			@include transform (translateX(-50%));
+			left: 50%;
+			position: relative;
+			opacity: $svgLinesOpacity;
+
+			&.jar {
+				width: 205px;
+				top: -60px;
+			}
+
+			&.plasticsack {
+				width: 220px;
+				top: -30px;
+			}
+		}
+
+//Gifts Section
+
+		.giftsContainer {
+			@include clearfix;
+			@include single-transition(all, 1s, ease-out);
+			@include span(12 of 12);
+			padding: 10px 5%;
+			font-family: $primary-font;
+			font-size: 1rem;
+			line-height: 1.3em;
+
+			.giftsNameContainer {
+				height: 90px;
+				margin-top: 20px;
+				font-family: $primary-fontlight;
+				font-size: $product-name-xsmall;
+				line-height: 1.3em;
+				text-align: left;
+			}
+		}
+		
+		.giftTwoBottlesCtrlSvgWrapper {
+			height: 270px;
+
+			.buyCtrlsLeftGifts {
+				width: 30%;
+				text-align: center;
+		
+				.oilsBuyContainerLeft p {
+					@include transform (translateY(32px));
+				}
+
+				.bigPlusBttn {
+					@include transform (translate(-50%, 32px));
+				}
+
+				.priceText {
+					padding-top: 40px;
+				}
+			}
+
+			.twoGiftSvgContainer {
+				width: 150px;
+				@include transform (scale(1.6) translateY(12px));
+				position: relative;
+			}
+		}
+
+		.horizontalCtrls {
+			height: 110px;
+	
+			.buyContainer p {
+				@include transform (translateY(-2px));
+			}
+
+			.bigPlusBttn {
+				@include transform (translate(-50%, -5px));
+			}
+
+			.price {
+				padding-top: 22px;
+			}
+		}
+
+		.giftSizeFive {
+			@include transform (scale(0.94) translate(-15px, -40px));
+			height: 170px;
+		}
+
+		.giftSizeThree {
+			@include transform (scale(0.6) translate(-100px, -125px));
+			height: 150px;
+		}
+
+		.giftSizeSampler {
+			@include transform (scale(0.8) translate(-36px, -80px));
+			height: 120px;
+		}
+
+//Accesories Section
+
+		.accessoriesContainer {
+			@include clearfix;
+			@include single-transition(all, 1s, ease-out);
+			@include span(12 of 12);
+			padding: 10px 5%;
+			font-family: $primary-font;
+			font-size: 1rem;
+			line-height: 1.3em;
+			height: 620px;
+			color: $textColor;
+
+			.accessoriesNameContainer {
+				height: 60px;
+				margin-top: 20px;
+				font-family: $primary-fontlight;
+				font-size: $product-name-xsmall;
+				line-height: 1.3em;
+				text-align: left;
+			}
+		}
+	}
+
+
+// -------------------------- SMALL --------------------------
+
+	@include susy-breakpoint($small){
+		@include single-transition(all, 1s, ease-out);
+		@include container;
+	  	max-width: 500px;
+
+		.pageTitle {
+			padding: 50px 5%;
+		}
+
+		.productsContainer {
+			@include clearfix;
+			@include single-transition(all, 1s, ease-out);
+			@include span(12 of 12);
+			padding: 10px 5% 20px;
+			line-height: 1.3em;
+
+			// Product Name (it's being selected by root position)
+			li:nth-child(2) {
+				font-family: $product-title;
+				font-size: 1.7rem;
+				padding: 10px 0px;
+				text-align: left;
+			}
+		}
+
+		.ctrlsContainer {
+			height: 500px;
+
+			.buyCtrlsLeft {
+				padding-left: 48px;
+			} // left side div with big bottle, price and buttons
+
+			.buyCtrlsRight {
+				padding-right: 88px;
+			} // right side div with big bottle, price and buttons
+		}
+
+		.description {
+			font-size: 1rem;
+			line-height: 1.8em;
+			letter-spacing: 0.03rem;
+			opacity: 0.7;
+			// padding: 20px 0px 30px;
+		}
+
+		.description ::first-letter {
+			font-size: 200%;
+			font-family: $desc-font;
+		}
+
+		.oilsNameImgContainer {
+			height: 80px; //this height is needed to even the two bottles
+
+			.oilsName {
+				width: 55%;
+				font-family: $primary-fontlight;
+				font-size: $product-name-small;
+				line-height: $product-name-sm-lh;
+				text-align: left;
+			}
+
+			.oilsImage {
+				width: 45%;
+				height: 0px; //this height is needed to even the two bottles
+				opacity: 0.9;
+				text-align: right;
+				@include transform (scale(0.9));
+			}
+		}
+
+//Seasonings Section
+
+		.seasoningsContainer {
+			@include clearfix;
+			@include single-transition(all, 1s, ease-out);
+			@include span(12 of 12);
+			padding: 10px 5% 20px;
+			// this font values are for buy ctrls texts
+			font-family: $primary-font;
+			font-size: 1rem;
+			line-height: 1.3em;
+			text-align: center;
+
+			// Product Name (it's being selected by root position)
+			li:nth-child(2) {
+				font-family: $product-title;
+				font-size: 1.7rem;
+				padding: 10px 0px;
+				text-align: left;
+			}
+		}
+
+		.seasoningsNameImgContainer {
+			height: 140px;
+		}
+
+		.seasoningsNames {
+			width: 55%;
+			float: left;
+			font-family: $primary-fontlight;
+			font-size: $product-name-small;
+			line-height: $product-name-sm-lh;
+			text-align: left;
+		}
+
+		.seasoningsImage {
+			width: 45%;
+			text-align: center;
+		}
+
+//Gifts Section
+
+		.giftsContainer {
+			@include clearfix;
+			@include single-transition(all, 1s, ease-out);
+			@include span(12 of 12);
+			padding: 10px 5% 20px;
+			font-family: $primary-font;
+			font-size: 1rem;
+			line-height: 1.3em;
+			color: $textColor;
+
+			.giftsNameContainer {
+				height: 110px;
+				margin-top: 20px;
+				font-family: $primary-fontlight;
+				font-size: $product-name-small;
+				line-height: $product-name-sm-lh;
+				text-align: left;
+			}
+		}
+
+		.giftTwoBottlesCtrlSvgWrapper {
+			height: 380px;
+
+			.buyCtrlsLeftGifts {
+				margin-top: 70px;
+
+				.oilsBuyContainerLeft p {
+					@include transform (translateY(22px));
+				}
+
+				.bigPlusBttn {
+					@include transform (translate(-50%, 22px));
+				}
+
+				.priceText {
+					padding-top: 20px;
+				}
+			}
+
+			.twoGiftSvgContainer {
+				@include transform (scale(1.9) translate(-20px, 30px));
+			}
+		}
+
+		.giftSizeFive {
+			@include transform (scale(0.6) translate(-15px, -40px));
+			height: 280px;
+		}
+
+		.giftSizeThree {
+			@include transform (scale(0.4) translate(-15px, -195px));
+			height: 260px;
+		}
+
+		.giftSizeSampler {
+			@include transform (scale(0.7) translate(-10px, -100px));
+			height: 200px;
+		}
+
+//Accessories Section
+
+		.accessoriesContainer {
+			@include clearfix;
+			@include single-transition(all, 1s, ease-out);
+			@include span(12 of 12);
+			padding: 10px 5% 20px;
+			font-family: $primary-font;
+			font-size: 1rem;
+			line-height: 1.3em;
+			height: 620px;
+			color: $textColor;
+
+			.accessoriesNameContainer {
+				height: 60px;
+				margin-top: 20px;
+				font-family: $primary-fontlight;
+				font-size: $product-name-small;
+				line-height: $product-name-sm-lh;
+				text-align: left;
+			}
+		}
+	}
+
+
+// -------------------------- MEDIUM --------------------------
+
+	@include susy-breakpoint($medium){
+		@include container;
+	  	max-width: 890px;
+
+		.pageTitle {
+			padding: 70px 20%;
+		}
+
+		.productsContainer {
+			@include clearfix;
+			@include single-transition(all, 1s, ease-out);
+			@include span(6 of 12);
+			padding: 0px 5% 20px;
+			line-height: 1.3em;
+			height: 880px;
+
+			// Product Name (it's being selected by root position)
+			li:nth-child(2) {
+				font-family: $product-title;
+				font-size: 1.7rem;
+				padding: 10px 0px;
+				text-align: left;
+			}
+		}
+
+		.buyContainer {
+			padding-top: 40px;
+			
+			p {
+				padding-top: 10px;
+				color: $textColor;
+				font-size: 0.8rem;
+			}
+		}
+
+		.ctrlsContainer {
+
+			.buyCtrlsLeft {
+				padding-left: 48px;
+			} // left side div with big bottle, price and buttons
+
+			.buyCtrlsRight {
+				padding-right: 48px;
+			} // right side div with big bottle, price and buttons
+		}
+
+		.description {
+			font-family: $desc-font;
+			font-size: 1rem;
+			text-align: left;
+			line-height: 1.7em;
+			letter-spacing: 0.03rem;
+			color: $textColor;
+			padding: 5px 0px 10px;
+		}
+
+		.description ::first-letter {
+			font-size: 200%;
+			font-family: $desc-font;
+		}
+
+		.oilsNameImgContainer {
+			height: 80px;
+
+			.oilsName {
+				width: 50%;
+			}
+
+			.oilsImage {
+				width: 50%;
+				height: 80px;
+				opacity: 0.9;
+				text-align: right;
+			}
+		}
+
+//Seasonings Section
+
+		.seasoningsContainer {
+			@include clearfix;
+			@include single-transition(all, 1s, ease-out);
+			@include span(6 of 12);
+			padding: 0px 5% 20px;
+			font-family: $primary-font;
+			font-size: 1rem;
+			line-height: 1.3em;
+			height: 690px;
+			text-align: center;
+
+			// Product Name (it's being selected by root position)
+			li:nth-child(2) {
+				font-family: $product-title;
+				font-size: 1.7rem;
+				padding: 10px 0px 30px;
+				text-align: left;
+			}
+		}
+
+//Gifts Section
+
+		.giftsContainer {
+			@include clearfix;
+			@include single-transition(all, 1s, ease-out);
+			@include span(6 of 12);
+			padding: 0px 5% 20px;
+			height: 700px;
+			color: $textColor;
+
+			.giftsNameContainer {
+				height: 110px;
+				margin-top: 20px;
+			}
+		}
+
+		.giftTwoBottlesCtrlSvgWrapper {
+			height: 380px;
+
+			.buyCtrlsLeftGifts {
+
+				.oilsBuyContainerLeft p {
+					@include transform (translateY(22px));
+				}
+
+				.bigPlusBttn {
+					@include transform (translate(-50%, 22px));
+				}
+
+				.priceText {
+					padding-top: 20px;
+				}
+			}
+
+			.twoGiftSvgContainer {
+				@include transform (scale(1.8) translate(-10px, 30px));
+			}
+		}
+
+		.horizontalCtrls {
+
+			.buyContainer {
+				padding-top: 0px;
+				p {
+					@include transform (translateY(-18px));
+				}
+
+				.bigPlusBttn {
+					@include transform (translate(-50%, -16px));
+				}
+
+				.price {
+					padding-top: 18px;
+				}
+			}
+		}
+
+		.giftSizeFive {
+			@include transform (scale(0.68) translate(-5px, -70px));
+			height: 200px;
+		}
+
+		.giftSizeThree {
+			@include transform (scale(0.45) translate(-10px, -170px));
+			height: 200px;
+		}
+
+		.giftSizeSampler {
+			@include transform (scale(0.8) translate(-5px, -70px));
+			height: 200px;
+		}
+
+//Accessories Section
+		.accessoriesContainer {
+			@include clearfix;
+			@include single-transition(all, 1s, ease-out);
+			@include span(6 of 12);
+			padding: 0px 5% 50px;
+			height: 660px;
+			color: $textColor;
+
+			.accessoriesNameContainer {
+				height: 60px;
+				margin-top: 20px;
+			}
+		}
+	}
+
+
+// -------------------------- LARGE --------------------------
+
+	@include susy-breakpoint($large){
+	  	max-width: 1290px;
+
+		.pageTitle {
+			@include transition-delay(1s);
+			@include transition-duration(0.2s);
+			@include transition-timing-function(ease-out);
+			padding: 60px 0px;
+
+			input {
+				display: none;
+			}
+		}
+
+		.productsContainer {
+			@include clearfix;
+			@include single-transition(all, 1s, ease-out);
+			@include span(4 of 12);
+			padding: 0px 5% 10px;
+			line-height: 1.3em;
+			height: 880px;
+
+			// Product Name (it's being selected by root position)
+			li:nth-child(2) {
+				font-family: $product-title;
+				font-size: 1.7rem;
+				padding: 10px 0px;
+				text-align: left;
+			}
+		}
+
+		.buyContainer p {
+		  color: $textColor;
+		  font-size: 0.8rem;
+		}
+
+		.ctrlsContainer {
+			// height: 540px;
+
+			.buyCtrlsLeft {
+				padding-left: 22px;
+			} // left side div with big bottle, price and buttons
+
+			.buyCtrlsRight {
+				padding-right: 22px;
+			} // right side div with big bottle, price and buttons
+		}
+
+		.description {
+			font-family: $desc-font;
+			font-size: $font-small;
+			text-align: left;
+			line-height: 1.7em;
+			letter-spacing: 0.05rem;
+			color: $textColor;
+			opacity: 0.8;
+		}
+
+		.description ::first-letter {
+			font-size: 200%;
+			font-family: $desc-font;
+		}
+
+		.oilsNameImgContainer {
+			height: 80px;
+
+			.oilsName {
+				width: 50%;
+				font-family: $primary-fontlight;
+				font-size: $font-medium;
+				line-height: $line-height-medium;
+				text-align: left;
+			}
+
+			.oilsImage {
+				width: 50%;
+				height: 80px;
+				opacity: 0.9;
+				text-align: right;
+			}
+		}
+
+//Seasonings Section
+
+		.seasoningsContainer {
+			@include clearfix;
+			@include single-transition(all, 1s, ease-out);
+			@include span(4 of 12);
+			padding: 0px 5% 10px;
+			height: 700px;
+		}
+
+		.seasoningsNameImgContainer {
+			height: 140px;
+		}
+
+		.seasoningsNames {
+			width: 55%;
+			float: left;
+			font-family: $primary-fontlight;
+			font-size: $product-name-large;
+			line-height: $product-name-lg-lh;
+			text-align: left;
+		}
+
+		.seasoningsImage {
+			width: 45%;
+		}
+
+//Gifts Section
+
+		.giftsContainer {
+			@include clearfix;
+			@include single-transition(all, 1s, ease-out);
+			@include span(4 of 12);
+			padding: 0px 5% 10px;
+			height: 690px;
+			color: $textColor;
+
+			.giftsNameContainer {
+				height: 75px;
+				font-family: $primary-fontlight;
+				font-size: $product-name-large;
+				line-height: $product-name-lg-lh;
+				text-align: left;
+			}
+		}
+
+		.giftTwoBottlesCtrlSvgWrapper {
+			height: 410px;
+
+			.buyCtrlsLeftGifts {
+				margin-top: 100px;
+			}
+
+			.twoGiftSvgContainer {
+				@include transform (scale(1.8) translateY(50px));
+			}
+		}
+
+		.giftSizeFive {
+			@include transform (scale(0.75) translate(0px, -24px));
+			height: 200px;
+		}
+
+		.giftSizeThree {
+			@include transform (scale(0.48) translate(-5px, -100px));
+			height: 200px;
+		}
+
+		.giftSizeSampler {
+			@include transform (scale(0.8) translate(-5px, -25px));
+			height: 200px;
+		}
+
+//Accessories Section
+		.accessoriesContainer {
+			@include clearfix;
+			@include single-transition(all, 1s, ease-out);
+			@include span(4 of 12);
+			padding: 0px 5% 10px;
+			font-family: $primary-font;
+			font-size: 1rem;
+			line-height: 1.3em;
+			height: 610px;
+			color: $textColor;
+
+			.accessoriesNameContainer {
+				height: 60px;
+				margin-top: 20px;
+				font-family: $primary-fontlight;
+				font-size: $product-name-large;
+				line-height: $product-name-lg-lh;
+				text-align: left;
+			}
+		}
+	}
+
+
+// -------------------------- XLARGE --------------------------
+
+	@include susy-breakpoint($xlarge){
+	  	max-width: 1800px;
+
+	  	.pageTitle {
+			@include transition-delay(1s);
+			@include transition-duration(0.2s);
+			@include transition-timing-function(ease-out);
+	  		padding: 90px 0px;
+	  	}
+
+		.productsContainer {
+			@include clearfix;
+			@include single-transition(all, 1s, ease-out);
+			@include span(3 of 12);
+			padding: 0px 4% 10px;
+		}
+
+//Seasonings Section
+		.seasoningsContainer {
+			@include clearfix;
+			@include single-transition(all, 1s, ease-out);
+			@include span(3 of 12);
+			padding: 0px 4% 10px;
+		}
+
+//Gifts Section
+		.giftsContainer {
+			@include clearfix;
+			@include single-transition(all, 1s, ease-out);
+			@include span(3 of 12);
+			padding: 0px 4% 10px;
+			color: $textColor;
+
+			.giftsNameContainer {
+				height: 75px;
+				margin-top: 20px;
+			}
+		}
+
+		.horizontalCtrls {
+
+			.buyContainer {
+				padding-top: 0px;
+				p {
+					@include transform (translateY(-8px));
+				}
+
+				.bigPlusBttn {
+					@include transform (translate(-50%, -6px));
+				}
+
+				.price {
+					padding-top: 28px;
+				}
+			}
+		}
+
+//Accessories Section
+		.accessoriesContainer {
+			@include clearfix;
+			@include single-transition(all, 1s, ease-out);
+			@include span(3 of 12);
+			padding: 0px 4% 10px;
+			height: 610px;
+			color: $textColor;
+
+			.accessoriesNameContainer {
+				height: 60px;
+				margin-top: 20px;
+			}
+		}
+	}
+}
+
+.buyContainer p {
+  color: $textColor;
+  font-size: 0.8rem;
+}
+
+.horizontalCtrls {
+
+	.buyBttns {
+		width: 50%;
+		text-align: center;
+	}
+
+	.price {
+		padding-top: 70px;
+		width: 50%;
+		font-family: $product-price;
+		font-size: 1.3rem;
+		color: $textColor;
+		text-align: center;
+		opacity: 0.4;
+	}
+}
+
+.horizontalImage {
+	height: 240px;
+	text-align: center;
+	@include transform (scale(0.85));
+}
+
+.sizeText {
+	font-family: $product-price;
+	font-size: $font-small;
+	color: $textColor;
+	text-align: center;
+	opacity: 0.6;
+}
+
+.priceText {
+	font-family: $product-price;
+	font-size: 1.4rem;
+	color: $textColor;
+	text-align: center;
+	padding: 60px 0px 20px;
+	opacity: 0.4;
+}
+
+.submenu {
+	@include susy-breakpoint($xsmall) {
+		@include single-transition(all, 0.5s, ease-out);
+		display: none;
+		height: 0px;
+	}
+
+	@include susy-breakpoint($small) {
+		@include single-transition(all, 0.5s, ease-out);
+
+	}
+
+	@include susy-breakpoint($medium) {
+		@include single-transition(all, 0.5s, ease-out);
+
+	}
+
+	@include susy-breakpoint($large) {
+		@include transition-delay(1s);
+		@include transition-duration(0.3s);
+		@include transition-timing-function(ease-out);
+		@include transform(translateY(0px));
+		visibility: visible;
+		width: 100%;
+		height: 90px;
+		text-align: center;
+		z-index: 900;
+		display: block;
+
+
+		a {
+			@include single-text-shadow;
+			display: block;
+			text-decoration: none;
+			font-family: $primary-font;
+			font-size: $font-small;
+			line-height: $line-height-small;
+			color: $primaryColor;
+			text-transform: uppercase;
+			text-align: right;
+			padding: 2px 28px;
+			letter-spacing: 0.1rem
+		}
+
+		.active {
+			opacity: 0.4;
+			border-top: 1px solid $green;
+			border-bottom: 0px;
+			margin: 0px;
+		}
+
+		.navwrapper {
+			display: table;
+			margin: 0 auto;
+		}
+
+		ul li {
+			float: left;
+		}
+
+		&.hidden {
+			@include transform(translateY(50px));
+			visibility: hidden;
+		}
+	}
+
+	@include susy-breakpoint($xlarge) {
+		@include transition-delay(1s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-out);
+	}
+}
+
+footer {
+	font-family: $primary-font;
+	letter-spacing: 0.04rem;
+	color: $bg01;
+	text-align: center;
+	z-index: 1600;
+	background: linear-gradient(to bottom left, rgba($green, 0.9), rgba($textColor, 0.85));
+
+	@include susy-breakpoint($xsmall) {
+		@include single-transition(all, 1s, ease-out);
+		font-size: 0.8rem;
+		line-height: 1.7rem;
+		padding: 20px 10%;
+		margin-top: 20px;
+
+		.about {
+			text-decoration: none;
+			text-transform: $link;
+			font-size: $button;
+			font-family: $primary-fontbold;
+			cursor: pointer;
+		}
+	}
+
+	@include susy-breakpoint($small) {
+		@include single-transition(all, 1s, ease-out);
+	}
+
+	@include susy-breakpoint($medium) {
+		@include single-transition(all, 1s, ease-out);
+	}
+
+	@include susy-breakpoint($large) {
+		@include single-transition(all, 1s, ease-out);
+
+		.about {
+			position: absolute;
+			top: 22px;
+			right: 100px;
+			z-index: 1040;
+			color: $green;
+			text-transform: $link;
+			font-size: $button;
+			font-family: $primary-font;
+			opacity: 0.8;
+		}
+	}
+
+	@include susy-breakpoint($xlarge) {
+		@include single-transition(all, 1s, ease-out);
+	}
+}

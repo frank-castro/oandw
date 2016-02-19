@@ -1,0 +1,130 @@
+// hack to render svgs properly in IE for img tags
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	img[src*=".svg"] {
+		width: 100%; 
+	}
+}
+
+$default-text-shadow-color: rgba(#000000, 0.8);
+$default-text-shadow-blur: 3px;
+$default-text-shadow-v-offset: 2px;
+
+$cartbttnshadow: rgba(black, 0.5) 0px 2px 3px;
+
+// bg gradients
+$bg01: #18241B;
+// $bg02: #181917;
+$bg02: #1B1D0E;
+
+//COLORS
+$green: #C1D647;
+
+$textColor: #BCCCB6;
+
+$primaryColor: #8EA286;
+
+$svgLinesOpacity: 0.55;
+
+// TYPEFACES
+
+// White text on a black background is a higher contrast to the opposite, so the letterforms need to be wider apart, lighter in weight and have more space between the lines. Increase the leading, tracking and decrease your font-weight
+
+@include font-face("SourceSansReg", font-files("SourceSansPro-Regular.otf"));
+@include font-face("SourceSansLight", font-files("SourceSansPro-Light.otf"));
+@include font-face("SourceSansBold", font-files("SourceSansPro-Bold.otf"));
+@include font-face("SourceSansIt", font-files("SourceSansPro-It.otf"));
+
+$primary-font: 'SourceSansReg';
+$primary-fontlight: 'SourceSansLight';
+$primary-fontbold: 'SourceSansBold';
+$primary-fontit: 'SourceSansIt';
+$page-title: 'expo-serif-pro';
+$desc-font: 'expo-serif-pro';
+$product-title: 'SourceSansLight';
+$product-price: 'SourceSansLight';
+$display-text: 'expo-serif-pro';
+
+//font weights for expo-serif from typekit
+.light {
+	font-weight: 300;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+//NEW STUFF HERE using google material design
+
+$button: 14px; //recommended medium weight, all caps
+$link: uppercase;
+
+$caption: 12px;
+$bodydesktop: 13px;
+$bodydevice: 14px;
+$subheading: 16px;
+$title: 20px; //recommended medium weight
+$headline: 24px;
+$displa1: 34px;
+$displa2: 45px;
+$displa3: 56px;
+$displa4: 112px; //recommended light weight 
+
+//******** THIS HERE IS OLD STUFF ********
+
+$font-xsmall: 0.75rem;
+
+$font-small: 0.9rem;
+$line-height-small: 1.8rem;
+
+$font-medium: 1.35rem;
+$line-height-medium: 1.75rem;
+
+$font-large: 2.25rem;
+
+$font-xlarge: 3.6rem;
+
+$font-xxlarge: 5.85rem;
+
+
+// these font sizes below should use above sizes, replace these variable with above values in html;
+$product-name-xsmall: 1.3rem;
+
+// values for small and medium
+$product-name-small: 1.5rem;
+$product-name-sm-lh: 1.8rem; //line height
+
+//values for large and xlarge
+$product-name-large: 1.5rem;
+$product-name-lg-lh: 1.8rem; //line height
+
+// ******** HERE IS WHERE THE OLD STUFF ENDS ********
+
+
+// BANNERS
+
+$bannerLargeVarietal: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('largeBanner/varietal.jpg');
+$bannerLargeInfuse: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('largeBanner/infuse.jpg');
+$bannerLargeSpecialty: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('largeBanner/specialty.jpg');
+$bannerLargeBalsamics: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('largeBanner/balsamics.jpg');
+$bannerLargeSeasonings: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('largeBanner/seasonings.jpg');
+$bannerLargeGifts: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('largeBanner/gifts.jpg');
+$bannerLargeAccessories: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('largeBanner/accessories.jpg');
+
+body {
+	@include background(linear-gradient(180deg, $bg01 32%, $bg02 68%));
+}
+
+#{headings(1,4)} {
+	font-family: $primary-font;
+}
+
+h4 {
+	font-size: $font-small;
+}
+
+address {
+	a {
+		text-decoration: none;
+		color: black;
+	}
+}

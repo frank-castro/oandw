@@ -1,0 +1,133 @@
+.ctaIntro {
+	@include susy-breakpoint($xsmall) {
+		@include transition-delay(0s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+		display: none;
+	}
+
+	@include susy-breakpoint($small) {
+		@include transition-delay(0s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+	}
+
+	@include susy-breakpoint($medium) {
+		@include transition-delay(0s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+	}
+
+	@include susy-breakpoint($large) {
+		@include transition-delay(0s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+		@include transform(translate(-50%));
+		display: block;
+		left: 50%;
+		position: fixed;
+		top: 85%;
+		text-transform: $link;
+		// font-size: $button;
+		font-family: $primary-font;
+		color: $green;
+		cursor: pointer;
+		text-align: center;
+		opacity: 0.8;
+
+		&.ctaIntroHidden {
+			display: none;
+			z-index: 0;
+		}
+	}
+
+	@include susy-breakpoint($xlarge) {
+		@include transition-delay(0s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+	}
+}
+
+.displayText {
+	text-transform: uppercase;
+	font-family: $display-text;
+	text-align: center;
+	z-index: 99;
+} //this is for the name of each page
+
+.imgText {
+	@include susy-breakpoint($xsmall) {
+		display: none;
+	}
+
+	@include susy-breakpoint($small) {
+	}
+
+	@include susy-breakpoint($medium) {
+	}
+
+	@include susy-breakpoint($large) {
+		@include single-transition(all, 0.2s, ease-out);
+		@include single-text-shadow;
+		@include transform(translateX(-50%));
+		left: 50%;
+		color: $textColor;
+		text-transform: uppercase;
+		font-family: $display-text;
+		font-size: $font-medium;
+		line-height: 2.1rem;
+		letter-spacing: 0.3em;
+		text-align: center;
+		z-index: 99;
+		top: 50%;
+		position: fixed;
+		display: block;
+		width: 80%;
+
+		&.imgTextIntro {
+			display: none;
+			z-index: 0;
+		}
+	}
+
+	@include susy-breakpoint($xlarge) {
+	}
+} //intro text under logo
+
+.slogan {
+	@include susy-breakpoint($xsmall) {
+		display: none;
+	}
+
+	@include susy-breakpoint($small) {
+	}
+
+	@include susy-breakpoint($medium) {
+	}
+
+	@include susy-breakpoint($large) {
+		@include single-transition(all, 0.2s, ease-out);
+		@include transform(translateX(-50%));
+		color: $textColor;
+		font-family: $primary-fontlight;
+		font-size: $title;
+		line-height: 2.5rem;
+		letter-spacing: 0.05em;
+		text-align: center;
+		z-index: 99;
+		top: 70%;
+		position: fixed;
+		display: block;
+		left: 50%;
+		width: 80%;
+		opacity: 0.5;
+
+		&.sloganIntro {
+			display: none;
+			z-index: 0;
+		}
+	}
+
+	@include susy-breakpoint($xlarge) {
+	}
+}

@@ -1,0 +1,442 @@
+@include keyframes(pulse) {
+	0% { 
+		transform: scale(1);
+		opacity: 1;
+	} 
+
+	25% { 
+		transform: scale(0.7);
+		opacity: 1;
+	} 
+
+	60% { 
+		transform: scale(6);
+		opacity: 0.9;
+	}
+
+	100% { 
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.cartBanner {
+	background: linear-gradient(to bottom left, rgba($green, 1), rgba($textColor, 0.9));
+	z-index: 1050;
+
+	@include susy-breakpoint($xsmall) {
+		@include transition-delay(0s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-out);
+		position: fixed;
+		top: 0px;
+		width: 100%;
+		height: 100vh;
+		right: 0px;
+
+		.shopping_cart {
+			position: absolute;
+			color: $bg01;
+			opacity: 1;
+			cursor: pointer;
+			z-index: 1150;
+			padding: 22px;
+			right: 0px;
+		}
+
+		&.cartBttn {
+			@include transition-delay(0.1s);
+			@include transition-duration(0.3s);
+			@include transition-timing-function(ease-in);
+			width: 70px;
+			height: 70px;
+			position: fixed;
+			right: 0px;
+			top: 0px;
+		}
+
+		.circleTotal {
+			height: 44px;
+			width: 44px;
+			border-radius: 50%;
+			background-color: $green;
+			position: absolute;
+			right: 45px;
+			top: 45px;
+			text-align: center;
+			z-index: 1200;
+
+				li {
+					padding-top: 7px;
+					font-family: $product-title;
+					font-size: 1.7rem;
+					color: $bg01;
+				}
+		}
+
+		.circleAnim {
+			animation-duration: 0.5s;
+			animation-name: pulse;
+		}
+	}
+
+	@include susy-breakpoint($small) {
+		@include transition-delay(0s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-out);
+
+		&.cartBttn {
+			@include transition-delay(0.5s);
+			@include transition-duration(0.3s);
+			@include transition-timing-function(ease-in);
+		}
+	}
+
+	@include susy-breakpoint($medium) {
+		@include transition-delay(0s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-out);
+
+		&.cartBttn {
+			@include transition-delay(0.5s);
+			@include transition-duration(0.3s);
+			@include transition-timing-function(ease-in);
+		}
+	}
+
+	@include susy-breakpoint($large) {
+		@include transition-delay(0s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-out);
+
+		&.cartBttn {
+			@include transition-delay(0.1s);
+			@include transition-duration(0.3s);
+			@include transition-timing-function(ease-in);
+		}
+	}
+
+	@include susy-breakpoint($xlarge) {
+		@include transition-delay(0s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-out);
+	}
+}
+
+.cartBannerContent {
+	left: 50%;
+	@include transform(translateX(-50%));
+	background: none;
+	overflow: scroll;
+	z-index: 1100;
+
+	@include susy-breakpoint($xsmall) {
+		@include transition-delay(0.3s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+
+		.maticon {
+			@include transform(translateY(5px));
+			color: $bg01;
+			cursor: pointer;
+		}
+
+		p {
+			font-size: $font-small;
+		}
+
+		.cartProductList {
+			width: 300px;
+			position: absolute;
+			left: 50%;
+			@include transform(translateX(-50%));
+			top: 40px;
+			font-family: $primary-font;
+			font-size: $font-medium;
+			line-height: 2.4rem;
+			color: $bg01;
+
+			.cartBigText {
+				font-size: $font-large;
+			}
+
+			table {
+				width: 100%;
+			}
+
+			table:nth-of-type(1) {
+
+				td {
+					padding: 5px;
+				}
+
+				.tableLabels {
+					font-size: $font-small;
+					opacity: 0.5;
+				}
+
+				td:last-child {
+					padding-left: 20px;
+					text-align: right;
+				}
+
+				.cartTotal {
+					font-size: $font-medium;
+					font-weight: 700;
+					text-align: right;
+					padding: 20px 0px;
+				}
+			}
+
+			.totalConfirm {
+				font-weight: 700;
+			}
+		}
+
+		.cartCTA {
+			width: 100%;
+			height: 40px;
+			padding: 20px 0px;
+			font-family: $primary-font;
+
+			.cartCTAback {
+				opacity: 0.7;
+				font-size: $font-medium;
+				float: left;
+				cursor: pointer;
+			}
+
+			.cartCTAforward {
+				font-size: $font-large;
+				float: right;
+				cursor: pointer;
+
+				i {
+					@include transform(scale(1.4));
+				}
+			}
+		}
+
+		.cartinfo {
+			font-size: 1.3rem;
+		}
+
+		.totalprice {
+			padding-left: 10px;
+		}
+
+		.actionText {
+			font-size: 1.3rem;
+		}
+
+		.divider2 {
+			height: 1px;
+			width: 100%;
+			display: block;
+			opacity: 0.6;
+			margin-bottom: 10px;
+			background-color: white;
+		}
+	}
+
+	@include susy-breakpoint($small) {
+		@include transition-delay(0.3s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+
+		.cartProductList {
+			width: 480px;
+		}
+	}
+
+	@include susy-breakpoint($medium) {
+		@include transition-delay(0.3s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+		
+		.cartProductList {
+			width: 500px;
+		}
+	}
+
+	@include susy-breakpoint($large) {
+		@include transition-delay(0.4s);
+		@include transition-duration(0.1s);
+		@include transition-timing-function(ease-in);
+
+		.cartProductList {
+			width: 500px;
+		}
+	}
+
+	@include susy-breakpoint($xlarge) {
+		@include transition-delay(0.4s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+	}
+
+	&.hidden {
+		@include transition-delay(0.1s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+		opacity: 0;
+		@include transform(translateY(-100vh));
+	}
+}
+
+.form {
+	// max-width: 500px;
+	@include susy-breakpoint($xsmall) {
+		@include transition-delay(0s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-out);
+
+		input {
+			width: 264px;
+			height: 20px;
+			background-color: rgba(white, 0.7);
+			border: 0px solid;
+			padding: 6px;
+			font-size: $font-small;
+			margin: 4px 2px;
+		}
+
+		.input-error {
+			color: red;
+			margin: 0px 4px;
+		}
+
+		.select {
+			// font-size: 11px; //dont delete this are the two option all browsers give you for font size
+			font-size: $bodydevice; //dont delete
+		}
+
+		p {
+			font-size: $font-small;
+		}
+
+		.general {
+			padding-bottom: 14px;
+		}
+
+		.billing {
+			@extend .general;
+		}
+
+		.shipping {
+			input:nth-of-type(1) {
+				height: 30px;
+				width: 24px;
+				float: left;
+				padding-right: 10px;
+			}
+			@extend .general;
+		}
+
+		.zip {
+			width: 45%;
+		}
+
+		.phone {
+			@extend .zip;
+		}
+
+		&.tarjetaInformation {
+			width: 75%;
+
+			.shortfield {
+				width: 35%;
+			}
+		}
+
+		.input-sample {
+			color: white;
+			opacity: 0.6;
+			font-size: $font-small;
+		}
+	}
+
+	@include susy-breakpoint($small) {
+		@include transition-delay(0s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-out);
+
+		input {
+			width: 420px;
+		}
+	}
+
+	@include susy-breakpoint($medium) {
+		@include transition-delay(0s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-out);
+
+		input {
+			width: 90%;
+		}
+	}
+
+	@include susy-breakpoint($large) {
+		@include transition-delay(0s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-out);
+
+		input {
+			width: 90%;
+		}
+	}
+
+	@include susy-breakpoint($xlarge) {
+		@include transition-delay(0s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-out);
+	}
+}
+
+.addRemoveBttn {
+	width: 48px;
+	height: 48px;
+	@include border-radius (24px);
+	cursor: pointer;
+	background-color: $green;
+}
+
+.confirmLabel {
+	color: white;
+}
+
+// .emptyShell {
+
+// 	@include susy-breakpoint($xsmall) {
+// 		@include transition-delay(0s);
+// 		@include transition-duration(0.2s);
+// 		@include transition-timing-function(ease-in);
+// 	}
+
+// 	@include susy-breakpoint($small) {
+// 		@include transition-delay(0s);
+// 		@include transition-duration(0.2s);
+// 		@include transition-timing-function(ease-in);
+// 	}
+
+// 	@include susy-breakpoint($medium) {
+// 		@include transition-delay(0s);
+// 		@include transition-duration(0.2s);
+// 		@include transition-timing-function(ease-in);
+// 	}
+
+// 	@include susy-breakpoint($large) {
+// 		@include transition-delay(0s);
+// 		@include transition-duration(0.2s);
+// 		@include transition-timing-function(ease-in);
+// 	}
+
+// 	@include susy-breakpoint($xlarge) {
+// 		@include transition-delay(0s);
+// 		@include transition-duration(0.2s);
+// 		@include transition-timing-function(ease-in);
+// 	}
+// }
