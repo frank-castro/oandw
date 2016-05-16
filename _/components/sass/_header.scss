@@ -155,9 +155,9 @@
 		background-color: transparent;
 
 		.logo {
-			@include transform (translateY(16px));
-			left: 30px;
-			position: absolute;
+			@include transform (translateY(319px));
+			left: 17%;
+			// position: relative;
 			width: 180px;
 			z-index: 1000;
 
