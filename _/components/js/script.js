@@ -23,26 +23,6 @@ $('.shopping_cart, #keepShopping').on('click', function(){
 	$('.cartBannerContent').toggleClass('hidden');
 });
 
-// ** old stuff you had here **
-
-$(window).scroll(function(){
-  var windowHeight = $(this).height();
-  var topOfWindow = $(this).scrollTop();
-  
-  $('.submenu').each(function() {
-    var elemPosit = $(this).offset().top;
-
-    if (elemPosit < topOfWindow + windowHeight) {
-      $(this).removeClass("hidden");
-    } else {
-      $(this).addClass("hidden");
-    }
-	
-  });
-});
-
-
-
 // ** new stuff starts here **
 
 // variables to hide nav menu on scroll down

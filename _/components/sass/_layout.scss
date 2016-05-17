@@ -33,7 +33,7 @@ $xlarge: 1900px; //four columns
 	width: 100%;
 	display: block;
 	opacity: 0.6;
-	margin-bottom: 10px;
+	margin-bottom: 24px;
 	background-color: $textColor;
 }
 
@@ -208,7 +208,7 @@ $xlarge: 1900px; //four columns
 	@include susy-breakpoint($xsmall){
 		@include single-transition(all, 1s, ease-out);
 		@include container;
-	  	max-width: 320px;
+	  	// max-width: 320px;
 	  	color: $textColor;
 
 		.pageTitle {
@@ -531,7 +531,7 @@ $xlarge: 1900px; //four columns
 	@include susy-breakpoint($small){
 		@include single-transition(all, 1s, ease-out);
 		@include container;
-	  	max-width: 500px;
+	  	// max-width: 500px;
 
 		.pageTitle {
 			padding: 50px 5%;
@@ -728,7 +728,7 @@ $xlarge: 1900px; //four columns
 
 	@include susy-breakpoint($medium){
 		@include container;
-	  	max-width: 890px;
+	  	// max-width: 890px;
 
 		.pageTitle {
 			padding: 70px 20%;
@@ -916,7 +916,7 @@ $xlarge: 1900px; //four columns
 // -------------------------- LARGE --------------------------
 
 	@include susy-breakpoint($large){
-	  	max-width: 1290px;
+	  	// max-width: 1290px;
 
 		.pageTitle {
 			@include transition-delay(1s);
@@ -935,7 +935,7 @@ $xlarge: 1900px; //four columns
 			@include span(4 of 12);
 			padding: 0px 5% 10px;
 			line-height: 1.3em;
-			height: 880px;
+			height: 640px;
 
 			// Product Name (it's being selected by root position)
 			li:nth-child(2) {
@@ -1098,6 +1098,10 @@ $xlarge: 1900px; //four columns
 
 	@include susy-breakpoint($xlarge){
 	  	max-width: 1800px;
+	  	// @include span (10 of 12);
+	  	// @include transform(translateX(-50%));
+	  	// left: 50%;
+	  	// position: relative;
 
 	  	.pageTitle {
 			@include transition-delay(1s);
@@ -1216,79 +1220,6 @@ $xlarge: 1900px; //four columns
 	opacity: 0.4;
 }
 
-.submenu {
-	@include susy-breakpoint($xsmall) {
-		@include single-transition(all, 0.5s, ease-out);
-		display: none;
-		height: 0px;
-	}
-
-	@include susy-breakpoint($small) {
-		@include single-transition(all, 0.5s, ease-out);
-
-	}
-
-	@include susy-breakpoint($medium) {
-		@include single-transition(all, 0.5s, ease-out);
-
-	}
-
-	@include susy-breakpoint($large) {
-		@include transition-delay(1s);
-		@include transition-duration(0.3s);
-		@include transition-timing-function(ease-out);
-		@include transform(translateY(0px));
-		visibility: visible;
-		width: 100%;
-		height: 90px;
-		text-align: center;
-		z-index: 900;
-		display: block;
-
-
-		a {
-			@include single-text-shadow;
-			display: block;
-			text-decoration: none;
-			font-family: $primary-font;
-			font-size: $font-small;
-			line-height: $line-height-small;
-			color: $primaryColor;
-			text-transform: uppercase;
-			text-align: right;
-			padding: 2px 28px;
-			letter-spacing: 0.1rem
-		}
-
-		.active {
-			opacity: 0.4;
-			border-top: 1px solid $green;
-			border-bottom: 0px;
-			margin: 0px;
-		}
-
-		.navwrapper {
-			display: table;
-			margin: 0 auto;
-		}
-
-		ul li {
-			float: left;
-		}
-
-		&.hidden {
-			@include transform(translateY(50px));
-			visibility: hidden;
-		}
-	}
-
-	@include susy-breakpoint($xlarge) {
-		@include transition-delay(1s);
-		@include transition-duration(0.2s);
-		@include transition-timing-function(ease-out);
-	}
-}
-
 footer {
 	font-family: $primary-font;
 	letter-spacing: 0.04rem;
@@ -1299,6 +1230,7 @@ footer {
 
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
+		@include span(12 of 12);
 		font-size: 0.8rem;
 		line-height: 1.7rem;
 		padding: 20px 10%;
