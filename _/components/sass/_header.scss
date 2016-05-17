@@ -155,10 +155,11 @@
 		background-color: transparent;
 
 		.logo {
-			@include transform (translateY(319px));
-			left: 17%;
-			// position: relative;
-			width: 180px;
+			@include transform (translate(0, 0));
+			left: 12%;
+			position: absolute;
+			top: 22px;
+			width: 160px;
 			z-index: 1000;
 
 			&.logoIntro {
@@ -191,6 +192,7 @@
 		@include single-transition(all, 1s, ease-out);
 
 		.logo {
+			left: 17%;			
 
 			&.logoIntro {
 				@include transform(translate(-50%, -50%));
