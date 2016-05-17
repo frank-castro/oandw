@@ -324,11 +324,11 @@ $xlarge: 1900px; //four columns
 		} // container for plus bttn and texts for the small bottle, only for add to cart
 
 		.bottlesContainer {
-			height: 210px;
+			height: 190px;
 			opacity: $svgLinesOpacity;
 
 			img {
-				@include transform(scale(0.8));
+				@include transform(translateY(-20px) scale(0.8));
 			}
 		} // container for the svg
 
@@ -554,7 +554,7 @@ $xlarge: 1900px; //four columns
 		}
 
 		.ctrlsContainer {
-			height: 500px;
+			height: 460px;
 
 			.buyCtrlsLeft {
 				padding-left: 48px;
