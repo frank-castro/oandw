@@ -40,7 +40,7 @@
 			opacity: 1;
 			cursor: pointer;
 			z-index: 1150;
-			padding: 22px;
+			padding: 14px;
 			right: 0px;
 		}
 
@@ -48,8 +48,8 @@
 			@include transition-delay(0.1s);
 			@include transition-duration(0.3s);
 			@include transition-timing-function(ease-in);
-			width: 70px;
-			height: 70px;
+			width: 52px;
+			height: 52px;
 			position: fixed;
 			right: 0px;
 			top: 0px;
@@ -113,6 +113,7 @@
 			@include transition-delay(0.1s);
 			@include transition-duration(0.3s);
 			@include transition-timing-function(ease-in);
+			right: 15%;
 		}
 	}
 
@@ -120,6 +121,13 @@
 		@include transition-delay(0s);
 		@include transition-duration(0.2s);
 		@include transition-timing-function(ease-out);
+
+		&.cartBttn {
+			@include transition-delay(0.1s);
+			@include transition-duration(0.3s);
+			@include transition-timing-function(ease-in);
+			right: 15%;
+		}
 	}
 }
 

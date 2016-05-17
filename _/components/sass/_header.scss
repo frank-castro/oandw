@@ -121,7 +121,7 @@
 		&.show {
 			@include transform (translateY(0px));
 			position: fixed;
-			height: 70px;
+			height: 54px;
 			width: 100%;
 		}
 
@@ -157,8 +157,8 @@
 		.logo {
 			@include transform (translate(0, 0));
 			left: 12%;
-			position: absolute;
-			top: 22px;
+			position: relative;
+			top: 68px;
 			width: 160px;
 			z-index: 1000;
 
@@ -180,7 +180,7 @@
 		}
 
 		&.show {
-			position: absolute;
+			position: relative;
 		}
 
 		.hide {
@@ -192,7 +192,7 @@
 		@include single-transition(all, 1s, ease-out);
 
 		.logo {
-			left: 17%;			
+			left: 15%;			
 
 			&.logoIntro {
 				@include transform(translate(-50%, -50%));
@@ -209,7 +209,7 @@ $xsmall-height: 25vh;
 $small-height: 25vh;
 $medium-height: 25vh;
 $large-height: 37vh;
-$xlarge-height: 29vh;
+$xlarge-height: 320px;
 
 .header {
 	@include susy-breakpoint($xsmall) {
