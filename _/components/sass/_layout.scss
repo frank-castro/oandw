@@ -208,7 +208,7 @@ $xlarge: 1900px; //four columns
 	@include susy-breakpoint($xsmall){
 		@include single-transition(all, 1s, ease-out);
 		@include container;
-	  	// max-width: 320px;
+	  	max-width: 320px;
 	  	color: $textColor;
 
 		.pageTitle {
@@ -531,7 +531,7 @@ $xlarge: 1900px; //four columns
 	@include susy-breakpoint($small){
 		@include single-transition(all, 1s, ease-out);
 		@include container;
-	  	// max-width: 500px;
+	  	max-width: 500px;
 
 		.pageTitle {
 			padding: 50px 5%;
@@ -728,7 +728,7 @@ $xlarge: 1900px; //four columns
 
 	@include susy-breakpoint($medium){
 		@include container;
-	  	// max-width: 890px;
+	  	max-width: 890px;
 
 		.pageTitle {
 			padding: 70px 20%;
@@ -916,7 +916,7 @@ $xlarge: 1900px; //four columns
 // -------------------------- LARGE --------------------------
 
 	@include susy-breakpoint($large){
-	  	// max-width: 1290px;
+	  	max-width: 1290px;
 
 		.pageTitle {
 			@include transition-delay(1s);
