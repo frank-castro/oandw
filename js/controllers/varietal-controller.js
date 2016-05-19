@@ -1,32 +1,37 @@
-angular.module('storeProducts')
+(function (window, angular) {
 
-	// $scope and $http after bracket protects this function from issues with minification, the bracket close at the bottom
+	// angular.module('storeProducts')
+	angular.module('oandwApp')
 
-.controller('varietalList', ['$scope', '$http', '$timeout', 'orderService', function ($scope, $http, $timeout, orderService) {
-	var list = this;
-	list.product = []; //empty array so you don't get an error when the page initially loads
-	$http.get('json/varietal.json').success(function(data) {
-		$scope.product = data;
-	});
+		// $scope and $http after bracket protects this function from issues with minification, the bracket close at the bottom
 
-   //cart functionality
-	$scope.add = function (prod, vol, price) {
-	    orderService.add(prod, vol, price);
-	}
+	.controller('varietalList', ['$scope', '$http', '$timeout', 'orderService', function ($scope, $http, $timeout, orderService) {
+		var list = this;
+		list.product = []; //empty array so you don't get an error when the page initially loads
+		$http.get('json/varietal.json').success(function(data) {
+			$scope.product = data;
+		});
 
-	$scope.remove = function (prod) {
-	    orderService.remove(prod);
-	}
+	   //cart functionality
+		$scope.add = function (prod, vol, price) {
+		    orderService.add(prod, vol, price);
+		}
 
-	$scope.getTotal = function () {
-	    return orderService.order.total;
-	}
+		$scope.remove = function (prod) {
+		    orderService.remove(prod);
+		}
 
-	$scope.carItems = function () {
-	    return orderService.order.items;
-	}
+		$scope.getTotal = function () {
+		    return orderService.order.total;
+		}
 
-	$scope.submit = function () {
-	    return orderService.submit();
-	}
-}]);
+		$scope.carItems = function () {
+		    return orderService.order.items;
+		}
+
+		$scope.submit = function () {
+		    return orderService.submit();
+		}
+	}]);
+
+}) (window, window.angular);

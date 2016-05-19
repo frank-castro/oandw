@@ -1,4 +1,7 @@
-angular.module('storeProducts')
+(function (window, angular) {
+
+	// angular.module('storeProducts')
+	angular.module('oandwApp')
 
 .controller('seasoningsList', ['$scope', '$http', 'orderService', function($scope, $http, orderService) {
 	var list = this;
@@ -28,3 +31,5 @@ angular.module('storeProducts')
 	    return orderService.submit();
 	}
 }]);
+
+}) (window, window.angular);

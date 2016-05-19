@@ -201,6 +201,6 @@ var Controllers;
         return OrderController;
     })();
     Controllers.OrderController = OrderController;
-    angular.module('storeProducts').controller('orderController', ['$scope', '$timeout', 'orderService',
+    angular.module('oandwApp').controller('orderController', ['$scope', '$timeout', 'orderService',
         function ($scope, $timeout, orderService) { return new OrderController($scope, $timeout, orderService); }]);
 })(Controllers || (Controllers = {}));

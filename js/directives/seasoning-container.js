@@ -1,4 +1,4 @@
-angular.module('storeProducts')
+angular.module('oandwApp')
 
 .directive("seasoningContainer", function() {
 	return {

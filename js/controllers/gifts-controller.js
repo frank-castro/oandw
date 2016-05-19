@@ -1,4 +1,7 @@
-angular.module('storeProducts')
+(function (window, angular) {
+
+	// angular.module('storeProducts')
+	angular.module('oandwApp')
 
 	// $scope and $http after bracket protects this function from issues with minification, the bracket close at the end
 
@@ -30,3 +33,5 @@ angular.module('storeProducts')
 	    return orderService.submit();
 	}
 }]);
+
+}) (window, window.angular);

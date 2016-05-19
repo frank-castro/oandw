@@ -1,30 +1,35 @@
-angular.module('storeProducts', [])
+(function (window, angular) {
 
-.controller('balsamicsList', ['$scope', '$http', 'orderService', function($scope, $http, orderService) {
-	var list = this;
-	list.product = [];
-	$http.get('json/balsamics.json').success(function(data) {
-		$scope.product = data;
-	});
+	// angular.module('storeProducts', [])
+	angular.module('oandwApp')
 
-//cart functionality
-	$scope.add = function (prod, vol, price) {
-	    orderService.add(prod, vol, price);
-	}
+	.controller('balsamicsList', ['$scope', '$http', 'orderService', function($scope, $http, orderService) {
+		var list = this;
+		list.product = [];
+		$http.get('json/balsamics.json').success(function(data) {
+			$scope.product = data;
+		});
 
-	$scope.remove = function (prod) {
-	    orderService.remove(prod);
-	}
+	//cart functionality
+		$scope.add = function (prod, vol, price) {
+		    orderService.add(prod, vol, price);
+		}
 
-	$scope.getTotal = function () {
-	    return orderService.order.total;
-	}
+		$scope.remove = function (prod) {
+		    orderService.remove(prod);
+		}
 
-	$scope.carItems = function () {
-	    return orderService.order.items;
-	}
+		$scope.getTotal = function () {
+		    return orderService.order.total;
+		}
 
-	$scope.submit = function () {
-	    return orderService.submit();
-	}
-}]);
+		$scope.carItems = function () {
+		    return orderService.order.items;
+		}
+
+		$scope.submit = function () {
+		    return orderService.submit();
+		}
+	}]);
+
+}) (window, window.angular);
