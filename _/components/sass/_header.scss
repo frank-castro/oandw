@@ -1,3 +1,12 @@
+header {
+    background: #444;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+}
+
 @mixin bg-properties {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -88,6 +97,8 @@
 }
 
 .logoBar {
+	position: fixed;
+	
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 		z-index: 1040;
@@ -161,14 +172,6 @@
 			top: 68px;
 			width: 160px;
 			z-index: 1000;
-
-			// &.logoIntro {
-			// 	@include transform(translate(-50%, -50%));
-			// 	width: 45vh;
-			// 	left: 50%;
-			// 	top: 35%;
-			// 	position: fixed;
-			// }
 		}
 
 		.barsWrapper {
@@ -192,14 +195,7 @@
 		@include single-transition(all, 1s, ease-out);
 
 		.logo {
-			left: 15%;			
-
-			// &.logoIntro {
-			// 	@include transform(translate(-50%, -50%));
-			// 	width: 50vh;
-			// 	left: 50%;
-			// 	position: fixed;
-			// }
+			left: 15%;
 		}
 	}
 }
@@ -409,7 +405,7 @@ $xlarge-height: 320px;
 }
 
 .headroom {
-	position: fixed;
+	will-change: transform;
 }
 .headroom--pinned {
     display: block;

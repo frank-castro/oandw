@@ -29,12 +29,4 @@ angular.module('storeProducts')
 	$scope.submit = function () {
 	    return orderService.submit();
 	}
-
-	activate();
-
-	function activate() {
-	    orderService.splashOn = false;
-		$('.sitemenu, .logo').removeClass('sitemenuIntro logoIntro');
-		$('.imgText, .slogan').addClass('imgTextIntro sloganIntro');
-	}
 }]);

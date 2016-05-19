@@ -1,53 +1,3 @@
-.ctaIntro {
-	@include susy-breakpoint($xsmall) {
-		@include transition-delay(0s);
-		@include transition-duration(0.2s);
-		@include transition-timing-function(ease-in);
-		display: none;
-	}
-
-	@include susy-breakpoint($small) {
-		@include transition-delay(0s);
-		@include transition-duration(0.2s);
-		@include transition-timing-function(ease-in);
-	}
-
-	@include susy-breakpoint($medium) {
-		@include transition-delay(0s);
-		@include transition-duration(0.2s);
-		@include transition-timing-function(ease-in);
-	}
-
-	@include susy-breakpoint($large) {
-		@include transition-delay(0s);
-		@include transition-duration(0.2s);
-		@include transition-timing-function(ease-in);
-		@include transform(translate(-50%));
-		display: block;
-		left: 50%;
-		position: fixed;
-		top: 85%;
-		text-transform: $link;
-		// font-size: $button;
-		font-family: $primary-font;
-		color: $green;
-		cursor: pointer;
-		text-align: center;
-		opacity: 0.8;
-
-		&.ctaIntroHidden {
-			display: none;
-			z-index: 0;
-		}
-	}
-
-	@include susy-breakpoint($xlarge) {
-		@include transition-delay(0s);
-		@include transition-duration(0.2s);
-		@include transition-timing-function(ease-in);
-	}
-}
-
 .displayText {
 	text-transform: uppercase;
 	font-family: $display-text;
@@ -57,7 +7,6 @@
 
 .imgText {
 	@include susy-breakpoint($xsmall) {
-		display: none;
 	}
 
 	@include susy-breakpoint($small) {
@@ -81,13 +30,7 @@
 		z-index: 99;
 		top: 50%;
 		position: fixed;
-		display: block;
 		width: 80%;
-
-		&.imgTextIntro {
-			display: none;
-			z-index: 0;
-		}
 	}
 
 	@include susy-breakpoint($xlarge) {
@@ -96,7 +39,7 @@
 
 .slogan {
 	@include susy-breakpoint($xsmall) {
-		display: none;
+
 	}
 
 	@include susy-breakpoint($small) {
@@ -117,15 +60,9 @@
 		z-index: 99;
 		top: 70%;
 		position: fixed;
-		display: block;
 		left: 50%;
 		width: 80%;
 		opacity: 0.5;
-
-		&.sloganIntro {
-			display: none;
-			z-index: 0;
-		}
 	}
 
 	@include susy-breakpoint($xlarge) {

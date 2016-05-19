@@ -24,7 +24,7 @@
 		<!-- Services -->
 		<script type="text/javascript" src="js/services/model.js"></script>
 		<script type="text/javascript" src="js/services/orderService.js"></script>
-		<script type="text/javascript" src="js/services/verifyCard.js"></script>
+		<script type="text/javascript" src="js/services/verifyCard.js"></script>	
 
 		<!-- Controllers -->
 		<script type="text/javascript" src="js/controllers/balsamics-controller.js"></script>
@@ -48,6 +48,10 @@
 		<script type="text/javascript" src="js/directives/bttns-hor.js"></script>
 		<script type="text/javascript" src="js/directives/bttns-left-gifts.js"></script>
 
+		<!-- functionality -->
+		<script type="text/javascript" src="js/others/headroom.js"></script>
+		<script type="text/javascript" src="js/others/angular.headroom.js"></script>
+
 		<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -61,8 +65,10 @@
 	</head>
 
 	<body>
+		<header headroom></header>
+
 		<div class="logoBar">
-			<div class="logo logoIntro">
+			<div class="logo">
 				<img src="images/svg/logo.svg"/>
 			</div>
 			<div class="barsWrapper">
@@ -76,13 +82,13 @@
 
 		<div class="slogan">"Where Healthy Tastes Great"</div>
 
-		<nav class="sitemenu hidden sitemenuIntro">
+		<nav class="sitemenu" >
 			<div class="closeBttnMenu">
 				<i class="material-icons">close</i>
 			</div>
 			<div class="navwrapper">
 				<ul nav-menu="active">
-					<!-- <li><a href="#/home">Home</a></li> -->
+					<li><a href="#/home">Home</a></li>
 					<li><a href="#/varietal">Single Varietals</a></li>
 					<li><a href="#/infuse">Fused & Infused</a></li>
 					<li><a href="#/specialty">Specialty Oils</a></li>

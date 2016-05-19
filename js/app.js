@@ -1,1 +1,5 @@
-angular.module('oandwApp', ['ngRoute', 'storeProducts'])
+angular.module('oandwApp', [
+	'ngRoute', 
+	'storeProducts',
+	'headroom'
+]);

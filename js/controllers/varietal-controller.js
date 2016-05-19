@@ -29,30 +29,4 @@ angular.module('storeProducts')
 	$scope.submit = function () {
 	    return orderService.submit();
 	}
-
-	$scope.splashOn = orderService.splashOn;
-
-	$scope.headerClass = function () {
-	    if (orderService.splashOn) {
-	        return 'header headerIntro';
-	    } else {
-	        return 'header';
-	    }
-	}
-
-	$scope.closeSplash = function () {
-	    orderService.splashOn = false;
-	    $scope.splashOn = false;
-		$('.sitemenu, .logo').removeClass('sitemenuIntro logoIntro');
-		$('.imgText, .slogan').addClass('imgTextIntro sloganIntro');
-	}
-
-	$(window).scroll(function () {
-	    if (orderService.splashOn) {
-	        var topOfWindow = $(this).scrollTop();
-	        if (topOfWindow > 70) {
-	            $timeout(function () { $scope.closeSplash(); }, 100);
-	        }
-	    }
-	});
 }]);

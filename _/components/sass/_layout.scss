@@ -47,14 +47,6 @@ $xlarge: 1900px; //four columns
 		background-color: $bg02;
 		z-index: 1090;
 
-		&.hidden {
-			display: none;
-		}
-
-		&.visible {
-			display: block;
-		}
-
 		a {
 			@include single-text-shadow;
 			display: block;
@@ -119,13 +111,9 @@ $xlarge: 1900px; //four columns
 		@include single-transition(all, 1s, ease-out);
 		height: 70px;
 		top: 25vh;
-		position: absolute;
+		position: fixed;
 		background-color: transparent;
 		z-index: 1040;
-
-		&.hidden {
-			display: block;
-		}
 
 		a {
 			font-size: $font-small;
@@ -151,11 +139,6 @@ $xlarge: 1900px; //four columns
 
 		ul li {
 			float: left;
-		}
-
-		&.sitemenuIntro {
-			visibility: hidden;
-			z-index: 0;
 		}
 
 		.closeBttn {
