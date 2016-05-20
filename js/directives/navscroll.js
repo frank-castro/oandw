@@ -18,9 +18,9 @@
 				}
 
 				if (st > lastScrollTop)
-					element.addClass('headroom--unpinned');
+					element.addClass('headerbg-hidden');
 				else
-					element.removeClass('headroom--unpinned');
+					element.removeClass('headerbg-hidden');
 
 				lastScrollTop = st;
 				});
