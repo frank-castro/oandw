@@ -7,7 +7,7 @@
 		restrict: 'A',
 		link: function (scope, element) {
 			var windowEl = angular.element($window);
-			var delta = 10;
+			var delta = 20;
 			var lastScrollTop = 0;
 
 			windowEl.on('scroll', function () {
@@ -18,9 +18,9 @@
 				}
 
 				if (st > lastScrollTop)
-					element.addClass('headerbg-hidden');
+					element.addClass('navbg-hidden');
 				else
-					element.removeClass('headerbg-hidden');
+					element.removeClass('navbg-hidden');
 
 				lastScrollTop = st;
 				});

@@ -197,7 +197,6 @@ $xlarge: 1900px; //four columns
 			line-height: 2.9rem;
 			font-weight: 300;
 			letter-spacing: 0.4rem;
-			opacity: 0.9;
 
 			.search {
 				opacity: 0.8;
@@ -1086,7 +1085,11 @@ $xlarge: 1900px; //four columns
 			@include transition-delay(1s);
 			@include transition-duration(0.2s);
 			@include transition-timing-function(ease-out);
-	  		padding: 75px 0px 90px;
+	  		padding: 0px;
+	  		display: inline;
+	  		@include transform(translate(-50%, -240px));
+	  		position: absolute;
+	  		left: 50%;
 	  	}
 
 		.productsContainer {
