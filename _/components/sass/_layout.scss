@@ -34,7 +34,7 @@ $xlarge: 1900px; //four columns
 	display: block;
 	opacity: 0.6;
 	margin-bottom: 24px;
-	background-color: $textColor;
+	background-color: transparent;
 }
 
 .sitemenu {
@@ -913,7 +913,7 @@ $xlarge: 1900px; //four columns
 			@include span(4 of 12);
 			padding: 0px 5% 10px;
 			line-height: 1.3em;
-			height: 640px;
+			height: 790px;
 
 			// Product Name (it's being selected by root position)
 			li:nth-child(2) {
@@ -944,16 +944,25 @@ $xlarge: 1900px; //four columns
 		.description {
 			font-family: $desc-font;
 			font-size: $font-small;
-			text-align: left;
-			line-height: 1.7em;
+			text-align: right;
+			line-height: 1.9em;
 			letter-spacing: 0.05rem;
 			color: $textColor;
-			opacity: 0.8;
+			opacity: 1;
+			height: 2px;
+			overflow: hidden;
+			border-bottom: solid;
+			border-bottom-color: $textColor;
+			border-bottom-width: 1px;
 		}
 
 		.description ::first-letter {
-			font-size: 200%;
+			font-size: 260%;
 			font-family: $desc-font;
+		}
+
+		.descOpen {
+			height: 70px;
 		}
 
 		.oilsNameImgContainer {
@@ -964,7 +973,7 @@ $xlarge: 1900px; //four columns
 				font-family: $primary-fontlight;
 				font-size: $font-medium;
 				line-height: $line-height-medium;
-				text-align: left;
+				text-align: right;
 			}
 
 			.oilsImage {
@@ -1096,7 +1105,7 @@ $xlarge: 1900px; //four columns
 			@include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(3 of 12);
-			padding: 0px 4% 10px;
+			padding: 50px 4% 0px;
 		}
 
 //Seasonings Section
