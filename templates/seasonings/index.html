@@ -8,8 +8,8 @@
 	<ul ng-repeat="item in product | filter:query" class="seasoningsContainer">
 		<div class="divider"></div>
 		<li class="seasoningsNameImgContainer">
-			<div class="seasoningsNames">{{item.name}}</div>
-			<div class="seasoningsImage right"><img ng-src="{{item.decoimage}}"/></div>
+			<div class="seasoningsImage left"><img ng-src="{{item.decoimage}}"/></div>
+			<div class="seasoningsNames right">{{item.name}}</div>
 		</li>
 		<li class="seasoningsCtrlSvgWrapper">
 			<seasoning-container></seasoning-container><!-- directive for the div with the svg in templates -->

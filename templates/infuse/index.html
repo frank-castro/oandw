@@ -8,17 +8,17 @@
 	<ul ng-repeat="item in product | filter:query" class="productsContainer">
 		<div class="divider"></div>
 		<li class="oilsNameImgContainer">
-			<div class="oilsName left">{{item.name}}</div>
-			<div class="oilsImage right"><img ng-src="{{item.decoimage}}"/></div>
+			<div class="oilsImage left"><img ng-src="{{item.decoimage}}"/></div>
+			<div class="oilsName right">{{item.name}}</div>
 		</li>
 		<li class="ctrlsContainer">
 			<div class="buyCtrlsLeft">
-				<big-bottle></big-bottle>
-				<bttns-left></bttns-left>
-			</div>
-			<div class="buyCtrlsRight">
 				<small-bottle></small-bottle>
 				<bttns-right></bttns-right>
+			</div>
+			<div class="buyCtrlsRight">
+				<big-bottle></big-bottle>
+				<bttns-left></bttns-left>
 			</div>
 		</li>
 		<li class="description"><p>{{item.description}}</p></li>
