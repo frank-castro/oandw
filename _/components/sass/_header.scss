@@ -32,7 +32,7 @@ header {
 	}
 
 	@include susy-breakpoint($xlarge) {
-		height: 104px;
+		height: 80px;
 	}
 }
 
@@ -222,7 +222,7 @@ $xsmall-height: 25vh;
 $small-height: 25vh;
 $medium-height: 25vh;
 $large-height: 37vh;
-$xlarge-height: 36vh;
+$xlarge-height: 29vh;
 
 .headerVarietal {
 	@include susy-breakpoint($xsmall) {

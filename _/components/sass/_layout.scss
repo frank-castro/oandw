@@ -144,8 +144,14 @@ $xlarge: 1900px; //four columns
 
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 1s, ease-out);
-		z-index: 1040;
-		top: 52px;
+		top: 40px;
+
+		a {
+			font-size: 0.75rem;
+			line-height: 2.2rem;
+			padding: 2px 20px;
+			letter-spacing: 0.07rem
+		}
 	}
 }
 
@@ -331,10 +337,13 @@ $xlarge: 1900px; //four columns
 			padding: 0px 0px 12px;
 		}
 
-		.description ::first-letter {
-			font-size: 200%;
-			font-family: $desc-font;
-		}
+		// .description ::first-letter {
+		// 	font-size: 360%;
+		// 	line-height: 360%;
+		// 	padding: 0px;
+		// 	float: left;
+		// 	font-family: $desc-font;
+		// }
 
 //Seasonings Section
 
@@ -460,12 +469,27 @@ $xlarge: 1900px; //four columns
 		.horizontalCtrls {
 			height: 110px;
 	
-			.buyContainer p {
-				@include transform (translateY(-2px));
+			.buyContainer {
+				p {
+  					color: $textColor;
+  					font-size: 0.8rem;
+					@include transform (translateY(-2px));
+				}
 			}
 
 			.bigPlusBttn {
 				@include transform (translate(-50%, -5px));
+				width: 48px;
+				height: 48px;
+				@include border-radius(50%);
+			  	margin-left: 50%;
+				box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+				margin-bottom: 5px;
+				cursor: pointer;
+				
+				path {
+					fill: #1E0F0F;
+				}
 			}
 
 			.price {
@@ -557,10 +581,10 @@ $xlarge: 1900px; //four columns
 			opacity: 0.7;
 		}
 
-		.description ::first-letter {
-			font-size: 200%;
-			font-family: $desc-font;
-		}
+		// .description ::first-letter {
+		// 	font-size: 200%;
+		// 	font-family: $desc-font;
+		// }
 
 		.oilsNameImgContainer {
 			height: 80px; //this height is needed to even the two bottles
@@ -763,10 +787,10 @@ $xlarge: 1900px; //four columns
 			color: $textColor;
 		}
 
-		.description ::first-letter {
-			font-size: 200%;
-			font-family: $desc-font;
-		}
+		// .description ::first-letter {
+		// 	font-size: 200%;
+		// 	font-family: $desc-font;
+		// }
 
 		.oilsNameImgContainer {
 			height: 80px;
@@ -954,8 +978,8 @@ $xlarge: 1900px; //four columns
 
 		.description {
 			font-family: $desc-font;
-			font-size: $font-small;
-			text-align: right;
+			font-size: 0.8rem;
+			text-align: left;
 			line-height: 1.9em;
 			letter-spacing: 0.05rem;
 			color: $textColor;
@@ -963,12 +987,12 @@ $xlarge: 1900px; //four columns
 			height: 150px;
 		}
 
-		.description ::first-letter {
-			font-size: 260%;
-			font-family: $desc-font;
-			@include transform (translateY(20px));
-			position: relative;
-		}
+		// .description ::first-letter {
+		// 	font-size: 3.2rem;
+		// 	font-weight: 300;
+		// 	padding: 8px 2px 2px 0px;
+		// 	float: left;
+		// }
 
 		.descOpen {
 			height: 2px;
@@ -1102,22 +1126,18 @@ $xlarge: 1900px; //four columns
 			@include transition-delay(1s);
 			@include transition-duration(0.2s);
 			@include transition-timing-function(ease-out);
-	  		padding: 0px;
-	  		display: inline;
-	  		@include transform(translate(-50%, -240px));
-	  		position: absolute;
-	  		left: 50%;
+	  		padding: 40px 0px;
 	  	}
 
 		.productsContainer {
 			@include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(3 of 12);
-			padding: 50px 4% 0px;
+			padding: 0px 4% 0px;
 		}
 
 		.bottlesContainer {
-			height: 190px;
+			height: 170px;
 			img {
 				@include transform(translateY(-20px) scale(0.8));
 			}
@@ -1178,15 +1198,9 @@ $xlarge: 1900px; //four columns
 			}
 		}
 	}
-}
-
-.buyContainer p {
-  color: $textColor;
-  font-size: 0.8rem;
-}
+} 
 
 .horizontalCtrls {
-
 	.buyBttns {
 		width: 50%;
 		text-align: center;
