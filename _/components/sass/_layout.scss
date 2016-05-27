@@ -37,6 +37,14 @@ $xlarge: 1900px; //four columns
 	background-color: transparent;
 }
 
+.motive {
+	width: 40px;
+	height: 40px;
+	@include transform(translate(-50%, -19px));
+	left: 50%;
+	position: relative;
+}
+
 .sitemenu {
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 0.5s, ease-out);
@@ -187,7 +195,7 @@ $xlarge: 1900px; //four columns
 			font-size: 1.5rem;
 			line-height: 2.9rem;
 			font-weight: 300;
-			letter-spacing: 0.4rem;
+			letter-spacing: 0.2rem;
 
 			.search {
 				opacity: 0.8;
@@ -208,7 +216,6 @@ $xlarge: 1900px; //four columns
 		}
 
 		.productsContainer {
-			@include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(12 of 12);
 			padding: 10px 5%;
@@ -230,11 +237,12 @@ $xlarge: 1900px; //four columns
 			height: 70px; // use this height to move the bottles up
 
 			.oilsName {
-				width: 60%;
+				width: 50%;
 				font-family: $primary-fontlight;
 				font-size: $product-name-xsmall;
 				line-height: 1.3em;
 				text-align: right;
+				text-transform: uppercase;
 			}
 
 			.oilsImage {
@@ -332,7 +340,7 @@ $xlarge: 1900px; //four columns
 			opacity: 0.9;
 			overflow: hidden;
 			border-bottom: solid;
-			border-bottom-color: $textColor;
+			border-bottom-color: $motive;
 			border-bottom-width: 1px;
 			padding: 0px 0px 12px;
 		}
@@ -348,7 +356,6 @@ $xlarge: 1900px; //four columns
 //Seasonings Section
 
 		.seasoningsContainer {
-			@include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(12 of 12);
 			padding: 10px 5%;
@@ -388,11 +395,12 @@ $xlarge: 1900px; //four columns
 		}
 
 		.seasoningsNames {
-			width: 55%;
+			width: 50%;
 			font-family: $primary-fontlight;
 			font-size: $product-name-xsmall;
 			line-height: 1.3em;
 			text-align: right;
+			text-transform: uppercase;
 		}
 
 		.seasoningsImage {
@@ -408,7 +416,7 @@ $xlarge: 1900px; //four columns
 			opacity: $svgLinesOpacity;
 
 			&.jar {
-				width: 216px;
+				width: 175px;
 				top: -60px;
 			}
 
@@ -421,7 +429,6 @@ $xlarge: 1900px; //four columns
 //Gifts Section
 
 		.giftsContainer {
-			@include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(12 of 12);
 			padding: 10px 5%;
@@ -436,6 +443,7 @@ $xlarge: 1900px; //four columns
 				font-size: $product-name-xsmall;
 				line-height: 1.3em;
 				text-align: left;
+				text-transform: uppercase;
 			}
 		}
 		
@@ -515,7 +523,6 @@ $xlarge: 1900px; //four columns
 //Accesories Section
 
 		.accessoriesContainer {
-			@include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(12 of 12);
 			padding: 10px 5%;
@@ -532,6 +539,7 @@ $xlarge: 1900px; //four columns
 				font-size: $product-name-xsmall;
 				line-height: 1.3em;
 				text-align: left;
+				text-transform: uppercase;
 			}
 		}
 	}
@@ -549,7 +557,6 @@ $xlarge: 1900px; //four columns
 		}
 
 		.productsContainer {
-			@include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(12 of 12);
 			padding: 10px 5% 20px;
@@ -594,7 +601,6 @@ $xlarge: 1900px; //four columns
 				font-family: $primary-fontlight;
 				font-size: $product-name-small;
 				line-height: $product-name-sm-lh;
-				text-align: right;
 			}
 
 			.oilsImage {
@@ -608,7 +614,6 @@ $xlarge: 1900px; //four columns
 //Seasonings Section
 
 		.seasoningsContainer {
-			@include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(12 of 12);
 			padding: 10px 5% 20px;
@@ -636,7 +641,6 @@ $xlarge: 1900px; //four columns
 			font-family: $primary-fontlight;
 			font-size: $product-name-small;
 			line-height: $product-name-sm-lh;
-			text-align: right;
 		}
 
 		.seasoningsImage {
@@ -647,7 +651,6 @@ $xlarge: 1900px; //four columns
 //Gifts Section
 
 		.giftsContainer {
-			@include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(12 of 12);
 			padding: 10px 5% 20px;
@@ -662,7 +665,6 @@ $xlarge: 1900px; //four columns
 				font-family: $primary-fontlight;
 				font-size: $product-name-small;
 				line-height: $product-name-sm-lh;
-				text-align: left;
 			}
 		}
 
@@ -741,7 +743,6 @@ $xlarge: 1900px; //four columns
 		}
 
 		.productsContainer {
-			@include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(6 of 12);
 			padding: 0px 5% 20px;
@@ -809,7 +810,7 @@ $xlarge: 1900px; //four columns
 //Seasonings Section
 
 		.seasoningsContainer {
-			@include clearfix;
+			// @include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(6 of 12);
 			padding: 0px 5% 20px;
@@ -831,7 +832,6 @@ $xlarge: 1900px; //four columns
 //Gifts Section
 
 		.giftsContainer {
-			@include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(6 of 12);
 			padding: 0px 5% 20px;
@@ -902,7 +902,7 @@ $xlarge: 1900px; //four columns
 
 //Accessories Section
 		.accessoriesContainer {
-			@include clearfix;
+			// @include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(6 of 12);
 			padding: 0px 5% 50px;
@@ -926,9 +926,9 @@ $xlarge: 1900px; //four columns
 			@include transition-delay(1s);
 			@include transition-duration(0.2s);
 			@include transition-timing-function(ease-out);
-			padding: 40px 0px;
-			line-height: 2.5rem;
-			font-size: 1.3rem;
+			padding: 55px 0px;
+			line-height: 3.9rem;
+			font-size: 2.4rem;
 
 			input {
 				display: none;
@@ -936,7 +936,6 @@ $xlarge: 1900px; //four columns
 		}
 
 		.productsContainer {
-			@include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(4 of 12);
 			padding: 0px 5% 10px;
@@ -979,12 +978,13 @@ $xlarge: 1900px; //four columns
 		.description {
 			font-family: $desc-font;
 			font-size: 0.8rem;
-			text-align: left;
+			text-align: right;
 			line-height: 1.9em;
 			letter-spacing: 0.05rem;
 			color: $textColor;
 			opacity: 0.7;
 			height: 150px;
+			margin: 18px 0px;
 		}
 
 		// .description ::first-letter {
@@ -1002,11 +1002,10 @@ $xlarge: 1900px; //four columns
 			height: 80px;
 
 			.oilsName {
-				width: 55%;
+				width: 50%;
 				font-family: $primary-fontlight;
 				font-size: $font-medium;
 				line-height: $line-height-medium;
-				text-align: right;
 			}
 
 			.oilsImage {
@@ -1020,11 +1019,16 @@ $xlarge: 1900px; //four columns
 //Seasonings Section
 
 		.seasoningsContainer {
-			@include clearfix;
+			// @include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(4 of 12);
 			padding: 0px 5% 10px;
 			height: 700px;
+
+			// Product Name (it's being selected by root position)
+			li:nth-child(2) {
+				padding: 10px 0px 30px;
+			}
 		}
 
 		.seasoningsNameImgContainer {
@@ -1032,11 +1036,10 @@ $xlarge: 1900px; //four columns
 		}
 
 		.seasoningsNames {
-			width: 55%;
+			width: 50%;
 			font-family: $primary-fontlight;
 			font-size: $product-name-large;
 			line-height: $product-name-lg-lh;
-			text-align: right;
 		}
 
 		.seasoningsImage {
@@ -1046,7 +1049,7 @@ $xlarge: 1900px; //four columns
 //Gifts Section
 
 		.giftsContainer {
-			@include clearfix;
+			// @include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(4 of 12);
 			padding: 0px 5% 10px;
@@ -1058,7 +1061,6 @@ $xlarge: 1900px; //four columns
 				font-family: $primary-fontlight;
 				font-size: $product-name-large;
 				line-height: $product-name-lg-lh;
-				text-align: left;
 			}
 		}
 
@@ -1091,7 +1093,7 @@ $xlarge: 1900px; //four columns
 
 //Accessories Section
 		.accessoriesContainer {
-			@include clearfix;
+			// @include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(4 of 12);
 			padding: 0px 5% 10px;
@@ -1126,14 +1128,14 @@ $xlarge: 1900px; //four columns
 			@include transition-delay(1s);
 			@include transition-duration(0.2s);
 			@include transition-timing-function(ease-out);
-	  		padding: 40px 0px;
+	  		padding: 60px 0px 40px;
 	  	}
 
 		.productsContainer {
-			@include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(3 of 12);
 			padding: 0px 4% 0px;
+			margin-top: 20px;
 		}
 
 		.bottlesContainer {
@@ -1145,15 +1147,19 @@ $xlarge: 1900px; //four columns
 
 //Seasonings Section
 		.seasoningsContainer {
-			@include clearfix;
+			// @include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(3 of 12);
 			padding: 0px 4% 10px;
+			// Product Name (it's being selected by root position)
+			li:nth-child(2) {
+				padding: 10px 0px 50px;
+			}
 		}
 
 //Gifts Section
 		.giftsContainer {
-			@include clearfix;
+			// @include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(3 of 12);
 			padding: 0px 4% 10px;
@@ -1210,10 +1216,9 @@ $xlarge: 1900px; //four columns
 		padding-top: 70px;
 		width: 50%;
 		font-family: $product-price;
-		font-size: 1.3rem;
+		font-size: 1.7rem;
 		color: $textColor;
 		text-align: center;
-		opacity: 0.4;
 	}
 }
 
@@ -1252,8 +1257,8 @@ footer {
 		@include span(12 of 12);
 		font-size: 0.8rem;
 		line-height: 1.7rem;
-		padding: 20px 10%;
-		margin-top: 20px;
+		padding: 20px 10% 40px;
+		margin-top: 40px;
 
 		.about {
 			text-decoration: none;

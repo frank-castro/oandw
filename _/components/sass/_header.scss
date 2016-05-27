@@ -47,9 +47,9 @@ header {
 		@include single-transition(all, 0.5s, ease-out);
 		background: linear-gradient(to bottom left, rgba($green, 0.95), rgba($textColor, 1));
 		font-family: $desc-font;
-		font-size: $font-small;
+		font-size: 1rem;
 		line-height: $line-height-small;
-		text-align: center;
+		text-align: left;
 		color: $bg01;
 		padding: 60px 0 0;
 		position: fixed;
@@ -221,8 +221,8 @@ header {
 $xsmall-height: 25vh;
 $small-height: 25vh;
 $medium-height: 25vh;
-$large-height: 37vh;
-$xlarge-height: 29vh;
+$large-height: 82px;
+$xlarge-height: 81px;
 
 .headerVarietal {
 	@include susy-breakpoint($xsmall) {
