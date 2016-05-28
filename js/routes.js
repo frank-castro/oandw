@@ -3,7 +3,8 @@ angular.module('oandwApp')
 .config(['$routeProvider', function($routeProvider) {
 	$routeProvider.
 	when('/home', {
-		templateUrl: 'templates/home/index.html'
+		templateUrl: 'templates/home/index.html',
+		controller: 'homeContent'
 	}).
 	when('/varietal', {
 		templateUrl: 'templates/varietal/index.html',

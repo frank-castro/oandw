@@ -1,0 +1,39 @@
+.slickIntro {
+
+
+// -------------------------- XSMALL --------------------------
+
+	@include susy-breakpoint($xsmall) {
+		@include single-transition(all, 1s, ease-out);
+		@include span(12 of 12);
+
+	}
+
+// -------------------------- SMALL --------------------------
+
+	@include susy-breakpoint($small) {
+		@include single-transition(all, 1s, ease-out);
+
+	}
+
+// -------------------------- MEDIUM --------------------------
+
+	@include susy-breakpoint($medium) {
+		@include single-transition(all, 1s, ease-out);
+	}
+
+// -------------------------- LARGE --------------------------
+
+	@include susy-breakpoint($large) {
+		@include single-transition(all, 1s, ease-out);
+		@include span(12 of 12);
+
+	}
+
+// -------------------------- XLARGE --------------------------
+
+	@include susy-breakpoint($xlarge) {
+		@include single-transition(all, 1s, ease-out);
+
+	}
+}
