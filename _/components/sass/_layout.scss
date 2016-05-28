@@ -38,9 +38,8 @@ $xlarge: 1900px; //four columns
 }
 
 .motive {
-	width: 40px;
-	height: 40px;
-	@include transform(translate(-50%, -19px));
+	width: 32px;
+	@include transform(translateX(-50%));
 	left: 50%;
 	position: relative;
 }
@@ -323,7 +322,7 @@ $xlarge: 1900px; //four columns
 		} // container for plus bttn and texts for the small bottle, only for add to cart
 
 		.bottlesContainer {
-			height: 190px;
+			height: 140px;
 			opacity: $svgLinesOpacity;
 
 			img {
@@ -926,9 +925,9 @@ $xlarge: 1900px; //four columns
 			@include transition-delay(1s);
 			@include transition-duration(0.2s);
 			@include transition-timing-function(ease-out);
-			padding: 55px 0px;
-			line-height: 3.9rem;
-			font-size: 2.4rem;
+			padding: 40px 0px 20px;
+			line-height: 3.3rem;
+			font-size: 2rem;
 
 			input {
 				display: none;
@@ -957,7 +956,7 @@ $xlarge: 1900px; //four columns
 		}
 
 		.ctrlsContainer {
-			// height: 540px;
+			height: 350px;
 
 			.buyCtrlsLeft {
 				padding-left: 30px;
@@ -966,12 +965,16 @@ $xlarge: 1900px; //four columns
 			.buyCtrlsRight {
 				padding-right: 30px;
 			} // right side div with big bottle, price and buttons
+
+			.buyCtrlsSpecial {
+				top: 82px;
+			}
 		}
 
 		.bottlesContainer {
-			height: 170px;
+			height: 130px;
 			img {
-				@include transform(translateY(-20px) scale(0.8));
+				@include transform(translateY(-60px) scale(0.8));
 			}
 		} // container for the svg
 
@@ -987,13 +990,6 @@ $xlarge: 1900px; //four columns
 			margin: 18px 0px;
 		}
 
-		// .description ::first-letter {
-		// 	font-size: 3.2rem;
-		// 	font-weight: 300;
-		// 	padding: 8px 2px 2px 0px;
-		// 	float: left;
-		// }
-
 		.descOpen {
 			height: 2px;
 		}
@@ -1003,7 +999,6 @@ $xlarge: 1900px; //four columns
 
 			.oilsName {
 				width: 50%;
-				font-family: $primary-fontlight;
 				font-size: $font-medium;
 				line-height: $line-height-medium;
 			}
@@ -1011,8 +1006,8 @@ $xlarge: 1900px; //four columns
 			.oilsImage {
 				width: 45%;
 				height: 80px;
-				opacity: 0.9;
-				@include transform (scale(0.8));
+				opacity: 1;
+				@include transform (scale(0.7));
 			}
 		}
 
@@ -1138,12 +1133,33 @@ $xlarge: 1900px; //four columns
 			margin-top: 20px;
 		}
 
+		.ctrlsContainer {
+			height: 410px;
+		}
+
 		.bottlesContainer {
 			height: 170px;
+
 			img {
 				@include transform(translateY(-20px) scale(0.8));
 			}
 		} // container for the svg
+
+		.oilsNameImgContainer {
+			height: 80px;
+
+			.oilsName {
+				width: 50%;
+				font-size: $font-medium;
+				line-height: $line-height-medium;
+			}
+
+			.oilsImage {
+				width: 45%;
+				height: 80px;
+				@include transform (scale(0.8));
+			}
+		}
 
 //Seasonings Section
 		.seasoningsContainer {
