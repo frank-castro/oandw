@@ -1,9 +1,14 @@
 .displayText {
-	text-transform: uppercase;
 	font-family: $display-text;
 	text-align: center;
 	z-index: 99;
 } //this is for the name of each page
+
+.hours {
+	font-family: $display-text;
+	font-size: 2rem;
+	padding-bottom: 10px;
+}
 
 .imgText {
 	@include susy-breakpoint($xsmall) {
@@ -22,7 +27,7 @@
 		left: 50%;
 		color: $textColor;
 		text-transform: uppercase;
-		font-family: $display-text;
+		font-family: $primary-font;
 		font-size: $font-medium;
 		line-height: 2.1rem;
 		letter-spacing: 0.3em;
@@ -52,8 +57,8 @@
 		@include single-transition(all, 0.2s, ease-out);
 		@include transform(translateX(-50%));
 		color: $textColor;
-		font-family: $primary-fontlight;
-		font-size: $title;
+		font-family: $page-title;
+		font-size: 3rem;
 		line-height: 2.5rem;
 		letter-spacing: 0.05em;
 		text-align: center;

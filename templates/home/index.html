@@ -1,1 +1,27 @@
-<div>This is the new landing page</div>
+<!-- <div class="slickIntro" ng-repeat="item in product">
+		<div ng-repeat="image in item.images" slick-carousel>
+			<img ng-src="{{image.image}}" />
+		</div>
+	<div class="TextHomeImgs">
+		<p>{{item.copy}}</p>
+		<p>{{item.description}}</p>
+		<br/>
+		<p><a ng-href="{{item.href}}">{{item.link}}</a></p>
+	</div>
+</div> -->
+
+<!-- <div class="slickIntro" ng-repeat="item in product">
+		<div ng-repeat="image in item.images" slick-carousel>
+			<img ng-src="{{image.image}}" />
+		</div>
+</div> -->
+
+<div class="slickIntro">
+		<div slick-carousel ng-repeat="items in product">
+			<img ng-src="{{items.image}}"/>
+		</div>
+</div>
+
+<div class="slogan">"Where Healthy Tastes Great"</div>
+
+<div class="imgText">Gourmet Olive Oils, Aged Balsamics & Related Products</div>

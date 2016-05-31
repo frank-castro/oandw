@@ -12,18 +12,21 @@ $default-text-shadow-v-offset: 2px;
 $cartbttnshadow: rgba(black, 0.5) 0px 2px 3px;
 
 // bg gradients
-$bg01: #18241B;
+$bg01: #1B1D0E;
+$bg01a: rgba(27, 29, 14, 0.8);
 // $bg02: #181917;
-$bg02: #1B1D0E;
+$bg02: #2B3B22;
 
 //COLORS
-$green: #C1D647;
+$green: #CEE44D;
 
 $textColor: #BCCCB6;
 
 $primaryColor: #8EA286;
 
 $svgLinesOpacity: 0.55;
+
+$motive: #3F5733;
 
 // TYPEFACES
 
@@ -38,15 +41,19 @@ $primary-font: 'SourceSansReg';
 $primary-fontlight: 'SourceSansLight';
 $primary-fontbold: 'SourceSansBold';
 $primary-fontit: 'SourceSansIt';
-$page-title: 'expo-serif-pro';
-$desc-font: 'expo-serif-pro';
+$page-title: 'le-monde-livre-classic-std-s';
+$desc-font: 'SourceSansReg';
 $product-title: 'SourceSansLight';
-$product-price: 'SourceSansLight';
-$display-text: 'expo-serif-pro';
+$product-price: 'le-monde-livre-classic-std-s';
+$display-text: 'le-monde-livre-classic-std-s';
 
 //font weights for expo-serif from typekit
 .light {
 	font-weight: 300;
+}
+
+.normal {
+	font-weight: 400;
 }
 
 .bold {
@@ -73,7 +80,7 @@ $displa4: 112px; //recommended light weight
 
 $font-xsmall: 0.75rem;
 
-$font-small: 0.9rem;
+$font-small: 0.8rem;
 $line-height-small: 1.8rem;
 
 $font-medium: 1.35rem;
@@ -102,7 +109,7 @@ $product-name-lg-lh: 1.8rem; //line height
 
 // BANNERS
 
-$bannerLargeVarietal: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('largeBanner/varietal.jpg');
+$bannerLargeVarietal: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.7)), image-url('largeBanner/varietal.jpg');
 $bannerLargeInfuse: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('largeBanner/infuse.jpg');
 $bannerLargeSpecialty: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('largeBanner/specialty.jpg');
 $bannerLargeBalsamics: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('largeBanner/balsamics.jpg');
@@ -125,6 +132,6 @@ h4 {
 address {
 	a {
 		text-decoration: none;
-		color: black;
+		color: $bg01;
 	}
 }

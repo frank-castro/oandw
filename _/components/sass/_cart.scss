@@ -109,11 +109,18 @@
 		@include transition-duration(0.2s);
 		@include transition-timing-function(ease-out);
 
+		.shopping_cart {
+			padding: 8px;
+			@include transform(scale(0.8));
+		}
+
 		&.cartBttn {
 			@include transition-delay(0.1s);
 			@include transition-duration(0.3s);
 			@include transition-timing-function(ease-in);
 			right: 15%;
+			width: 40px;
+			height: 40px;
 		}
 	}
 
@@ -147,7 +154,6 @@
 		height: 100vh;
 
 		.maticon {
-			@include transform(translateY(5px));
 			color: $bg01;
 			cursor: pointer;
 		}

@@ -6,9 +6,9 @@ $('.navwrapper a').on('click', function(){
 	$('.sitemenu').toggleClass('hidden visible');
 });
 
-$('.about').on('click', function(){
-	$('.aboutUs').removeClass('closed');
-});
+// $('.about').on('click', function(){
+// 	$('.aboutUs').removeClass('closed');
+// });
 
 $('.closeBttn').on('click', function(){
 	$('.aboutUs').addClass('closed');
