@@ -1,8 +1,9 @@
 [ 
 	{
 		"copy" : "Where Healthy Tastes Great",
-		"image" : "images/home/where-healthy-taste-well.jpg"
-	}, {
+		"image" : "images/home/where-healthy-taste-well.jpg",
+		"image2" : "images/home/infuse.jpg"
+	},{
 		"copy" : "Another header",
 		"image" : "images/home/infuse.jpg"
 	}

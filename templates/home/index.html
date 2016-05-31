@@ -1,6 +1,7 @@
-<div class="slickIntro">
-		<div ng-repeat="items in product"  slick-carousel="{dots: true, arrows: true, dragable: true}">
+<div ng-repeat="items in product">
+		<div slick-carousel>
 			<img ng-src="{{items.image}}"/>
+			<img ng-src="{{items.image2}}"/>
 		</div>
 </div>
 
