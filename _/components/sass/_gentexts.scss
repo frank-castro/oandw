@@ -55,19 +55,19 @@
 
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 0.2s, ease-out);
-		@include transform(translateX(-50%));
+		// @include transform(translateX(-50%));
 		color: $textColor;
 		font-family: $page-title;
 		font-size: 3rem;
 		line-height: 2.5rem;
 		letter-spacing: 0.05em;
-		text-align: center;
+		text-align: left;
 		z-index: 99;
 		top: 70%;
-		position: fixed;
+		position: relative;
 		left: 50%;
 		width: 80%;
-		opacity: 0.5;
+		opacity: 1;
 	}
 
 	@include susy-breakpoint($xlarge) {

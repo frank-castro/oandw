@@ -338,7 +338,7 @@ $xlarge: 1900px; //four columns
 			text-align: left;
 			opacity: 0.9;
 			overflow: hidden;
-			border-bottom: solid;
+			border-bottom: none;
 			border-bottom-color: $motive;
 			border-bottom-width: 1px;
 			padding: 0px 0px 12px;
@@ -1274,7 +1274,7 @@ footer {
 		font-size: 0.8rem;
 		line-height: 1.7rem;
 		padding: 20px 10% 40px;
-		margin-top: 40px;
+		// margin-top: 40px;
 
 		.about {
 			text-decoration: none;

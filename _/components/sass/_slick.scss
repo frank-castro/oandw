@@ -18,8 +18,8 @@ $slick-dot-color-active: blue !default;
 $slick-prev-character: " ≪ " !default;
 $slick-next-character: " ≫ " !default;
 $slick-dot-character: " ● " !default;
-$slick-dot-size: ms(0) !default;
-$slick-opacity-arrows: 0.25 !default;
+$slick-dot-size: 16px !default;
+$slick-opacity-arrows: 1 !default;
 $slick-opacity-dots: 1 !default;
 $slick-opacity-on-hover: 1 !default;
 $slick-opacity-not-active: 1 !default;
@@ -43,15 +43,15 @@ body {
 		.slick-prev,
 		.slick-next {
 			position: absolute;
-			z-index: 900;
+			z-index: 990;
 			display: block;
 			height: 40px;
 			width: 40px;
-			line-height: 0px;
-			font-size: 0px;
+			line-height: 10px;
+			font-size: 10px;
 			cursor: pointer;
 			background: transparent;
-			color: transparent;
+			color: red;
 			top: 50%;
 			@include transform(translate(0, -50%) scale(1));
 			padding: 0;
@@ -60,7 +60,7 @@ body {
 			&:hover, &:focus {
 				outline: none;
 				background: transparent;
-				color: transparent;
+				color: blue;
 				&:before {
 					opacity: $slick-opacity-on-hover;
 				}
@@ -70,21 +70,21 @@ body {
 			}
 			&:before {
 				font-family: $slick-font-family;
-				font-size: ms(1);
+				font-size: 18px;
 				line-height: 1;
 				color: $slick-arrow-color;
 				// opacity: $slick-opacity-arrows;
-				opacity: 0;
+				opacity: 0.6;
 				-webkit-font-smoothing: antialiased;
 				-moz-osx-font-smoothing: grayscale;
 			}
 		}
 
 		.slick-prev {
-			left: (ms(0));
+			left: 16px;
 			[dir="ltr"] & {
 				left: auto;
-				right: (ms(0));
+				right: 16px;
 			}
 			&:before {
 				content: $slick-prev-character;
@@ -95,9 +95,9 @@ body {
 		}
 
 		.slick-next {
-			right: (ms(0));
+			right: 16px;
 			[dir="ltr"] & {
-				left: (ms(0));
+				left: 16px;
 				right: auto;
 			}
 			&:before {
@@ -125,7 +125,7 @@ body {
 		/* Dots */
 
 		.slick-dotted.slick-slider {
-			margin-bottom: ms(0);
+			margin-bottom: 16px;
 		}
 
 		.slick-dots {
@@ -141,7 +141,7 @@ body {
 				display: inline-block;
 				height: 44px;
 				width: 30px;
-				margin: ms(-1) ms(-1);
+				margin: 12px;
 				padding: 0;
 				cursor: pointer;
 				button {
@@ -260,7 +260,7 @@ body {
 		.slick-dots {
 
 			li {
-				margin: ms(2) ms(0);
+				margin: 20px 16px;
 	
 				button {
 					@include transform(scale(1));
