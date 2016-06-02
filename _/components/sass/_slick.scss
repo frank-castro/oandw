@@ -28,6 +28,11 @@ body {
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 
+		.slickContainer {
+	  		// height: 90vh;
+	  		padding: ms(2) 0px ms(3) 0px;
+	  	}
+
 		/* Slider */
 
 		.slick-list {
