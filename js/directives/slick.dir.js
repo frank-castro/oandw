@@ -14,7 +14,7 @@ angular
 						autoplaySpeed: 7000,
 						dots: true,
 						arrows: true,
-						infinite: false,
+						infinite: true,
 						mobileFirst: true,
 						rows: 1,
 						lazyload: 'progressive',
