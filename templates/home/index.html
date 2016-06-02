@@ -1,11 +1,15 @@
-<div ng-repeat="items in product">
+<div class="slickContainer" ng-repeat="items in product">
 	<div slick-carousel>
-		<img ng-src="{{items.image}}"/>
-		<img ng-src="{{items.image2}}"/>
-		<img ng-src="{{items.image3}}"/>
+		<div>
+			<img ng-src="{{items.image}}"/>
+			<h3 class="slogan">
+				<div></div><!-- spacer -->
+				<div>Where Healthy Tastes Great</div>
+			</h3>
+		</div>
+		<div><img ng-src="{{items.image2}}"/></div>
+		<div><img ng-src="{{items.image3}}"/></div>
 	</div>
 </div>
-
-<div class="slogan">"Where Healthy Tastes Great"</div>
 
 <div class="imgText">Gourmet Olive Oils, Aged Balsamics & Related Products</div>

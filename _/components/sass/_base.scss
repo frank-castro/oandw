@@ -16,9 +16,9 @@ html {
 
 // Typographic scale using golden ratio 1:1.618, modular-scale .
 // $ms-base: 1rem;
-$ms-base: 1rem * 0.92;
-// 1rem = 16px by default. To relate values so you can write 1.4rem = 14px, the default font size on the body has to be set like this; body { font-size:62.5%; }.
-$ms-ratio: 1.618;
+$ms-base: 0.8rem;
+// 1rem = 16px by default.
+$ms-ratio: $golden;
 
 $default-text-shadow-color: rgba(#000000, 0.8);
 $default-text-shadow-blur: 3px;
@@ -75,7 +75,7 @@ $display-text: 'le-monde-livre-classic-std-s';
 	font-weight: 700;
 }
 
-//NEW STUFF HERE using google material design
+//GET RID OF ALL OF THESE FROM HERE TO THE NEXT MARKER
 
 $button: 14px; //recommended medium weight, all caps
 $link: uppercase;
@@ -119,7 +119,7 @@ $product-name-sm-lh: 1.8rem; //line height
 $product-name-large: 1.5rem;
 $product-name-lg-lh: 1.8rem; //line height
 
-// ******** HERE IS WHERE THE OLD STUFF ENDS ********
+// GET RID OF ALL OF THAT ALL THE WAY HERE, MAKE SURE YOU ARE NOT USING THE above VARIABLES
 
 
 // BANNERS
@@ -140,9 +140,11 @@ body {
 	font-family: $primary-font;
 }
 
-h4 {
-	font-size: $font-small;
-}
+h1 { font-size: ms(5); line-height: ms(4); }
+h2 { font-size: ms(3); line-height: ms(2); }
+h3 { font-size: ms(2); line-height: ms(3); }
+h4 { font-size: ms(1); line-height: ms(0); }
+p { font-size: ms(0); line-height: ms(1); }
 
 address {
 	a {
