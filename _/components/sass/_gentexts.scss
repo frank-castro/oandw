@@ -60,13 +60,13 @@
 		color: white;
 		font-family: $display-text;
 		font-size: ms(3);
-		letter-spacing: 0.05em;
+		letter-spacing: 0.05rem;
 		z-index: 99;
 		opacity: 1;
 		position: relative;
-		@include transform(translateY(-72vh));
+		@include transform(translateY(10vh));
 
-		div:first-of-type {
+		#spacer {
 			@include span(2 of 12);
 			padding: 0px;
 			height: 1px;
