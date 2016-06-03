@@ -95,3 +95,10 @@ address {
 		color: $bg01;
 	}
 }
+
+#spacer2 {
+	@include span(2 of 12);
+	padding: 0px;
+	height: 1px;
+	color: transparent;
+} //2 column spacer div

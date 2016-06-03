@@ -22,20 +22,15 @@
 
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 0.2s, ease-out);
-		@include single-text-shadow;
-		@include transform(translateX(-50%));
-		left: 50%;
+		// @include single-text-shadow;
 		color: $textColor;
 		text-transform: uppercase;
 		font-family: $primary-font;
 		font-size: ms(1);
-		line-height: 2.1rem;
-		letter-spacing: 0.3em;
-		text-align: center;
+		line-height: ms(2);
+		letter-spacing: 0.3rem;
+		text-align: right;
 		z-index: 99;
-		top: 50%;
-		position: fixed;
-		width: 80%;
 	}
 
 	@include susy-breakpoint($xlarge) {
@@ -65,13 +60,6 @@
 		opacity: 1;
 		position: relative;
 		@include transform(translateY(12vh));
-
-		#spacer {
-			@include span(2 of 12);
-			padding: 0px;
-			height: 1px;
-			color: transparent;
-		} //spacer div
 	}
 
 	@include susy-breakpoint($xlarge) {

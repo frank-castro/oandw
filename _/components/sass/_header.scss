@@ -124,26 +124,17 @@ header {
 }
 
 .logoBar {
-	position: fixed;
 	
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 		z-index: 1040;
-		width: 100%;
 		background-color: rgba($bg01, 0.6);
 
-		#spacer {
-			@include span(2 of 12);
-			padding: 0px;
-			height: 1px;
-			color: transparent;
-		} //spacer div
-
 		.logo {
-			@include transform (translate(-50%, 16px));
-			left: 50%;
-			position: absolute;
-			width: 170px;
+			// @include transform (translate(-50%, 16px));
+			// left: 50%;
+			// position: absolute;
+			width: 120px;
 		}
 
 		.barsWrapper {
@@ -167,10 +158,9 @@ header {
 		@include single-transition(all, 1s, ease-out);
 
 		.logo {
-			@include transform (translate(-50%, 16px));
-			left: 50%;
-			position: absolute;
-			width: 190px;
+			// @include transform (translate(-50%, 16px));
+			// left: 50%;
+			width: 120px;
 		}
 	}
 
@@ -178,8 +168,8 @@ header {
 		@include single-transition(all, 1s, ease-out);
 
 		.logo {
-			@include transform (translate(-50%, 16px));
-			left: 50%;
+			// @include transform (translate(-50%, 16px));
+			// left: 50%;
 		}
 	}
 
@@ -188,9 +178,10 @@ header {
 		background-color: transparent;
 
 		.logo {
-			@include transform (translate(0, 0));
+			// @include transform (translate(0, 0));
 			top: 12px;
-			left: 12%;
+			// left: 0px;
+			float: left;
 			position: relative;
 			width: 120px;
 			z-index: 1000;
