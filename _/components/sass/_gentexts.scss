@@ -64,7 +64,7 @@
 		z-index: 99;
 		opacity: 1;
 		position: relative;
-		@include transform(translateY(10vh));
+		@include transform(translateY(12vh));
 
 		#spacer {
 			@include span(2 of 12);
