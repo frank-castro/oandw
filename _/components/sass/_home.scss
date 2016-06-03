@@ -77,3 +77,23 @@
 	@include susy-breakpoint($xlarge) {
 	}
 }
+
+.promogroup {
+	@include susy-breakpoint($xsmall) {
+
+	}
+
+	@include susy-breakpoint($small) {
+	}
+
+	@include susy-breakpoint($medium) {
+	}
+
+	@include susy-breakpoint($large) {
+		@include single-transition(all, 0.2s, ease-out);
+		@include span(12 of 12);
+	}
+
+	@include susy-breakpoint($xlarge) {
+	}
+}
