@@ -58,7 +58,7 @@ $xlarge: 1900px; //four columns
 			display: block;
 			text-decoration: none;
 			font-family: $primary-font;
-			font-size: $font-small;
+			font-size: ms(0);
 			line-height: 2rem;
 			padding: 3px 0 7px;
 			color: $primaryColor;
@@ -96,7 +96,7 @@ $xlarge: 1900px; //four columns
 		@include single-transition(all, 0.5s, ease-out);
 
 		a {
-			font-size: $font-medium;
+			font-size: ms(1);
 			line-height: 3.3rem;
 			padding: 20px 0;
 		}
@@ -106,7 +106,7 @@ $xlarge: 1900px; //four columns
 		@include single-transition(all, 0.5s, ease-out);
 
 		a {
-			font-size: $font-medium;
+			font-size: ms(1);
 			padding: 24px 0;
 		}
 	}
@@ -201,7 +201,7 @@ $xlarge: 1900px; //four columns
 
 			.search {
 				opacity: 0.8;
-				font-size: $font-medium;
+				font-size: ms(1);
 				text-transform: lowercase;
 			}
 
@@ -212,7 +212,7 @@ $xlarge: 1900px; //four columns
 				border: 0px solid;
 				@include border-radius (4px);
 				padding: 6px;
-				font-size: $font-small;
+				font-size: ms(0);
 				margin: 32px 2px 4px;
 			}
 		}
@@ -222,7 +222,7 @@ $xlarge: 1900px; //four columns
 			@include span(12 of 12);
 			padding: 10px 5%;
 			font-family: $primary-font;
-			font-size: $font-small;
+			font-size: ms(0);
 			line-height: 1.3em;
 			text-align: center;
 
@@ -241,7 +241,7 @@ $xlarge: 1900px; //four columns
 			.oilsName {
 				width: 50%;
 				font-family: $primary-fontlight;
-				font-size: $product-name-xsmall;
+				font-size: ms(1);
 				line-height: 1.3em;
 				text-align: right;
 				text-transform: uppercase;
@@ -335,7 +335,7 @@ $xlarge: 1900px; //four columns
 
 		.description {
 			font-family: $desc-font;
-			font-size: $font-small;
+			font-size: ms(0);
 			line-height: 1.6em;
 			letter-spacing: 0.03rem;
 			text-align: left;
@@ -399,7 +399,7 @@ $xlarge: 1900px; //four columns
 		.seasoningsNames {
 			width: 50%;
 			font-family: $primary-fontlight;
-			font-size: $product-name-xsmall;
+			font-size: ms(1);
 			line-height: 1.3em;
 			text-align: right;
 			text-transform: uppercase;
@@ -442,7 +442,7 @@ $xlarge: 1900px; //four columns
 				height: 90px;
 				margin-top: 20px;
 				font-family: $primary-fontlight;
-				font-size: $product-name-xsmall;
+				font-size: ms(1);
 				line-height: 1.3em;
 				text-align: left;
 				text-transform: uppercase;
@@ -538,7 +538,7 @@ $xlarge: 1900px; //four columns
 				height: 60px;
 				margin-top: 20px;
 				font-family: $primary-fontlight;
-				font-size: $product-name-xsmall;
+				font-size: ms(1);
 				line-height: 1.3em;
 				text-align: left;
 				text-transform: uppercase;
@@ -601,8 +601,8 @@ $xlarge: 1900px; //four columns
 			.oilsName {
 				width: 55%;
 				font-family: $primary-fontlight;
-				font-size: $product-name-small;
-				line-height: $product-name-sm-lh;
+				font-size: ms(1);
+				line-height: ms(2);
 			}
 
 			.oilsImage {
@@ -641,8 +641,8 @@ $xlarge: 1900px; //four columns
 		.seasoningsNames {
 			width: 55%;
 			font-family: $primary-fontlight;
-			font-size: $product-name-small;
-			line-height: $product-name-sm-lh;
+			font-size: ms(1);
+			line-height: ms(2);
 		}
 
 		.seasoningsImage {
@@ -665,8 +665,8 @@ $xlarge: 1900px; //four columns
 				height: 110px;
 				margin-top: 20px;
 				font-family: $primary-fontlight;
-				font-size: $product-name-small;
-				line-height: $product-name-sm-lh;
+				font-size: ms(1);
+				line-height: ms(2);
 			}
 		}
 
@@ -726,8 +726,8 @@ $xlarge: 1900px; //four columns
 				height: 60px;
 				margin-top: 20px;
 				font-family: $primary-fontlight;
-				font-size: $product-name-small;
-				line-height: $product-name-sm-lh;
+				font-size: ms(1);
+				line-height: ms(2);
 				text-align: left;
 			}
 		}
@@ -1036,8 +1036,8 @@ $xlarge: 1900px; //four columns
 		.seasoningsNames {
 			width: 50%;
 			font-family: $primary-fontlight;
-			font-size: $product-name-large;
-			line-height: $product-name-lg-lh;
+			font-size: ms(1);
+			line-height: ms(2);
 		}
 
 		.seasoningsImage {
@@ -1057,8 +1057,8 @@ $xlarge: 1900px; //four columns
 			.giftsNameContainer {
 				height: 75px;
 				font-family: $primary-fontlight;
-				font-size: $product-name-large;
-				line-height: $product-name-lg-lh;
+				font-size: ms(1);
+				line-height: ms(2);
 			}
 		}
 
@@ -1105,8 +1105,8 @@ $xlarge: 1900px; //four columns
 				height: 60px;
 				margin-top: 20px;
 				font-family: $primary-fontlight;
-				font-size: $product-name-large;
-				line-height: $product-name-lg-lh;
+				font-size: ms(1);
+				line-height: ms(2);
 				text-align: left;
 			}
 		}
@@ -1153,8 +1153,8 @@ $xlarge: 1900px; //four columns
 
 			.oilsName {
 				width: 50%;
-				font-size: $font-medium;
-				line-height: $line-height-medium;
+				font-size: ms(1);
+				line-height: ms(1);
 			}
 
 			.oilsImage {
@@ -1249,7 +1249,7 @@ $xlarge: 1900px; //four columns
 
 .sizeText {
 	font-family: $product-price;
-	font-size: $font-small;
+	font-size: ms(0);
 	color: $textColor;
 	text-align: center;
 	opacity: 0.6;
@@ -1281,8 +1281,8 @@ footer {
 
 		.about {
 			text-decoration: none;
-			text-transform: $link;
-			font-size: $button;
+			text-transform: ms(1);
+			font-size: ms(1);
 			font-family: $primary-fontbold;
 			cursor: pointer;
 		}
@@ -1305,7 +1305,7 @@ footer {
 			right: 20%;
 			z-index: 1040;
 			color: $green;
-			text-transform: $link;
+			text-transform: ms(1);
 			font-size: 12px;
 			font-family: $primary-font;
 			opacity: 0.8;

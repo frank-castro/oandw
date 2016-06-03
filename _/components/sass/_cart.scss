@@ -159,7 +159,7 @@
 		}
 
 		p {
-			font-size: $font-small;
+			font-size: ms(0);
 		}
 
 		.cartProductList {
@@ -169,12 +169,12 @@
 			@include transform(translateX(-50%));
 			top: 40px;
 			font-family: $primary-font;
-			font-size: $font-medium;
+			font-size: ms(1);
 			line-height: 2.4rem;
 			color: $bg01;
 
 			.cartBigText {
-				font-size: $font-large;
+				font-size: ms(2);
 			}
 
 			table {
@@ -188,7 +188,7 @@
 				}
 
 				.tableLabels {
-					font-size: $font-small;
+					font-size: ms(0);
 					opacity: 0.5;
 				}
 
@@ -198,7 +198,7 @@
 				}
 
 				.cartTotal {
-					font-size: $font-medium;
+					font-size: ms(1);
 					font-weight: 700;
 					text-align: right;
 					padding: 20px 0px;
@@ -218,13 +218,13 @@
 
 			.cartCTAback {
 				opacity: 0.7;
-				font-size: $font-medium;
+				font-size: ms(1);
 				float: left;
 				cursor: pointer;
 			}
 
 			.cartCTAforward {
-				font-size: $font-large;
+				font-size: ms(2);
 				float: right;
 				cursor: pointer;
 
@@ -314,7 +314,7 @@
 			background-color: rgba(white, 0.7);
 			border: 0px solid;
 			padding: 6px;
-			font-size: $font-small;
+			font-size: ms(0);
 			margin: 4px 2px;
 		}
 
@@ -325,11 +325,11 @@
 
 		.select {
 			// font-size: 11px; //dont delete this are the two option all browsers give you for font size
-			font-size: $bodydevice; //dont delete
+			font-size: ms(1); //dont delete
 		}
 
 		p {
-			font-size: $font-small;
+			font-size: ms(0);
 		}
 
 		.general {
@@ -369,7 +369,7 @@
 		.input-sample {
 			color: white;
 			opacity: 0.6;
-			font-size: $font-small;
+			font-size: ms(0);
 		}
 	}
 

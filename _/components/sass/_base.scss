@@ -7,7 +7,6 @@
 
 html, body {
 	overflow-x: hidden;
-	height: 100%;
 }
 
 html {
@@ -77,47 +76,20 @@ $display-text: 'le-monde-livre-classic-std-s';
 
 //GET RID OF ALL OF THESE FROM HERE TO THE NEXT MARKER
 
-$button: 14px; //recommended medium weight, all caps
-$link: uppercase;
+// $font-xsmall: 0.75rem;
 
-$caption: 12px;
-$bodydesktop: 13px;
-$bodydevice: 14px;
-$subheading: 16px;
-$title: 20px; //recommended medium weight
-$headline: 24px;
-$displa1: 34px;
-$displa2: 45px;
-$displa3: 56px;
-$displa4: 112px; //recommended light weight 
+// $font-small: 0.8rem;
+// $line-height-small: 1.8rem;
 
-//******** THIS HERE IS OLD STUFF ********
+// $font-medium: 1.35rem;
+// $line-height-medium: 1.75rem;
 
-$font-xsmall: 0.75rem;
+// $font-large: 2.25rem;
 
-$font-small: 0.8rem;
-$line-height-small: 1.8rem;
+// $font-xlarge: 3.6rem;
 
-$font-medium: 1.35rem;
-$line-height-medium: 1.75rem;
+// $font-xxlarge: 5.85rem;
 
-$font-large: 2.25rem;
-
-$font-xlarge: 3.6rem;
-
-$font-xxlarge: 5.85rem;
-
-
-// these font sizes below should use above sizes, replace these variable with above values in html;
-$product-name-xsmall: 1.3rem;
-
-// values for small and medium
-$product-name-small: 1.5rem;
-$product-name-sm-lh: 1.8rem; //line height
-
-//values for large and xlarge
-$product-name-large: 1.5rem;
-$product-name-lg-lh: 1.8rem; //line height
 
 // GET RID OF ALL OF THAT ALL THE WAY HERE, MAKE SURE YOU ARE NOT USING THE above VARIABLES
 

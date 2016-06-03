@@ -48,7 +48,7 @@ header {
 		background: linear-gradient(to bottom left, rgba($green, 0.95), rgba($textColor, 1));
 		font-family: $desc-font;
 		font-size: 1rem;
-		line-height: $line-height-small;
+		line-height: ms(1);
 		text-align: left;
 		color: $bg01;
 		padding: 60px 0 0;
