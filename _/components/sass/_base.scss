@@ -62,40 +62,11 @@ $product-price: 'le-monde-livre-classic-std-s';
 $display-text: 'le-monde-livre-classic-std-s';
 
 //font weights for expo-serif from typekit
-.light {
-	font-weight: 300;
-}
-
-.normal {
-	font-weight: 400;
-}
-
-.bold {
-	font-weight: 700;
-}
-
-//GET RID OF ALL OF THESE FROM HERE TO THE NEXT MARKER
-
-// $font-xsmall: 0.75rem;
-
-// $font-small: 0.8rem;
-// $line-height-small: 1.8rem;
-
-// $font-medium: 1.35rem;
-// $line-height-medium: 1.75rem;
-
-// $font-large: 2.25rem;
-
-// $font-xlarge: 3.6rem;
-
-// $font-xxlarge: 5.85rem;
-
-
-// GET RID OF ALL OF THAT ALL THE WAY HERE, MAKE SURE YOU ARE NOT USING THE above VARIABLES
-
+.light { font-weight: 300; }
+.normal { font-weight: 400; }
+.bold {	font-weight: 700; }
 
 // BANNERS
-
 $bannerLargeVarietal: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.7)), image-url('largeBanner/varietal.jpg');
 $bannerLargeInfuse: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('largeBanner/infuse.jpg');
 $bannerLargeSpecialty: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('largeBanner/specialty.jpg');
@@ -108,14 +79,14 @@ body {
 	@include background(linear-gradient(180deg, $bg01 32%, $bg02 68%));
 }
 
-#{headings(1,4)} {
-	font-family: $primary-font;
-}
+// #{headings(1,4)} {
+// 	font-family: ;
+// }
 
 h1 { font-size: ms(5); line-height: ms(4); }
 h2 { font-size: ms(3); line-height: ms(2); }
 h3 { font-size: ms(2); line-height: ms(3); }
-h4 { font-size: ms(1); line-height: ms(0); }
+h4 { font-size: ms(1); line-height: ms(2); }
 p { font-size: ms(0); line-height: ms(1); }
 
 address {
