@@ -19,8 +19,8 @@ $ms-base: 0.8rem;
 // 1rem = 16px by default.
 $ms-ratio: $golden;
 
-$default-text-shadow-color: rgba(#000000, 0.8);
-$default-text-shadow-blur: 3px;
+$default-text-shadow-color: rgba(#000000, 0.6);
+$default-text-shadow-blur: 4px;
 $default-text-shadow-v-offset: 2px;
 
 $cartbttnshadow: rgba(black, 0.5) 0px 2px 3px;
@@ -83,10 +83,36 @@ body {
 // 	font-family: ;
 // }
 
-h1 { font-size: ms(5); line-height: ms(4); }
-h2 { font-size: ms(3); line-height: ms(2); }
-h3 { font-size: ms(2); line-height: ms(3); }
-h4 { font-size: ms(1); line-height: ms(2); }
+$susy: (
+	columns: 12,
+	gutters: .7,
+	math: fluid,
+	output: float,
+	gutter-position: inside,
+	container: auto,
+	container-position: center,
+	debug: (
+		image: hide,
+		color: rgba(#66f, .25),
+		output: background,
+		toggle: top right,	
+	)
+);
+
+$xsmall: 320px; //one column narrow
+$small: 760px; //one column wide
+$medium: 970px; //two columns
+$large: 1200px; //three columns
+$xlarge: 1900px; //four columns
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
 p { font-size: ms(0); line-height: ms(1); }
 
 address {
@@ -95,10 +121,3 @@ address {
 		color: $bg01;
 	}
 }
-
-#spacer2 {
-	@include span(2 of 12);
-	padding: 0px;
-	height: 1px;
-	color: transparent;
-} //2 column spacer div

@@ -114,7 +114,6 @@ body {
 
 		.slick-slide {
 			z-index: -1;
-			background-color: $bg01;
 
 			img {
 				width: auto;
@@ -264,10 +263,9 @@ body {
 		}
 
 		.slick-dots {
+			@include transform (translateY(-30px));
 
-			li {
-				margin: 20px 16px;
-	
+			li {	
 				button {
 					@include transform(scale(1));
 				}

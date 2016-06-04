@@ -6,7 +6,7 @@
 
 .hours {
 	font-family: $display-text;
-	font-size: 2rem;
+	font-size: ms(1);
 	padding-bottom: 10px;
 }
 
@@ -28,18 +28,28 @@
 		font-family: $primary-font;
 		font-size: ms(1);
 		line-height: ms(2);
-		letter-spacing: 0.3rem;
-		text-align: right;
+		letter-spacing: 0.2rem;
+		text-align: center;
 		z-index: 99;
+		position: relative;
 	}
 
 	@include susy-breakpoint($xlarge) {
+		@include transform (translateY(-50vh));
 	}
 } //intro text under logo
 
 .slogan {
+	@include single-transition(all, 0.3s, ease-out);
 	@include susy-breakpoint($xsmall) {
+		@include single-text-shadow;
 
+		#spacer2 {
+			@include span(2 of 12);
+			padding: 0px;
+			height: 1px;
+			color: transparent;
+		} //2 column spacer div
 	}
 
 	@include susy-breakpoint($small) {
@@ -49,20 +59,35 @@
 	}
 
 	@include susy-breakpoint($large) {
-		@include single-transition(all, 0.2s, ease-out);
 		@include span(12 of 12);
 		padding: 0px;
 		color: white;
 		font-family: $display-text;
-		font-size: ms(3);
-		letter-spacing: 0.05rem;
+		font-size: ms(2);
+		letter-spacing: 0.1rem;
 		z-index: 99;
 		opacity: 1;
 		position: relative;
-		@include transform(translateY(12vh));
+		@include transform(translateY(-50vh));
+
+		#spacer {
+			@include span(2 of 12);
+			padding: 0px;
+			height: 5vh;
+			color: transparent;
+		}
+
+		// div:last-of-type {
+		// 	position: relative;
+		// 	left: ms(7);
+		// 	top: ms(2);
+		// }
 	}
 
 	@include susy-breakpoint($xlarge) {
+		font-size: ms(3);
+		letter-spacing: 0.1rem;
+		@include transform(translateY(-50vh));
 	}
 }
 
@@ -80,6 +105,13 @@
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 0.2s, ease-out);
 		@include span(12 of 12);
+		padding: 0px;
+
+		.promo {
+			background-color: lightgray;
+			@include span (3 of 12);
+			height: ms(6)
+		}
 	}
 
 	@include susy-breakpoint($xlarge) {

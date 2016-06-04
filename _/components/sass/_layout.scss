@@ -1,33 +1,3 @@
-$susy: (
-	columns: 12,
-	gutters: .7,
-	math: fluid,
-	output: float,
-	gutter-position: inside,
-	container: auto,
-	container-position: center,
-	debug: (
-		image: hide,
-		color: rgba(#66f, .25),
-		output: background,
-		toggle: top right,	
-	)
-);
-
-$xsmall: 320px; //one column narrow
-$small: 760px; //one column wide
-$medium: 970px; //two columns
-$large: 1200px; //three columns
-$xlarge: 1900px; //four columns
-
-.left {
-	float: left;
-}
-
-.right {
-	float: right;
-}
-
 .divider {
 	height: 1px;
 	width: 100%;
@@ -189,15 +159,12 @@ $xlarge: 1900px; //four columns
 	  	color: $textColor;
 
 		.pageTitle {
-			padding: 80px 5% 30px;
-			// font-size: 1.5rem;
-			// line-height: 2.9rem;
+			padding: ms(5) 5% ms(3);
+			font-family: $page-title;
+			font-size: ms(2);
+			line-height: ms(3);
 			font-weight: 300;
 			letter-spacing: 0.2rem;
-
-			h3 {
-				font-family: $page-title;
-			}
 
 			.search {
 				opacity: 0.8;
@@ -241,6 +208,8 @@ $xlarge: 1900px; //four columns
 			.oilsName {
 				width: 50%;
 				font-family: $primary-fontlight;
+				font-size: ms(1);
+				line-height: ms(1);
 				text-align: right;
 				text-transform: uppercase;
 			}
@@ -998,6 +967,8 @@ $xlarge: 1900px; //four columns
 
 			.oilsName {
 				width: 50%;
+				font-size: ms(1);
+				line-height: ms(1);
 			}
 
 			.oilsImage {
@@ -1120,14 +1091,15 @@ $xlarge: 1900px; //four columns
 			@include transition-delay(1s);
 			@include transition-duration(0.2s);
 			@include transition-timing-function(ease-out);
-	  		padding: 60px 0px 40px;
+	  		padding: ms(3) 0px ms(2);
+	  		font-size: ms(2);
+			line-height: ms(3);
 	  	}
 
 		.productsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(3 of 12);
 			padding: 0px 4% 0px;
-			margin-top: 20px;
 		}
 
 		.ctrlsContainer {

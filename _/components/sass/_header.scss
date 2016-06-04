@@ -130,6 +130,13 @@ header {
 		z-index: 1040;
 		background-color: rgba($bg01, 0.6);
 
+		#spacer {
+			@include span(2 of 12);
+			padding: 0px;
+			height: 1px;
+			color: transparent;
+		} //2 column spacer div
+
 		.logo {
 			// @include transform (translate(-50%, 16px));
 			// left: 50%;
