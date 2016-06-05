@@ -10,35 +10,9 @@
 	padding-bottom: 10px;
 }
 
-.imgText {
-	@include susy-breakpoint($xsmall) {
-	}
-
-	@include susy-breakpoint($small) {
-	}
-
-	@include susy-breakpoint($medium) {
-	}
-
-	@include susy-breakpoint($large) {
-		@include single-transition(all, 0.2s, ease-out);
-		@include span (2 of 12);
-		// @include single-text-shadow;
-		color: $textColor;
-		text-transform: uppercase;
-		font-family: $primary-font;
-		font-size: ms(1);
-		line-height: ms(2);
-		letter-spacing: 0.2rem;
-		text-align: right;
-		z-index: 99;
-		float: right;
-	}
-
-	@include susy-breakpoint($xlarge) {
-		@include transform (translateY(-50vh));
-	}
-} //intro text under logo
+.slickContainer {
+	// width: 50vw;
+}
 
 .slogan {
 	@include single-transition(all, 0.3s, ease-out);
@@ -78,17 +52,54 @@
 			color: transparent;
 		}
 
-		// div:last-of-type {
-		// 	position: relative;
-		// 	left: ms(7);
-		// 	top: ms(2);
-		// }
+		#sloganText {
+			@include span (6 of 12);
+		}
 	}
 
 	@include susy-breakpoint($xlarge) {
 		font-size: ms(3);
 		letter-spacing: 0.1rem;
 		@include transform(translateY(-50vh));
+	}
+}
+
+.imgTextContainer {
+	@include susy-breakpoint($xsmall) {
+	}
+
+	@include susy-breakpoint($small) {
+	}
+
+	@include susy-breakpoint($medium) {
+	}
+
+	@include susy-breakpoint($large) {
+		.imgText {
+			@include single-transition(all, 0.2s, ease-out);
+			@include span (2 of 12);
+			color: white;
+			text-transform: uppercase;
+			font-family: $primary-font;
+			font-size: ms(1);
+			line-height: ms(2);
+			letter-spacing: 0.1rem;
+			text-align: left;
+			z-index: 99;
+			float: right;
+		}
+
+		#spacer {
+			@include span(1 of 12);
+			padding: 0px;
+			height: 2vh;
+			color: transparent;
+			float: right;
+		}
+	}
+
+	@include susy-breakpoint($xlarge) {
+
 	}
 }
 

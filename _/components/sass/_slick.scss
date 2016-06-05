@@ -12,9 +12,9 @@
 // Default Variables
 
 $slick-font-family: $primary-font !default;
-$slick-arrow-color: red !default;
-$slick-dot-color: red !default;
-$slick-dot-color-active: blue !default;
+$slick-arrow-color: #616A00 !default;
+$slick-dot-color: #616A00 !default;
+$slick-dot-color-active: #D5CB2E !default;
 $slick-prev-character: " ≪ " !default;
 $slick-next-character: " ≫ " !default;
 $slick-dot-character: " ● " !default;
@@ -27,10 +27,6 @@ $slick-opacity-not-active: 1 !default;
 body {
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
-
-		.slickContainer {
-	  		// width: 50vw;
-	  	}
 
 		/* Slider */
 
@@ -55,7 +51,7 @@ body {
 			font-size: ms(0);
 			cursor: pointer;
 			background: transparent;
-			color: red;
+			color: #616A00;
 			top: 50%;
 			@include transform(translate(0, -50%) scale(1));
 			padding: 0;
@@ -64,7 +60,7 @@ body {
 			&:hover, &:focus {
 				outline: none;
 				background: transparent;
-				color: blue;
+				color: #D5CB2E;
 				&:before {
 					opacity: $slick-opacity-on-hover;
 				}
