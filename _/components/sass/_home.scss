@@ -64,7 +64,7 @@
 	}
 }
 
-.imgTextContainer {
+.imgText {
 	@include susy-breakpoint($xsmall) {
 	}
 
@@ -75,27 +75,17 @@
 	}
 
 	@include susy-breakpoint($large) {
-		.imgText {
-			@include single-transition(all, 0.2s, ease-out);
-			@include span (2 of 12);
-			color: white;
-			text-transform: uppercase;
-			font-family: $primary-font;
-			font-size: ms(1);
-			line-height: ms(2);
-			letter-spacing: 0.1rem;
-			text-align: left;
-			z-index: 99;
-			float: right;
-		}
-
-		#spacer {
-			@include span(1 of 12);
-			padding: 0px;
-			height: 2vh;
-			color: transparent;
-			float: right;
-		}
+		@include single-transition(all, 0.2s, ease-out);
+		@include span (6 of 12);
+		color: white;
+		text-transform: uppercase;
+		font-family: $primary-font;
+		font-size: ms(0);
+		line-height: ms(2);
+		letter-spacing: 0.1rem;
+		text-align: left;
+		padding-top: ms(0);
+		z-index: 99;
 	}
 
 	@include susy-breakpoint($xlarge) {
