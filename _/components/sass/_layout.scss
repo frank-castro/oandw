@@ -26,14 +26,8 @@
 		a {
 			@include single-text-shadow;
 			display: block;
-			text-decoration: none;
-			font-family: $primary-font;
-			font-size: ms(0);
-			line-height: 2rem;
 			padding: 3px 0 7px;
-			color: $primaryColor;
-			text-transform: uppercase;
-			text-align: center;
+			@include links(ms(0), 2rem); //arguments font size and line height
 		}
 
 		.active {

@@ -2,8 +2,8 @@
   <defs>
     <style>
       .cls-1, .cls-2 {
-        fill: none;
-        stroke: #b3b3b3;
+        fill: #1B1D0E;
+        stroke: none;
         stroke-miterlimit: 10;
       }
 

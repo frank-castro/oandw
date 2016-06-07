@@ -38,6 +38,6 @@ angular.module('oandwApp')
 		templateUrl: 'templates/checkout.html'
 	}).
 	otherwise({
-		redirectTo: '/varietal'
+		redirectTo: '/home'
 	});
 }]);

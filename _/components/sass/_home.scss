@@ -79,10 +79,10 @@
 		@include span (6 of 12);
 		color: white;
 		text-transform: uppercase;
-		font-family: $primary-fontlight;
-		font-size: ms(1);
+		font-family: $primary-font;
+		font-size: ms(0);
 		line-height: ms(2);
-		letter-spacing: 0.07rem;
+		letter-spacing: 0.1rem;
 		text-align: left;
 		padding-top: ms(0);
 		z-index: 99;
@@ -94,11 +94,15 @@
 }
 
 .promogroup {
+	@include transform(translateX(-50%));
+	left: 50%;
+	position: relative;
 	@include susy-breakpoint($xsmall) {
 		.promo {
 			background-color: transparent;
 			@include span (6 of 12);
-			height: ms(6)
+			height: ms(6);
+			padding: 0px;
 		}
 	}
 
@@ -110,13 +114,13 @@
 
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 0.2s, ease-out);
-		@include span(12 of 12);
+		@include span(10 of 12);
 		padding: 0px;
+		height: ms(7);
 
 		.promo {
 			@include span (3 of 12);
-			height: ms(7);
-
+			padding: 0px;
 			.row {
 				display: flex;
 				justify-content: center;
@@ -126,25 +130,138 @@
 				}
 
 				.img {
-					width: 16%;
 					@include transform (scale(0.4));
+					width: 70px;
 				}
 
 				p {
 					font-family: $display-text;
-					font-size: ms(2);
+					font-size: ms(1);
+					line-height: ms(2);
 					color: $textColor;
-					padding: ms(-1) 0px;
+					max-width: 280px;
+					text-align: center;
 				}
 
 				.infoText {
-					font-family: $primary-font;
+					font-family: $primary-fontbold;
 					font-size: ms(0);
+					line-height: ms(1);
+					color: $bg01;
+					margin-top: ms(0);
+				}
+
+				a {
+					@include single-text-shadow;
+					@include links(ms(0), 2rem); //arguments font size and line height
+				}
+
+				&.one {
+					// background-color: gray;
+					height: ms(4);
+				}
+
+				&.two {
+					// background-color: lightgray;
+					height: ms(4);
+				}
+
+				&.three {
+					// background-color: dimgray;
+					height: ms(2);
+				}
+
+				&.four {
+					// background-color: $bg01;
+					height: ms(4);
+				}
+			}
+
+			&.four {
+				.one {
+					.svg {
+						&.one {
+							width: 130px;
+						}
+
+						&.two {
+							width: 80px;
+							@include transform (translateY(80px));
+						}
+					}
 				}
 			}
 		}
 	}
 
 	@include susy-breakpoint($xlarge) {
+		@include single-transition(all, 0.2s, ease-out);
+		@include span(10 of 12);
+		height: ms(8);
+
+		.promo {
+			.row {
+				.svg {
+					width: 110px;
+				}
+
+				.img {
+					width: 110px;
+					@include transform (scale(0.6));
+				}
+
+				p {
+					font-size: ms(2);
+					padding: ms(-1) 0px;
+					max-width: 360px;
+				}
+
+				.infoText {
+					font-size: ms(0);
+					margin-top: ms(1);
+				}
+
+				&.one {
+					// background-color: gray;
+					height: ms(5);
+				}
+
+				&.two {
+					// background-color: lightgray;
+					height: ms(5);
+				}
+
+				&.three {
+					// background-color: dimgray;
+					height: ms(3);
+				}
+
+				&.four {
+					// background-color: $bg01;
+					height: ms(4);
+					margin: 0px ms(-1);
+					// border-radius: 4px;
+				}
+
+				&.five {
+					height: ms(3);
+				}
+			}
+
+			&.four {
+				.one {
+					.svg {
+						&.one {
+							width: 220px;
+						}
+
+						&.two {
+							width: 110px;
+							@include transform (translateY(155px));
+						}
+					}
+				}
+			}
+		}
 	}
 }

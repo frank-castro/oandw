@@ -121,3 +121,16 @@ address {
 		color: $bg01;
 	}
 }
+
+@mixin links ($fsize, $lheight) {
+	color: $primaryColor;
+	&:hover {
+		color: white;
+	}
+	font-family: $primary-font;
+	font-size: $fsize;
+	text-transform: uppercase;
+	line-height: $lheight;
+	text-decoration: none;
+	text-align: center;
+}
