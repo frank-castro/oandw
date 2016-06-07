@@ -79,10 +79,10 @@
 		@include span (6 of 12);
 		color: white;
 		text-transform: uppercase;
-		font-family: $primary-font;
-		font-size: ms(0);
+		font-family: $primary-fontlight;
+		font-size: ms(1);
 		line-height: ms(2);
-		letter-spacing: 0.1rem;
+		letter-spacing: 0.07rem;
 		text-align: left;
 		padding-top: ms(0);
 		z-index: 99;
@@ -95,7 +95,11 @@
 
 .promogroup {
 	@include susy-breakpoint($xsmall) {
-
+		.promo {
+			background-color: transparent;
+			@include span (6 of 12);
+			height: ms(6)
+		}
 	}
 
 	@include susy-breakpoint($small) {
@@ -110,9 +114,34 @@
 		padding: 0px;
 
 		.promo {
-			background-color: lightgray;
 			@include span (3 of 12);
-			height: ms(6)
+			height: ms(7);
+
+			.row {
+				display: flex;
+				justify-content: center;
+
+				.svg {
+					width: 60px;
+				}
+
+				.img {
+					width: 16%;
+					@include transform (scale(0.4));
+				}
+
+				p {
+					font-family: $display-text;
+					font-size: ms(2);
+					color: $textColor;
+					padding: ms(-1) 0px;
+				}
+
+				.infoText {
+					font-family: $primary-font;
+					font-size: ms(0);
+				}
+			}
 		}
 	}
 

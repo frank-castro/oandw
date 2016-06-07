@@ -573,7 +573,7 @@
 			.oilsImage {
 				width: 45%;
 				height: 0px; //this height is needed to even the two bottles
-				opacity: 0.9;
+				opacity: 1;
 				@include transform (scale(0.9));
 			}
 		}
