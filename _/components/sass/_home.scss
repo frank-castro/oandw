@@ -137,12 +137,11 @@
 				}
 
 				.infoText {
-					font-family: $primary-fontbold;
+					font-family: $primary-font;
 					font-size: ms(0);
 					line-height: ms(1);
-					letter-spacing: 0.04rem;
+					letter-spacing: 0.03rem;
 					color: $bg01;
-					margin-top: ms(0);
 				}
 
 				a {
@@ -255,6 +254,7 @@
 				.infoText {
 					font-size: ms(0);
 					margin-top: ms(1);
+					line-height: ms(1);
 				}
 
 				&.one {
