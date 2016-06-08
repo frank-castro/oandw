@@ -9,11 +9,11 @@ angular
 				$timeout(function() {
 
 					$(element).slick({
-						speed: 500,
+						speed: 900,
 						autoplay: true,
 						autoplaySpeed: 3600,
 						dots: true,
-						arrows: true,
+						arrows: false,
 						infinite: true,
 						mobileFirst: true,
 						rows: 1,

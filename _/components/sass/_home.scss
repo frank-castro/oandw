@@ -138,7 +138,8 @@
 					font-family: $display-text;
 					font-size: ms(1);
 					line-height: ms(2);
-					color: $textColor;
+					letter-spacing: 0.07rem;
+					color: $primaryColor;
 					max-width: 280px;
 					text-align: center;
 				}
@@ -147,6 +148,7 @@
 					font-family: $primary-fontbold;
 					font-size: ms(0);
 					line-height: ms(1);
+					letter-spacing: 0.04rem;
 					color: $bg01;
 					margin-top: ms(0);
 				}
@@ -223,7 +225,7 @@
 
 				&.one {
 					// background-color: gray;
-					height: ms(5);
+					height: 180px;
 				}
 
 				&.two {
@@ -253,11 +255,12 @@
 					.svg {
 						&.one {
 							width: 220px;
+							@include transform (translateX(-6px) rotate(-3deg));
 						}
 
 						&.two {
 							width: 110px;
-							@include transform (translateY(155px));
+							@include transform (translate(-40px, 148px) rotate(10deg));
 						}
 					}
 				}
