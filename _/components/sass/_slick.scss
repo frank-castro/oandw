@@ -195,33 +195,18 @@ body {
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 1s, ease-out);
 
-		// .slick-slide {
-
-		// 	// img {
-		// 	// 	max-width: 100%;
-		// 	// 	max-height: ms(7);
-		// 	// 	left: 50%;
-		// 	// 	@include transform (translateX(-50%));
-		// 	// }
-		// }
 	}
 
 	@include susy-breakpoint($medium) {
 		@include single-transition(all, 1s, ease-out);
 
-		// .slick-slide {
-
-		// 	img {
-		// 		max-height: ms(7);
-		// 	}
-		// }
 	}
 
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 1s, ease-out);
 
 		.slickContainer {
-			@include span (10 of 12);
+			@include span (12 of 12);
 			@include transform (translateX(-50%));
 			left: 50%;
 			position: relative;
@@ -231,7 +216,7 @@ body {
 		.slick-prev,
 		.slick-next {
 			&:before {
-				opacity: 0.16;
+				opacity: 1;
 			}
 		}
 
@@ -241,7 +226,18 @@ body {
 			img {
 				width: auto;
 				max-width: 100%;
-				max-height: 80vh;
+				min-height: 480px;
+				max-height: 69vh;
+			}
+		}
+
+		.slick-dots {
+			@include transform (translateY(-140px));
+
+			li {	
+				button {
+					@include transform(scale(0.7));
+				}
 			}
 		}
 	}
@@ -268,9 +264,6 @@ body {
 			z-index: -1;
 
 			img {
-				width: auto;
-				max-width: 100%;
-				min-height: ms(9);
 				max-height: 88vh;
 			}
 		}

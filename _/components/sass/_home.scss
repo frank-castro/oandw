@@ -121,10 +121,6 @@
 				display: flex;
 				justify-content: center;
 
-				.svg {
-					width: 60px;
-				}
-
 				.img {
 					@include transform (scale(0.4));
 					width: 70px;
@@ -136,7 +132,7 @@
 					line-height: ms(2);
 					letter-spacing: 0.07rem;
 					color: $primaryColor;
-					max-width: 280px;
+					max-width: 260px;
 					text-align: center;
 				}
 
@@ -165,13 +161,54 @@
 				}
 
 				&.three {
-					// background-color: dimgray;
-					height: ms(2);
+					background-color: dimgray;
+					height: ms(3);
+
+					p {
+						padding-top: ms(-1);
+					}
 				}
 
 				&.four {
-					// background-color: $bg01;
 					height: ms(4);
+
+					p {
+						@include transform(translateY(-50%));
+						top: 50%;
+						position: relative;
+						background-color: gray;
+					}
+				}
+
+				&.five {
+					height: ms(3);
+				}
+			}
+
+			&.one {
+				.one {
+					.svg {
+						width: 80px;
+						@include transform (translateY(-20px));
+					}
+				}
+			}
+
+			&.two {
+				.one {
+					.svg {
+						width: 86px;
+						@include transform (translateY(-20px));
+					}
+				}
+			}
+
+			&.three {
+				.one {
+					.svg {
+						width: 90px;
+						@include transform (translateY(40px));
+					}
 				}
 			}
 
@@ -180,11 +217,12 @@
 					.svg {
 						&.one {
 							width: 130px;
+							@include transform (translateX(-6px) rotate(-3deg));
 						}
 
 						&.two {
 							width: 80px;
-							@include transform (translateY(80px));
+							@include transform (translate(-24px, 80px) rotate(7deg));
 						}
 					}
 				}
@@ -243,6 +281,33 @@
 
 				&.five {
 					height: ms(3);
+				}
+			}
+
+			&.one {
+				.one {
+					.svg {
+						width: 80px;
+						@include transform (translateY(-20px));
+					}
+				}
+			}
+
+			&.two {
+				.one {
+					.svg {
+						width: 90px;
+						@include transform (translateY(-20px));
+					}
+				}
+			}
+
+			&.three {
+				.one {
+					.svg {
+						width: 160px;
+						@include transform (translateY(40px));
+					}
 				}
 			}
 

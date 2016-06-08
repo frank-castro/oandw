@@ -1232,14 +1232,13 @@ footer {
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 		@include span(12 of 12);
-		font-size: 0.8rem;
-		line-height: 1.7rem;
+		font-size: ms(0);
+		line-height: ms(2);
 		padding: 20px 10% 40px;
 		// margin-top: 40px;
 
 		.about {
 			text-decoration: none;
-			text-transform: ms(1);
 			font-size: ms(1);
 			font-family: $primary-fontbold;
 			cursor: pointer;
@@ -1256,17 +1255,18 @@ footer {
 
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 1s, ease-out);
-
+		font-size: ms(0);
+		line-height: ms(2);
+		padding: 20px 10% 40px;
+		
 		.about {
 			position: absolute;
 			top: 7px;
 			right: 20%;
 			z-index: 1040;
 			color: $green;
-			text-transform: ms(1);
-			font-size: 12px;
+			font-size: ms(0);
 			font-family: $primary-font;
-			opacity: 0.8;
 		}
 	}
 
