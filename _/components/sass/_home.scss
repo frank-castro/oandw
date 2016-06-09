@@ -39,7 +39,7 @@
 		z-index: 99;
 		opacity: 1;
 		position: relative;
-		@include transform(translateY(-50vh));
+		@include transform(translateY(-300px));
 
 		#spacer {
 			@include span(2 of 12);
@@ -56,7 +56,7 @@
 	@include susy-breakpoint($xlarge) {
 		font-size: ms(3);
 		letter-spacing: 0.1rem;
-		@include transform(translateY(-50vh));
+		@include transform(translateY(-500px));
 	}
 }
 
