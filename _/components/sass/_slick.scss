@@ -30,6 +30,11 @@ body {
 
 		.slickContainer {
 			@include span (12 of 12);
+			padding: 0px;
+			@include transform (translateX(-50%));
+			left: 50%;
+			position: relative;
+			margin-top: ms(1);
 		}
 
 		/* Slider */
@@ -116,10 +121,10 @@ body {
 			z-index: -1;
 
 			img {
-				// width: auto;
-				// max-width: 100%;
-				height: 66vh;
-				max-height: 440px;
+				width: auto;
+				max-width: 100%;
+				// height: 66vh;
+				// max-height: 440px;
 				position: relative;
 				cursor: grab;
 			}
@@ -128,7 +133,7 @@ body {
 		/* Dots */
 
 		.slick-dotted.slick-slider {
-			margin-bottom: 16px;
+			margin-bottom: ms(1);
 		}
 
 		.slick-dots {
@@ -226,7 +231,8 @@ body {
 			img {
 				// width: auto;
 				// max-width: 100%;
-				height: 66vh;
+				height: 62vh;
+				min-height: 300px;
 				max-height: 680px;
 			}
 		}
@@ -266,7 +272,8 @@ body {
 
 			img {
 				height: 66vh;
-				max-height: 1000px;
+				min-height: 500px;
+				max-height: 2000px;
 			}
 		}
 
