@@ -56,7 +56,7 @@
 	@include susy-breakpoint($xlarge) {
 		font-size: ms(3);
 		letter-spacing: 0.1rem;
-		@include transform(translateY(-400px));
+		@include transform(translateY(-520px));
 	}
 }
 
@@ -247,7 +247,7 @@
 
 				p {
 					font-size: ms(2);
-					padding: ms(-1) 0px;
+					padding: 0px;
 					max-width: 360px;
 				}
 
@@ -275,7 +275,7 @@
 				&.four {
 					// background-color: $bg01;
 					height: ms(4);
-					margin: 0px ms(-1);
+					margin: 10px ms(-1);
 					// border-radius: 4px;
 				}
 
@@ -316,12 +316,12 @@
 					.svg {
 						&.one {
 							width: 220px;
-							@include transform (translateX(-6px) rotate(-3deg));
+							@include transform (translateX(-6px) rotate(-2deg));
 						}
 
 						&.two {
 							width: 110px;
-							@include transform (translate(-40px, 148px) rotate(10deg));
+							@include transform (translate(-40px, 148px) rotate(7deg));
 						}
 					}
 				}
