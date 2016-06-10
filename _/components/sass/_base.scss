@@ -28,6 +28,7 @@ $cartbttnshadow: rgba(black, 0.5) 0px 2px 3px;
 // bg gradients
 $bg01: #1B1D0E;
 $bg01a: rgba(27, 29, 14, 0.8);
+$bg01b: #1F2210;
 // $bg02: #181917;
 $bg02: #2B3B22;
 
@@ -37,6 +38,7 @@ $green: #CEE44D;
 $textColor: #BCCCB6;
 
 $primaryColor: #8EA286;
+$secondaryColor: #5E6B59;
 
 $svgLinesOpacity: 0.55;
 
@@ -84,7 +86,7 @@ $bannerLargeGifts: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02
 $bannerLargeAccessories: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('largeBanner/accessories.jpg');
 
 body {
-	@include background(linear-gradient(180deg, $bg01 32%, $bg02 68%));
+	@include background(linear-gradient(180deg, $bg01b 32%, $bg02 68%));
 }
 
 // #{headings(1,4)} {
@@ -150,4 +152,177 @@ address {
 	background-size: cover;
 	background-position: center center;
 	@include single-transition(all, 1s, ease-out);
+}
+
+.sitemenu {
+	@include susy-breakpoint($xsmall) {
+		@include single-transition(all, 0.5s, ease-out);
+		width: 100%;
+		text-align: center;
+		position: fixed;
+		background-color: $bg01;
+		z-index: 1090;
+
+		a {
+			@include single-text-shadow;
+			display: block;
+			padding: 3px 0 7px;
+			letter-spacing: 0.08rem;
+			@include links(ms(0), 2rem); //arguments font size and line height
+		}
+
+		.active {
+			font-family: $primary-fontlight;
+			opacity: 0.4;
+			border-top: 1px solid $green;
+			border-bottom: 1px solid $green;
+			margin: 10px 0%;
+		}
+
+		.navwrapper {
+			height: 0px;
+			overflow: hidden;
+			visibility: hidden;
+		}
+
+		.showMenu {
+			height: 100%;
+			overflow: visible;
+			visibility: visible;
+			padding: ms(3) ms(2);
+		}
+
+		.closeBttnMenu {
+			position: fixed;
+			top: 10px;
+			left: 12px;
+			cursor: pointer;
+			background-color: none;
+			z-index: 2000;
+			display: none;
+
+			i {
+				color: $green;
+			}
+		}
+
+		.showBttn {
+			display: block;
+		}
+	}
+
+	@include susy-breakpoint($small) {
+		@include single-transition(all, 0.5s, ease-out);
+
+		a {
+			font-size: ms(1);
+			line-height: 3.3rem;
+			padding: 20px 0;
+		}
+	}
+
+	@include susy-breakpoint($medium) {
+		@include single-transition(all, 0.5s, ease-out);
+
+		a {
+			font-size: ms(1);
+			padding: 24px 0;
+		}
+	}
+
+	@include susy-breakpoint($large) {
+		@include single-transition(all, 1s, ease-out);
+		top: 40px;
+		position: fixed;
+		background-color: transparent;
+		z-index: 1040;
+
+		a {
+			font-size: 0.75rem;
+			line-height: 2.2rem;
+			padding: 2px 16px;
+			letter-spacing: 0.07rem;
+		}
+
+		.active {
+			border-top: 0px;
+			border-bottom: 1px solid $green;
+			margin: 0px;
+		}
+
+		.navwrapper {
+			visibility: visible;
+			display: table;
+			margin: 0 auto;
+		}
+
+		.closeBttnMenu {
+			display: none;
+		}
+
+		.showMenu {
+			height: auto;
+			padding: 0px;
+		}
+
+		ul li {
+			float: left;
+		}
+
+		.closeBttn {
+			display: none;
+		}
+	}
+
+	@include susy-breakpoint($xlarge) {
+		@include single-transition(all, 1s, ease-out);
+		top: 40px;
+
+		a {
+			font-size: 0.75rem;
+			line-height: 2.2rem;
+			padding: 2px 20px;
+			letter-spacing: 0.07rem;
+		}
+	}
+}
+
+.navbg-hidden {
+	@include susy-breakpoint($xsmall) {
+		will-change: transform;
+		@include single-transition(all, 0.9s, ease-out);
+		@include transform(translateY(-600px));
+		opacity: 0;
+	}
+
+	@include susy-breakpoint($small) {
+
+	}
+
+	@include susy-breakpoint($medium) {
+		
+	}
+
+	@include susy-breakpoint($large) {
+
+	}
+
+	@include susy-breakpoint($xlarge) {
+
+	}
+} // class needed to hide the nav menu on scroll
+
+.roundBttnPlus {
+	width: 44px;
+	height: 44px;
+	@include border-radius (50%);
+	@include transform (translateX(-50%));
+  	margin-left: 50%;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+	margin-bottom: 5px;
+	cursor: pointer;
+	
+	path {
+		fill: #1E0F0F;
+	}
 }
