@@ -44,6 +44,12 @@
 			visibility: hidden;
 		}
 
+		.showMenu {
+			height: 100%;
+			overflow: visible;
+			visibility: visible;
+		}
+
 		.closeBttnMenu {
 			position: fixed;
 			top: 10px;
@@ -51,10 +57,15 @@
 			cursor: pointer;
 			background-color: none;
 			z-index: 2000;
+			display: none;
 
 			i {
 				color: $green;
 			}
+		}
+
+		.showBttn {
+			display: block;
 		}
 	}
 

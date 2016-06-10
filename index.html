@@ -72,7 +72,7 @@
 				<div class="logo">
 					<img src="images/svg/oandw-logo2.svg"/>
 				</div>
-				<div class="barsWrapper">
+				<div class="barsWrapper" ng-click="menutoggle = !menutoggle">
 					<div class="bar"></div>
 					<div class="bar"></div>
 					<div class="bar"></div>
@@ -80,20 +80,20 @@
 			</div>
 
 			<nav class="sitemenu" >
-				<div class="closeBttnMenu">
-					<i class="material-icons">close</i>
-				</div>
-				<div class="navwrapper">
+				<div class="navwrapper" ng-class="{'showMenu' : menutoggle }">
 					<ul nav-menu="active">
-						<li><a href="#/home">Home</a></li>
-						<li><a href="#/varietal">Single Varietals</a></li>
-						<li><a href="#/infuse">Fused & Infused</a></li>
-						<li><a href="#/specialty">Specialty Oils</a></li>
-						<li><a href="#/balsamics">Balsamics</a></li>
-						<li><a href="#/seasonings">Seasonings</a></li>
-						<li><a href="#/gifts">Gifts</a></li>
-						<li><a href="#/accessories">Accessories</a></li>
+						<li ng-click="menutoggle = !menutoggle"><a href="#/home">Home</a></li>
+						<li ng-click="menutoggle = !menutoggle"><a href="#/varietal">Single Varietals</a></li>
+						<li ng-click="menutoggle = !menutoggle"><a href="#/infuse">Fused & Infused</a></li>
+						<li ng-click="menutoggle = !menutoggle"><a href="#/specialty">Specialty Oils</a></li>
+						<li ng-click="menutoggle = !menutoggle"><a href="#/balsamics">Balsamics</a></li>
+						<li ng-click="menutoggle = !menutoggle"><a href="#/seasonings">Seasonings</a></li>
+						<li ng-click="menutoggle = !menutoggle"><a href="#/gifts">Gifts</a></li>
+						<li ng-click="menutoggle = !menutoggle"><a href="#/accessories">Accessories</a></li>
 					</ul>
+				</div>
+				<div class="closeBttnMenu" ng-click="menutoggle = !menutoggle" ng-class="{'showBttn' : menutoggle }">
+					<i class="material-icons">close</i>
 				</div>
 			</nav>
 		</header>

@@ -27,6 +27,12 @@ header {
 	}
 }
 
+.navbg-hidden {
+	will-change: transform;
+	@include single-transition(all, 0.9s, ease-out);
+	@include transform(translateY(-180px));
+} // class needed to hide the nav menu on scroll
+
 .aboutUs {
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 0.5s, ease-out);
@@ -123,15 +129,15 @@ header {
 		} //2 column spacer div
 
 		.logo {
-			@include transform (translate(-50%, 5px));
+			@include transform (translate(-50%, 14px));
 			left: 50%;
 			position: absolute;
 			width: 90px;
 		}
 
 		.barsWrapper {
-			top: 10px;
-			left: 12px;
+			top: 12px;
+			left: 16px;
 			position: absolute;
 			cursor: pointer;
 			z-index: 1050;
@@ -140,7 +146,7 @@ header {
 		.bar {
 			background-color: $primaryColor;
 			height: 1px;
-			width: 26px;
+			width: 18px;
 			margin: 4px 0px;
 			display: table;
 		}
