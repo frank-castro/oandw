@@ -17,7 +17,7 @@ angular
 						infinite: true,
 						mobileFirst: true,
 						rows: 1,
-						lazyload: 'progressive',
+						lazyload: 'progressive'
 					})
 
 					// $(element).slick(scope.$eval(attrs.slickCarousel));

@@ -31,10 +31,23 @@ body {
 		.slickContainer {
 			@include span (12 of 12);
 			padding: 0px;
-			@include transform (translateX(-50%));
-			left: 50%;
-			position: relative;
-			margin-top: ms(1);
+			margin-top: 0px;			
+			// @include transform (translateX(-50%));
+			// left: 50%;
+			// position: relative;
+
+			.slide1 {
+				@include background($slide1);
+				@include bg-properties;
+			}
+			.slide2 {
+				@include background($slide2);
+				@include bg-properties;
+			}
+			.slide3 {
+				@include background($slide3);
+				@include bg-properties;
+			}
 		}
 
 		/* Slider */
@@ -43,8 +56,6 @@ body {
 			.slick-loading & {
 				// background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
 			}
-
-			// height: ms(6);
 		}
 
 		/* Arrows */
@@ -119,14 +130,20 @@ body {
 
 		.slick-slide {
 			z-index: -1;
+			height: 66vh;
 
 			img {
-				width: auto;
-				max-width: 100%;
-				// height: 66vh;
-				// max-height: 440px;
+				// width: 400px;
+				// width: 100%;
+				// max-width: 100%;
+				// height: 400px;
+				// max-height: 240px;
 				position: relative;
 				cursor: grab;
+// this breaks the carousel				
+				// @include transform (translateX(-50%)); 
+				// left: 50%;
+				// position: relative;
 			}
 		}
 

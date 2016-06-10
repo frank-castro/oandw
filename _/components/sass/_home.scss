@@ -11,33 +11,44 @@
 }
 
 .slogan {
-	@include single-transition(all, 0.3s, ease-out);
 	@include susy-breakpoint($xsmall) {
+		@include single-transition(all, 0.3s, ease-out);
 		@include single-text-shadow;
+		color: white;
+		font-family: $display-text;
+		z-index: 99;
+		padding: 0px;
+		font-size: ms(1);
+		letter-spacing: 0.1rem;
+		position: relative;
+		@include transform(translateY(-180px));
 
-		#spacer2 {
-			@include span(2 of 12);
+		#spacer {
+			width: 0px;
 			padding: 0px;
-			height: 1px;
+			height: 0px;
 			color: transparent;
 		} //2 column spacer div
+
+		#sloganText {
+			@include span (10 of 12);
+		}
 	}
 
 	@include susy-breakpoint($small) {
+		@include single-transition(all, 0.3s, ease-out);
 	}
 
 	@include susy-breakpoint($medium) {
+		@include single-transition(all, 0.3s, ease-out);
 	}
 
 	@include susy-breakpoint($large) {
+		@include single-transition(all, 0.3s, ease-out);
 		@include span(12 of 12);
 		padding: 0px;
-		color: white;
-		font-family: $display-text;
 		font-size: ms(2);
 		letter-spacing: 0.1rem;
-		z-index: 99;
-		opacity: 1;
 		position: relative;
 		@include transform(translateY(-340px));
 
@@ -54,6 +65,7 @@
 	}
 
 	@include susy-breakpoint($xlarge) {
+		@include single-transition(all, 0.3s, ease-out);
 		font-size: ms(3);
 		letter-spacing: 0.1rem;
 		@include transform(translateY(-520px));
@@ -62,6 +74,17 @@
 
 .imgText {
 	@include susy-breakpoint($xsmall) {
+		@include single-transition(all, 0.2s, ease-out);
+		@include span (8 of 12);
+		color: white;
+		text-transform: uppercase;
+		font-family: $primary-font;
+		font-size: ms(-1);
+		line-height: ms(1);
+		letter-spacing: 0.1rem;
+		text-align: left;
+		padding-top: ms(0);
+		z-index: 99;
 	}
 
 	@include susy-breakpoint($small) {
@@ -73,15 +96,10 @@
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 0.2s, ease-out);
 		@include span (6 of 12);
-		color: white;
-		text-transform: uppercase;
-		font-family: $primary-font;
 		font-size: ms(0);
 		line-height: ms(2);
 		letter-spacing: 0.1rem;
-		text-align: left;
 		padding-top: ms(0);
-		z-index: 99;
 	}
 
 	@include susy-breakpoint($xlarge) {
