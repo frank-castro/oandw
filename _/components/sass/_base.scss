@@ -26,10 +26,8 @@ $default-text-shadow-v-offset: 1px;
 $cartbttnshadow: rgba(black, 0.5) 0px 2px 3px;
 
 // bg gradients
-$bg01: #1B1D0E;
+$bg01: #1F2210;
 $bg01a: rgba(27, 29, 14, 0.8);
-$bg01b: #1F2210;
-// $bg02: #181917;
 $bg02: #2B3B22;
 
 //COLORS
@@ -86,7 +84,7 @@ $bannerLargeGifts: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02
 $bannerLargeAccessories: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('largeBanner/accessories.jpg');
 
 body {
-	@include background(linear-gradient(180deg, $bg01b 32%, $bg02 68%));
+	@include background(linear-gradient(180deg, $bg01 32%, $bg02 68%));
 }
 
 // #{headings(1,4)} {
