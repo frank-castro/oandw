@@ -31,10 +31,7 @@ body {
 		.slickContainer {
 			@include span (12 of 12);
 			padding: 0px;
-			margin-top: 0px;			
-			// @include transform (translateX(-50%));
-			// left: 50%;
-			// position: relative;
+			margin-top: 0px;
 
 			.slide1 {
 				@include background($slide1);
@@ -130,7 +127,7 @@ body {
 
 		.slick-slide {
 			z-index: -1;
-			height: 66vh;
+			height: 36vh;
 
 			img {
 				// width: 400px;
@@ -140,10 +137,6 @@ body {
 				// max-height: 240px;
 				position: relative;
 				cursor: grab;
-// this breaks the carousel				
-				// @include transform (translateX(-50%)); 
-				// left: 50%;
-				// position: relative;
 			}
 		}
 
@@ -233,6 +226,19 @@ body {
 			left: 50%;
 			position: relative;
 			margin-top: ms(4);
+
+			.slide1 {
+				@include background($slide4);
+				@include bg-properties;
+			}
+			.slide2 {
+				@include background($slide5);
+				@include bg-properties;
+			}
+			.slide3 {
+				@include background($slide6);
+				@include bg-properties;
+			}
 		}
 
 		.slick-prev,

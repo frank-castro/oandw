@@ -5,7 +5,7 @@ header {
 		left: 0px;
 		top: 0px;
 		width: 100%;
-		height: 104px;
+		height: 44px;
 		z-index: 999;
 		background-color: $bg01;
 	}
@@ -123,15 +123,15 @@ header {
 		} //2 column spacer div
 
 		.logo {
-			// @include transform (translate(-50%, 16px));
-			// left: 50%;
-			// position: absolute;
-			width: 120px;
+			@include transform (translate(-50%, 5px));
+			left: 50%;
+			position: absolute;
+			width: 90px;
 		}
 
 		.barsWrapper {
-			top: 26px;
-			left: 30px;
+			top: 10px;
+			left: 12px;
 			position: absolute;
 			cursor: pointer;
 			z-index: 1050;
@@ -150,9 +150,7 @@ header {
 		@include single-transition(all, 1s, ease-out);
 
 		.logo {
-			// @include transform (translate(-50%, 16px));
-			// left: 50%;
-			width: 120px;
+			width: 90px;
 		}
 	}
 
@@ -170,9 +168,9 @@ header {
 		background-color: transparent;
 
 		.logo {
-			// @include transform (translate(0, 0));
+			@include transform (translate(0, 0));
 			top: 12px;
-			// left: 0px;
+			left: 0px;
 			float: left;
 			position: relative;
 			width: 120px;

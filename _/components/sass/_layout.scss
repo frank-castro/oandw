@@ -39,14 +39,15 @@
 		}
 
 		.navwrapper {
-			height: ms(1);
+			height: 0px;
 			overflow: hidden;
+			visibility: hidden;
 		}
 
 		.closeBttnMenu {
 			position: fixed;
-			top: 24px;
-			left: 30px;
+			top: 10px;
+			left: 12px;
 			cursor: pointer;
 			background-color: none;
 			z-index: 2000;
@@ -97,6 +98,7 @@
 		}
 
 		.navwrapper {
+			visibility: visible;
 			display: table;
 			margin: 0 auto;
 		}
