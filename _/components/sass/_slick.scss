@@ -223,11 +223,11 @@ body {
 
 		.slickContainer {
 			@include span (12 of 12);
-			padding: 0px;
+			padding: 0px 0px ms(3) 0px;
 			@include transform (translateX(-50%));
 			left: 50%;
 			position: relative;
-			margin-top: ms(4);
+			margin-top: 80px;
 
 			.slide1 {
 				@include background($slide4);
@@ -279,7 +279,7 @@ body {
 
 		.slickContainer {
 			@include span (12 of 12);
-			padding: 0px;
+			padding: 0px 0px ms(4) 0px;
 			margin-top: 80px;
 		}
 
@@ -287,7 +287,6 @@ body {
 		.slick-next {
 			cursor: pointer;
 			@include transform(translate(0, -50%) scale(1.5));
-
 				&:before {
 					opacity: 1;
 				}

@@ -21,7 +21,7 @@
 		padding: ms(1) 0px 0px ms(1);
 		font-size: ms(1);
 		line-height: ms(2);
-		letter-spacing: 0.1rem;
+		letter-spacing: 0.08rem;
 		position: relative;
 
 		#spacer {
@@ -71,7 +71,7 @@
 		color: white;
 		text-transform: uppercase;
 		font-family: $primary-font;
-		font-size: ms(-1);
+		font-size: ms(0);
 		line-height: ms(0);
 		letter-spacing: 0.07rem;
 		text-align: left;
@@ -298,7 +298,6 @@
 				.one {
 					.svg {
 						width: 80px;
-						@include transform (translateY(-20px));
 					}
 				}
 			}
@@ -307,7 +306,6 @@
 				.one {
 					.svg {
 						width: 86px;
-						@include transform (translateY(-20px));
 					}
 				}
 			}
@@ -315,7 +313,7 @@
 			&.three {
 				.one {
 					.svg {
-						width: 90px;
+						width: 80px;
 						@include transform (translateY(40px));
 					}
 				}
@@ -396,7 +394,6 @@
 				.one {
 					.svg {
 						width: 100px;
-						@include transform (translateY(0px));
 					}
 				}
 			}
@@ -405,7 +402,6 @@
 				.one {
 					.svg {
 						width: 90px;
-						@include transform (translateY(0px));
 					}
 				}
 			}
@@ -413,7 +409,7 @@
 			&.three {
 				.one {
 					.svg {
-						width: 160px;
+						width: 130px;
 						@include transform (translateY(40px));
 					}
 				}
