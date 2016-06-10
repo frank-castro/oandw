@@ -169,24 +169,18 @@
 				}
 
 				&.four {
-					height: ms(4);
 
-					p {
-						@include transform(translateY(-50%));
-						top: 50%;
-						position: relative;
-					}
 				}
 
 				&.five {
-					height: ms(3);
+					height: ms(4);
 				}
 			}
 
 			&.one {
 				.one {
 					.svg {
-						width: 90px;
+						width: 74px;
 					}
 				}
 			}
@@ -194,7 +188,7 @@
 			&.two {
 				.one {
 					.svg {
-						width: 86px;
+						width: 70px;
 					}
 				}
 			}
@@ -202,7 +196,7 @@
 			&.three {
 				.one {
 					.svg {
-						width: 90px;
+						width: 86px;
 						@include transform (translateY(40px));
 					}
 				}
