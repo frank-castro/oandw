@@ -61,7 +61,7 @@
 		@include single-transition(all, 0.3s, ease-out);
 		font-size: ms(3);
 		letter-spacing: 0.1rem;
-		@include transform(translateY(-520px));
+		@include transform(translateY(ms(4)));
 	}
 }
 
@@ -281,12 +281,6 @@
 
 				&.four {
 					height: ms(4);
-
-					p {
-						@include transform(translateY(-50%));
-						top: 50%;
-						position: relative;
-					}
 				}
 
 				&.five {
@@ -371,7 +365,8 @@
 				}
 
 				&.two {
-					height: ms(5);
+					height: ms(4);
+					@include transform(translateY(-30%) scale(0.9));
 				}
 
 				&.three {
@@ -379,10 +374,7 @@
 				}
 
 				&.four {
-					// background-color: $bg01;
 					height: ms(4);
-					margin: 10px ms(-1);
-					// border-radius: 4px;
 				}
 
 				&.five {
@@ -393,7 +385,7 @@
 			&.one {
 				.one {
 					.svg {
-						width: 100px;
+						width: 120px;
 					}
 				}
 			}
@@ -401,7 +393,7 @@
 			&.two {
 				.one {
 					.svg {
-						width: 90px;
+						width: 100px;
 					}
 				}
 			}
@@ -409,8 +401,8 @@
 			&.three {
 				.one {
 					.svg {
-						width: 130px;
-						@include transform (translateY(40px));
+						width: 140px;
+						@include transform (translateY(60px));
 					}
 				}
 			}
@@ -420,12 +412,12 @@
 					.svg {
 						&.one {
 							width: 220px;
-							@include transform (translateX(-6px) rotate(-2deg));
+							@include transform (translate(-6px, -10px) rotate(-2deg));
 						}
 
 						&.two {
 							width: 110px;
-							@include transform (translate(-40px, 148px) rotate(7deg));
+							@include transform (translate(-40px, 145px) rotate(7deg));
 						}
 					}
 				}

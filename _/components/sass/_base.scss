@@ -148,7 +148,7 @@ address {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	background-position: center center;
+	background-position: left center;
 	@include single-transition(all, 1s, ease-out);
 }
 
