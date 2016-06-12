@@ -274,9 +274,9 @@
 				height: 90px;
 				margin-top: 20px;
 				font-family: $primary-fontlight;
-				font-size: ms(1);
-				line-height: 1.3em;
-				text-align: left;
+				font-size: ms(0);
+				line-height: ms(1);
+				text-align: right;
 				text-transform: uppercase;
 			}
 		}
@@ -372,7 +372,7 @@
 				font-family: $primary-fontlight;
 				font-size: ms(1);
 				line-height: 1.3em;
-				text-align: left;
+				text-align: right;
 				text-transform: uppercase;
 			}
 		}
@@ -558,7 +558,7 @@
 				font-family: $primary-fontlight;
 				font-size: ms(1);
 				line-height: ms(2);
-				text-align: left;
+				text-align: right;
 			}
 		}
 	}
@@ -761,6 +761,9 @@
 			padding: ms(2) 0px ms(1);
 			// line-height: 3.3rem;
 			// font-size: 2rem;
+	  		// padding: ms(3) 0px ms(2);
+	  		font-size: ms(2);
+			line-height: ms(3);
 
 			input {
 				display: none;
@@ -867,11 +870,12 @@
 			width: 50%;
 			font-family: $primary-fontlight;
 			font-size: ms(1);
-			line-height: ms(2);
+			line-height: ms(1);
 		}
 
 		.seasoningsImage {
 			width: 45%;
+			@include transform(scale(0.8));
 		}
 
 //Gifts Section
@@ -888,7 +892,7 @@
 				height: 75px;
 				font-family: $primary-fontlight;
 				font-size: ms(1);
-				line-height: ms(2);
+				line-height: ms(1);
 			}
 		}
 
@@ -937,7 +941,7 @@
 				font-family: $primary-fontlight;
 				font-size: ms(1);
 				line-height: ms(2);
-				text-align: left;
+				text-align: right;
 			}
 		}
 	}
@@ -1003,6 +1007,11 @@
 			li:nth-child(2) {
 				padding: 10px 0px 50px;
 			}
+		}
+
+		.seasoningsImage {
+			width: 45%;
+			@include transform(scale(1));
 		}
 
 //Gifts Section

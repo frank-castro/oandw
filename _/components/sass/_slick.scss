@@ -264,7 +264,7 @@ body {
 		}
 
 		.slick-dots {
-			@include transform (translateY(-140px));
+			@include transform (translateY(-40px));
 
 			li {	
 				button {

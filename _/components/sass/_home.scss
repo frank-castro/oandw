@@ -52,7 +52,7 @@
 		#spacer {
 			@include span(2 of 12);
 			padding: 0px;
-			height: 5vh;
+			height: 25vh;
 			color: transparent;
 		}
 	}
@@ -223,7 +223,7 @@
 
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 0.2s, ease-out);
-		@include span(10 of 12);
+		@include span(12 of 12);
 		padding: 0px;
 		height: ms(7);
 
@@ -299,7 +299,7 @@
 			&.two {
 				.one {
 					.svg {
-						width: 86px;
+						width: 68px;
 					}
 				}
 			}
@@ -308,7 +308,7 @@
 				.one {
 					.svg {
 						width: 80px;
-						@include transform (translateY(40px));
+						@include transform (translateY(48px));
 					}
 				}
 			}
