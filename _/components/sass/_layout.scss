@@ -63,7 +63,7 @@
 				font-size: 1.7rem;
 				padding: 0px;
 				text-align: left;
-				height: 120px;
+				height: 84px;
 			} // product name selected by root position
 		}
 
@@ -88,16 +88,16 @@
 		}
 
 		.ctrlsContainer {
-			height: 410px;
+			height: 380px;
 
 			.buyCtrlsLeft {
 				float: left;
 				width: 98px;
-				padding-left: 18px;
+				padding-left: 30px;
 			} // left side div with big bottle, price and buttons
 
 			.buyCtrlsRight {
-				padding-right: 18px;
+				padding-right: 30px;
 				float: right;
 				width: 98px;
 			} // right side div with big bottle, price and buttons
@@ -105,7 +105,7 @@
 			.buyCtrlsSpecial {
 				width: 58px;
 				position: relative;
-				top: 122px;
+				top: 70px;
 				left: 50%;
 				@include transform (translateX(-50%));
 				
@@ -128,9 +128,9 @@
 
 		.oilsBuyContainerLeft {
 			p {
-				padding: 5px 0px 16px;
+				padding: 5px 0px 0px;
 				font-size: 0.8rem;
-				@include transform (translateY(-55px));
+				@include transform (translateY(-52px));
 				color: $primaryColor;
 			}
 
@@ -151,7 +151,7 @@
 		} // container for plus bttn and texts for the big bottle, only for add to cart
 
 		.oilsBuyContainer p {
-			padding: 5px 0px 20px;
+			padding: 5px 0px 5px;
 			font-size: 0.8rem;
 			color: $primaryColor;
 		} // container for plus bttn and texts for the small bottle, only for add to cart
@@ -161,7 +161,7 @@
 			opacity: $svgLinesOpacity;
 
 			img {
-				@include transform(translateY(-20px) scale(0.8));
+				@include transform(translateY(-45px) scale(0.7));
 			}
 		} // container for the svg
 
@@ -178,14 +178,6 @@
 			border-bottom-width: 1px;
 			padding: 0px 0px 12px;
 		}
-
-		// .description ::first-letter {
-		// 	font-size: 360%;
-		// 	line-height: 360%;
-		// 	padding: 0px;
-		// 	float: left;
-		// 	font-family: $desc-font;
-		// }
 
 //Seasonings Section
 
@@ -413,6 +405,10 @@
 			.buyCtrlsRight {
 				padding-right: 88px;
 			} // right side div with big bottle, price and buttons
+		}
+
+		.oilsBuyContainer p {
+			padding: 5px 0px 20px;
 		}
 
 		.description {

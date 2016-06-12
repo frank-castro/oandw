@@ -148,8 +148,15 @@ address {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	background-position: left center;
 	@include single-transition(all, 1s, ease-out);
+
+	@include susy-breakpoint($xsmall) {
+		background-position: center center;
+	}
+
+	@include susy-breakpoint($large) {
+		background-position: left center;
+	}
 }
 
 .sitemenu {
