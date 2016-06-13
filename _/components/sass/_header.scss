@@ -109,7 +109,6 @@ header {
 }
 
 .logoBar {
-	
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 		z-index: 1040;
@@ -206,8 +205,8 @@ header {
 }
 
 //header variables
-$xsmall-height: 25vh;
-$small-height: 25vh;
+$xsmall-height: 45px;
+$small-height: 45px;
 $medium-height: 81px;
 $large-height: 81px;
 $xlarge-height: 81px;
@@ -215,12 +214,10 @@ $xlarge-height: 81px;
 .headerVarietal {
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
-		@include background($bannerLargeVarietal);
-		@include bg-properties;
+		@include background($patternVarietal);
+		@include bg-pattern;
 		width: 100%;
-		min-width: 360px;
 		height: $xsmall-height;
-		opacity: 0.5;
 	}
 
 	@include susy-breakpoint($small) {
@@ -245,11 +242,9 @@ $xlarge-height: 81px;
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 		@include background($bannerLargeSeasonings);
-		@include bg-properties;
+		@include bg-pattern;
 		width: 100%;
-		min-width: 360px;
 		height: $xsmall-height;
-		opacity: 0.3;
 	}
 
 	@include susy-breakpoint($small) {
@@ -273,11 +268,9 @@ $xlarge-height: 81px;
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 		@include background($bannerLargeGifts);
-		@include bg-properties;
+		@include bg-pattern;
 		width: 100%;
-		min-width: 360px;
 		height: $xsmall-height;
-		opacity: 0.4;
 	}
 
 	@include susy-breakpoint($small) {
@@ -301,11 +294,9 @@ $xlarge-height: 81px;
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 		@include background($bannerLargeAccessories);
-		@include bg-properties;
+		@include bg-pattern;
 		width: 100%;
-		min-width: 360px;
 		height: $xsmall-height;
-		opacity: 0.5;
 	}
 
 	@include susy-breakpoint($small) {
@@ -329,11 +320,9 @@ $xlarge-height: 81px;
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 		@include background($bannerLargeSpecialty);
-		@include bg-properties;
+		@include bg-pattern;
 		width: 100%;
-		min-width: 360px;
 		height: $xsmall-height;
-		opacity: 0.3;
 	}
 
 	@include susy-breakpoint($small) {
@@ -357,11 +346,9 @@ $xlarge-height: 81px;
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 		@include background($bannerLargeBalsamics);
-		@include bg-properties;
+		@include bg-pattern;
 		width: 100%;
-		min-width: 360px;
 		height: $xsmall-height;
-		opacity: 0.4;
 	}
 
 	@include susy-breakpoint($small) {
@@ -385,11 +372,9 @@ $xlarge-height: 81px;
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 		@include background($bannerLargeInfuse);
-		@include bg-properties;
+		@include bg-pattern;
 		width: 100%;
-		min-width: 360px;
 		height: $xsmall-height;
-		opacity: 0.3;
 	}
 
 	@include susy-breakpoint($small) {

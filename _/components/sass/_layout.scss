@@ -26,10 +26,9 @@
 		.pageTitle {
 			padding: ms(2) 5% ms(1);
 			font-family: $page-title;
-			font-size: ms(2);
-			line-height: ms(3);
-			font-weight: 300;
-			letter-spacing: 0.2rem;
+			font-size: ms(1);
+			line-height: ms(2);
+			letter-spacing: 0.1rem;
 
 			.search {
 				opacity: 0.8;
@@ -84,6 +83,7 @@
 				height: 50px; // this height is needed to even the two bottles
 				opacity: 0.9;
 				@include transform (scale(0.7));
+				@include transform-origin(0, 0);
 			}
 		}
 
@@ -231,6 +231,8 @@
 
 		.seasoningsImage {
 			width: 45%;
+			@include transform(scale(0.8));
+			@include transform-origin(0, 0);
 		}
 
 		.seasoningsPackageContainer {
@@ -380,6 +382,9 @@
 
 		.pageTitle {
 			padding: 50px 5%;
+			font-size: ms(2);
+			line-height: ms(3);
+			letter-spacing: 0.2rem;
 		}
 
 		.productsContainer {
@@ -417,11 +422,6 @@
 			letter-spacing: 0.03rem;
 			opacity: 0.7;
 		}
-
-		// .description ::first-letter {
-		// 	font-size: 200%;
-		// 	font-family: $desc-font;
-		// }
 
 		.oilsNameImgContainer {
 			height: 80px; //this height is needed to even the two bottles

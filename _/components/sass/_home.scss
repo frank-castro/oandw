@@ -459,3 +459,18 @@
 		}
 	}
 }
+
+.shippingText {
+	@include susy-breakpoint($xsmall) {
+		@include span(12 of 12);
+		padding-bottom: ms(1);
+
+		p {
+			font-family: $display-text;
+			font-size: ms(0);
+			letter-spacing: 0.04rem;
+			color: $secondaryColor;
+			text-align: center;
+		}
+	}	
+}

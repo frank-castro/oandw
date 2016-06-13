@@ -75,13 +75,13 @@ $slide5: image-url('home/hot-pan-olive-oil-lrg.jpg');
 $slide6: image-url('home/olive-oil-balsamic-bread-lrg.jpg');
 
 // BANNERS
-$bannerLargeVarietal: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.7)), image-url('largeBanner/varietal.jpg');
-$bannerLargeInfuse: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('largeBanner/infuse.jpg');
-$bannerLargeSpecialty: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('largeBanner/specialty.jpg');
-$bannerLargeBalsamics: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('largeBanner/balsamics.jpg');
-$bannerLargeSeasonings: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('largeBanner/seasonings.jpg');
-$bannerLargeGifts: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('largeBanner/gifts.jpg');
-$bannerLargeAccessories: linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('largeBanner/accessories.jpg');
+$patternVarietal: image-url('largeBanner/varietal-pattern.jpg');
+$bannerLargeInfuse: image-url('largeBanner/varietal-pattern.jpg');
+$bannerLargeSpecialty: image-url('largeBanner/varietal-pattern.jpg');
+$bannerLargeBalsamics: image-url('largeBanner/varietal-pattern.jpg');
+$bannerLargeSeasonings: image-url('largeBanner/varietal-pattern.jpg');
+$bannerLargeGifts: image-url('largeBanner/varietal-pattern.jpg');
+$bannerLargeAccessories: image-url('largeBanner/varietal-pattern.jpg');
 
 body {
 	@include background(linear-gradient(180deg, $bg01 32%, $bg02 68%));
@@ -157,6 +157,16 @@ address {
 	@include susy-breakpoint($large) {
 		background-position: left center;
 	}
+}
+
+@mixin bg-pattern {
+	@include single-transition(all, 1s, ease-out);
+	-webkit-background-size: auto;
+	-moz-background-size: auto;
+	-o-background-size: auto;
+	background-size: auto;
+	background-position: left top;
+	background-repeat: repeat;
 }
 
 .sitemenu {
