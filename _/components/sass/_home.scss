@@ -152,9 +152,9 @@
 				&.three {
 					height: ms(3);
 
-					p {
-						padding-top: ms(-1);
-					}
+					// p {
+					// 	padding-top: ms(-1);
+					// }
 				}
 
 				&.four {
@@ -268,19 +268,16 @@
 				}
 
 				&.two {
-					height: ms(4);
+					height: ms(3);
+					padding-top: ms(0);
 				}
 
 				&.three {
-					height: ms(3);
-
-					p {
-						padding-top: ms(-1);
-					}
+					height: ms(4);
 				}
 
 				&.four {
-					height: ms(4);
+					height: ms(5);
 				}
 
 				&.five {
