@@ -953,10 +953,6 @@
 
 	@include susy-breakpoint($xlarge){
 	  	max-width: 1800px;
-	  	// @include span (10 of 12);
-	  	// @include transform(translateX(-50%));
-	  	// left: 50%;
-	  	// position: relative;
 
 	  	.pageTitle {
 			@include transition-delay(1s);
