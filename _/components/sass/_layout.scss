@@ -8,7 +8,7 @@
 }
 
 .motive {
-	width: 32px;
+	width: 66px;
 	@include transform(translateX(-50%));
 	left: 50%;
 	position: relative;
@@ -24,7 +24,7 @@
 	  	color: $textColor;
 
 		.pageTitle {
-			padding: ms(5) 5% ms(3);
+			padding: ms(2) 5% ms(1);
 			font-family: $page-title;
 			font-size: ms(2);
 			line-height: ms(3);
@@ -170,7 +170,7 @@
 			font-size: ms(0);
 			line-height: 1.6em;
 			letter-spacing: 0.03rem;
-			text-align: left;
+			text-align: right;
 			opacity: 0.9;
 			overflow: hidden;
 			border-bottom: none;
@@ -803,10 +803,16 @@
 			}
 		}
 
+		.oilsBuyContainerLeft {
+			p {
+				padding: 5px 0px 16px;
+			}
+		}
+
 		.bottlesContainer {
 			height: 130px;
 			img {
-				@include transform(translateY(-60px) scale(0.8));
+				@include transform(translateY(-50px) scale(0.8));
 			}
 		} // container for the svg
 
@@ -1115,7 +1121,7 @@ footer {
 
 		.about {
 			text-decoration: none;
-			font-size: ms(1);
+			font-size: ms(0);
 			font-family: $primary-fontbold;
 			cursor: pointer;
 		}
