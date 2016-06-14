@@ -103,10 +103,12 @@
 		@include span (12 of 12);
 		@include single-transition(all, 0.2s, ease-out);
 		color: $primaryColor;
+
 		font-family: $primary-font;
 		font-size: ms(0);
 		line-height: ms(0);
 		letter-spacing: 0.05rem;
+
 		text-align: center;
 		padding: 0px ms(1) ms(3);
 	}
@@ -120,11 +122,19 @@
 	}
 
 	@include susy-breakpoint($large) {
-		@include span (10 of 12);
 		@include single-transition(all, 0.2s, ease-out);
-		font-size: ms(0);
-		line-height: ms(2);
-		letter-spacing: 0.1rem;
+		@include span (6 of 12);
+		@include transform(translateX(-50%));
+		left: 50%;
+		position: relative;
+		text-align: left;
+
+		p {
+			font-family: $primary-fontlight;
+			font-size: ms(0);
+			line-height: ms(2);
+			letter-spacing: 0.1rem;
+		}
 	}
 
 	@include susy-breakpoint($xlarge) {
@@ -306,7 +316,7 @@
 
 				&.two {
 					height: ms(3);
-					padding-top: ms(0);
+					padding-top: ms(1);
 				}
 
 				&.three {
@@ -314,7 +324,7 @@
 				}
 
 				&.four {
-					height: ms(5);
+					height: ms(4);
 				}
 
 				&.five {
@@ -360,6 +370,15 @@
 							@include transform (translate(-24px, 80px) rotate(7deg));
 						}
 					}
+				}
+
+				.three {
+					padding-top: ms(1);
+					height: ms(3);
+				}
+
+				.four {
+					padding-bottom: ms(0);
 				}
 			}
 		}
@@ -463,6 +482,7 @@
 .shippingText {
 	@include susy-breakpoint($xsmall) {
 		@include span(12 of 12);
+		padding-top: ms(2);
 		padding-bottom: ms(1);
 
 		p {

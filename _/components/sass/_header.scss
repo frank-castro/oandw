@@ -218,6 +218,7 @@ $xlarge-height: 81px;
 		@include bg-pattern;
 		width: 100%;
 		height: $xsmall-height;
+		opacity: 0.5;
 	}
 
 	@include susy-breakpoint($small) {
@@ -230,7 +231,6 @@ $xlarge-height: 81px;
 
 	@include susy-breakpoint($large) {
 		height: $large-height;
-		opacity: 0.5;
 	}
 
 	@include susy-breakpoint($xlarge) {
@@ -245,6 +245,7 @@ $xlarge-height: 81px;
 		@include bg-pattern;
 		width: 100%;
 		height: $xsmall-height;
+		opacity: 0.5;		
 	}
 
 	@include susy-breakpoint($small) {
@@ -271,6 +272,7 @@ $xlarge-height: 81px;
 		@include bg-pattern;
 		width: 100%;
 		height: $xsmall-height;
+		opacity: 0.5;
 	}
 
 	@include susy-breakpoint($small) {
@@ -297,6 +299,7 @@ $xlarge-height: 81px;
 		@include bg-pattern;
 		width: 100%;
 		height: $xsmall-height;
+		opacity: 0.5;
 	}
 
 	@include susy-breakpoint($small) {
@@ -323,6 +326,7 @@ $xlarge-height: 81px;
 		@include bg-pattern;
 		width: 100%;
 		height: $xsmall-height;
+		opacity: 0.5;
 	}
 
 	@include susy-breakpoint($small) {
@@ -349,6 +353,7 @@ $xlarge-height: 81px;
 		@include bg-pattern;
 		width: 100%;
 		height: $xsmall-height;
+		opacity: 0.5;
 	}
 
 	@include susy-breakpoint($small) {
@@ -375,6 +380,7 @@ $xlarge-height: 81px;
 		@include bg-pattern;
 		width: 100%;
 		height: $xsmall-height;
+		opacity: 0.5;
 	}
 
 	@include susy-breakpoint($small) {

@@ -7,13 +7,6 @@
 	background-color: transparent;
 }
 
-.motive {
-	width: 66px;
-	@include transform(translateX(-50%));
-	left: 50%;
-	position: relative;
-}
-
 .layout {
 // -------------------------- XSMALL --------------------------
 
@@ -121,7 +114,7 @@
 				}
 
 				.special {
-					padding-top: 59px;
+					padding-top: 55px;
 				}
 			} // special bottle, price and buttons in Specialty
 		}
@@ -771,7 +764,7 @@
 			@include span(4 of 12);
 			padding: 0px 5% 10px;
 			line-height: 1.3em;
-			height: 750px;
+			height: 670px;
 
 			// Product Name (it's being selected by root position)
 			li:nth-child(2) {
@@ -1121,6 +1114,13 @@ footer {
 			font-family: $primary-fontbold;
 			cursor: pointer;
 		}
+
+		.motive {
+			width: 66px;
+			@include transform(translateX(-50%));
+			left: 50%;
+			position: relative;
+		}
 	}
 
 	@include susy-breakpoint($small) {
@@ -1145,6 +1145,10 @@ footer {
 			color: $green;
 			font-size: ms(0);
 			font-family: $primary-font;
+		}
+
+		.motive {
+			width: 80px;
 		}
 	}
 
