@@ -960,10 +960,15 @@
 			@include single-transition(all, 1s, ease-out);
 			@include span(3 of 12);
 			padding: 0px 4% 0px;
+			height: 740px;
 		}
 
 		.ctrlsContainer {
 			height: 410px;
+
+			.buyCtrlsSpecial {
+				top: 122px;
+			}
 		}
 
 		.bottlesContainer {

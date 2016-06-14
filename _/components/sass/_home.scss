@@ -127,6 +127,7 @@
 		@include transform(translateX(-50%));
 		left: 50%;
 		position: relative;
+		max-width: 640px;
 		text-align: left;
 
 		p {
@@ -140,6 +141,7 @@
 	@include susy-breakpoint($xlarge) {
 		@include span (8 of 12);
 		@include single-transition(all, 0.2s, ease-out);
+		max-width: 680px;
 	}	
 }
 
@@ -387,17 +389,21 @@
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 0.2s, ease-out);
 		@include span(10 of 12);
-		height: ms(8);
+		padding: 0px;
+		height: auto;
 
 		.promo {
+			padding: 0px ms(3);
+
 			.row {
 				.svg {
 					width: 110px;
 				}
 
 				.img {
-					width: 110px;
+					width: 98px;
 					@include transform (scale(0.6));
+					@include transform-origin(50%, 0);
 				}
 
 				p {
@@ -408,22 +414,26 @@
 
 				.infoText {
 					font-size: ms(0);
-					margin-top: ms(1);
 					line-height: ms(1);
 				}
 
 				&.one {
-
-					height: 180px;
+					height: ms(5);
 				}
 
 				&.two {
 					height: ms(4);
-					@include transform(translateY(-30%) scale(0.9));
+					padding-top: ms(0);
+
+					// p {
+					// 	@include transform(translateY(-50%));
+					// 	top: 50%;
+					// 	position: relative;
+					// }
 				}
 
 				&.three {
-					height: ms(3);
+					height: ms(4);
 				}
 
 				&.four {
@@ -474,6 +484,15 @@
 						}
 					}
 				}
+
+				.three {
+					padding-top: ms(2);
+					height: ms(3);
+				}
+
+				.four {
+					padding-bottom: 0px;
+				}				
 			}
 		}
 	}
@@ -481,6 +500,19 @@
 
 .shippingText {
 	@include susy-breakpoint($xsmall) {
+		@include span(12 of 12);
+		padding-bottom: ms(1);
+
+		p {
+			font-family: $display-text;
+			font-size: ms(0);
+			letter-spacing: 0.04rem;
+			color: $secondaryColor;
+			text-align: center;
+		}
+	}	
+
+	@include susy-breakpoint($large) {
 		@include span(12 of 12);
 		padding-top: ms(2);
 		padding-bottom: ms(1);
