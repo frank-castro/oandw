@@ -609,11 +609,6 @@
 			color: $textColor;
 		}
 
-		// .description ::first-letter {
-		// 	font-size: 200%;
-		// 	font-family: $desc-font;
-		// }
-
 		.oilsNameImgContainer {
 			height: 80px;
 
@@ -812,7 +807,7 @@
 		.description {
 			font-family: $desc-font;
 			font-size: ms(0);
-			text-align: right;
+			text-align: left;
 			line-height: ms(1);
 			letter-spacing: 0.05rem;
 			color: $textColor;

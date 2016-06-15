@@ -12,7 +12,7 @@
 
 .slogan {
 	@include susy-breakpoint($xsmall) {
-		@include span (8 of 12);
+		@include span (12 of 12);
 		@include single-transition(all, 0.3s, ease-out);
 		@include single-text-shadow;
 		color: white;
@@ -23,13 +23,6 @@
 		line-height: ms(2);
 		letter-spacing: 0.08rem;
 		position: relative;
-
-		#spacer {
-			width: 0px;
-			padding: 0px;
-			height: 0px;
-			color: transparent;
-		} //2 column spacer div
 	}
 
 	@include susy-breakpoint($small) {
@@ -44,24 +37,19 @@
 		@include span (6 of 12);
 		@include single-transition(all, 0.3s, ease-out);
 		@include span(12 of 12);
-		padding: ms(2) 0px 0px 0px;
+		padding-top: ms(2);
 		font-size: ms(2);
 		letter-spacing: 0.1rem;
 		position: relative;
-
-		#spacer {
-			@include span(2 of 12);
-			padding: 0px;
-			height: 25vh;
-			color: transparent;
-		}
 	}
 
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 0.3s, ease-out);
+		max-width: 1800px;
 		font-size: ms(3);
 		letter-spacing: 0.1rem;
-		@include transform(translateY(ms(4)));
+		@include transform(translate(-50%, ms(4)));
+		left: 50%;
 	}
 }
 
@@ -103,14 +91,12 @@
 		@include span (12 of 12);
 		@include single-transition(all, 0.2s, ease-out);
 		color: $primaryColor;
-
 		font-family: $primary-font;
 		font-size: ms(0);
 		line-height: ms(0);
 		letter-spacing: 0.05rem;
-
 		text-align: center;
-		padding: 0px ms(1) ms(3);
+		padding-bottom: ms(3);
 	}
 
 	@include susy-breakpoint($small) {
@@ -141,6 +127,7 @@
 	@include susy-breakpoint($xlarge) {
 		@include span (8 of 12);
 		@include single-transition(all, 0.2s, ease-out);
+		padding-bottom: ms(4);
 		max-width: 680px;
 	}	
 }
@@ -169,6 +156,7 @@
 					line-height: ms(2);
 					letter-spacing: 0.07rem;
 					color: $textColor;
+					width: 100%;
 					max-width: 260px;
 					text-align: center;
 				}
@@ -189,12 +177,11 @@
 
 				&.one {
 					// background-color: gray;
-					height: ms(4);
+					height: ms(3);
 				}
 
 				&.two {
-					height: ms(3);
-					padding-top: ms(0);
+					height: ms(4);
 				}
 
 				&.three {
@@ -211,7 +198,7 @@
 			}
 
 			&.one {
-				.one {
+				.two {
 					.svg {
 						width: 74px;
 					}
@@ -219,7 +206,7 @@
 			}
 
 			&.two {
-				.one {
+				.two {
 					.svg {
 						width: 62px;
 					}
@@ -227,7 +214,7 @@
 			}
 
 			&.three {
-				.one {
+				.two {
 					.svg {
 						width: 86px;
 						@include transform (translateY(40px));
@@ -236,7 +223,7 @@
 			}
 
 			&.four {
-				.one {
+				.two {
 					.svg {
 						&.one {
 							width: 130px;
@@ -278,7 +265,7 @@
 
 		.promo {
 			@include span (3 of 12);
-			padding: 0px;
+
 			.row {
 				display: flex;
 				justify-content: center;
@@ -313,12 +300,11 @@
 
 				&.one {
 					// background-color: gray;
-					height: ms(4);
+					height: ms(3);
 				}
 
 				&.two {
-					height: ms(3);
-					padding-top: ms(1);
+					height: ms(4);
 				}
 
 				&.three {
@@ -335,7 +321,7 @@
 			}
 
 			&.one {
-				.one {
+				.two {
 					.svg {
 						width: 80px;
 					}
@@ -343,7 +329,7 @@
 			}
 
 			&.two {
-				.one {
+				.two {
 					.svg {
 						width: 68px;
 					}
@@ -351,7 +337,7 @@
 			}
 
 			&.three {
-				.one {
+				.two {
 					.svg {
 						width: 80px;
 						@include transform (translateY(48px));
@@ -360,7 +346,7 @@
 			}
 
 			&.four {
-				.one {
+				.two {
 					.svg {
 						&.one {
 							width: 130px;
@@ -388,12 +374,11 @@
 
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 0.2s, ease-out);
-		@include span(10 of 12);
-		padding: 0px;
+		@include span(12 of 12);
 		height: auto;
 
 		.promo {
-			padding: 0px ms(3);
+			// padding: 0px ms(3) 0px 0px;
 
 			.row {
 				.svg {
@@ -409,7 +394,7 @@
 				p {
 					font-size: ms(2);
 					padding: 0px;
-					max-width: 360px;
+					max-width: 420px;
 				}
 
 				.infoText {
@@ -418,18 +403,17 @@
 				}
 
 				&.one {
-					height: ms(5);
+					height: ms(4);
 				}
 
 				&.two {
-					height: ms(4);
-					padding-top: ms(0);
+					height: ms(5);
 
-					// p {
-					// 	@include transform(translateY(-50%));
-					// 	top: 50%;
-					// 	position: relative;
-					// }
+					p {
+						@include transform(translateY(-50%));
+						top: 50%;
+						position: relative;
+					}
 				}
 
 				&.three {
@@ -446,7 +430,8 @@
 			}
 
 			&.one {
-				.one {
+				padding-left: 0px;
+				.two {
 					.svg {
 						width: 120px;
 					}
@@ -454,7 +439,7 @@
 			}
 
 			&.two {
-				.one {
+				.two {
 					.svg {
 						width: 100px;
 					}
@@ -462,7 +447,7 @@
 			}
 
 			&.three {
-				.one {
+				.two {
 					.svg {
 						width: 140px;
 						@include transform (translateY(60px));
@@ -471,7 +456,8 @@
 			}
 
 			&.four {
-				.one {
+				padding-right: 0px;
+				.two {
 					.svg {
 						&.one {
 							width: 220px;

@@ -114,13 +114,6 @@ header {
 		z-index: 1040;
 		background-color: rgba($bg01, 0.6);
 
-		#spacer {
-			@include span(2 of 12);
-			padding: 0px;
-			height: 1px;
-			color: transparent;
-		} //2 column spacer div
-
 		.logo {
 			@include transform (translate(-50%, 14px));
 			left: 50%;
@@ -195,6 +188,11 @@ header {
 
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 1s, ease-out);
+		@include span(12 of 12);
+		max-width: 1800px;
+		@include transform(translateX(-50%));
+		left: 50%;
+		position: relative;
 
 		.logo {
 			top: 15px;
