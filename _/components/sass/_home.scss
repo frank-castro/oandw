@@ -141,26 +141,10 @@
 		.promo {
 			@include span (12 of 12);
 			padding: 0px;
+
 			.row {
 				display: flex;
 				justify-content: center;
-
-				.iconText {
-					width: 76px;
-
-					img {
-						@include transform (scale(0.4));
-					}
-
-					p {
-						font-family: $primary-font;
-						font-size: ms(0);
-						line-height: ms(1);
-						letter-spacing: 0.03rem;
-						color: $secondaryColor;
-						text-align: center;
-					}
-				}
 
 				.infoText {
 					p {
@@ -169,6 +153,22 @@
 						line-height: ms(1);
 						letter-spacing: 0.03rem;
 						color: $primaryColor;
+						text-align: center;
+					}
+				}
+
+				td {
+					img {
+						// @include transform (scale(0.4));
+						object-fit: contain;
+					}
+
+					p {
+						font-family: $primary-font;
+						font-size: ms(0);
+						line-height: ms(1);
+						letter-spacing: 0.03rem;
+						color: $secondaryColor;
 						text-align: center;
 					}
 				}
@@ -282,10 +282,9 @@
 			@include span (3 of 12);
 
 			.row {
-				display: flex;
-				justify-content: center;
-
 				.infoText {
+					padding-top: ms(1);
+
 					p {
 						font-size: ms(0);
 						line-height: ms(1);
@@ -293,19 +292,19 @@
 					}
 				}
 
-				.iconText {
-					width: 33%;
+				td {
+					text-align: center;
+					padding: ms(0) ms(0) 0px;
 
 					img {
-						@include transform (scale(0.5));
-						@include transform-origin(25%, 0);
+						height: 44px;
 					}
 
 					p {
-						font-size: ms(0);
+						font-size: ms(-1);
 						line-height: ms(0);
 						letter-spacing: 0.03rem;
-						@include transform(translateY(-40px));
+						text-transform: uppercase;
 					}
 				}
 
@@ -404,31 +403,29 @@
 		height: auto;
 
 		.promo {
-			// padding: 0px ms(3) 0px 0px;
-
 			.row {
-				.svg {
-					width: 110px;
+				.infoText {
+					padding-top: ms(1);
+
+					p {
+						font-size: ms(0);
+						line-height: ms(1);
+						letter-spacing: 0.03rem;
+					}
 				}
 
-				.iconText {
-					width: 98px;
+				td {
+					text-align: center;
+					padding: ms(0) ms(0) 0px;
 
 					img {
-						@include transform (scale(0.6));
-						@include transform-origin(50%, 0);
+						height: 44px;
 					}
 
 					p {
 						font-size: ms(0);
 						line-height: ms(1);
-					}
-				}
-
-				.infoText {
-					p {
-						font-size: ms(0);
-						line-height: ms(1);
+						letter-spacing: 0.03rem;
 					}
 				}
 
