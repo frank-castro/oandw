@@ -145,29 +145,32 @@
 				display: flex;
 				justify-content: center;
 
-				.img {
-					@include transform (scale(0.4));
+				.iconText {
 					width: 76px;
-				}
 
-				p {
-					font-family: $display-text;
-					font-size: ms(1);
-					line-height: ms(2);
-					letter-spacing: 0.07rem;
-					color: $textColor;
-					width: 100%;
-					max-width: 260px;
-					text-align: center;
+					img {
+						@include transform (scale(0.4));
+					}
+
+					p {
+						font-family: $primary-font;
+						font-size: ms(0);
+						line-height: ms(1);
+						letter-spacing: 0.03rem;
+						color: $secondaryColor;
+						text-align: center;
+					}
 				}
 
 				.infoText {
-					font-family: $primary-font;
-					font-size: ms(0);
-					line-height: ms(1);
-					letter-spacing: 0.03rem;
-					color: $secondaryColor;
-					opacity: 0.8;
+					p {
+						font-family: $primary-font;
+						font-size: ms(0);
+						line-height: ms(1);
+						letter-spacing: 0.03rem;
+						color: $primaryColor;
+						text-align: center;
+					}
 				}
 
 				a {
@@ -178,6 +181,18 @@
 				&.one {
 					// background-color: gray;
 					height: ms(3);
+
+					p {
+						font-family: $display-text;
+						font-size: ms(1);
+						line-height: ms(2);
+						letter-spacing: 0.07rem;
+						color: $textColor;
+						width: 100%;
+						max-width: 260px;
+						text-align: center;
+					}
+
 				}
 
 				&.two {
@@ -270,27 +285,28 @@
 				display: flex;
 				justify-content: center;
 
-				.img {
-					@include transform (scale(0.4));
-					width: 70px;
-				}
-
-				p {
-					font-family: $display-text;
-					font-size: ms(1);
-					line-height: ms(2);
-					letter-spacing: 0.07rem;
-					color: $textColor;
-					max-width: 260px;
-					text-align: center;
-				}
-
 				.infoText {
-					font-family: $primary-font;
-					font-size: ms(0);
-					line-height: ms(1);
-					letter-spacing: 0.03rem;
-					color: $primaryColor;
+					p {
+						font-size: ms(0);
+						line-height: ms(1);
+						letter-spacing: 0.03rem;
+					}
+				}
+
+				.iconText {
+					width: 33%;
+
+					img {
+						@include transform (scale(0.5));
+						@include transform-origin(25%, 0);
+					}
+
+					p {
+						font-size: ms(0);
+						line-height: ms(0);
+						letter-spacing: 0.03rem;
+						@include transform(translateY(-40px));
+					}
 				}
 
 				a {
@@ -301,6 +317,16 @@
 				&.one {
 					// background-color: gray;
 					height: ms(3);
+
+					p {
+						font-family: $display-text;
+						font-size: ms(1);
+						line-height: ms(2);
+						letter-spacing: 0.07rem;
+						color: $textColor;
+						max-width: 260px;
+						text-align: center;
+					}
 				}
 
 				&.two {
@@ -312,7 +338,7 @@
 				}
 
 				&.four {
-					height: ms(4);
+					height: ms(5);
 				}
 
 				&.five {
@@ -385,25 +411,35 @@
 					width: 110px;
 				}
 
-				.img {
+				.iconText {
 					width: 98px;
-					@include transform (scale(0.6));
-					@include transform-origin(50%, 0);
-				}
 
-				p {
-					font-size: ms(2);
-					padding: 0px;
-					max-width: 420px;
+					img {
+						@include transform (scale(0.6));
+						@include transform-origin(50%, 0);
+					}
+
+					p {
+						font-size: ms(0);
+						line-height: ms(1);
+					}
 				}
 
 				.infoText {
-					font-size: ms(0);
-					line-height: ms(1);
+					p {
+						font-size: ms(0);
+						line-height: ms(1);
+					}
 				}
 
 				&.one {
 					height: ms(4);
+
+					p {
+						font-size: ms(2);
+						padding: 0px;
+						max-width: 420px;
+					}
 				}
 
 				&.two {

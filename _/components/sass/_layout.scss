@@ -13,7 +13,7 @@
 	@include susy-breakpoint($xsmall){
 		@include single-transition(all, 1s, ease-out);
 		@include container;
-	  	max-width: 320px;
+	  	// max-width: 320px;
 	  	color: $textColor;
 
 		.pageTitle {
@@ -371,7 +371,7 @@
 	@include susy-breakpoint($small){
 		@include single-transition(all, 1s, ease-out);
 		@include container;
-	  	max-width: 500px;
+	  	// max-width: 500px;
 
 		.pageTitle {
 			padding: 50px 5%;
@@ -557,7 +557,7 @@
 
 	@include susy-breakpoint($medium){
 		@include container;
-	  	max-width: 890px;
+	  	// max-width: 890px;
 
 		.pageTitle {
 			padding: 70px 20%;
@@ -736,7 +736,7 @@
 // -------------------------- LARGE --------------------------
 
 	@include susy-breakpoint($large){
-	  	max-width: 1290px;
+	  	max-width: $largeMax;
 
 		.pageTitle {
 			@include transition-delay(1s);
@@ -940,7 +940,7 @@
 // -------------------------- XLARGE --------------------------
 
 	@include susy-breakpoint($xlarge){
-	  	max-width: 1800px;
+	  	max-width: $xlargeMax;
 
 	  	.pageTitle {
 			@include transition-delay(1s);
@@ -1140,7 +1140,7 @@ footer {
 		.about {
 			position: absolute;
 			top: 7px;
-			right: 20%;
+			right: 8%;
 			z-index: 1040;
 			color: $green;
 			font-size: ms(0);
@@ -1154,6 +1154,10 @@ footer {
 
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 1s, ease-out);
+
+		.about {
+			right: 20%;
+		}
 	}
 }
 

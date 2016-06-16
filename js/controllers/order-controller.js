@@ -188,15 +188,6 @@ var Controllers;
             this.submitting = true;
             this.orderService.submit().then(function () { return _this.step = 4; }, function () { return _this.step = 5; }).finally(function () { return _this.submitting = false; });
         };
-        
-        // OrderController.prototype.hideCart = function () {
-        //     $('.cartBanner').toggleClass('cartBttn');
-        //     $('.cartBannerContent').toggleClass('hidden');
-        //     this.step = 1;
-        // };
-        
-//this is the new stuff
-
         OrderController.prototype.hideCart = function () {
             return {
                 scope: true,
@@ -210,9 +201,6 @@ var Controllers;
             };
             this.step = 1;
         };
-
-//this is the end of the new stuff
-
         OrderController.prototype.triggerChange = function () {
             var self = this;
             this.recentlyChanged = true;

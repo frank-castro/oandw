@@ -107,11 +107,18 @@ $susy: (
 	)
 );
 
+// Breakpoints values
 $xsmall: 320px; //one column narrow
+
 $small: 760px; //one column wide
+
 $medium: 970px; //two columns
+
 $large: 1200px; //three columns
+$largeMax: 1280px;
+
 $xlarge: 1900px; //four columns
+$xlargeMax: 1800px;
 
 .left {
 	float: left;

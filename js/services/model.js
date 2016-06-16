@@ -5,7 +5,7 @@ var Model;
     //#region order constants
     var shippingRanges = [
         { to: 40, price: 14.95 },
-        { to: 80, price: 15.95 },
+        { to: 70, price: 15.95 },
         { to: 100, price: 16.95 },
         { to: 200, price: 18.95 },
         { to: null, price: 10.00 },
