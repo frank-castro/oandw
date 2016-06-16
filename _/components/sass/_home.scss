@@ -301,7 +301,7 @@
 					}
 
 					p {
-						font-size: ms(-1);
+						font-size: ms(0);
 						line-height: ms(0);
 						letter-spacing: 0.03rem;
 						text-transform: uppercase;
@@ -392,6 +392,10 @@
 
 				.four {
 					padding-bottom: ms(0);
+
+					p {
+						padding-top: ms(1);
+					}
 				}
 			}
 		}
@@ -419,12 +423,12 @@
 					padding: ms(0) ms(0) 0px;
 
 					img {
-						height: 44px;
+						height: 52px;
 					}
 
 					p {
 						font-size: ms(0);
-						line-height: ms(1);
+						line-height: ms(0);
 						letter-spacing: 0.03rem;
 					}
 				}
@@ -454,7 +458,7 @@
 				}
 
 				&.four {
-					height: ms(4);
+					height: ms(5);
 				}
 
 				&.five {
@@ -494,12 +498,12 @@
 					.svg {
 						&.one {
 							width: 220px;
-							@include transform (translate(-6px, -10px) rotate(-2deg));
+							@include transform (translate(-6px, -36px) rotate(-2deg));
 						}
 
 						&.two {
 							width: 110px;
-							@include transform (translate(-40px, 145px) rotate(7deg));
+							@include transform (translate(-40px, 125px) rotate(7deg));
 						}
 					}
 				}
@@ -511,6 +515,10 @@
 
 				.four {
 					padding-bottom: 0px;
+
+					p {
+						padding-top: ms(2);
+					}
 				}				
 			}
 		}
