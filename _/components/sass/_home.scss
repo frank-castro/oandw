@@ -138,15 +138,18 @@
 	position: relative;
 
 	@include susy-breakpoint($xsmall) {
+		@include single-transition(all, 0.2s, ease-out);
+
 		.promo {
 			@include span (12 of 12);
-			padding: 0px;
 
 			.row {
 				display: flex;
 				justify-content: center;
 
 				.infoText {
+					padding: ms(1) ms(2);
+
 					p {
 						font-family: $primary-font;
 						font-size: ms(0);
@@ -158,18 +161,23 @@
 				}
 
 				td {
+					text-align: center;
+					padding: ms(0) ms(0) 0px;
+
 					img {
 						// @include transform (scale(0.4));
 						object-fit: contain;
+						height: 48px;
 					}
 
 					p {
 						font-family: $primary-font;
 						font-size: ms(0);
-						line-height: ms(1);
+						line-height: ms(0);
 						letter-spacing: 0.03rem;
 						color: $secondaryColor;
 						text-align: center;
+						text-transform: uppercase;
 					}
 				}
 
@@ -200,11 +208,11 @@
 				}
 
 				&.three {
-					height: ms(4);
+					height: auto;
 				}
 
 				&.four {
-					height: ms(4);
+					height: ms(5);
 				}
 
 				&.five {
@@ -261,29 +269,140 @@
 	}
 
 	@include susy-breakpoint($small) {
+		@include single-transition(all, 0.2s, ease-out);
+
 		.promo {
 			@include span (12 of 12);
 		}
 	}
 
 	@include susy-breakpoint($medium) {
+		@include single-transition(all, 0.2s, ease-out);
+
 		.promo {
 			@include span (6 of 12);
+
+			.row {
+
+				.infoText {
+					padding: ms(1) ms(2) 0px;
+
+					p {
+						font-size: ms(0);
+						line-height: ms(1);
+						letter-spacing: 0.03rem;
+					}
+				}
+
+				td {
+					padding: ms(0) ms(0) 0px;
+
+					img {
+						height: 48px;
+					}
+
+					p {
+						font-size: ms(0);
+						line-height: ms(0);
+						letter-spacing: 0.03rem;
+					}
+				}
+
+				a {
+					@include links(ms(0), 2rem); //arguments font size and line height
+				}
+
+				&.one {
+					// background-color: gray;
+					height: ms(3);
+
+					p {
+						font-size: ms(1);
+						line-height: ms(2);
+						letter-spacing: 0.07rem;
+						max-width: 260px;
+					}
+
+				}
+
+				&.two {
+					height: ms(4);
+				}
+
+				&.three {
+					height: ms(4);
+				}
+
+				&.four {
+					height: ms(5);
+				}
+
+				&.five {
+					height: ms(4);
+				}
+			}
+
+			&.one {
+				.two {
+					.svg {
+						width: 74px;
+					}
+				}
+			}
+
+			&.two {
+				.two {
+					.svg {
+						width: 62px;
+					}
+				}
+			}
+
+			&.three {
+				.two {
+					.svg {
+						width: 86px;
+						@include transform (translateY(40px));
+					}
+				}
+			}
+
+			&.four {
+				.two {
+					.svg {
+						&.one {
+							width: 130px;
+							@include transform (translateX(-6px) rotate(-3deg));
+						}
+
+						&.two {
+							width: 80px;
+							@include transform (translate(-24px, 80px) rotate(7deg));
+						}
+					}
+				}
+
+				.three {
+					padding-top: ms(2);
+					height: ms(3);
+				}
+			}
 		}
 	}
 
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 0.2s, ease-out);
 		@include span(12 of 12);
-		padding: 0px;
-		height: ms(7);
+		// padding: 0px;
+		// height: ms(7);
+		height: auto;
 
 		.promo {
 			@include span (3 of 12);
 
 			.row {
 				.infoText {
-					padding-top: ms(1);
+					padding: ms(1) 0px 0px;
 
 					p {
 						font-size: ms(0);
@@ -304,7 +423,6 @@
 						font-size: ms(0);
 						line-height: ms(0);
 						letter-spacing: 0.03rem;
-						text-transform: uppercase;
 					}
 				}
 
@@ -409,7 +527,7 @@
 		.promo {
 			.row {
 				.infoText {
-					padding-top: ms(1);
+					padding: ms(1) 0px 0px;
 
 					p {
 						font-size: ms(0);
