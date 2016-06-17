@@ -286,6 +286,9 @@
 		}
 	}
 
+
+// SMALL BREAKPOINT
+
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 0.2s, ease-out);
 
@@ -315,8 +318,52 @@
 					padding-top: ms(1);
 				}
 			}
+
+			&.one {
+				.two {
+					.svg {
+						width: 100px;
+					}
+				}
+			}
+
+			&.two {
+				.two {
+					.svg {
+						width: 92px;
+					}
+				}
+			}
+
+			&.three {
+				.two {
+					.svg {
+						width: 110px;
+						@include transform (translateY(40px));
+					}
+				}
+			}
+
+			&.four {
+				.two {
+					.svg {
+						&.one {
+							width: 160px;
+							@include transform (translateX(-6px) rotate(-3deg));
+						}
+
+						&.two {
+							width: 100px;
+							@include transform (translate(-24px, 80px) rotate(7deg));
+						}
+					}
+				}
+			}
 		}
 	}
+
+
+// MEDIUM BREAKPOINT
 
 	@include susy-breakpoint($medium) {
 		@include single-transition(all, 0.2s, ease-out);

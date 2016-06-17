@@ -44,7 +44,7 @@
 		.productsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(12 of 12);
-			padding: 10px 5%;
+			// padding: 10px 5%;
 			font-family: $primary-font;
 			font-size: ms(0);
 			line-height: 1.3em;
@@ -164,12 +164,13 @@
 			line-height: 1.6em;
 			letter-spacing: 0.03rem;
 			text-align: right;
-			opacity: 0.9;
+			opacity: 1;
 			overflow: hidden;
 			border-bottom: none;
 			border-bottom-color: $motive;
 			border-bottom-width: 1px;
 			padding: 0px 0px 12px;
+			color: $textColor;
 		}
 
 //Seasonings Section
@@ -374,7 +375,7 @@
 	  	// max-width: 500px;
 
 		.pageTitle {
-			padding: 50px 5%;
+			padding: ms(2) 5%;
 			font-size: ms(2);
 			line-height: ms(3);
 			letter-spacing: 0.2rem;
@@ -382,9 +383,10 @@
 
 		.productsContainer {
 			@include single-transition(all, 1s, ease-out);
-			@include span(12 of 12);
-			padding: 10px 5% 20px;
+			@include span(6 of 12);
+			// padding: 10px 3% 20px;
 			line-height: 1.3em;
+			height: 720px;
 
 			// Product Name (it's being selected by root position)
 			li:nth-child(2) {
@@ -397,23 +399,24 @@
 
 		.ctrlsContainer {
 			.buyCtrlsLeft {
-				padding-left: 48px;
+				padding-left: 8vw;
 			} // left side div with big bottle, price and buttons
 
 			.buyCtrlsRight {
-				padding-right: 88px;
+				padding-right: 8vw;
 			} // right side div with big bottle, price and buttons
 		}
 
 		.oilsBuyContainer p {
-			padding: 5px 0px 20px;
+			padding: 5px 0px 4px;
 		}
 
 		.description {
 			font-size: 1rem;
 			line-height: 1.8em;
 			letter-spacing: 0.03rem;
-			opacity: 0.7;
+			text-align: left;
+			opacity: 1;
 		}
 
 		.oilsNameImgContainer {
@@ -560,15 +563,15 @@
 	  	// max-width: 890px;
 
 		.pageTitle {
-			padding: 70px 20%;
+			padding: ms(2) 20%;
 		}
 
 		.productsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(6 of 12);
-			padding: 0px 5% 20px;
+			// padding: 0px 5% 20px;
 			line-height: 1.3em;
-			height: 880px;
+			height: 660px;
 
 			// Product Name (it's being selected by root position)
 			li:nth-child(2) {
@@ -592,11 +595,11 @@
 		.ctrlsContainer {
 
 			.buyCtrlsLeft {
-				padding-left: 48px;
+				padding-left: 8vw;
 			} // left side div with big bottle, price and buttons
 
 			.buyCtrlsRight {
-				padding-right: 48px;
+				padding-right: 8vw;
 			} // right side div with big bottle, price and buttons
 		}
 
@@ -606,7 +609,6 @@
 			text-align: left;
 			line-height: 1.7em;
 			letter-spacing: 0.03rem;
-			color: $textColor;
 		}
 
 		.oilsNameImgContainer {
@@ -757,7 +759,7 @@
 		.productsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(4 of 12);
-			padding: 0px 5% 10px;
+			// padding: 0px 5% 10px;
 			line-height: 1.3em;
 			height: 670px;
 
@@ -954,7 +956,7 @@
 		.productsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(3 of 12);
-			padding: 0px 4% 0px;
+			// padding: 0px 4% 0px;
 			height: 740px;
 		}
 
