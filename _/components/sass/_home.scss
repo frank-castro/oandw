@@ -317,6 +317,7 @@
 
 	@include susy-breakpoint($medium) {
 		@include single-transition(all, 0.2s, ease-out);
+		@include span(12 of 12);
 
 		.promo {
 			@include span (6 of 12);
