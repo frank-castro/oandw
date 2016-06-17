@@ -91,16 +91,30 @@
 		@include span (12 of 12);
 		@include single-transition(all, 0.2s, ease-out);
 		color: $primaryColor;
-		font-family: $primary-font;
-		font-size: ms(0);
-		line-height: ms(0);
-		letter-spacing: 0.05rem;
-		text-align: center;
 		padding-bottom: ms(3);
+
+		p {
+			font-family: $primary-fontlight;
+			font-size: ms(0);
+			line-height: ms(0);
+			letter-spacing: 0.05rem;
+			text-align: center;
+		}
 	}
 
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 0.2s, ease-out);
+		@include transform(translateX(-50%));
+		left: 50%;
+		position: relative;
+		max-width: 480px;
+
+		p {
+			font-size: ms(0);
+			line-height: ms(1);
+			letter-spacing: 0.04rem;
+			text-align: left;
+		}
 	}
 
 	@include susy-breakpoint($medium) {
@@ -110,17 +124,13 @@
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 0.2s, ease-out);
 		@include span (6 of 12);
-		@include transform(translateX(-50%));
-		left: 50%;
-		position: relative;
 		max-width: 640px;
-		text-align: left;
 
 		p {
-			font-family: $primary-fontlight;
 			font-size: ms(0);
 			line-height: ms(2);
 			letter-spacing: 0.1rem;
+			text-align: left;
 		}
 	}
 
@@ -167,7 +177,7 @@
 					img {
 						// @include transform (scale(0.4));
 						object-fit: contain;
-						height: 48px;
+						height: ms(3);
 					}
 
 					p {
@@ -273,6 +283,30 @@
 
 		.promo {
 			@include span (12 of 12);
+
+			.row {
+				.infoText {
+					padding: ms(1) 20vw 0px;
+
+					p {
+						font-size: ms(0);
+						line-height: ms(1);
+						letter-spacing: 0.03rem;
+					}
+				}
+
+				td {
+					padding: ms(0) ms(1) 0px;
+
+					img {
+						height: ms(4);
+					}
+				}
+
+				&.five {
+					padding-top: ms(1);
+				}
+			}
 		}
 	}
 
@@ -283,7 +317,6 @@
 			@include span (6 of 12);
 
 			.row {
-
 				.infoText {
 					padding: ms(1) ms(2) 0px;
 
@@ -295,8 +328,6 @@
 				}
 
 				td {
-					padding: ms(0) ms(0) 0px;
-
 					img {
 						height: 48px;
 					}
@@ -339,6 +370,7 @@
 
 				&.five {
 					height: ms(4);
+					padding-top: 0px;
 				}
 			}
 
