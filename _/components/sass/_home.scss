@@ -32,6 +32,9 @@
 
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 0.3s, ease-out);
+		max-width: 420px;
+		padding: ms(3) 0px 0px ms(1);
+		font-size: ms(2);
 	}
 
 	@include susy-breakpoint($medium) {

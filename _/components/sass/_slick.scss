@@ -210,7 +210,13 @@ body {
 
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 1s, ease-out);
-
+		.slick-dots {
+			li {	
+				button {
+					@include transform(scale(0.8));
+				}
+			}
+		}
 	}
 
 	@include susy-breakpoint($medium) {
