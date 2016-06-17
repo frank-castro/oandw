@@ -18,11 +18,16 @@
 		color: white;
 		font-family: $display-text;
 		z-index: 99;
-		padding: ms(1) 0px 0px ms(1);
+		padding: ms(2) 0px 0px ms(1);
 		font-size: ms(1);
 		line-height: ms(2);
 		letter-spacing: 0.08rem;
 		position: relative;
+
+		a {
+			font-family: $primary-font;
+			font-size: ms(0);
+		}
 	}
 
 	@include susy-breakpoint($small) {
@@ -91,12 +96,12 @@
 		@include span (12 of 12);
 		@include single-transition(all, 0.2s, ease-out);
 		color: $primaryColor;
-		padding-bottom: ms(3);
+		padding: 0px ms(1) ms(3);
 
 		p {
 			font-family: $primary-fontlight;
 			font-size: ms(0);
-			line-height: ms(0);
+			line-height: ms(1);
 			letter-spacing: 0.05rem;
 			text-align: center;
 		}
@@ -158,7 +163,7 @@
 				justify-content: center;
 
 				.infoText {
-					padding: ms(1) ms(2);
+					padding: ms(1) ms(2) ms(0);
 
 					p {
 						font-family: $primary-font;
