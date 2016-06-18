@@ -18,7 +18,7 @@
 		color: white;
 		font-family: $display-text;
 		z-index: 99;
-		padding: ms(2) 0px 0px ms(1);
+		padding: ms(2) 30vw 0px ms(1);
 		font-size: ms(1);
 		line-height: ms(2);
 		letter-spacing: 0.08rem;
@@ -55,7 +55,7 @@
 
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 0.3s, ease-out);
-		max-width: 1800px;
+		max-width: $xlargeMax;
 		font-size: ms(3);
 		letter-spacing: 0.1rem;
 		@include transform(translate(-50%, ms(4)));
@@ -95,7 +95,7 @@
 	}
 
 	@include susy-breakpoint($xlarge) {
-
+		max-width: 520px;
 	}
 }
 
@@ -506,20 +506,24 @@
 				.two {
 					.svg {
 						&.one {
-							width: 130px;
+							width: 180px;
 							@include transform (translateX(-6px) rotate(-3deg));
 						}
 
 						&.two {
-							width: 80px;
-							@include transform (translate(-24px, 80px) rotate(7deg));
+							width: 90px;
+							@include transform (translate(-24px, 110px) rotate(7deg));
 						}
 					}
 				}
 
 				.three {
-					padding-top: ms(2);
-					height: ms(3);
+					padding-top: ms(3);
+					height: ms(4);
+				}
+
+				.four {
+					height: ms(4);
 				}
 			}
 		}
