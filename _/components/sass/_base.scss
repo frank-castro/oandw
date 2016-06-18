@@ -69,7 +69,7 @@ $display-text: 'le-monde-livre-classic-std-s';
 //HOME SLICK CAROUSEL IMAGES
 $slide1: linear-gradient(to right, rgba($bg01, 0.7), rgba($bg02, 0)), image-url('home/salad-plate-olive-oil-sml.jpg');
 $slide2: image-url('home/hot-pan-olive-oil-sml.jpg');
-$slide3: image-url('home/olive-oil-balsamic-bread-sml.jpg');
+$slide3: linear-gradient(to right, rgba($bg01, 0.7), rgba($bg02, 0)), image-url('home/olive-oil-balsamic-bread-sml.jpg');
 $slide4: image-url('home/salad-plate-olive-oil-lrg.jpg');
 $slide5: image-url('home/hot-pan-olive-oil-lrg.jpg');
 $slide6: image-url('home/olive-oil-balsamic-bread-lrg.jpg');

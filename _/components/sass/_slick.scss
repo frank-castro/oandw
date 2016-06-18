@@ -36,11 +36,17 @@ body {
 			.slide1 {
 				@include background($slide1);
 				@include bg-properties;
+
+				.imgText {
+					text-transform: uppercase;
+				}
 			}
+
 			.slide2 {
 				@include background($slide2);
 				@include bg-properties;
 			}
+
 			.slide3 {
 				@include background($slide3);
 				@include bg-properties;
@@ -210,6 +216,11 @@ body {
 
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 1s, ease-out);
+
+		.slickContainer {
+			padding: 0px 0px ms(2) 0px;
+		}
+
 		.slick-dots {
 			li {	
 				button {
@@ -222,6 +233,9 @@ body {
 	@include susy-breakpoint($medium) {
 		@include single-transition(all, 1s, ease-out);
 
+		.slickContainer {
+			padding: 0px 0px ms(3) 0px;
+		}
 	}
 
 	@include susy-breakpoint($large) {

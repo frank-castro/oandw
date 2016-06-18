@@ -25,20 +25,22 @@
 		position: relative;
 
 		a {
-			font-family: $primary-font;
-			font-size: ms(0);
+			@include single-text-shadow;
+			@include links(ms(0), 2rem); //arguments font size and line height
 		}
 	}
 
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 0.3s, ease-out);
-		max-width: 420px;
+		max-width: 400px;
 		padding: ms(3) 0px 0px ms(1);
 		font-size: ms(2);
 	}
 
 	@include susy-breakpoint($medium) {
 		@include single-transition(all, 0.3s, ease-out);
+		max-width: 520px;
+		padding: ms(3) 0px 0px ms(1);
 	}
 
 	@include susy-breakpoint($large) {
@@ -65,17 +67,20 @@
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 0.2s, ease-out);
 		color: white;
-		text-transform: uppercase;
 		font-family: $primary-font;
 		font-size: ms(0);
 		line-height: ms(0);
-		letter-spacing: 0.07rem;
+		letter-spacing: 0.06rem;
 		text-align: left;
 		padding-top: ms(0);
+		padding-right: ms(1);
 		z-index: 99;
 	}
 
 	@include susy-breakpoint($small) {
+		line-height: ms(1);
+		letter-spacing: 0.04rem;
+		padding-top: ms(1);
 	}
 
 	@include susy-breakpoint($medium) {
@@ -96,41 +101,46 @@
 
 .introText {
 	@include susy-breakpoint($xsmall) {
+		@include single-transition(all, 0.2s, ease-out);	
+		display: none;
+	}
+
+	@include susy-breakpoint($small) {
 		@include span (12 of 12);
 		@include single-transition(all, 0.2s, ease-out);
-		color: $primaryColor;
-		padding: 0px ms(1) ms(3);
+		display: inline;
+		@include transform(translateX(-50%));
+		left: 50%;
+		position: relative;
+		max-width: 480px;
+		padding-bottom: ms(3);
+		color: $secondaryColor;
 
 		p {
 			font-family: $primary-fontlight;
 			font-size: ms(0);
 			line-height: ms(1);
-			letter-spacing: 0.05rem;
-			text-align: center;
-		}
-	}
-
-	@include susy-breakpoint($small) {
-		@include single-transition(all, 0.2s, ease-out);
-		@include transform(translateX(-50%));
-		left: 50%;
-		position: relative;
-		max-width: 480px;
-
-		p {
-			font-size: ms(0);
-			line-height: ms(1);
 			letter-spacing: 0.04rem;
-			text-align: left;
+			text-align: center;
 		}
 	}
 
 	@include susy-breakpoint($medium) {
 		@include single-transition(all, 0.2s, ease-out);
+		display: none;		
+		// max-width: 520px;
+		// padding-bottom: ms(3);
+
+		// p {
+		// 	font-size: ms(0);
+		// 	line-height: ms(1);
+		// 	letter-spacing: 0.04rem;
+		// }
 	}
 
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 0.2s, ease-out);
+		display: inline;
 		@include span (6 of 12);
 		max-width: 640px;
 
@@ -279,8 +289,11 @@
 				}
 
 				.three {
-					padding-top: ms(2);
-					height: ms(3);
+					height: ms(4);
+				}
+
+				.four {
+					height: auto;
 				}
 			}
 		}
@@ -310,8 +323,26 @@
 					padding: ms(0) ms(1) 0px;
 
 					img {
-						height: ms(4);
+						height: 80px;
 					}
+				}
+
+				&.one {
+					p {
+						font-size: ms(2);
+						line-height: ms(2);
+						letter-spacing: 0.07rem;
+						max-width: 360px;
+					}
+
+				}
+
+				&.two {
+					height: ms(4);
+				}
+
+				&.four {
+					height: auto;
 				}
 
 				&.five {
@@ -322,7 +353,7 @@
 			&.one {
 				.two {
 					.svg {
-						width: 100px;
+						width: 80px;
 					}
 				}
 			}
@@ -330,7 +361,13 @@
 			&.two {
 				.two {
 					.svg {
-						width: 92px;
+						width: 70px;
+					}
+				}
+
+				.four {
+					img {
+						height: 60px;
 					}
 				}
 			}
@@ -339,7 +376,7 @@
 				.two {
 					.svg {
 						width: 110px;
-						@include transform (translateY(40px));
+						@include transform (translateY(30px));
 					}
 				}
 			}
@@ -348,15 +385,19 @@
 				.two {
 					.svg {
 						&.one {
-							width: 160px;
+							width: 180px;
 							@include transform (translateX(-6px) rotate(-3deg));
 						}
 
 						&.two {
-							width: 100px;
-							@include transform (translate(-24px, 80px) rotate(7deg));
+							width: 96px;
+							@include transform (translate(-24px, 112px) rotate(7deg));
 						}
 					}
+				}
+
+				.three {
+					height: ms(5);
 				}
 			}
 		}
@@ -385,7 +426,7 @@
 
 				td {
 					img {
-						height: 48px;
+						height: 70px;
 					}
 
 					p {
@@ -404,10 +445,10 @@
 					height: ms(3);
 
 					p {
-						font-size: ms(1);
+						font-size: ms(2);
 						line-height: ms(2);
 						letter-spacing: 0.07rem;
-						max-width: 260px;
+						max-width: 360px;
 					}
 
 				}
@@ -442,6 +483,12 @@
 				.two {
 					.svg {
 						width: 62px;
+					}
+				}
+
+				.four {
+					img {
+						height: 60px;
 					}
 				}
 			}
