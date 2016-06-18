@@ -89,7 +89,7 @@
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 0.2s, ease-out);
 		font-size: ms(0);
-		line-height: ms(2);
+		line-height: ms(1);
 		letter-spacing: 0.1rem;
 		padding-top: ms(0);
 	}
@@ -146,8 +146,8 @@
 
 		p {
 			font-size: ms(0);
-			line-height: ms(2);
-			letter-spacing: 0.1rem;
+			line-height: ms(1);
+			letter-spacing: 0.07rem;
 			text-align: left;
 		}
 	}
@@ -551,7 +551,7 @@
 					padding: ms(0) ms(0) 0px;
 
 					img {
-						height: 44px;
+						height: 56px;
 					}
 
 					p {
@@ -610,6 +610,12 @@
 				.two {
 					.svg {
 						width: 68px;
+					}
+				}
+
+				.four {
+					img {
+						height: 48px;
 					}
 				}
 			}
@@ -676,7 +682,7 @@
 					padding: ms(0) ms(0) 0px;
 
 					img {
-						height: 52px;
+						height: 62px;
 					}
 
 					p {
@@ -734,6 +740,12 @@
 						width: 100px;
 					}
 				}
+
+				.four {
+					img {
+						height: 52px;
+					}
+				}
 			}
 
 			&.three {
@@ -750,8 +762,8 @@
 				.two {
 					.svg {
 						&.one {
-							width: 220px;
-							@include transform (translate(-6px, -36px) rotate(-2deg));
+							width: 210px;
+							@include transform (translate(-6px, -15px) rotate(-2deg));
 						}
 
 						&.two {
