@@ -45,11 +45,19 @@ body {
 			.slide2 {
 				@include background($slide2);
 				@include bg-properties;
+
+				.imgText {
+					font-variant: small-caps;
+				}
 			}
 
 			.slide3 {
 				@include background($slide3);
 				@include bg-properties;
+
+				.imgText {
+					font-variant: small-caps;
+				}
 			}
 		}
 
