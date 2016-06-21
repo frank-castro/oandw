@@ -33,7 +33,7 @@
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 0.3s, ease-out);
 		max-width: 400px;
-		padding: ms(3) 0px 0px ms(1);
+		// padding: ms(3) 0px 0px ms(1);
 		font-size: ms(3);
 		line-height: ms(3);
 	}
@@ -44,20 +44,18 @@
 	}
 
 	@include susy-breakpoint($large) {
-		@include span (6 of 12);
 		@include single-transition(all, 0.3s, ease-out);
-		@include span(12 of 12);
-		padding-top: ms(2);
-		font-size: ms(2);
+		@include span (12 of 12); //don't fucking delete this, we needed this here to overwrite the previous padding
+		max-width: $largeMax;
 		letter-spacing: 0.1rem;
 		position: relative;
+		@include transform(translate(-50%, ms(4)));
+		left: 50%;
 	}
 
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 0.3s, ease-out);
 		max-width: $xlargeMax;
-		font-size: ms(3);
-		letter-spacing: 0.1rem;
 		@include transform(translate(-50%, ms(4)));
 		left: 50%;
 	}
@@ -92,10 +90,11 @@
 		line-height: ms(1);
 		letter-spacing: 0.1rem;
 		padding-top: ms(0);
+		max-width: 340px;
 	}
 
 	@include susy-breakpoint($xlarge) {
-		max-width: 520px;
+
 	}
 }
 
@@ -532,8 +531,6 @@
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 0.2s, ease-out);
 		@include span(12 of 12);
-		// padding: 0px;
-		// height: ms(7);
 		height: auto;
 
 		.promo {
@@ -547,12 +544,13 @@
 						font-size: ms(0);
 						line-height: ms(1);
 						letter-spacing: 0.03rem;
+						min-width: 230px;
 					}
 				}
 
 				td {
 					text-align: center;
-					padding: ms(0) ms(0) 0px;
+					padding: ms(0) 9px 0px;
 
 					img {
 						height: 56px;
@@ -580,7 +578,7 @@
 						line-height: ms(2);
 						letter-spacing: 0.07rem;
 						color: $textColor;
-						max-width: 260px;
+						min-width: 230px;
 						text-align: center;
 					}
 				}

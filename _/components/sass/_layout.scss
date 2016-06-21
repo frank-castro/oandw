@@ -163,13 +163,13 @@
 			font-size: ms(0);
 			line-height: 1.6em;
 			letter-spacing: 0.03rem;
-			text-align: right;
+			text-align: left;
 			opacity: 1;
 			overflow: hidden;
 			border-bottom: none;
 			border-bottom-color: $motive;
 			border-bottom-width: 1px;
-			padding: 0px 0px 12px;
+			padding: 0px 0px ms(2);
 			color: $textColor;
 		}
 
@@ -781,11 +781,11 @@
 			height: 350px;
 
 			.buyCtrlsLeft {
-				padding-left: 30px;
+				padding-left: 55px;
 			} // left side div with big bottle, price and buttons
 
 			.buyCtrlsRight {
-				padding-right: 30px;
+				padding-right: 55px;
 			} // right side div with big bottle, price and buttons
 
 			.buyCtrlsSpecial {
