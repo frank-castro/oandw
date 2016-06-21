@@ -18,8 +18,8 @@
 		color: white;
 		font-family: $display-text;
 		z-index: 99;
-		padding: ms(2) 40vw 0px ms(1);
-		font-size: ms(1);
+		padding: 20px 40vw 0px ms(1);
+		font-size: ms(2);
 		line-height: ms(2);
 		letter-spacing: 0.08rem;
 		position: relative;
@@ -49,7 +49,7 @@
 		max-width: $largeMax;
 		letter-spacing: 0.1rem;
 		position: relative;
-		@include transform(translate(-50%, ms(3)));
+		@include transform(translate(-50%, ms(2)));
 		left: 50%;
 	}
 
@@ -122,7 +122,7 @@
 			font-size: ms(0);
 			line-height: ms(1);
 			letter-spacing: 0.04rem;
-			text-align: center;
+			text-align: left;
 		}
 	}
 
@@ -311,7 +311,8 @@
 
 			.row {
 				.infoText {
-					padding: ms(1) 20vw 0px;
+					padding: ms(1) 0px 0px;
+					max-width: 360px;
 
 					p {
 						font-size: ms(0);
