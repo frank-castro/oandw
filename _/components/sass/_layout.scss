@@ -195,7 +195,7 @@
 		}
 
 		.seasoningsCtrlSvgWrapper {
-			height: 280px;
+			height: 250px;
 	
 			.oilsBuyContainerLeft p {
 				@include transform (translateY(2px));
@@ -493,7 +493,7 @@
 		}
 
 		.giftTwoBottlesCtrlSvgWrapper {
-			height: 380px;
+			height: 360px;
 
 			.buyCtrlsLeftGifts {
 				margin-top: 70px;
@@ -663,7 +663,7 @@
 		}
 
 		.giftTwoBottlesCtrlSvgWrapper {
-			height: 380px;
+			height: 360px;
 
 			.buyCtrlsLeftGifts {
 
@@ -688,7 +688,8 @@
 		.horizontalCtrls {
 
 			.buyContainer {
-				padding-top: 0px;
+				padding-top: 18px;
+
 				p {
 					@include transform (translateY(-18px));
 				}
@@ -759,7 +760,7 @@
 		.productsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(4 of 12);
-			// padding: 0px 5% 10px;
+			padding: 0px 5% 0px;
 			line-height: 1.3em;
 			height: 670px;
 
@@ -781,11 +782,11 @@
 			height: 350px;
 
 			.buyCtrlsLeft {
-				padding-left: 55px;
+				padding-left: 8%;
 			} // left side div with big bottle, price and buttons
 
 			.buyCtrlsRight {
-				padding-right: 55px;
+				padding-right: 8%;
 			} // right side div with big bottle, price and buttons
 
 			.buyCtrlsSpecial {
@@ -805,6 +806,10 @@
 				@include transform(translateY(-50px) scale(0.8));
 			}
 		} // container for the svg
+
+		.oilsBuyContainer p {
+			padding: 5px 0px 20px;
+		}
 
 		.description {
 			font-family: $desc-font;
@@ -846,11 +851,11 @@
 			@include single-transition(all, 1s, ease-out);
 			@include span(4 of 12);
 			padding: 0px 5% 10px;
-			height: 700px;
+			height: 640px;
 
 			// Product Name (it's being selected by root position)
 			li:nth-child(2) {
-				padding: 10px 0px 30px;
+				padding: 10px 0px;
 			}
 		}
 
@@ -877,7 +882,7 @@
 			@include single-transition(all, 1s, ease-out);
 			@include span(4 of 12);
 			padding: 0px 5% 10px;
-			height: 690px;
+			height: 620px;
 			color: $textColor;
 
 			.giftsNameContainer {
@@ -889,14 +894,14 @@
 		}
 
 		.giftTwoBottlesCtrlSvgWrapper {
-			height: 410px;
+			height: 360px;
 
 			.buyCtrlsLeftGifts {
 				margin-top: 100px;
 			}
 
 			.twoGiftSvgContainer {
-				@include transform (scale(1.8) translateY(50px));
+				@include transform (scale(1.8) translateY(45px));
 			}
 		}
 
@@ -956,7 +961,7 @@
 		.productsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(3 of 12);
-			// padding: 0px 4% 0px;
+			padding: 0px 4% 0px;
 			height: 740px;
 		}
 
@@ -1081,9 +1086,8 @@
 .sizeText {
 	font-family: $product-price;
 	font-size: ms(0);
-	color: $textColor;
+	color: $secondaryColor;
 	text-align: center;
-	opacity: 0.6;
 }
 
 .priceText {
