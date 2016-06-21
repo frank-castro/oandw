@@ -44,17 +44,13 @@
 		.productsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(12 of 12);
-			// padding: 10px 5%;
+			padding: 10px 5%;
 			font-family: $primary-font;
 			font-size: ms(0);
-			line-height: 1.3em;
+			line-height: ms(0);
 			text-align: center;
 
 			li:nth-child(2) {
-				font-family: $product-title;
-				font-size: 1.7rem;
-				padding: 0px;
-				text-align: left;
 				height: 84px;
 			} // product name selected by root position
 		}
@@ -108,13 +104,17 @@
 				} // container for the svg
 
 				.oilsBuyContainer {
+					.sizeText {
+						padding-top: 35px;
+					}
+
 					p {
 						padding-bottom: 2px;
 					}
 				}
 
 				.special {
-					padding-top: 55px;
+					@include transform(translateX(-10px));
 				}
 			} // special bottle, price and buttons in Specialty
 		}
@@ -122,7 +122,8 @@
 		.oilsBuyContainerLeft {
 			p {
 				padding: 5px 0px 0px;
-				font-size: 0.8rem;
+				font-size: ms(0);
+				line-height: ms(1);
 				@include transform (translateY(-52px));
 				color: $primaryColor;
 			}
@@ -161,7 +162,7 @@
 		.description {
 			font-family: $desc-font;
 			font-size: ms(0);
-			line-height: 1.6em;
+			line-height: ms(0);
 			letter-spacing: 0.03rem;
 			text-align: left;
 			opacity: 1;
@@ -199,6 +200,7 @@
 	
 			.oilsBuyContainerLeft p {
 				@include transform (translateY(2px));
+				padding-bottom: 5px;
 			}
 
 			.bigPlusBttn {
@@ -206,7 +208,7 @@
 			}
 
 			.priceText {
-				padding-top: 40px;
+				padding-top: 44px;
 			}
 		}
 
@@ -218,7 +220,7 @@
 			width: 50%;
 			font-family: $primary-fontlight;
 			font-size: ms(1);
-			line-height: 1.3em;
+			line-height: ms(1);
 			text-align: right;
 			text-transform: uppercase;
 		}
@@ -231,15 +233,15 @@
 
 		.seasoningsPackageContainer {
 			width: 120px;
-			height: 18px;
+			height: 28px;
 			@include transform (translateX(-50%));
 			left: 50%;
 			position: relative;
 			opacity: $svgLinesOpacity;
 
 			&.jar {
-				width: 175px;
-				top: -60px;
+				width: 165px;
+				top: -48px;
 			}
 
 			&.plasticsack {
@@ -253,16 +255,13 @@
 		.giftsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(12 of 12);
-			padding: 10px 5%;
-			font-family: $primary-font;
-			font-size: 1rem;
-			line-height: 1.3em;
+			padding: 10px 8%;
 
 			.giftsNameContainer {
-				height: 90px;
-				margin-top: 20px;
+				height: ms(4);
+				margin-top: ms(2);
 				font-family: $primary-fontlight;
-				font-size: ms(0);
+				font-size: ms(1);
 				line-height: ms(1);
 				text-align: right;
 				// text-transform: uppercase;
@@ -329,8 +328,10 @@
 		}
 
 		.giftSizeFive {
-			@include transform (scale(0.94) translate(-15px, -40px));
-			height: 170px;
+			@include transform(translate(-50%, 12px));
+			left: 50%;
+			position: relative;
+			width: 230px;
 		}
 
 		.giftSizeThree {
@@ -385,7 +386,7 @@
 		.productsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(6 of 12);
-			// padding: 10px 3% 20px;
+			padding: 10px 5%;
 			line-height: 1.3em;
 			height: 720px;
 
@@ -400,11 +401,11 @@
 
 		.ctrlsContainer {
 			.buyCtrlsLeft {
-				padding-left: 8vw;
+				padding-left: 5vw;
 			} // left side div with big bottle, price and buttons
 
 			.buyCtrlsRight {
-				padding-right: 8vw;
+				padding-right: 5vw;
 			} // right side div with big bottle, price and buttons
 		}
 
@@ -440,13 +441,14 @@
 
 		.seasoningsContainer {
 			@include single-transition(all, 1s, ease-out);
-			@include span(12 of 12);
+			@include span(6 of 12);
 			padding: 10px 5% 20px;
 			// this font values are for buy ctrls texts
 			font-family: $primary-font;
 			font-size: 1rem;
 			line-height: 1.3em;
 			text-align: center;
+			height: 620px;
 
 			// Product Name (it's being selected by root position)
 			li:nth-child(2) {
@@ -463,9 +465,6 @@
 
 		.seasoningsNames {
 			width: 55%;
-			font-family: $primary-fontlight;
-			font-size: ms(1);
-			line-height: ms(2);
 		}
 
 		.seasoningsImage {
@@ -477,11 +476,8 @@
 
 		.giftsContainer {
 			@include single-transition(all, 1s, ease-out);
-			@include span(12 of 12);
+			@include span(6 of 12);
 			padding: 10px 5% 20px;
-			font-family: $primary-font;
-			font-size: 1rem;
-			line-height: 1.3em;
 			color: $textColor;
 
 			.giftsNameContainer {
@@ -542,7 +538,7 @@
 			font-family: $primary-font;
 			font-size: 1rem;
 			line-height: 1.3em;
-			height: 620px;
+			height: auto;
 			color: $textColor;
 
 			.accessoriesNameContainer {
@@ -570,7 +566,7 @@
 		.productsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(6 of 12);
-			// padding: 0px 5% 20px;
+			padding: 0px 8%;
 			line-height: 1.3em;
 			height: 660px;
 
@@ -596,11 +592,11 @@
 		.ctrlsContainer {
 
 			.buyCtrlsLeft {
-				padding-left: 8vw;
+				padding-left: 5vw;
 			} // left side div with big bottle, price and buttons
 
 			.buyCtrlsRight {
-				padding-right: 8vw;
+				padding-right: 5vw;
 			} // right side div with big bottle, price and buttons
 		}
 
@@ -632,18 +628,18 @@
 			// @include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(6 of 12);
-			padding: 0px 5% 20px;
+			padding: 0px 10% 20px;
 			font-family: $primary-font;
 			font-size: 1rem;
 			line-height: 1.3em;
-			height: 690px;
+			height: 620px;
 			text-align: center;
 
 			// Product Name (it's being selected by root position)
 			li:nth-child(2) {
 				font-family: $product-title;
 				font-size: 1.7rem;
-				padding: 10px 0px 30px;
+				padding: 10px 0px 0px;
 				text-align: left;
 			}
 		}
@@ -653,8 +649,8 @@
 		.giftsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(6 of 12);
-			padding: 0px 5% 20px;
-			height: 700px;
+			padding: 0px 8%;
+			height: 650px;
 			color: $textColor;
 
 			.giftsNameContainer {
@@ -761,7 +757,7 @@
 		.productsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(4 of 12);
-			padding: 0px 5% 0px;
+			padding: 0px 6% 0px;
 			line-height: 1.3em;
 			height: 670px;
 
@@ -783,15 +779,15 @@
 			height: 350px;
 
 			.buyCtrlsLeft {
-				padding-left: 8%;
+				padding-left: 2vw;
 			} // left side div with big bottle, price and buttons
 
 			.buyCtrlsRight {
-				padding-right: 8%;
+				padding-right: 2vw;
 			} // right side div with big bottle, price and buttons
 
 			.buyCtrlsSpecial {
-				top: 82px;
+				top: 94px;
 			}
 		}
 
@@ -832,7 +828,7 @@
 			height: 80px;
 
 			.oilsName {
-				width: 50%;
+				width: 55%;
 				font-size: ms(1);
 				line-height: ms(1);
 			}
@@ -853,11 +849,6 @@
 			@include span(4 of 12);
 			padding: 0px 5% 10px;
 			height: 640px;
-
-			// Product Name (it's being selected by root position)
-			li:nth-child(2) {
-				padding: 10px 0px;
-			}
 		}
 
 		.seasoningsNameImgContainer {
@@ -865,15 +856,16 @@
 		}
 
 		.seasoningsNames {
-			width: 50%;
-			font-family: $primary-fontlight;
-			font-size: ms(1);
-			line-height: ms(1);
+			width: 55%;
 		}
 
 		.seasoningsImage {
 			width: 45%;
 			@include transform(scale(0.8));
+		}
+
+		.seasoningsPackageContainer {
+			height: 25px;
 		}
 
 //Gifts Section
