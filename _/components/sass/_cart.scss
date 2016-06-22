@@ -56,20 +56,20 @@
 		}
 
 		.circleTotal {
-			height: 44px;
-			width: 44px;
+			height: 36px;
+			width: 36px;
 			border-radius: 50%;
 			background-color: $green;
 			position: absolute;
-			right: 45px;
-			top: 45px;
+			right: 26px;
+			top: 26px;
 			text-align: center;
 			z-index: 1200;
 
 				li {
-					padding-top: 7px;
-					font-family: $product-title;
-					font-size: 1.7rem;
+					padding-top: 5px;
+					font-family: $display-text;
+					font-size: ms(1);
 					color: $bg01;
 				}
 		}

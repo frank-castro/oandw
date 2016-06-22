@@ -19,11 +19,11 @@ header {
 	}
 
 	@include susy-breakpoint($large) {
-		height: 80px;
+		height: 40px;
 	}
 
 	@include susy-breakpoint($xlarge) {
-		height: 80px;
+		height: 40px;
 	}
 }
 
@@ -156,7 +156,7 @@ header {
 
 		.logo {
 			@include transform (translate(0, 0));
-			top: 12px;
+			top: 10px;
 			left: 0px;
 			float: left;
 			position: relative;
@@ -188,12 +188,6 @@ header {
 		@include transform(translateX(-50%));
 		left: 50%;
 		position: relative;
-
-		.logo {
-			top: 15px;
-			left: 0px; 
-			width: 120px;
-		}
 	}
 }
 

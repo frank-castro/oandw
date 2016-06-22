@@ -75,10 +75,10 @@ $slide5: image-url('home/hot-pan-olive-oil-lrg.jpg');
 $slide6: image-url('home/olive-oil-balsamic-bread-lrg.jpg');
 
 // BANNERS
-$patternVarietal: image-url('largeBanner/varietal-pattern.jpg');
-$bannerLargeInfuse: image-url('largeBanner/varietal-pattern.jpg');
-$bannerLargeSpecialty: image-url('largeBanner/varietal-pattern.jpg');
-$bannerLargeBalsamics: image-url('largeBanner/varietal-pattern.jpg');
+$patternVarietal: image-url('largeBanner/varietal-pattern.gif');
+$bannerLargeInfuse: image-url('largeBanner/varietal-pattern.gif');
+$bannerLargeSpecialty: image-url('largeBanner/varietal-pattern.gif');
+$bannerLargeBalsamics: image-url('largeBanner/balsamics-pattern.gif');
 $bannerLargeSeasonings: image-url('largeBanner/varietal-pattern.jpg');
 $bannerLargeGifts: image-url('largeBanner/varietal-pattern.jpg');
 $bannerLargeAccessories: image-url('largeBanner/varietal-pattern.jpg');
@@ -256,13 +256,13 @@ address {
 		@include single-transition(all, 1s, ease-out);
 		top: 40px;
 		position: fixed;
-		background-color: transparent;
+		background-color: rgba(31, 34, 15, 0.8);
 		z-index: 1040;
 
 		a {
 			font-size: 0.75rem;
 			line-height: 2.2rem;
-			padding: 2px 16px;
+			padding: 3px 16px;
 			letter-spacing: 0.07rem;
 		}
 
@@ -303,7 +303,7 @@ address {
 		a {
 			font-size: 0.75rem;
 			line-height: 2.2rem;
-			padding: 2px 20px;
+			padding: 3px 20px;
 			letter-spacing: 0.07rem;
 		}
 	}

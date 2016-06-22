@@ -179,7 +179,7 @@
 		.seasoningsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(12 of 12);
-			padding: 10px 5%;
+			padding: 10px 8%;
 			// this font values are for buy ctrls texts
 			font-family: $primary-font;
 			font-size: 1rem;
@@ -290,8 +290,8 @@
 			}
 
 			.twoGiftSvgContainer {
-				width: 150px;
-				@include transform (scale(1.6) translateY(12px));
+				width: 210px;
+				@include transform(translateY(-20px));
 				position: relative;
 			}
 		}
@@ -335,13 +335,17 @@
 		}
 
 		.giftSizeThree {
-			@include transform (scale(0.6) translate(-100px, -125px));
-			height: 150px;
+			@include transform(translate(-50%, 12px));
+			left: 50%;
+			position: relative;
+			width: 170px;
 		}
 
 		.giftSizeSampler {
-			@include transform (scale(0.8) translate(-36px, -80px));
-			height: 120px;
+			@include transform(translate(-50%, 5px));
+			left: 50%;
+			position: relative;
+			width: 260px;
 		}
 
 //Accesories Section
@@ -479,6 +483,7 @@
 			@include span(6 of 12);
 			padding: 10px 5% 20px;
 			color: $textColor;
+			height: 670px;
 
 			.giftsNameContainer {
 				height: 110px;
@@ -509,23 +514,21 @@
 			}
 
 			.twoGiftSvgContainer {
-				@include transform (scale(1.9) translate(-20px, 30px));
+				@include transform (scale(1.2) translate(0px, 20px));
+				width: 210px;
 			}
 		}
 
 		.giftSizeFive {
-			@include transform (scale(0.6) translate(-15px, -40px));
-			height: 280px;
+			width: 220px;
 		}
 
 		.giftSizeThree {
-			@include transform (scale(0.4) translate(-15px, -195px));
-			height: 260px;
+			width: 140px;
 		}
 
 		.giftSizeSampler {
-			@include transform (scale(0.7) translate(-10px, -100px));
-			height: 200px;
+			width: 220px;
 		}
 
 //Accessories Section
@@ -676,10 +679,6 @@
 					padding-top: 20px;
 				}
 			}
-
-			.twoGiftSvgContainer {
-				@include transform (scale(1.8) translate(-10px, 30px));
-			}
 		}
 
 		.horizontalCtrls {
@@ -699,21 +698,6 @@
 					padding-top: 18px;
 				}
 			}
-		}
-
-		.giftSizeFive {
-			@include transform (scale(0.68) translate(-5px, -70px));
-			height: 200px;
-		}
-
-		.giftSizeThree {
-			@include transform (scale(0.45) translate(-10px, -170px));
-			height: 200px;
-		}
-
-		.giftSizeSampler {
-			@include transform (scale(0.8) translate(-5px, -70px));
-			height: 200px;
 		}
 
 //Accessories Section
@@ -743,9 +727,6 @@
 			@include transition-duration(0.2s);
 			@include transition-timing-function(ease-out);
 			padding: ms(2) 0px ms(1);
-			// line-height: 3.3rem;
-			// font-size: 2rem;
-	  		// padding: ms(3) 0px ms(2);
 	  		font-size: ms(2);
 			line-height: ms(3);
 
@@ -757,7 +738,7 @@
 		.productsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(4 of 12);
-			padding: 0px 6% 0px;
+			padding: 0px 5% 0px;
 			line-height: 1.3em;
 			height: 670px;
 
@@ -874,8 +855,8 @@
 			// @include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(4 of 12);
-			padding: 0px 5% 10px;
-			height: 620px;
+			padding: 0px 4% 10px;
+			height: 640px;
 			color: $textColor;
 
 			.giftsNameContainer {
@@ -894,23 +875,8 @@
 			}
 
 			.twoGiftSvgContainer {
-				@include transform (scale(1.8) translateY(45px));
+				width: 220px;
 			}
-		}
-
-		.giftSizeFive {
-			@include transform (scale(0.75) translate(0px, -24px));
-			height: 200px;
-		}
-
-		.giftSizeThree {
-			@include transform (scale(0.48) translate(-5px, -100px));
-			height: 200px;
-		}
-
-		.giftSizeSampler {
-			@include transform (scale(0.8) translate(-5px, -25px));
-			height: 200px;
 		}
 
 //Accessories Section
@@ -954,7 +920,6 @@
 		.productsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(3 of 12);
-			padding: 0px 4% 0px;
 			height: 740px;
 		}
 

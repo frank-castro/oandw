@@ -96,7 +96,12 @@
 	}
 
 	@include susy-breakpoint($xlarge) {
-
+		@include single-transition(all, 0.2s, ease-out);
+		font-size: ms(1);
+		line-height: ms(2);
+		letter-spacing: 0.07rem;
+		padding-top: ms(0);
+		max-width: 480px;
 	}
 }
 
@@ -157,7 +162,13 @@
 		@include span (8 of 12);
 		@include single-transition(all, 0.2s, ease-out);
 		padding-bottom: ms(4);
-		max-width: 680px;
+		max-width: 850px;
+
+		p {
+			font-size: ms(1);
+			line-height: ms(2);
+			letter-spacing: 0.07rem;
+		}
 	}	
 }
 
@@ -674,6 +685,7 @@
 			.row {
 				.infoText {
 					padding: ms(1) 0px 0px;
+					max-width: 320px;
 
 					p {
 						font-size: ms(0);
