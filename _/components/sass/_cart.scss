@@ -170,18 +170,19 @@
 		}
 
 		.cartProductList {
-			width: 300px;
+			width: 340px;
 			position: absolute;
 			left: 50%;
 			@include transform(translateX(-50%));
 			top: 40px;
 			font-family: $primary-font;
-			font-size: ms(1);
-			line-height: 2.4rem;
+			font-size: ms(0);
+			line-height: ms(1);
 			color: $bg01;
 
 			.cartBigText {
-				font-size: ms(2);
+				font-size: ms(1);
+				padding-bottom: ms(1);
 			}
 
 			table {
@@ -231,7 +232,7 @@
 			}
 
 			.cartCTAforward {
-				font-size: ms(2);
+				font-size: ms(1);
 				float: right;
 				cursor: pointer;
 
@@ -261,6 +262,14 @@
 			margin-bottom: 10px;
 			background-color: white;
 		}
+
+		.addRemoveBttn {
+			width: 36px;
+			height: 36px;
+			@include border-radius (18px);
+			cursor: pointer;
+			background-color: $green;
+		}
 	}
 
 	@include susy-breakpoint($small) {
@@ -270,6 +279,38 @@
 
 		.cartProductList {
 			width: 480px;
+			font-size: ms(1);
+			line-height: ms(2);
+
+			.cartBigText {
+				font-size: ms(2);
+			}
+		}
+
+		.cartCTA {
+			width: 100%;
+			height: 40px;
+			padding: 20px 0px;
+
+			.cartCTAback {
+				font-size: ms(1);
+			}
+
+			.cartCTAforward {
+				font-size: ms(2);
+
+				i {
+					@include transform(scale(1.4));
+				}
+			}
+		}
+
+		.addRemoveBttn {
+			width: 48px;
+			height: 48px;
+			@include border-radius (24px);
+			cursor: pointer;
+			background-color: $green;
 		}
 	}
 
@@ -415,14 +456,6 @@
 		@include transition-duration(0.2s);
 		@include transition-timing-function(ease-out);
 	}
-}
-
-.addRemoveBttn {
-	width: 48px;
-	height: 48px;
-	@include border-radius (24px);
-	cursor: pointer;
-	background-color: $green;
 }
 
 .confirmLabel {
