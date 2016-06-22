@@ -50,9 +50,9 @@
 			line-height: ms(0);
 			text-align: center;
 
-			li:nth-child(2) {
-				height: 84px;
-			} // product name selected by root position
+			// li:nth-child(2) {
+			// 	height: 84px;
+			// } // product name selected by root position
 		}
 
 		.oilsNameImgContainer {
@@ -123,6 +123,7 @@
 			p {
 				padding: 5px 0px 0px;
 				font-size: ms(0);
+				font-family: $primary-font;
 				line-height: ms(1);
 				@include transform (translateY(-52px));
 				color: $primaryColor;
@@ -302,7 +303,8 @@
 			.buyContainer {
 				p {
   					color: $textColor;
-  					font-size: 0.8rem;
+  					font-size: ms(0);
+  					font-family: $primary-font;
 					@include transform (translateY(-2px));
 				}
 			}
@@ -395,12 +397,12 @@
 			height: 720px;
 
 			// Product Name (it's being selected by root position)
-			li:nth-child(2) {
-				font-family: $product-title;
-				font-size: 1.7rem;
-				padding: 10px 0px;
-				text-align: left;
-			}
+			// li:nth-child(2) {
+			// 	font-family: $product-title;
+			// 	font-size: 1.7rem;
+			// 	padding: 10px 0px;
+			// 	text-align: left;
+			// }
 		}
 
 		.ctrlsContainer {
@@ -574,12 +576,12 @@
 			height: 660px;
 
 			// Product Name (it's being selected by root position)
-			li:nth-child(2) {
-				font-family: $product-title;
-				font-size: 1.7rem;
-				padding: 10px 0px;
-				text-align: left;
-			}
+			// li:nth-child(2) {
+			// 	font-family: $product-title;
+			// 	font-size: 1.7rem;
+			// 	padding: 10px 0px;
+			// 	text-align: left;
+			// }
 		}
 
 		.buyContainer {
@@ -743,12 +745,12 @@
 			height: 670px;
 
 			// Product Name (it's being selected by root position)
-			li:nth-child(2) {
-				font-family: $product-title;
-				font-size: 1.7rem;
-				padding: 10px 0px;
-				text-align: left;
-			}
+			// li:nth-child(2) {
+			// 	font-family: $product-title;
+			// 	font-size: ms(2);
+			// 	padding: 10px 0px;
+			// 	text-align: left;
+			// }
 		}
 
 		.buyContainer p {
@@ -999,6 +1001,18 @@
 				.price {
 					padding-top: 28px;
 				}
+			}
+		}
+
+		.giftTwoBottlesCtrlSvgWrapper {
+			// height: 360px;
+
+			.buyCtrlsLeftGifts {
+				margin-top: 100px;
+			}
+
+			.twoGiftSvgContainer {
+				width: 210px;
 			}
 		}
 

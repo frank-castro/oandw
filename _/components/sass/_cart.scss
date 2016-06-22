@@ -122,6 +122,13 @@
 			@include transition-duration(0.3s);
 			@include transition-timing-function(ease-in);
 		}
+
+		.circleTotal {
+			height: 36px;
+			width: 36px;
+			right: 22px;
+			top: 22px;
+		}
 	}
 
 	@include susy-breakpoint($xlarge) {
