@@ -16,8 +16,10 @@
 	  	// max-width: 320px;
 	  	color: $textColor;
 
+		$xsmlContainer: 5%; // this will change the width of the containers for all products in this breakpoint
+
 		.pageTitle {
-			padding: ms(2) 5% ms(1);
+			padding: ms(2) $xsmlContainer ms(1);
 			font-family: $page-title;
 			font-size: ms(1);
 			line-height: ms(2);
@@ -44,7 +46,7 @@
 		.productsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(12 of 12);
-			padding: 10px 5%;
+			padding: 10px $xsmlContainer;
 			font-family: $primary-font;
 			font-size: ms(0);
 			line-height: ms(0);
@@ -70,7 +72,6 @@
 			.oilsImage {
 				width: 40%;
 				height: 50px; // this height is needed to even the two bottles
-				opacity: 0.9;
 				@include transform (scale(0.7));
 				@include transform-origin(0, 0);
 			}
@@ -180,7 +181,7 @@
 		.seasoningsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(12 of 12);
-			padding: 10px 8%;
+			padding: 10px $xsmlContainer;
 			// this font values are for buy ctrls texts
 			font-family: $primary-font;
 			font-size: 1rem;
@@ -256,7 +257,7 @@
 		.giftsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(12 of 12);
-			padding: 10px 8%;
+			padding: 10px $xsmlContainer;
 
 			.giftsNameContainer {
 				height: ms(4);
@@ -355,7 +356,7 @@
 		.accessoriesContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(12 of 12);
-			padding: 10px 5%;
+			padding: 10px $xsmlContainer;
 			font-family: $primary-font;
 			font-size: 1rem;
 			line-height: 1.3em;
@@ -382,8 +383,10 @@
 		@include container;
 	  	// max-width: 500px;
 
+		$smlContainer: 6%; // this will change the width of the containers for all products in this breakpoint
+
 		.pageTitle {
-			padding: ms(2) 5%;
+			padding: ms(2) $smlContainer;
 			font-size: ms(2);
 			line-height: ms(3);
 			letter-spacing: 0.2rem;
@@ -392,17 +395,9 @@
 		.productsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(6 of 12);
-			padding: 10px 5%;
+			padding: 10px $smlContainer;
 			line-height: 1.3em;
 			height: 720px;
-
-			// Product Name (it's being selected by root position)
-			// li:nth-child(2) {
-			// 	font-family: $product-title;
-			// 	font-size: 1.7rem;
-			// 	padding: 10px 0px;
-			// 	text-align: left;
-			// }
 		}
 
 		.ctrlsContainer {
@@ -438,8 +433,7 @@
 			.oilsImage {
 				width: 45%;
 				height: 0px; //this height is needed to even the two bottles
-				opacity: 1;
-				@include transform (scale(0.9));
+				@include transform (scale(0.7));
 			}
 		}
 
@@ -448,7 +442,7 @@
 		.seasoningsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(6 of 12);
-			padding: 10px 5% 20px;
+			padding: 10px $smlContainer 20px;
 			// this font values are for buy ctrls texts
 			font-family: $primary-font;
 			font-size: 1rem;
@@ -483,7 +477,7 @@
 		.giftsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(6 of 12);
-			padding: 10px 5% 20px;
+			padding: 10px $smlContainer 20px;
 			color: $textColor;
 			height: 670px;
 
@@ -517,7 +511,7 @@
 
 			.twoGiftSvgContainer {
 				@include transform (scale(1.2) translate(0px, 20px));
-				width: 210px;
+				width: 200px;
 			}
 		}
 
@@ -538,12 +532,10 @@
 		.accessoriesContainer {
 			@include clearfix;
 			@include single-transition(all, 1s, ease-out);
-			@include span(12 of 12);
-			padding: 10px 5% 20px;
+			@include span(6 of 12);
+			padding: 10px $smlContainer 20px;
 			font-family: $primary-font;
-			font-size: 1rem;
-			line-height: 1.3em;
-			height: auto;
+			height: 580px;
 			color: $textColor;
 
 			.accessoriesNameContainer {
@@ -564,6 +556,8 @@
 		@include container;
 	  	// max-width: 890px;
 
+		$medContainer: 8%; // this will change the width of the containers for all products in this breakpoint
+
 		.pageTitle {
 			padding: ms(2) 20%;
 		}
@@ -571,7 +565,7 @@
 		.productsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(6 of 12);
-			padding: 0px 8%;
+			padding: 0px $medContainer;
 			line-height: 1.3em;
 			height: 660px;
 
@@ -623,7 +617,6 @@
 			.oilsImage {
 				width: 50%;
 				height: 80px;
-				opacity: 0.9;
 			}
 		}
 
@@ -633,7 +626,7 @@
 			// @include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(6 of 12);
-			padding: 0px 10% 20px;
+			padding: 0px $medContainer 20px;
 			font-family: $primary-font;
 			font-size: 1rem;
 			line-height: 1.3em;
@@ -654,7 +647,7 @@
 		.giftsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(6 of 12);
-			padding: 0px 8%;
+			padding: 0px $medContainer;
 			height: 650px;
 			color: $textColor;
 
@@ -684,7 +677,6 @@
 		}
 
 		.horizontalCtrls {
-
 			.buyContainer {
 				padding-top: 18px;
 
@@ -707,7 +699,7 @@
 			// @include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(6 of 12);
-			padding: 0px 5% 50px;
+			padding: 0px $medContainer 50px;
 			height: 660px;
 			color: $textColor;
 
@@ -723,6 +715,8 @@
 
 	@include susy-breakpoint($large){
 	  	max-width: $largeMax;
+
+		$lrgContainer: 5%; // this will change the width of the containers for all products in this breakpoint
 
 		.pageTitle {
 			@include transition-delay(1s);
@@ -740,7 +734,7 @@
 		.productsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(4 of 12);
-			padding: 0px 5% 0px;
+			padding: 0px $lrgContainer;
 			line-height: 1.3em;
 			height: 670px;
 
@@ -819,7 +813,6 @@
 			.oilsImage {
 				width: 45%;
 				height: 80px;
-				opacity: 1;
 				@include transform (scale(0.7));
 			}
 		}
@@ -830,7 +823,7 @@
 			// @include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(4 of 12);
-			padding: 0px 5% 10px;
+			padding: 0px $lrgContainer 10px;
 			height: 640px;
 		}
 
@@ -857,7 +850,7 @@
 			// @include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(4 of 12);
-			padding: 0px 4% 10px;
+			padding: 0px $lrgContainer 10px;
 			height: 640px;
 			color: $textColor;
 
@@ -886,7 +879,7 @@
 			// @include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(4 of 12);
-			padding: 0px 5% 10px;
+			padding: 0px $lrgContainer 10px;
 			font-family: $primary-font;
 			font-size: 1rem;
 			line-height: 1.3em;
@@ -910,6 +903,8 @@
 	@include susy-breakpoint($xlarge){
 	  	max-width: $xlargeMax;
 
+		$xlrgContainer: 4%; // this will change the width of the containers for all products in this breakpoint
+
 	  	.pageTitle {
 			@include transition-delay(1s);
 			@include transition-duration(0.2s);
@@ -922,6 +917,7 @@
 		.productsContainer {
 			@include single-transition(all, 1s, ease-out);
 			@include span(3 of 12);
+			padding: 0px $xlrgContainer;
 			height: 740px;
 		}
 
@@ -960,7 +956,7 @@
 			// @include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(3 of 12);
-			padding: 0px 4% 10px;
+			padding: 0px $xlrgContainer 10px;
 			// Product Name (it's being selected by root position)
 			li:nth-child(2) {
 				padding: 10px 0px 50px;
@@ -977,7 +973,7 @@
 			// @include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(3 of 12);
-			padding: 0px 4% 10px;
+			padding: 0px $xlrgContainer 10px;
 			color: $textColor;
 
 			.giftsNameContainer {
@@ -1021,7 +1017,7 @@
 			@include clearfix;
 			@include single-transition(all, 1s, ease-out);
 			@include span(3 of 12);
-			padding: 0px 4% 10px;
+			padding: 0px $xlrgContainer 10px;
 			height: 610px;
 			color: $textColor;
 
