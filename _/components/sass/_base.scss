@@ -67,9 +67,9 @@ $display-text: 'le-monde-livre-classic-std-s';
 .bold {	font-weight: 700; }
 
 //HOME SLICK CAROUSEL IMAGES
-$slide1: linear-gradient(to right, rgba($bg01, 0.7), rgba($bg02, 0)), image-url('home/salad-plate-olive-oil-sml.jpg');
-$slide2: image-url('home/hot-pan-olive-oil-sml.jpg');
-$slide3: linear-gradient(to right, rgba($bg01, 0.7), rgba($bg02, 0)), image-url('home/olive-oil-balsamic-bread-sml.jpg');
+$slide1: linear-gradient(to right, rgba($bg01, 0.7), rgba($bg02, 0)), image-url('home/salad-plate-olive-oil-smler.jpg');
+$slide2: image-url('home/hot-pan-olive-oil-smler.jpg');
+$slide3: linear-gradient(to right, rgba($bg01, 0.7), rgba($bg02, 0)), image-url('home/olive-oil-balsamic-bread-smler.jpg');
 $slide4: image-url('home/salad-plate-olive-oil-lrg.jpg');
 $slide5: image-url('home/hot-pan-olive-oil-lrg.jpg');
 $slide6: image-url('home/olive-oil-balsamic-bread-lrg.jpg');
@@ -110,15 +110,21 @@ $susy: (
 // Breakpoints values
 $xsmall: 320px; //one column narrow
 
-$small: 760px; //one column wide
+$small: 760px; //two columns
+$smlMax: 860px;
 
 $medium: 980px; //two columns
+$medMax: 1080px;
 
 $large: 1200px; //three columns
 $largeMax: 1280px; // this is to maintain the content in this breakpoint within this var width value
 
 $xlarge: 1900px; //four columns
 $xlargeMax: 1800px;
+
+.view {
+	min-height: 89vh;
+}
 
 .left {
 	float: left;

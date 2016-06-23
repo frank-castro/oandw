@@ -12,13 +12,13 @@
 
 .slogan {
 	@include susy-breakpoint($xsmall) {
-		@include span (12 of 12);
 		@include single-transition(all, 0.3s, ease-out);
+		@include span (12 of 12);
 		@include single-text-shadow;
 		color: white;
 		font-family: $display-text;
 		z-index: 99;
-		padding: 20px 40vw 0px ms(1);
+		padding: 9vh 20vw 0px ms(1);
 		font-size: ms(2);
 		line-height: ms(2);
 		letter-spacing: 0.08rem;
@@ -32,8 +32,10 @@
 
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 0.3s, ease-out);
-		max-width: 400px;
-		padding: ms(3) 0px 0px ms(1);
+		@include span (12 of 12);
+		max-width: 480px;
+		padding-top: 12vh;
+		padding-bottom: ms(1);
 		font-size: ms(3);
 		line-height: ms(3);
 	}
@@ -45,21 +47,25 @@
 
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 0.3s, ease-out);
-		@include span (12 of 12); //don't fucking delete this, we needed this here to overwrite the previous padding
+		@include span (12 of 12);
+		padding-top: 6vh;
+		@include transform(translateX(-50%));
+		left: 50%;
+		position:relative;
 		max-width: $largeMax;
 		letter-spacing: 0.1rem;
-		position: relative;
-		@include transform(translate(-50%, ms(2)));
-		left: 50%;
 	}
 
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 0.3s, ease-out);
-		max-width: $xlargeMax;
-		@include transform(translate(-50%, ms(4)));
+		@include span (12 of 12);
+		@include transform(translateX(-50%));
 		left: 50%;
+		position:relative;
+		max-width: $xlargeMax;
 		font-size: ms(4);
 		line-height: ms(4);
+		letter-spacing: 0.1rem;
 	}
 }
 
@@ -107,19 +113,32 @@
 
 .introText {
 	@include susy-breakpoint($xsmall) {
-		@include single-transition(all, 0.2s, ease-out);	
-		display: none;
+		@include span (12 of 12);
+		@include single-transition(all, 0.2s, ease-out);
+		@include transform(translateX(-50%));
+		left: 50%;
+		position: relative;
+		max-width: 320px;
+		padding-bottom: ms(2);
+		color: $secondaryColor;
+
+		p {
+			font-family: $primary-fontlight;
+			font-size: ms(0);
+			line-height: ms(1);
+			letter-spacing: 0.04rem;
+			text-align: left;
+		}
 	}
 
 	@include susy-breakpoint($small) {
 		@include span (12 of 12);
 		@include single-transition(all, 0.2s, ease-out);
-		display: inline;
 		@include transform(translateX(-50%));
 		left: 50%;
 		position: relative;
 		max-width: 480px;
-		padding-bottom: ms(3);
+		padding-bottom: ms(4);
 		color: $secondaryColor;
 
 		p {
@@ -133,15 +152,14 @@
 
 	@include susy-breakpoint($medium) {
 		@include single-transition(all, 0.2s, ease-out);
-		display: none;		
-		// max-width: 520px;
-		// padding-bottom: ms(3);
+		padding-bottom: ms(4);
+		max-width: 520px;
 
-		// p {
-		// 	font-size: ms(0);
-		// 	line-height: ms(1);
-		// 	letter-spacing: 0.04rem;
-		// }
+		p {
+			font-size: ms(0);
+			line-height: ms(1);
+			letter-spacing: 0.04rem;
+		}
 	}
 
 	@include susy-breakpoint($large) {
@@ -360,6 +378,7 @@
 
 				&.five {
 					padding-top: ms(1);
+					height: ms(5);
 				}
 			}
 

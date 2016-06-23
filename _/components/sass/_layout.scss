@@ -13,7 +13,8 @@
 	@include susy-breakpoint($xsmall){
 		@include single-transition(all, 1s, ease-out);
 		@include container;
-	  	// max-width: 320px;
+		min-width: 320px;
+	  	max-width: 350px;
 	  	color: $textColor;
 
 		$xsmlContainer: 5%; // this will change the width of the containers for all products in this breakpoint
@@ -83,11 +84,11 @@
 			.buyCtrlsLeft {
 				float: left;
 				width: 98px;
-				padding-left: 14vw;
+				padding-left: 44px;
 			} // left side div with big bottle, price and buttons
 
 			.buyCtrlsRight {
-				padding-right: 14vw;
+				padding-right: 44px;
 				float: right;
 				width: 98px;
 			} // right side div with big bottle, price and buttons
@@ -381,7 +382,7 @@
 	@include susy-breakpoint($small){
 		@include single-transition(all, 1s, ease-out);
 		@include container;
-	  	// max-width: 500px;
+	  	max-width: $smlMax;
 
 		$smlContainer: 6%; // this will change the width of the containers for all products in this breakpoint
 
@@ -402,11 +403,11 @@
 
 		.ctrlsContainer {
 			.buyCtrlsLeft {
-				padding-left: 5vw;
+				padding-left: 6vw;
 			} // left side div with big bottle, price and buttons
 
 			.buyCtrlsRight {
-				padding-right: 5vw;
+				padding-right: 6vw;
 			} // right side div with big bottle, price and buttons
 		}
 
@@ -554,7 +555,7 @@
 
 	@include susy-breakpoint($medium){
 		@include container;
-	  	// max-width: 890px;
+	  	max-width: $medMax;
 
 		$medContainer: 8%; // this will change the width of the containers for all products in this breakpoint
 
@@ -568,14 +569,6 @@
 			padding: 0px $medContainer;
 			line-height: 1.3em;
 			height: 660px;
-
-			// Product Name (it's being selected by root position)
-			// li:nth-child(2) {
-			// 	font-family: $product-title;
-			// 	font-size: 1.7rem;
-			// 	padding: 10px 0px;
-			// 	text-align: left;
-			// }
 		}
 
 		.buyContainer {
@@ -1114,7 +1107,7 @@ footer {
 		.about {
 			position: absolute;
 			top: 7px;
-			right: 8%;
+			right: 12vw;
 			z-index: 1040;
 			color: $green;
 			font-size: ms(0);
@@ -1130,7 +1123,7 @@ footer {
 		@include single-transition(all, 1s, ease-out);
 
 		.about {
-			right: 20%;
+			right: 11vw;
 		}
 	}
 }

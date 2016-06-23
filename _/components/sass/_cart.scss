@@ -21,7 +21,7 @@
 }
 
 .cartBanner {
-	background: linear-gradient(to bottom left, rgba($green, 1), rgba($textColor, 0.9));
+	background: linear-gradient(to bottom left, rgba($green, 1), rgba($textColor, 1));
 	z-index: 1050;
 
 	@include susy-breakpoint($xsmall) {
@@ -108,9 +108,9 @@
 		@include transition-delay(0s);
 		@include transition-duration(0.2s);
 		@include transition-timing-function(ease-out);
+		right: 8vw;
 		width: 40px;
 		height: 40px;
-		right: 3%;	
 
 		.shopping_cart {
 			padding: 8px;
@@ -135,7 +135,7 @@
 		@include transition-delay(0s);
 		@include transition-duration(0.2s);
 		@include transition-timing-function(ease-out);
-		right: 15%;
+		right: 8vw;
 
 		&.cartBttn {
 			@include transition-delay(0.1s);

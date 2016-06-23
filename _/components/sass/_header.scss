@@ -85,8 +85,7 @@ header {
 
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 0.5s, ease-out);
-		height: 86vh;
-
+		
 		.closeBttn {
 			top: 14px;
 			right: 7%;
