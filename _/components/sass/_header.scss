@@ -36,7 +36,7 @@ header {
 		line-height: ms(1);
 		text-align: left;
 		color: $bg01;
-		padding: 60px 0 0;
+		padding: ms(2) 0px ms(3);
 		position: fixed;
 		top: 0px;
 		width: 100%;
@@ -85,6 +85,7 @@ header {
 
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 0.5s, ease-out);
+		height: 86vh;
 
 		.closeBttn {
 			top: 14px;
