@@ -293,7 +293,7 @@
 			}
 
 			.twoGiftSvgContainer {
-				width: 210px;
+				width: 116px;
 				@include transform(translateY(-20px));
 				position: relative;
 			}
@@ -511,8 +511,8 @@
 			}
 
 			.twoGiftSvgContainer {
-				@include transform (scale(1.2) translate(0px, 20px));
-				width: 200px;
+				@include transform (translateY(-5px));
+				width: 140px;
 			}
 		}
 
@@ -863,7 +863,7 @@
 			}
 
 			.twoGiftSvgContainer {
-				width: 208px;
+				width: 125px;
 			}
 		}
 
@@ -1001,7 +1001,7 @@
 			}
 
 			.twoGiftSvgContainer {
-				width: 210px;
+				width: 130px;
 			}
 		}
 

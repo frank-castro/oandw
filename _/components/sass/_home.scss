@@ -309,13 +309,13 @@
 				.two {
 					.svg {
 						&.one {
-							width: 130px;
-							@include transform (translateX(-6px) rotate(-3deg));
+							width: 78px;
+							@include transform (translateX(-6px) rotate(-2deg));
 						}
 
 						&.two {
 							width: 80px;
-							@include transform (translate(-24px, 80px) rotate(7deg));
+							@include transform (translate(10px, 80px) rotate(7deg));
 						}
 					}
 				}
@@ -419,13 +419,13 @@
 				.two {
 					.svg {
 						&.one {
-							width: 180px;
+							width: 102px;
 							@include transform (translateX(-6px) rotate(-3deg));
 						}
 
 						&.two {
 							width: 96px;
-							@include transform (translate(-24px, 112px) rotate(7deg));
+							@include transform (translate(10px, 112px) rotate(7deg));
 						}
 					}
 				}
@@ -540,13 +540,12 @@
 				.two {
 					.svg {
 						&.one {
-							width: 180px;
-							@include transform (translateX(-6px) rotate(-3deg));
+
 						}
 
 						&.two {
 							width: 90px;
-							@include transform (translate(-24px, 110px) rotate(7deg));
+							@include transform (translate(20px, 120px) rotate(7deg));
 						}
 					}
 				}
@@ -670,13 +669,13 @@
 				.two {
 					.svg {
 						&.one {
-							width: 130px;
+							width: 84px;
 							@include transform (translateX(-6px) rotate(-3deg));
 						}
 
 						&.two {
 							width: 80px;
-							@include transform (translate(-24px, 80px) rotate(7deg));
+							@include transform (translate(10px, 88px) rotate(7deg));
 						}
 					}
 				}
@@ -800,13 +799,13 @@
 				.two {
 					.svg {
 						&.one {
-							width: 210px;
+							width: 116px;
 							@include transform (translate(-6px, -15px) rotate(-2deg));
 						}
 
 						&.two {
 							width: 110px;
-							@include transform (translate(-40px, 125px) rotate(7deg));
+							@include transform (translate(16px, 125px) rotate(7deg));
 						}
 					}
 				}
