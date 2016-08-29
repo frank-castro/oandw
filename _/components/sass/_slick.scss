@@ -15,8 +15,8 @@ $slick-font-family: $display-text !default;
 $slick-arrow-color: #616A00 !default;
 $slick-dot-color: $bg02 !default;
 $slick-dot-color-active: #D5CB2E !default;
-$slick-prev-character: "«" !default;
-$slick-next-character: "»" !default;
+$slick-prev-character: "‹" !default;
+$slick-next-character: "›" !default;
 $slick-dot-character: "·" !default;
 $slick-dot-size: ms(4) !default;
 $slick-opacity-arrows: 1 !default;
@@ -33,12 +33,59 @@ body {
 			padding: 0px 0px ms(2) 0px;
 			margin-top: 0px;
 
+			.textContainer {
+				@include span (12 of 12);
+				@include single-text-shadow;
+				color: white;
+				z-index: 99;
+				padding: 10vh 30vw 0px ms(1);
+				position: relative;
+
+				.header {
+					p{
+						font-family: $display-text;
+						font-size: ms(2);
+						line-height: ms(2);
+						letter-spacing: 0.08rem;
+						padding-top: ms(0);
+					}
+				}
+
+				p {
+					a {
+						@include single-text-shadow;
+						@include links(ms(1), ms(3)); //arguments font size and line height
+						color: white;
+					}
+				}
+
+				.imgText {
+					padding-top: ms(0);
+					padding-right: ms(1);
+					z-index: 99;
+
+					p {
+						color: $textColor;
+						font-family: $primary-font;
+						font-size: ms(0);
+						line-height: ms(1);
+						letter-spacing: 0.06rem;
+						text-align: left;
+					}
+				}
+			}
+
 			.slide1 {
 				@include background($slide1);
 				@include bg-properties;
 
-				.imgText {
-					text-transform: uppercase;
+				.textContainer {
+					p {
+						font-family: $primary-font;
+						font-size: ms(1);
+						text-transform: uppercase;
+						line-height: ms(2);
+					}
 				}
 			}
 
@@ -78,13 +125,13 @@ body {
 			display: block;
 			height: 40px;
 			width: 40px;
-			line-height: ms(-1);
-			font-size: ms(1);
+			font-size: 0px;
 			cursor: pointer;
 			background: transparent;
 			color: #616A00;
-			top: 50%;
-			@include transform(translate(0, -50%) scale(1));
+			// top: 50%;
+			bottom: 0px;
+			@include transform(translate(0, -50%) scale(2));
 			padding: 0;
 			border: none;
 			outline: none;
@@ -104,8 +151,7 @@ body {
 				font-size: ms(0);
 				line-height: 1;
 				color: $slick-arrow-color;
-				// opacity: $slick-opacity-arrows;
-				opacity: 1;
+				opacity: $slick-opacity-arrows;
 				-webkit-font-smoothing: antialiased;
 				-moz-osx-font-smoothing: grayscale;
 			}
@@ -164,7 +210,7 @@ body {
 			padding: 0;
 			margin: 0;
 			width: 100%;
-			@include transform (translateY(-35px));
+			@include transform (translateY(-55px));
 			li {
 				position: relative;
 				display: inline-block;
@@ -222,6 +268,28 @@ body {
 
 		.slickContainer {
 			padding: 0px 0px ms(3) 0px;
+
+			.textContainer {
+				max-width: 480px;
+				padding-top: 12vh;
+				padding-bottom: ms(1);
+
+				.header {
+					p {
+						font-size: ms(3);
+						line-height: ms(3);						
+					}
+				}
+
+				.imgText {
+					padding-top: ms(1);
+
+					p {
+						line-height: ms(1);
+						letter-spacing: 0.04rem;
+					}
+				}
+			}
 		}
 
 		.slick-slide {
@@ -262,6 +330,32 @@ body {
 			position: relative;
 			margin-top: 80px;
 
+			.textContainer {
+				padding-top: 6vh;
+				@include transform(translateX(-50%));
+				left: 50%;
+				position:relative;
+				max-width: $largeMax;
+
+				.header {
+					p {
+						font-size: ms(4);
+						letter-spacing: 0.1rem;
+					}
+				}
+
+				.imgText {
+					padding-top: ms(0);
+					max-width: 340px;
+
+					p {
+						font-size: ms(0);
+						line-height: ms(1);
+						letter-spacing: 0.1rem;
+					}
+				}
+			}		
+
 			.slide1 {
 				@include background($slide4);
 				@include bg-properties;
@@ -278,6 +372,8 @@ body {
 
 		.slick-prev,
 		.slick-next {
+			bottom: ms(0);
+			@include transform(scale(3));
 			&:before {
 				opacity: 1;
 			}
@@ -285,7 +381,13 @@ body {
 
 		.slick-slide {
 			z-index: -1;
-			height: 66vh;
+			height: 80vh;
+
+			img {
+				width: 400px;
+				min-height: 80px;
+				max-height: 800px;
+			}
 		}
 
 		.slick-dots {
@@ -306,12 +408,40 @@ body {
 			@include span (12 of 12);
 			padding: 0px 0px ms(3) 0px;
 			margin-top: 80px;
+
+			.textContainer {
+				@include span (12 of 12);
+				padding-top: 10vh;
+				@include transform(translateX(-50%));
+				left: 50%;
+				position:relative;
+				max-width: $xlargeMax;
+
+				.header {
+					p {
+						font-size: ms(4);
+						line-height: ms(4);
+						letter-spacing: 0.1rem;
+					}
+				}
+
+				.imgText {
+					padding-top: ms(0);
+					max-width: 420px;
+
+					p {
+						font-size: ms(0);
+						line-height: ms(1);
+						letter-spacing: 0.07rem;
+					}
+				}
+			}
 		}
 
 		.slick-prev,
 		.slick-next {
-			cursor: pointer;
-			@include transform(translate(0, -50%) scale(1.5));
+			bottom: ms(1);
+			@include transform(scale(3.5));
 				&:before {
 					opacity: 1;
 				}
@@ -319,11 +449,10 @@ body {
 
 		.slick-slide {
 			z-index: -1;
+			height: 88vh;
 
 			img {
-				height: 66vh;
-				min-height: 500px;
-				max-height: 2000px;
+				width: 580px;
 			}
 		}
 
