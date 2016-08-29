@@ -38,7 +38,7 @@ body {
 				@include single-text-shadow;
 				color: white;
 				z-index: 99;
-				padding: 10vh 30vw 0px ms(1);
+				padding: 25vh 30vw 0px ms(1);
 				position: relative;
 
 				.header {
@@ -411,7 +411,7 @@ body {
 
 			.textContainer {
 				@include span (12 of 12);
-				padding-top: 10vh;
+				padding-top: 25vh;
 				@include transform(translateX(-50%));
 				left: 50%;
 				position:relative;
