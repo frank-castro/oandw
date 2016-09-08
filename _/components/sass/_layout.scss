@@ -101,9 +101,12 @@
 				@include transform (translateX(-50%));
 				
 				.bottleContainerSpecial {
-					height: 66px;
+					height: 77px;
 					opacity: $svgLinesOpacity;
-				} // container for the svg
+					img {
+						@include transform(translateY(-82px) scale(1.6));
+					}
+				}
 
 				.oilsBuyContainer {
 					.sizeText {
@@ -158,7 +161,7 @@
 			opacity: $svgLinesOpacity;
 
 			img {
-				@include transform(translateY(-45px) scale(0.7));
+				@include transform(translateY(-45px) scale(0.77));
 			}
 		} // container for the svg
 
@@ -926,7 +929,7 @@
 			height: 170px;
 
 			img {
-				@include transform(translateY(-20px) scale(0.8));
+				@include transform(translateY(-15px) scale(0.84));
 			}
 		} // container for the svg
 
