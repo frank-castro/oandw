@@ -20,7 +20,7 @@ $ms-base: 0.8rem;
 $ms-ratio: $golden;
 
 $default-text-shadow-color: rgba(#15160B, 1);
-$default-text-shadow-blur: 3px;
+$default-text-shadow-blur: 2px;
 $default-text-shadow-v-offset: 1px;
 
 $cartbttnshadow: rgba(black, 0.5) 0px 2px 3px;
@@ -139,9 +139,9 @@ address {
 }
 
 @mixin links ($fsize, $lheight) {
-	color: $primaryColor;
+	color: white;
 	&:hover {
-		color: white;
+		color: $green;
 	}
 	font-family: $primary-font;
 	font-size: $fsize;
@@ -189,17 +189,18 @@ address {
 		a {
 			@include single-text-shadow;
 			display: block;
-			padding: 3px 0 7px;
+			padding: 2vw 0;
 			letter-spacing: 0.08rem;
 			@include links(ms(0), 2rem); //arguments font size and line height
 		}
 
 		.active {
 			font-family: $primary-fontlight;
+			color: $green;
 			opacity: 0.4;
-			border-top: 1px solid $green;
-			border-bottom: 1px solid $green;
-			margin: 10px 0%;
+			// border-top: 1px solid $green;
+			// border-bottom: 1px solid $green;
+			margin: 1vw 0%;
 		}
 
 		.navwrapper {
