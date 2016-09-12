@@ -78,6 +78,8 @@
 	@include transform(translateX(-50%));
 	left: 50%;
 	text-align: center;
+	margin-top: ms(0);
+	margin-bottom: ms(1);
 
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 0.2s, ease-out);
@@ -95,16 +97,15 @@
 
 				&.one {
 					// background-color: gray;
-					height: ms(3);
+					height: 60px;
 				}
 
 				&.two {
-					height: ms(4);
+					height: ms(2);
 
 					p {
 						font-family: $display-text;
 						font-size: ms(1);
-						line-height: ms(2);
 						letter-spacing: 0.07rem;
 						color: $textColor;
 					}
@@ -117,7 +118,7 @@
 
 			&.one {
 				img {
-					height: 55px;
+					height: 45px;
 				}
 			}
 
@@ -180,26 +181,27 @@
 			// 		height: auto;
 			// 	}
 			// }
-		}
+		} //explore our store links
 
 		.weddingContainer {
 			@include span(12 of 12);
 
 			.weddingText {
-				padding: 0px ms(2);
-
 				p:first-of-type {
 					font-family: $display-text;
 					font-size: ms(1);
 					line-height: ms(1.3);
-					@include transform(translateY(-204px));
+					top: 72px;
 				}
 
 				p {
 					font-family: $primary-font;
 					font-size: ms(-0.2);
 					line-height: ms(0.2);
-					@include transform(translateY(-160px));
+					position: absolute;
+					top: 190px;
+					left: 50%;
+					@include transform(translateX(-50%));
 				}
 			}
 
@@ -209,6 +211,7 @@
 		}
 
 		.introText {
+			display: none;
 			@include span(12 of 12);
 
 			p {
@@ -224,20 +227,22 @@
 			@include span(12 of 12);
 
 			.corporateText {
-				padding: 0px ms(2);
-
 				p:first-of-type {
 					font-family: $display-text;
 					font-size: ms(1);
 					line-height: ms(1.5);
-					@include transform(translateY(-214px));
+					top: 103px;
 				}
 
 				p {
 					font-family: $primary-font;
 					font-size: ms(-0.2);
 					line-height: ms(0);
-					@include transform(translateY(-128px));
+					position: absolute;
+					width: 210px;
+					top: 238px;
+					left: 50%;
+					@include transform(translateX(-50%));
 				}
 			}
 
@@ -300,51 +305,10 @@
 			&.seven {
 				padding-right: 0px;
 			}
+		}
 
-			// &.four {
-			// 	.two {
-			// 		.svg {
-			// 			&.one {
-			// 				width: 116px;
-			// 				@include transform (translate(-6px, -15px) rotate(-2deg));
-			// 			}
-
-			// 			&.two {
-			// 				width: 110px;
-			// 				@include transform (translate(16px, 125px) rotate(7deg));
-			// 			}
-			// 		}
-			// 	}				
-			// }
+		.introText {
+			display: inline;
 		}
 	}
-}
-
-.shippingText {
-	@include susy-breakpoint($xsmall) {
-		@include span(12 of 12);
-		padding-bottom: ms(1);
-
-		p {
-			font-family: $display-text;
-			font-size: ms(0);
-			letter-spacing: 0.04rem;
-			color: $secondaryColor;
-			text-align: center;
-		}
-	}	
-
-	@include susy-breakpoint($large) {
-		@include span(12 of 12);
-		padding-top: ms(2);
-		padding-bottom: ms(1);
-
-		p {
-			font-family: $display-text;
-			font-size: ms(0);
-			letter-spacing: 0.04rem;
-			color: $secondaryColor;
-			text-align: center;
-		}
-	}	
 }
