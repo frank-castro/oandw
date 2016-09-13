@@ -4,14 +4,13 @@
 	@include transform(translateX(-50%));
 	left: 50%;
 	text-align: center;
-	margin-top: ms(0);
 	margin-bottom: ms(1);
 
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 0.2s, ease-out);
 
 		.promo {
-			margin: ms(0) 0px ms(2);
+			margin: ms(1) 0px ms(2);
 			
 			.row {
 				img {
@@ -47,6 +46,7 @@
 
 			&.one {				
 				img {
+					padding-top: 10px;
 					height: 40px;
 				}
 			}

@@ -1096,7 +1096,7 @@ footer {
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 		@include span(12 of 12);
-		padding: 30px 10% 40px;
+		padding: 20px 10% 40px;
 
 		p {
 			font-size: ms(0);
