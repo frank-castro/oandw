@@ -98,37 +98,35 @@
 		</header>
 
 		<div class="aboutUs" ng-show="showAbout">
-			<div class="closeBttn" ng-click="showAbout = ! showAbout">
-				<i class="material-icons">close</i>
+			<div>
+				<div class="closeBttn" ng-click="showAbout = ! showAbout">
+					<i class="material-icons">close</i>
+				</div>
+				<p>Olive & Well offers the finest Extra Virgin Olive Oils, Aged Balsamic Vinegars & related products. Our products come fresh to you from small-batch groves and producers throughout the world. We carry over 50 olive oils, truly aged balsamic vinegars, specialty oils, specialty vinegars, and food products. We focus on the olive used to press the oil, not a brand. We focus on freshness ... from pick to press is measured in just hours in our Ultra Premium varietals.  ... And we focus on health — our oils are high in polyphenols, and our balsamics are all natural, no added sugars or colors. This is what makes our products so distinct and FLAVORFUL!</p><br />
+	 
+				<p>Customers are able to taste our premium olive oils and balsamic vinegars before making their selection, which is bottled from the same Italian Fusti (stainless steel tank) that they sample, so they know they are buying the freshest and most delicious products to enhance recipes and make palates happy.</p><br />
+				 
+				<p>Even if you have not yet had the opportunity to visit us in person to experience our tasting opportunities, you can order online and rest assured that you will be getting the same quality, fresh products that our in-store customers try.</p><br />
+
+				<p class="hours">Business Hours</p>
+				<p>Monday: 11 am - 6:00 pm</p>
+				<p>Tuesday: 11 am - 6:00 pm</p>
+				<p>Wednesday: 11 am - 6:00 pm</p>
+				<p>Thursday: 11 am - 6:00 pm</p>
+				<p>Friday: 11 am - 6:00 pm</p>
+				<p>Saturday: 11 am - 5:00 pm</p>
+				<p>Sunday: 12:30 pm - 4:00 pm</p>
 			</div>
-			<p>Olive & Well offers the finest Extra Virgin Olive Oils, Aged Balsamic Vinegars & related products. Our products come fresh to you from small-batch groves and producers throughout the world. We carry over 50 olive oils, truly aged balsamic vinegars, specialty oils, specialty vinegars, and food products. We focus on the olive used to press the oil, not a brand. We focus on freshness ... from pick to press is measured in just hours in our Ultra Premium varietals.  ... And we focus on health — our oils are high in polyphenols, and our balsamics are all natural, no added sugars or colors. This is what makes our products so distinct and FLAVORFUL!</p><br />
- 
-			<p>Customers are able to taste our premium olive oils and balsamic vinegars before making their selection, which is bottled from the same Italian Fusti (stainless steel tank) that they sample, so they know they are buying the freshest and most delicious products to enhance recipes and make palates happy.</p><br />
-			 
-			<p>Even if you have not yet had the opportunity to visit us in person to experience our tasting opportunities, you can order online and rest assured that you will be getting the same quality, fresh products that our in-store customers try.</p><br />
-
-			<address class="extraAddress">
-				<p><a href="https://www.google.com/maps?ll=41.888152,-87.794808&z=16&t=m&hl=en-US&gl=US&mapclient=embed&q=133+N+Oak+Park+Ave+Oak+Park,+IL+60301" target="_blank">133 N. Oak Park Ave. Oak Park, IL 60301</a></p>
-				<p>Phone: 708.848.4230</p>
-				<p>info@oliveandwell.com</p>
-			</address><br />
-
-			<p class="hours bold">Business Hours</p>
-			<p>Monday: 11 am - 6:00 pm</p>
-			<p>Tuesday: 11 am - 6:00 pm</p>
-			<p>Wednesday: 11 am - 6:00 pm</p>
-			<p>Thursday: 11 am - 6:00 pm</p>
-			<p>Friday: 11 am - 6:00 pm</p>
-			<p>Saturday: 11 am - 5:00 pm</p>
-			<p>Sunday: 12:30 pm - 4:00 pm</p>
 		</div>
 
 		<div class="view" ng-view></div>
 
 		<footer>
-			<address><a href="https://www.google.com/maps?ll=41.888152,-87.794808&z=16&t=m&hl=en-US&gl=US&mapclient=embed&q=133+N+Oak+Park+Ave+Oak+Park,+IL+60301" target="_blank">133 N. Oak Park Ave. Oak Park, IL 60301</a> | Phone: 708.848.4230 | info@oliveandwell.com</address>
-
-			<p><a class="about" ng-click="showAbout = ! showAbout">About Us |</a> © 2016 | Olive & Well, Inc.</p> 
+			<p><a class="about" ng-click="showAbout = ! showAbout">About Us</a></p>
+			<p>Store Location</p>
+			<p><a href="https://www.google.com/maps?ll=41.888152,-87.794808&z=16&t=m&hl=en-US&gl=US&mapclient=embed&q=133+N+Oak+Park+Ave+Oak+Park,+IL+60301" target="_blank">133 N. Oak Park Ave. Oak Park, IL 60301</a></p>
+			<p>Phone: 708.848.4230 &diams; info@oliveandwell.com</p>
+			<p>&copy; 2016 &diams; Olive & Well, Inc.</p> 
 		</footer>
 
 		<div class="cartBanner" ng-class="{'cartBttn' : showCart }" ng-controller="orderController as model">

@@ -131,13 +131,6 @@ $xlargeMax: 1800px;
 
 p { font-size: ms(0); line-height: ms(1); }
 
-address {
-	a {
-		text-decoration: none;
-		color: $bg01;
-	}
-}
-
 @mixin links ($fsize, $lheight) {
 	color: white;
 	&:hover {

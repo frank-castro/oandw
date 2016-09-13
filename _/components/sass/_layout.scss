@@ -7,6 +7,12 @@
 	background-color: transparent;
 }
 
+.displayText {
+	font-family: $display-text;
+	text-align: center;
+	z-index: 99;
+} //this is for the name of each page
+
 .layout {
 // -------------------------- XSMALL --------------------------
 
@@ -47,6 +53,7 @@
 		.sectionTitle {
 			width: 200px;
 			margin: 0 auto;
+			opacity: 0.6;
 
 			p {
 				font-family: $primary-font;
@@ -56,7 +63,6 @@
 			}
 
 			img {
-				opacity: 0.7;
 				@include transform(translateY(-10px));
 			}
 		}
@@ -1081,25 +1087,31 @@
 
 footer {
 	font-family: $primary-font;
-	letter-spacing: 0.04rem;
+	letter-spacing: 0.02rem;
 	color: $bg01;
 	text-align: center;
 	z-index: 1600;
-	background: linear-gradient(to bottom left, rgba($textColor, 0.9), rgba($green, 0.85));
+	background: linear-gradient(to bottom, rgba($textColor, 0.9), rgba($green, 0.85));
 
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 		@include span(12 of 12);
-		font-size: ms(0);
-		line-height: ms(2);
-		padding: 20px 10% 40px;
-		// margin-top: 40px;
+		padding: 30px 10% 40px;
+
+		p {
+			font-size: ms(0);
+			line-height: ms(2);
+
+			a {
+				font-family: $primary-fontbold;
+				text-decoration: none;
+				color: $bg01;
+				cursor: pointer;
+			}
+		}
 
 		.about {
-			text-decoration: none;
-			font-size: ms(0);
-			font-family: $primary-fontbold;
-			cursor: pointer;
+			text-transform: uppercase;
 		}
 	}
 

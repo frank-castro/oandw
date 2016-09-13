@@ -34,9 +34,6 @@ angular.module('oandwApp')
 		templateUrl: 'templates/accessories/index.html',
 		controller: 'accessorList'
 	}).
-	when('/checkout', {
-		templateUrl: 'templates/checkout.html'
-	}).
 	otherwise({
 		redirectTo: '/home'
 	});

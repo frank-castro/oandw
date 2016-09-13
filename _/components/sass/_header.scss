@@ -32,11 +32,11 @@ header {
 		@include single-transition(all, 0.5s, ease-out);
 		background: linear-gradient(to bottom left, rgba($green, 0.95), rgba($textColor, 1));
 		font-family: $desc-font;
-		font-size: 1rem;
+		font-size: ms(0);
 		line-height: ms(1);
 		text-align: left;
 		color: $bg01;
-		padding: ms(2) 0px ms(3);
+		padding: 60px 0px;
 		position: fixed;
 		top: 0px;
 		width: 100%;
@@ -45,21 +45,27 @@ header {
 		overflow: scroll;
 
 		.closeBttn {
-			position: absolute;
-			top: 20px;
-			right: 20px;
+			position: fixed;
+			top: 12px;
+			left: 12px;
 			cursor: pointer;
 		}
 
+		div {
+			height: 148vh;
+		}
+
 		p {
-			width: 300px;
+			width: 280px;
 			@include transform (translateX(-50%));
 			left: 50%;
 			position: relative;
 		}
 
-		.extraAddress {
-			display: none;
+		.hours {
+			font-family: $display-text;
+			font-size: ms(1);
+			padding-bottom: ms(1);
 		}
 	}
 
@@ -89,10 +95,6 @@ header {
 		.closeBttn {
 			top: 14px;
 			right: 7%;
-		}
-
-		.extraAddress {
-			display: block;
 		}
 	}
 
