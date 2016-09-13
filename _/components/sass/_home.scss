@@ -91,7 +91,7 @@
 		.weddingContainer {
 			@include span(12 of 12);
 
-			.weddingText {
+			.weddingContent {
 				p:first-of-type {
 					font-family: $display-text;
 					font-size: ms(1);
@@ -131,7 +131,7 @@
 		.corporateContainer {
 			@include span(12 of 12);
 
-			.corporateText {
+			.corporateContent {
 				p:first-of-type {
 					font-family: $display-text;
 					font-size: ms(1);
@@ -153,6 +153,59 @@
 
 			img {
 				width: 300px;
+			}
+		}
+
+		.pastaContainer {
+			@include span(12 of 12);
+
+			.pastaContent {
+				margin-top: ms(0);
+				img:first-of-type {
+					width: 120px;
+					opacity: 0.5;
+				}
+
+				p {
+					font-family: $display-text;
+					font-size: ms(0);
+					position: relative;
+					left: 50%;
+					@include transform(translateX(-50%));
+				}
+
+				p:first-of-type {
+					top: -14px;
+				}
+
+				p:nth-of-type(2) {
+					font-size: ms(2);
+					line-height: ms(2);
+					padding-bottom: ms(0);
+				}
+
+				img:nth-of-type(2) {
+					padding-top: ms(-1);
+					width: 170px;
+					opacity: 0.5;
+				}
+
+				p:last-of-type {
+					font-family: $primary-font;
+					padding: ms(-1) 0;
+				}
+
+				img:nth-of-type(3) {
+					width: 300px;
+					opacity: 0.5;
+					padding-bottom: 10px;
+				}
+
+				img:last-of-type {
+					width: 300px;
+					opacity: 0.5;
+					padding-bottom: 10px;
+				}
 			}
 		}
 	}
