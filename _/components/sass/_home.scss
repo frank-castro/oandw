@@ -86,31 +86,7 @@
 					height: 90px;
 				}
 			}
-
-			// &.four {
-			// 	.two {
-			// 		.svg {
-			// 			&.one {
-			// 				width: 78px;
-			// 				@include transform (translateX(-6px) rotate(-2deg));
-			// 			}
-
-			// 			&.two {
-			// 				width: 80px;
-			// 				@include transform (translate(10px, 80px) rotate(7deg));
-			// 			}
-			// 		}
-			// 	}
-
-			// 	.three {
-			// 		height: ms(4);
-			// 	}
-
-			// 	.four {
-			// 		height: auto;
-			// 	}
-			// }
-		} //explore our store links
+		}
 
 		.weddingContainer {
 			@include span(12 of 12);

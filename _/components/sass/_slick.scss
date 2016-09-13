@@ -291,9 +291,9 @@ body {
 			padding: 0px 0px ms(3) 0px;
 
 			.textContainer {
+				margin: 0 auto;
+				position: relative;
 				max-width: 480px;
-				padding-top: 12vh;
-				padding-bottom: ms(1);
 
 				.header {
 					p {
@@ -320,10 +320,39 @@ body {
 					}
 				}
 			}
+
+			.slide1 {
+				.textContainer {
+					top: 23vh;
+
+					.logo {
+						width: 360px;
+					}
+
+					.logoText {
+						margin-top: ms(1);
+						padding: 0px 8vw;
+
+						p {
+							font-size: ms(1);
+							line-height: ms(2);
+							letter-spacing: 0.1rem;
+						}
+					}
+
+					.slogan {
+						margin-top: 5vh;
+
+						p {
+							font-size: ms(1);
+						}
+					}
+				}
+			}
 		}
 
 		.slick-slide {
-			height: 92vh;
+			height: 95vh;
 		}
 
 		.slick-dots {
