@@ -1,5 +1,4 @@
 .promogroup {
-
 	@include susy-breakpoint($xsmall) {
 		@include span(12 of 12);
 		position: relative;
@@ -210,12 +209,10 @@
 		}
 	}
 
-
-// SMALL BREAKPOINT
-
 	@include susy-breakpoint($small) {
 		@include span(12 of 12);
 		@include single-transition(all, 0.2s, ease-out);
+		margin: ms(1) 0px;
 
 		.promo {
 			@include span(6 of 12);
@@ -234,14 +231,14 @@
 				p:first-of-type {
 					font-size: ms(1);
 					line-height: ms(1.3);
-					top: 106px;
+					top: 108px;
 				}
 
 				p {
 					font-size: ms(0);
 					line-height: ms(1);
-					top: 245px;
-					width: 290px;
+					top: 248px;
+					width: 240px;
 				}
 			}
 
@@ -284,25 +281,95 @@
 				}			
 			}
 		}
+
+		&.four {
+			padding-bottom: ms(1);
+		}
 	}
-
-
-// MEDIUM BREAKPOINT
 
 	@include susy-breakpoint($medium) {
 		@include single-transition(all, 0.2s, ease-out);
 
-	}
+		.promo {
+			@include span(4 of 12);
+		}
 
-// LARGE BREAKPOINT
+		&.two {
+			@include span(6 of 12);
+		}
+
+		.weddingContainer {
+			@include span(12 of 12);
+
+			.weddingContent {
+				p:first-of-type {
+					font-size: ms(1);
+					line-height: ms(1.3);
+					top: 108px;
+				}
+
+				p {
+					font-size: ms(0);
+					line-height: ms(1);
+					top: 248px;
+					width: 240px;
+				}
+			}
+
+			img {
+				width: 400px;
+			}
+		}
+
+		&.three {
+			@include span(6 of 12);
+		}
+
+		.corporateContainer {
+			@include span(12 of 12);
+
+			.corporateContent {
+				p:first-of-type {
+					font-size: ms(1);
+					line-height: ms(2);
+					top: 124px;
+				}
+
+				p {
+					font-size: ms(0);
+					line-height: ms(0.8);
+					width: 280px;
+					top: 285px;
+				}
+			}
+
+			img {
+				width: 364px;
+			}
+		}
+
+		.pastaContainer {
+			.pastaContent {
+				img:nth-of-type(3) {
+					padding-right: 6px;
+				}
+
+				img:last-of-type {
+					padding-left: 6px;
+				}			
+			}
+		}
+
+		&.four {
+			padding-bottom: ms(2);
+		}
+	}
 
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 0.2s, ease-out);
 		height: auto;
 
 	}
-
-// EXTRALARGE BREAKPOINT
 
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 0.2s, ease-out);
