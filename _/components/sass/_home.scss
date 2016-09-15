@@ -369,6 +369,69 @@
 		@include single-transition(all, 0.2s, ease-out);
 		height: auto;
 
+		.weddingContainer {
+			.weddingContent {
+				p:first-of-type {
+					font-size: ms(2);
+					line-height: ms(2);
+					top: 124px;
+				}
+
+				p {
+					font-size: ms(0);
+					line-height: ms(1);
+					top: 300px;
+					width: 240px;
+				}
+			}
+
+			img {
+				width: 465px;
+				padding-top: 7px;
+			}
+		}
+
+		.corporateContainer {
+			@include span(12 of 12);
+
+			.corporateContent {
+				p:first-of-type {
+					font-size: ms(2);
+					line-height: ms(2.2);
+					top: 146px;
+				}
+
+				p {
+					font-size: ms(0);
+					line-height: ms(1);
+					width: 280px;
+					top: 340px;
+				}
+			}
+
+			img {
+				width: 430px;
+			}
+		}
+
+		.pastaContainer {
+			.pastaContent {
+				img:nth-of-type(3) {
+					padding-right: 6px;
+					position: absolute;
+					top: 80px;
+					left: 8vw;
+				}
+
+				img:last-of-type {
+					padding-left: 6px;
+					position: absolute;
+					top: 80px;
+					right: 8vw;
+				}			
+			}
+		}
+
 	}
 
 	@include susy-breakpoint($xlarge) {

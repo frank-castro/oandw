@@ -371,6 +371,9 @@ body {
 			padding: 0px 0px ms(3) 0px;
 
 			.slide1 {
+				@include background($slide2);
+				@include bg-properties;
+
 				.textContainer {
 					top: 23vh;
 
@@ -390,7 +393,7 @@ body {
 					}
 
 					.slogan {
-						margin-top: 43vh;
+						margin-top: 52vh;
 
 						p {
 							font-size: ms(2);
@@ -401,7 +404,7 @@ body {
 		}
 
 		.slick-slide {
-			height: 96vh;
+			height: 94vh;
 		}
 	}
 
@@ -443,14 +446,14 @@ body {
 			}		
 
 			.slide1 {
-				@include background($slide4);
+				@include background($slide3);
 				@include bg-properties;
 
 				.textContainer {
-					top: 0vh;
+					top: 2vh;
 
 					.logo {
-						width: 420px;
+						width: 370px;
 					}
 
 					.logoText {
@@ -460,27 +463,21 @@ body {
 						p {
 							font-size: ms(1);
 							line-height: ms(2);
-							letter-spacing: 0.1rem;
+							letter-spacing: 0.08rem;
+							width: 370px;
+							margin: 0 auto;
 						}
 					}
 
 					.slogan {
-						margin-top: 14vh;
+						margin-top: 34vh;
 
 						p {
-							font-size: ms(2);
+							font-size: ms(1);
 						}
 					}
 				}
 			}
-			// .slide2 {
-			// 	@include background($slide5);
-			// 	@include bg-properties;
-			// }
-			// .slide3 {
-			// 	@include background($slide6);
-			// 	@include bg-properties;
-			// }
 		}
 
 		.slick-prev,
@@ -494,13 +491,7 @@ body {
 
 		.slick-slide {
 			z-index: -1;
-			height: 84vh;
-
-			// img {
-			// 	width: 400px;
-			// 	min-height: 80px;
-			// 	max-height: 800px;
-			// }
+			height: 78vh;
 		}
 
 		.slick-dots {

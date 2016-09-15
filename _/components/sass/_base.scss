@@ -62,12 +62,11 @@ $product-price: 'le-monde-livre-classic-std-s';
 $display-text: 'le-monde-livre-classic-std-s';
 
 //HOME SLICK CAROUSEL IMAGES
-$slide1: linear-gradient(to right, rgba($bg01, 0.7), rgba($bg02, 0)), image-url('home/salad-plate-olive-oil-smler.jpg');
-$slide2: image-url('home/hot-pan-olive-oil-smler.jpg');
-$slide3: linear-gradient(to right, rgba($bg01, 0.7), rgba($bg02, 0)), image-url('home/olive-oil-balsamic-bread-smler.jpg');
-$slide4: image-url('home/salad-plate-olive-oil-lrg.jpg');
-$slide5: image-url('home/hot-pan-olive-oil-lrg.jpg');
-$slide6: image-url('home/olive-oil-balsamic-bread-lrg.jpg');
+$slide1: linear-gradient(to right, rgba($bg01, 0.7), rgba($bg02, 0)), image-url('home/salad-plate-olive-oil-sml.jpg');
+$slide2: linear-gradient(to right, rgba($bg01, 0.7), rgba($bg02, 0)), image-url('home/salad-plate-olive-oil-med.jpg');
+$slide3: linear-gradient(to right, rgba($bg01, 0.7), rgba($bg02, 0)), image-url('home/salad-plate-olive-oil-lrg.jpg');
+// $slide5: image-url('home/hot-pan-olive-oil-lrg.jpg');
+// $slide6: image-url('home/olive-oil-balsamic-bread-lrg.jpg');
 
 // BANNERS
 $patternVarietal: image-url('largeBanner/varietal-pattern.gif');
@@ -156,7 +155,7 @@ p { font-size: ms(0); line-height: ms(1); }
 	}
 
 	@include susy-breakpoint($large) {
-		background-position: left center;
+		background-position: center center;
 	}
 }
 
