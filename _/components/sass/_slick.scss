@@ -312,8 +312,6 @@ body {
 				}
 
 				.slogan {
-					padding-top: ms(7);
-
 					p {
 						font-family: $display-text;
 						text-transform: none;
@@ -341,7 +339,7 @@ body {
 					}
 
 					.slogan {
-						margin-top: 5vh;
+						margin-top: 43vh;
 
 						p {
 							font-size: ms(1);
@@ -371,10 +369,39 @@ body {
 
 		.slickContainer {
 			padding: 0px 0px ms(3) 0px;
+
+			.slide1 {
+				.textContainer {
+					top: 23vh;
+
+					.logo {
+						width: 420px;
+					}
+
+					.logoText {
+						margin-top: ms(1);
+						padding: 0px 3vw;
+
+						p {
+							font-size: ms(1);
+							line-height: ms(2);
+							letter-spacing: 0.1rem;
+						}
+					}
+
+					.slogan {
+						margin-top: 43vh;
+
+						p {
+							font-size: ms(2);
+						}
+					}
+				}
+			}
 		}
 
 		.slick-slide {
-			height: 66vh;
+			height: 96vh;
 		}
 	}
 
@@ -418,15 +445,42 @@ body {
 			.slide1 {
 				@include background($slide4);
 				@include bg-properties;
+
+				.textContainer {
+					top: 0vh;
+
+					.logo {
+						width: 420px;
+					}
+
+					.logoText {
+						margin-top: ms(1);
+						padding: 0px 3vw;
+
+						p {
+							font-size: ms(1);
+							line-height: ms(2);
+							letter-spacing: 0.1rem;
+						}
+					}
+
+					.slogan {
+						margin-top: 14vh;
+
+						p {
+							font-size: ms(2);
+						}
+					}
+				}
 			}
-			.slide2 {
-				@include background($slide5);
-				@include bg-properties;
-			}
-			.slide3 {
-				@include background($slide6);
-				@include bg-properties;
-			}
+			// .slide2 {
+			// 	@include background($slide5);
+			// 	@include bg-properties;
+			// }
+			// .slide3 {
+			// 	@include background($slide6);
+			// 	@include bg-properties;
+			// }
 		}
 
 		.slick-prev,
@@ -440,13 +494,13 @@ body {
 
 		.slick-slide {
 			z-index: -1;
-			height: 80vh;
+			height: 84vh;
 
-			img {
-				width: 400px;
-				min-height: 80px;
-				max-height: 800px;
-			}
+			// img {
+			// 	width: 400px;
+			// 	min-height: 80px;
+			// 	max-height: 800px;
+			// }
 		}
 
 		.slick-dots {
