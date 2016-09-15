@@ -1,5 +1,25 @@
 [
 	{
+		"name" : "Neapolitan Herb",
+		"pricebig" : "$32.95",
+		"pricesmall" : "$17.95",
+		"description" : "Zesty, infused with herbs associated with southern Italian cuisine — garlic, rosemary, marjoram, thyme, sage.  Loves salads, grilled vegetables, and meat marinades.  Great in a Bloody (or Virgin) Mary!!",
+		"decoimage" : "images/balsamics/neapolitan-herb-oliveandwell.png",
+		"color" : "#97ad6d",
+		"bigbottle": "750 ml",
+		"smallbottle": "375 ml"
+	},
+	{
+		"name" : "Blackberry Ginger",
+		"pricebig" : "$32.95",
+		"pricesmall" : "$17.95",
+		"description" : "Essence of blackberries with a hint of ginger.  Pair with Blood Orange or Persian Lime olive oils.  Reduce for dessert toppings, from cake to ice cream.",
+		"decoimage" : "images/balsamics/blackberry-ginger-oliveandwell.png",
+		"color" : "#825963",
+		"bigbottle": "750 ml",
+		"smallbottle": "375 ml"
+	},
+	{
 		"name" : "Alfoos Mango",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
@@ -116,16 +136,6 @@
 		"description" : "Starts sweet and finishes tangy, wonderful in salad dressings, on fruit, chicken, pork and wild game.  Pair with Blood Orange olive oil for a citrusy dressing or marinade; or combine it with herbaceous olive oils such as Sweet Basil or Fresh Garlic.",
 		"decoimage" : "images/balsamics/juniper-berry-balsamic.png",
 		"color" : "#5E6C8B",
-		"bigbottle": "750 ml",
-		"smallbottle": "375 ml"
-	},
-	{
-		"name" : "Juicy Pineapple",
-		"pricebig" : "$32.95",
-		"pricesmall" : "$17.95",
-		"description" : "Tangy pineapple and white balsamic complement chicken and hearty fish dishes. This one is designed to make salad greens or marinades taste like summer all year long.",
-		"decoimage" : "images/balsamics/juicy-pineapple-balsamic.png",
-		"color" : "#854B26",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
 	},

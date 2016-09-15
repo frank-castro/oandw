@@ -3,7 +3,7 @@
 		"name" : "Arbosana",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
-		"description" : "Fruity, nutty tones, with tasting notes of green tomato and almond. Creamy, delicate aftertaste. Drizzle over greens, sauté vegetables, or grill fish. (California)",
+		"description" : "Fruity, nutty tones, with tasting notes of green tomato and almond. Creamy, delicate aftertaste. Drizzle over greens, sauté vegetables, or grill fish. (Chile)",
 		"decoimage" : "images/varietal/arbosanaimg.png",
 		"color" : "#616E28",
 		"bigbottle": "750 ml",
@@ -16,16 +16,6 @@
 		"description" : "Smooth and elegant, with notes of green apple and almond. Great for salads, making pesto, or adding light flavor to roasted vegetables. (Chile)",
 		"decoimage" : "images/varietal/arbequinaimg.png",
 		"color" : "#782935",
-		"bigbottle": "750 ml",
-		"smallbottle": "375 ml"
-	},
-	{
-		"name" : "Coratina Gran Cru",
-		"pricebig" : "$32.95",
-		"pricesmall" : "$17.95",
-		"description" : "Highly complex, made from hand-picked olives. Displays herbaceous qualities and notes of green apple. Unique, floral finish. Clean, crisp and pungent. (Italy)",
-		"decoimage" : "images/varietal/coratina-grand-cru-img.png",
-		"color" : "#417348",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
 	},
@@ -60,10 +50,10 @@
 		"smallbottle": "375 ml"
 	},
 	{
-		"name" : "Mission",
+		"name" : "Manzanillo",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
-		"description" : "Developed by early California missionaries, this olive produces a bold oil, very high in antioxidant polyphenols, and favored by the health-conscious. Flavors are layered and complex, with a fleeting bitter center. (California)",
+		"description" : "Bold and sassy, displays gradual but lingering notes of citrus blossom and green apple. High in healthy throat-tickling polyphenols. (California)",
 		"decoimage" : "images/varietal/mission-img.png",
 		"color" : "#88355E",
 		"bigbottle": "750 ml",
@@ -73,7 +63,7 @@
 		"name" : "Picual",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
-		"description" : "Smooth, fruity olive oil for use with and on everything. Complex yet well-balanced, with a lovely aroma and lightly grassy aftertaste. (Australia)",
+		"description" : "Smooth, fruity olive oil for use with and on everything. Complex yet well-balanced, with a lovely aroma and lightly grassy aftertaste. (Chile)",
 		"decoimage" : "images/varietal/picual-img.png",
 		"color" : "#6A612F",
 		"bigbottle": "750 ml",
