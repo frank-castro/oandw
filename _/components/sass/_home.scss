@@ -113,19 +113,6 @@
 			}
 		}
 
-		.introText {
-			display: none;
-			@include span(12 of 12);
-
-			p {
-				font-family: $primary-fontlight;
-				font-size: ms(0);
-				line-height: ms(1);
-				letter-spacing: 0.04rem;
-				text-align: left;
-			}
-		}
-
 		.corporateContainer {
 			@include span(12 of 12);
 
@@ -372,14 +359,16 @@
 		.weddingContainer {
 			.weddingContent {
 				p:first-of-type {
-					font-size: ms(2);
+					font-size: ms(1.8);
 					line-height: ms(2);
+					letter-spacing: 0.04rem;
 					top: 124px;
 				}
 
 				p {
 					font-size: ms(0);
 					line-height: ms(1);
+					letter-spacing: 0.05rem;
 					top: 300px;
 					width: 240px;
 				}
@@ -396,14 +385,16 @@
 
 			.corporateContent {
 				p:first-of-type {
-					font-size: ms(2);
+					font-size: ms(1.8);
 					line-height: ms(2.2);
+					letter-spacing: 0.04rem;
 					top: 146px;
 				}
 
 				p {
 					font-size: ms(0);
 					line-height: ms(1);
+					letter-spacing: 0.05rem;
 					width: 280px;
 					top: 340px;
 				}
@@ -439,7 +430,9 @@
 		height: auto;
 
 		.promo {
-			@include span(1.7 of 12);
+			@include span(1.71 of 12);
+			padding: 0px 20px;
+
 			.row {
 				&.one {
 					height: ms(4);
@@ -459,12 +452,64 @@
 			}
 
 			&.seven {
-				padding-right: 0px;
+				@include transform(translateX(0%));
+				left: 0%;
+				position: relative;
 			}
 		}
 
-		.introText {
-			display: inline;
+		&.two {
+			@include span(4 of 12);
+		}
+
+		.weddingContainer {
+			padding: 0px;
+		}
+
+		&.three {
+			@include span(4 of 12);
+			float: right;
+		}
+
+		.pastaContainer {
+			.pastaContent {
+				img:nth-of-type(3) {
+					left: 15vw;
+				}
+
+				img:last-of-type {
+					right: 15vw;
+				}			
+			}
+		}
+	}
+}
+
+.introText {
+	@include susy-breakpoint($xsmall) {
+		display: none;
+	}
+
+	@include susy-breakpoint($xlarge) {
+		display: inline;
+		@include span(3 of 12);
+		@include transform(translateX(-50%));
+		left: 50%;
+		top: 430px;
+		position: absolute;
+
+		p {
+			font-family: $primary-fontlight;
+			font-size: ms(0);
+			line-height: ms(2);
+			letter-spacing: 0.05rem;
+			text-align: left;
+		}
+
+		p::first-letter {
+			font-family: $display-text;
+			font-size: ms(2);
+			text-transform: uppercase;
 		}
 	}
 }

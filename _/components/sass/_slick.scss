@@ -80,7 +80,7 @@ body {
 				@include bg-properties;
 
 				.textContainer {
-					top: 26vh;
+					top: 24vh;
 
 					.logo {
 						width: 260px;
@@ -89,22 +89,24 @@ body {
 
 					.logoText {
 						margin-top: ms(0);
-						padding: 0px 16vw;
 
 						p {
+							width: 260px;
+							margin: 0 auto;
 							font-family: $primary-font;
-							font-size: ms(0.4);
+							font-size: ms(0);
 							font-variant: small-caps;
-							letter-spacing: 0.1rem;
+							letter-spacing: 0.06rem;
 						}
 					}
 
 					.slogan {
-						margin-top: 43vh;
+						margin-top: 44vh;
 
 						p {
 							font-family: $page-title;
 							font-size: ms(1);
+							letter-spacing: 0.05rem;
 						}
 					}
 				}
@@ -208,7 +210,7 @@ body {
 
 		.slick-slide {
 			z-index: -1;
-			height: 92vh;
+			height: 94vh;
 			padding-top: 44px;
 
 			img {
@@ -321,25 +323,26 @@ body {
 
 			.slide1 {
 				.textContainer {
-					top: 23vh;
+					top: 20vh;
 
 					.logo {
 						width: 360px;
 					}
 
 					.logoText {
-						margin-top: ms(1);
-						padding: 0px 8vw;
+						margin-top: ms(0);
 
 						p {
-							font-size: ms(1);
-							line-height: ms(2);
-							letter-spacing: 0.1rem;
+							width: 360px;
+							margin: 0 auto;
+							font-size: ms(0);
+							line-height: ms(1);
+							letter-spacing: 0.08rem;
 						}
 					}
 
 					.slogan {
-						margin-top: 43vh;
+						margin-top: 50vh;
 
 						p {
 							font-size: ms(1);
@@ -350,7 +353,7 @@ body {
 		}
 
 		.slick-slide {
-			height: 95vh;
+			height: 97vh;
 		}
 
 		.slick-dots {
@@ -375,20 +378,21 @@ body {
 				@include bg-properties;
 
 				.textContainer {
-					top: 23vh;
+					top: 16vh;
 
 					.logo {
-						width: 420px;
+						width: 400px;
 					}
 
 					.logoText {
 						margin-top: ms(1);
-						padding: 0px 3vw;
 
 						p {
-							font-size: ms(1);
-							line-height: ms(2);
-							letter-spacing: 0.1rem;
+							width: 420px;
+							margin: 0 auto;							
+							font-size: ms(0.3);
+							line-height: ms(1);
+							letter-spacing: 0.08rem;
 						}
 					}
 
@@ -404,7 +408,7 @@ body {
 		}
 
 		.slick-slide {
-			height: 94vh;
+			height: 97vh;
 		}
 	}
 
@@ -420,7 +424,6 @@ body {
 			margin-top: 80px;
 
 			.textContainer {
-				padding-top: 6vh;
 				@include transform(translateX(-50%));
 				left: 50%;
 				position:relative;
@@ -450,30 +453,30 @@ body {
 				@include bg-properties;
 
 				.textContainer {
-					top: 2vh;
+					top: 10vh;
 
 					.logo {
-						width: 370px;
+						width: 350px;
 					}
 
 					.logoText {
-						margin-top: ms(1);
-						padding: 0px 3vw;
+						margin-top: ms(0);
 
 						p {
-							font-size: ms(1);
-							line-height: ms(2);
-							letter-spacing: 0.08rem;
-							width: 370px;
+							font-size: ms(0);
+							line-height: ms(1);
+							letter-spacing: 0.07rem;
+							width: 360px;
 							margin: 0 auto;
 						}
 					}
 
 					.slogan {
-						margin-top: 34vh;
+						margin-top: 42vh;
 
 						p {
 							font-size: ms(1);
+							letter-spacing: 0.05rem;
 						}
 					}
 				}
@@ -491,7 +494,7 @@ body {
 
 		.slick-slide {
 			z-index: -1;
-			height: 78vh;
+			height: 80vh;
 		}
 
 		.slick-dots {
@@ -514,12 +517,7 @@ body {
 			margin-top: 80px;
 
 			.textContainer {
-				@include span (12 of 12);
-				padding-top: 25vh;
-				@include transform(translateX(-50%));
-				left: 50%;
-				position:relative;
-				max-width: $xlargeMax;
+				max-width: 100vw;
 
 				.header {
 					p {
@@ -539,13 +537,38 @@ body {
 						letter-spacing: 0.07rem;
 					}
 				}
+			}
 
-				.slogan {
-					padding-top: ms(6);
+			.slide1 {
+				@include background($slide3);
+				@include bg-properties;
 
-					p {
-						font-family: $display-text;
-						text-transform: none;
+				.textContainer {
+					top: 18vh;
+
+					.logo {
+						width: 480px;
+					}
+
+					.logoText {
+						margin-top: ms(0);
+
+						p {
+							font-size: ms(0.8);
+							line-height: ms(2);
+							letter-spacing: 0.05rem;
+							width: 480px;
+							margin: 0 auto;
+						}
+					}
+
+					.slogan {
+						margin-top: 48vh;
+
+						p {
+							font-size: ms(2);
+							letter-spacing: 0.05rem;
+						}
 					}
 				}
 			}
@@ -561,12 +584,7 @@ body {
 			}
 
 		.slick-slide {
-			z-index: -1;
-			height: 88vh;
-
-			img {
-				width: 580px;
-			}
+			height: 92vh;
 		}
 
 		.slick-dots {
