@@ -1,8 +1,8 @@
 <div class="headerSeasonings"></div>
-<div class="layout">
+<div class="layout lastSeasonings">
 	<div class="pageTitle displayText">
 		<div>Salts, Herbs, Condiments & Sugars</div>
-		<p class="search"><input ng-model="query" placeholder="Search"></p>
+		<!-- <p class="search"><input ng-model="query" placeholder="Search"></p> -->
 	</div>
 
 	<ul ng-repeat="item in product | filter:query" class="seasoningsContainer">
@@ -13,12 +13,6 @@
 		</li>
 		<li class="seasoningsCtrlSvgWrapper">
 			<seasoning-container></seasoning-container><!-- directive for the div with the svg in templates -->
-<!-- 			<div class="seasoningsPackageContainer">
-				<img src="images/svg/seasonings.svg"/>
-			</div>
-			<div class="buyCtrlsLeft">
-				<bttns-left></bttns-left>
-			</div> -->
 		</li>
 		<div class="description"><p>{{item.description}}</p></div>
 	</ul>

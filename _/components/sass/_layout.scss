@@ -25,6 +25,8 @@
 
 		$xsmlContainer: 5%; // this will change the width of the containers for all products in this breakpoint
 
+//Oils and Balsamics Section
+
 		.pageTitle {
 			padding: ms(2) $xsmlContainer ms(1);
 			font-family: $page-title;
@@ -292,7 +294,7 @@
 				font-family: $primary-fontlight;
 				font-size: ms(1);
 				line-height: ms(1);
-				text-align: right;
+				text-align: left;
 				// text-transform: uppercase;
 				font-variant: small-caps;
 			}
@@ -396,7 +398,7 @@
 				font-family: $primary-fontlight;
 				font-size: ms(1);
 				line-height: 1.3em;
-				text-align: right;
+				text-align: left;
 				text-transform: uppercase;
 			}
 		}
@@ -568,10 +570,8 @@
 			.accessoriesNameContainer {
 				height: 60px;
 				margin-top: 20px;
-				font-family: $primary-fontlight;
 				font-size: ms(1);
 				line-height: ms(2);
-				text-align: right;
 			}
 		}
 	}
@@ -736,13 +736,6 @@
 	  	max-width: $largeMax;
 
 		$lrgContainer: 5%; // this will change the width of the containers for all products in this breakpoint
-
-
-		ul:last-of-type {
-			@include transform(translateX(-50%));
-			left: 50%;
-			position: relative;
-		}
 
 		.pageTitle {
 			@include transition-delay(1s);
@@ -915,10 +908,8 @@
 			.accessoriesNameContainer {
 				height: 60px;
 				margin-top: 20px;
-				font-family: $primary-fontlight;
 				font-size: ms(1);
 				line-height: ms(2);
-				text-align: right;
 			}
 		}
 	}
@@ -1053,7 +1044,265 @@
 			}
 		}
 	}
-} 
+}
+
+.lastVarietal {
+	@include susy-breakpoint($xsmall) {
+	}
+
+	@include susy-breakpoint($small) {
+		@include transition-delay(0.2s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+
+		ul:last-of-type {
+			@include transform(translateX(-50%));
+			left: 50%;
+			position: relative;
+		}
+	}
+
+	@include susy-breakpoint($medium) {
+	}
+	@include susy-breakpoint($large) {
+	}
+
+	@include susy-breakpoint($xlarge) {
+		@include transition-delay(0.2s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+
+		ul:last-of-type {
+			@include transform(translateX(0%));
+			left: 0%;
+			position: relative;
+		}
+
+		ul:nth-last-child(-n+3) {
+			left: 13%;
+			position: relative;
+		}
+	}
+}
+
+.lastInfused {
+	@include susy-breakpoint($xsmall) {
+	}
+	@include susy-breakpoint($small) {
+	}
+	@include susy-breakpoint($medium) {
+	}
+
+	@include susy-breakpoint($large) {
+		@include transition-delay(0.2s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+
+		ul:nth-last-child(-n+2) {
+			left: 17%;
+			position: relative;
+		}
+	}
+
+	@include susy-breakpoint($xlarge) {
+		@include transition-delay(0.2s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+
+		ul:nth-last-child(-n+2) {
+			left: 24%;
+		}
+	}
+}
+
+.lastSpecialty {
+	@include susy-breakpoint($xsmall) {
+		@include transition-delay(0.2s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+
+		ul:last-of-type {
+			@include transform(translateX(-50%));
+			left: 50%;
+			position: relative;
+		}
+	}
+
+	@include susy-breakpoint($small) {
+	}
+	@include susy-breakpoint($medium) {
+	}
+
+	@include susy-breakpoint($large) {
+		@include transition-delay(0.2s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+
+		ul:nth-last-child(-n+2) {
+			@include transform(translateX(0%));
+			left: 17%;
+			position: relative;
+		}
+	}
+
+	@include susy-breakpoint($xlarge) {
+		@include transition-delay(0.2s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+
+		ul:nth-last-child(-n+2) {
+			left: 0%;
+		}
+
+		ul:last-of-type {
+			@include transform(translateX(-50%));
+			left: 50%;
+			position: relative;
+		}
+	}
+}
+
+.lastBalsamics {
+	@include susy-breakpoint($xsmall) {
+	}
+
+	@include susy-breakpoint($small) {
+		@include transition-delay(0.2s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+
+		ul:last-of-type {
+			@include transform(translateX(-50%));
+			left: 50%;
+			position: relative;
+		}
+	}
+
+	@include susy-breakpoint($medium) {
+	}
+
+	@include susy-breakpoint($large) {
+		@include transition-delay(0.2s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+
+		ul:last-of-type {
+			@include transform(translateX(0%));
+			left: 0%;
+		}
+	}
+
+	@include susy-breakpoint($xlarge) {
+		ul:nth-last-child(-n+3) {
+			left: 13%;
+			position: relative;
+		}
+	}
+}
+
+.lastSeasonings {
+	@include susy-breakpoint($xsmall) {
+	}
+
+	@include susy-breakpoint($small) {
+		@include transition-delay(0.2s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+
+		ul:last-of-type {
+			@include transform(translateX(-50%));
+			left: 50%;
+			position: relative;
+		}
+	}
+
+	@include susy-breakpoint($medium) {
+	}
+
+	@include susy-breakpoint($large) {
+		@include transition-delay(0.2s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+		
+		ul:nth-last-child(-n+2) {
+			@include transform(translateX(0%));
+			left: 17%;
+			position: relative;
+		}
+	}
+
+	@include susy-breakpoint($xlarge) {
+		@include transition-delay(0.2s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+
+		ul:nth-last-child(-n+2) {
+			left: 0%;
+		}
+
+		ul:last-of-type {
+			@include transform(translateX(-50%));
+			left: 50%;
+			position: relative;
+		}
+	}
+}
+
+.lastGifts {
+	@include susy-breakpoint($xsmall) {
+	}
+
+	@include susy-breakpoint($small) {
+		@include transition-delay(0.2s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+
+		ul:last-of-type {
+			@include transform(translateX(-50%));
+			left: 50%;
+			position: relative;
+		}
+	}
+
+	@include susy-breakpoint($medium) {
+	}
+	@include susy-breakpoint($large) {
+	}
+	@include susy-breakpoint($xlarge) {
+	}
+}
+
+.lastAccessories {
+	@include susy-breakpoint($xsmall) {
+	}
+	@include susy-breakpoint($small) {
+	}
+	@include susy-breakpoint($medium) {
+	}
+
+	@include susy-breakpoint($large) {
+		@include transition-delay(0.2s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+
+		ul:last-of-type {
+			@include transform(translateX(-50%));
+			left: 50%;
+			position: relative;
+		}
+	}
+
+	@include susy-breakpoint($xlarge) {
+		@include transition-delay(0.2s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+
+		ul:last-of-type {
+			@include transform(translateX(0%));
+			left: 0%;
+		}
+	}
+}
 
 .horizontalCtrls {
 	.buyBttns {
