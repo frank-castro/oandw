@@ -36,7 +36,7 @@ header {
 		line-height: ms(1);
 		text-align: left;
 		color: $bg01;
-		padding: 60px 0px;
+		padding-top: 40px;
 		position: fixed;
 		top: 0px;
 		width: 100%;
@@ -51,8 +51,8 @@ header {
 			cursor: pointer;
 		}
 
-		div {
-			height: 148vh;
+		.container {
+			height: 140vh;
 		}
 
 		p {
@@ -71,10 +71,15 @@ header {
 
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 0.5s, ease-out);
+		padding-top: 100px;
 
 		.closeBttn {
 			top: 24px;
 			left: 24px;
+		}
+
+		.container {
+			height: 100vh;
 		}
 
 		p {
@@ -87,6 +92,7 @@ header {
 
 	@include susy-breakpoint($medium) {
 		@include single-transition(all, 0.5s, ease-out);
+		padding-top: 190px;
 		
 		.closeBttn {
 			top: 24px;
@@ -96,18 +102,30 @@ header {
 
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 0.5s, ease-out);
+		padding-top: 40px;
 		
 		.closeBttn {
-			top: 14px;
-			right: 7%;
+			top: 10px;
+			left: auto;
+			right: 77px;
+		}
+
+		.container {
+			height: 105vh;
 		}
 	}
 
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 0.5s, ease-out);
+		padding-top: 16vh;
+
 		.closeBttn {
-			right: 18%;
+			right: 12vw;
 		}
+
+		.container {
+			height: 100vh;
+		}		
 	}
 }
 
@@ -117,10 +135,10 @@ header {
 		z-index: 1040;
 
 		.logo {
-			@include transform (translate(-50%, 14px));
+			@include transform (translate(-50%, 12px));
 			left: 50%;
 			position: absolute;
-			width: 90px;
+			width: 110px;
 		}
 
 		.barsWrapper {
@@ -144,13 +162,16 @@ header {
 		@include single-transition(all, 1s, ease-out);
 
 		.logo {
-			width: 90px;
+			width: 120px;
 		}
 	}
 
 	@include susy-breakpoint($medium) {
 		@include single-transition(all, 1s, ease-out);
 
+		.logo {
+			width: 130px;
+		}
 	}
 
 	@include susy-breakpoint($large) {

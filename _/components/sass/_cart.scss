@@ -10,7 +10,7 @@
 	} 
 
 	60% { 
-		transform: scale(6);
+		transform: scale(7);
 		opacity: 0.9;
 	}
 
@@ -25,8 +25,8 @@
 	z-index: 1050;
 
 	@include susy-breakpoint($xsmall) {
-		@include transition-delay(0s);
-		@include transition-duration(0.2s);
+		@include transition-delay(0.2s);
+		@include transition-duration(0.3s);
 		@include transition-timing-function(ease-out);
 		position: fixed;
 		top: 0px;
@@ -40,22 +40,51 @@
 			opacity: 1;
 			cursor: pointer;
 			z-index: 1150;
-			padding: 9px;
 			right: 0px;
-			@include transform(scale(0.8));
+
+			.cart {
+				visibility: visible;
+				@include transition-delay(0.4s);
+				@include transition-duration(0.2s);
+				position: absolute;
+				right: 10px;
+				top: 10px;
+			}
+
+			.close {
+				visibility: hidden;
+				@include transition-delay(0s);
+				position: absolute;
+				right: 10px;
+				top: 10px;
+			}
 		}
 
 		&.cartBttn {
 			@include transition-delay(0.1s);
-			@include transition-duration(0.3s);
+			@include transition-duration(0.2s);
 			@include transition-timing-function(ease-in);
 			width: 100%;
 			height: 100vh;
 			position: fixed;
 			right: 0px;
+
+			.cart {
+				visibility: hidden;
+				@include transition-delay(0s);
+				@include transition-duration(0s);
+			}
+
+			.close {
+				@include transition-delay(0.3s);
+				@include transition-duration(0s);
+				visibility: visible;
+			}
 		}
 
 		.circleTotal {
+			@include transition-delay(0.3s);
+			@include transition-duration(0s);
 			height: 36px;
 			width: 36px;
 			border-radius: 50%;
@@ -75,52 +104,33 @@
 		}
 
 		.circleAnim {
+			@include transition-delay(0.2s);
 			animation-duration: 0.5s;
 			animation-name: pulse;
+		}
+
+		.circleHidden {
+			visibility: hidden;
+			@include transition-delay(0s);
+			@include transition-duration(0s);
 		}
 	}
 
 	@include susy-breakpoint($small) {
-		@include transition-delay(0s);
-		@include transition-duration(0.2s);
-		@include transition-timing-function(ease-out);
-
-		&.cartBttn {
-			@include transition-delay(0.5s);
-			@include transition-duration(0.3s);
-			@include transition-timing-function(ease-in);
-		}
 	}
 
 	@include susy-breakpoint($medium) {
-		@include transition-delay(0s);
-		@include transition-duration(0.2s);
-		@include transition-timing-function(ease-out);
 
-		&.cartBttn {
-			@include transition-delay(0.5s);
-			@include transition-duration(0.3s);
-			@include transition-timing-function(ease-in);
-		}
 	}
 
 	@include susy-breakpoint($large) {
-		@include transition-delay(0s);
-		@include transition-duration(0.2s);
-		@include transition-timing-function(ease-out);
-		right: 8vw;
+		right: 0px;
 		width: 40px;
 		height: 40px;
 
 		.shopping_cart {
 			padding: 8px;
 			@include transform(scale(0.8));
-		}
-
-		&.cartBttn {
-			@include transition-delay(0.1s);
-			@include transition-duration(0.3s);
-			@include transition-timing-function(ease-in);
 		}
 
 		.circleTotal {
@@ -132,15 +142,22 @@
 	}
 
 	@include susy-breakpoint($xlarge) {
-		@include transition-delay(0s);
-		@include transition-duration(0.2s);
-		@include transition-timing-function(ease-out);
+		@include transition-delay(0.3s);
+		@include transition-duration(0.3s);
 		right: 8vw;
 
 		&.cartBttn {
 			@include transition-delay(0.1s);
-			@include transition-duration(0.3s);
+			@include transition-duration(0.2s);
 			@include transition-timing-function(ease-in);
+
+			.cart {
+				@include transition-delay(0s);
+			}
+
+			.close {
+				padding-right: 10vw;
+			}
 		}
 	}
 }
@@ -154,7 +171,7 @@
 
 	@include susy-breakpoint($xsmall) {
 		@include transition-delay(0.3s);
-		@include transition-duration(0.2s);
+		@include transition-duration(0.1s);
 		@include transition-timing-function(ease-in);
 		position: absolute;
 		width: 100%;

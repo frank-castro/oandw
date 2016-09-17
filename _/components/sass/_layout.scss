@@ -737,6 +737,13 @@
 
 		$lrgContainer: 5%; // this will change the width of the containers for all products in this breakpoint
 
+
+		ul:last-of-type {
+			@include transform(translateX(-50%));
+			left: 50%;
+			position: relative;
+		}
+
 		.pageTitle {
 			@include transition-delay(1s);
 			@include transition-duration(0.2s);
@@ -1138,8 +1145,8 @@ footer {
 
 		.about {
 			position: absolute;
-			top: 7px;
-			right: 12vw;
+			top: 4px;
+			right: 60px;
 			z-index: 1040;
 			color: $green;
 			font-size: ms(0);

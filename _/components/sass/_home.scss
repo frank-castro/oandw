@@ -443,7 +443,7 @@
 				}
 
 				&.three {
-					height: ms(4);
+					height: ms(2);
 				}
 			}
 
@@ -495,7 +495,7 @@
 		@include span(3 of 12);
 		@include transform(translateX(-50%));
 		left: 50%;
-		top: 430px;
+		top: 380px;
 		position: absolute;
 
 		p {

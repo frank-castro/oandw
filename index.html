@@ -98,7 +98,7 @@
 		</header>
 
 		<div class="aboutUs" ng-show="showAbout">
-			<div>
+			<div class="container">
 				<div class="closeBttn" ng-click="showAbout = ! showAbout">
 					<i class="material-icons">close</i>
 				</div>
@@ -130,10 +130,13 @@
 		</footer>
 
 		<div class="cartBanner" ng-class="{'cartBttn' : showCart }" ng-controller="orderController as model">
+
 			<div class="maticon shopping_cart" ng-click="showCart = ! showCart">
-				<i class="material-icons">shopping_cart</i>
+				<i class="material-icons cart">shopping_cart</i>
+				<i class="material-icons close">close</i>
 			</div>
-			<div ng-class="{'circleAnim': model.recentlyChanged, 'circleTotal': model.hasItems}">
+
+			<div ng-class="{'circleAnim': model.recentlyChanged, 'circleTotal': model.hasItems, 'circleHidden' : showCart}">
 				<ul>
 					<li>
 						<span ng-show="model.hasItems">{{model.itemCount}}</span>
