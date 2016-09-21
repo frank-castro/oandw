@@ -229,8 +229,9 @@ $xlarge-height: 81px;
 .headerVarietal {
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
-		@include background($patternVarietal);
-		@include bg-pattern;
+		@include background($bannerLargeVarietal);
+		// @include bg-pattern;
+		@include banner-properties;
 		width: 100%;
 		height: $xsmall-height;
 		opacity: 0.5;

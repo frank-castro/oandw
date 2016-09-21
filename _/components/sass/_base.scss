@@ -68,8 +68,11 @@ $slide3: linear-gradient(to right, rgba($bg01, 0.7), rgba($bg02, 0)), image-url(
 // $slide5: image-url('home/hot-pan-olive-oil-lrg.jpg');
 // $slide6: image-url('home/olive-oil-balsamic-bread-lrg.jpg');
 
-// BANNERS
+// P A T T E R N S
 $patternVarietal: image-url('largeBanner/varietal-pattern.gif');
+
+// B A N N E R S
+$bannerLargeVarietal: image-url('largeBanner/varietal2.jpg');
 $bannerLargeInfuse: image-url('largeBanner/varietal-pattern.gif');
 $bannerLargeSpecialty: image-url('largeBanner/varietal-pattern.gif');
 $bannerLargeBalsamics: image-url('largeBanner/balsamics-pattern.gif');
@@ -144,6 +147,22 @@ p { font-size: ms(0); line-height: ms(1); }
 }
 
 @mixin bg-properties {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	@include single-transition(all, 1s, ease-out);
+
+	@include susy-breakpoint($xsmall) {
+		background-position: center center;
+	}
+
+	@include susy-breakpoint($large) {
+		background-position: center center;
+	}
+}
+
+@mixin banner-properties {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
