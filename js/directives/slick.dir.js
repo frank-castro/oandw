@@ -10,7 +10,7 @@ angular
 
 					$(element).slick({
 						speed: 900,
-						autoplay: false,
+						autoplay: true,
 						autoplaySpeed: 5000,
 						dots: false,
 						arrows: false,
