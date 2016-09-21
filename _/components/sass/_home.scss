@@ -103,6 +103,7 @@
 					line-height: ms(0.2);
 					position: absolute;
 					top: 190px;
+					width: 220px;
 					left: 50%;
 					@include transform(translateX(-50%));
 				}
@@ -129,7 +130,7 @@
 					font-size: ms(-0.2);
 					line-height: ms(0);
 					position: absolute;
-					width: 210px;
+					width: 220px;
 					top: 240px;
 					left: 50%;
 					@include transform(translateX(-50%));

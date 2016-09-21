@@ -53,9 +53,8 @@
 		}
 
 		.sectionTitle {
-			width: 200px;
+			width: 180px;
 			margin: 0 auto;
-			opacity: 0.6;
 
 			p {
 				font-family: $primary-font;
@@ -427,6 +426,14 @@
 			font-size: ms(2);
 			line-height: ms(3);
 			letter-spacing: 0.2rem;
+		}
+
+		.sectionTitle {
+			width: 180px;
+
+			p {
+				font-size: ms(0);
+			}
 		}
 
 		.productsContainer {

@@ -80,10 +80,10 @@ body {
 				@include bg-properties;
 
 				.textContainer {
-					top: 24vh;
+					top: 15vh;
 
 					.logo {
-						width: 260px;
+						width: 280px;
 						margin: 0 auto;
 					}
 
@@ -91,7 +91,7 @@ body {
 						margin-top: ms(0);
 
 						p {
-							width: 260px;
+							width: 280px;
 							margin: 0 auto;
 							font-family: $primary-font;
 							font-size: ms(0);
@@ -101,7 +101,7 @@ body {
 					}
 
 					.slogan {
-						margin-top: 44vh;
+						margin-top: 55vh;
 
 						p {
 							font-family: $page-title;
@@ -295,7 +295,7 @@ body {
 			.textContainer {
 				margin: 0 auto;
 				position: relative;
-				max-width: 480px;
+				// max-width: 480px;
 
 				.header {
 					p {
@@ -323,29 +323,29 @@ body {
 
 			.slide1 {
 				.textContainer {
-					top: 20vh;
+					top: 8vh;
 
 					.logo {
-						width: 360px;
+						width: 460px;
 					}
 
 					.logoText {
 						margin-top: ms(0);
 
 						p {
-							width: 360px;
+							width: 500px;
 							margin: 0 auto;
-							font-size: ms(0);
+							font-size: ms(0.7);
 							line-height: ms(1);
 							letter-spacing: 0.08rem;
 						}
 					}
 
 					.slogan {
-						margin-top: 50vh;
+						margin-top: 62vh;
 
 						p {
-							font-size: ms(1);
+							font-size: ms(1.7);
 						}
 					}
 				}
