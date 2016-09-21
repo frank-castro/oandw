@@ -77,15 +77,16 @@
 			font-size: ms(0);
 			line-height: ms(0);
 			text-align: center;
+		}
 
-			.motif {
-				width: 100%;
+		.motif {
+			width: 100%;
+			text-align: center;
 
-				img {
-					width: ms(1);
-					margin: 0 auto;
-					padding-bottom: ms(2);
-				}
+			img {
+				width: ms(1);
+				margin: 0 auto;
+				padding-bottom: ms(2);
 			}
 		}
 
@@ -811,10 +812,10 @@
 			letter-spacing: 0.05rem;
 			color: $textColor;
 			opacity: 0.7;
-			height: 150px;
+			height: 140px;
 
 			&.varietal {
-				height: 110px;
+				height: 90px;
 			}
 
 			&.infused {
@@ -827,6 +828,14 @@
 
 			&.balsamics {
 				height: 120px;
+			}
+
+			&.seasonings {
+				height: 114px;
+			}
+
+			&.giftlrg {
+				height: 80px;
 			}
 		}
 
@@ -884,7 +893,7 @@
 			@include single-transition(all, 1s, ease-out);
 			@include span(4 of 12);
 			padding: 0px $lrgContainer 10px;
-			height: 640px;
+			height: 670px;
 			color: $textColor;
 
 			.giftsNameContainer {
@@ -903,7 +912,7 @@
 			}
 
 			.twoGiftSvgContainer {
-				width: 155px;
+				width: 150px;
 			}
 		}
 
@@ -988,7 +997,8 @@
 			@include single-transition(all, 1s, ease-out);
 			@include span(3 of 12);
 			padding: 0px $xlrgContainer 10px;
-			// Product Name (it's being selected by root position)
+			height: 700px;
+
 			li:nth-child(2) {
 				padding: 10px 0px 50px;
 			}
@@ -1005,6 +1015,7 @@
 			@include single-transition(all, 1s, ease-out);
 			@include span(3 of 12);
 			padding: 0px $xlrgContainer 10px;
+			height: 690px;
 			color: $textColor;
 
 			.giftsNameContainer {
@@ -1283,6 +1294,11 @@
 	@include susy-breakpoint($large) {
 	}
 	@include susy-breakpoint($xlarge) {
+		ul:nth-child(-n+4) {
+			.description {
+				height: 90px;
+			}
+		}
 	}
 }
 
@@ -1335,9 +1351,9 @@
 }
 
 .horizontalImage {
-	height: 240px;
+	height: 200px;
 	text-align: center;
-	@include transform (scale(0.85));
+	// @include transform (scale(0.85));
 }
 
 .sizeText {
