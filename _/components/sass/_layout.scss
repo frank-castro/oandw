@@ -837,6 +837,10 @@
 			&.giftlrg {
 				height: 80px;
 			}
+
+			&.accessories {
+				height: 80px;
+			}
 		}
 
 		.descOpen {
@@ -925,7 +929,7 @@
 			font-family: $primary-font;
 			font-size: 1rem;
 			line-height: 1.3em;
-			height: 610px;
+			height: 580px;
 			color: $textColor;
 
 			.accessoriesNameContainer {
@@ -1291,8 +1295,15 @@
 
 	@include susy-breakpoint($medium) {
 	}
+
 	@include susy-breakpoint($large) {
+		ul:nth-child(-n+4) {
+			.description {
+				height: 90px;
+			}
+		}
 	}
+
 	@include susy-breakpoint($xlarge) {
 		ul:nth-child(-n+4) {
 			.description {
