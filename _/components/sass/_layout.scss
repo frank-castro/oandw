@@ -408,6 +408,12 @@
 				text-align: left;
 				text-transform: uppercase;
 			}
+
+			.horizontalImage {
+				img {
+					height: 180px;
+				}
+			}
 		}
 	}
 
@@ -442,6 +448,26 @@
 			padding: 10px $smlContainer;
 			line-height: 1.3em;
 			height: 720px;
+
+			&.varietal {
+				height: 690px;
+			}
+
+			&.infused {
+				height: 720px;
+			}
+
+			&.specialty {
+				height: 720px;
+			}
+
+			&.balsamics {
+				height: 720px;
+			}
+
+			&.accessories {
+				height: 720px;
+			}
 		}
 
 		.ctrlsContainer {
@@ -464,6 +490,34 @@
 			letter-spacing: 0.03rem;
 			text-align: left;
 			opacity: 1;
+
+			&.varietal {
+				height: 90px;
+			}
+
+			&.infused {
+				height: 100px;
+			}
+
+			&.specialty {
+				height: 120px;
+			}
+
+			&.balsamics {
+				height: 120px;
+			}
+
+			&.seasonings {
+				height: 110px;
+			}
+
+			&.gift {
+				height: 120px;
+			}
+
+			&.accessories {
+				height: 80px;
+			}
 		}
 
 		.oilsNameImgContainer {
@@ -492,7 +546,7 @@
 			font-size: 1rem;
 			line-height: 1.3em;
 			text-align: center;
-			height: 620px;
+			height: 650px;
 
 			// Product Name (it's being selected by root position)
 			li:nth-child(2) {
@@ -682,7 +736,7 @@
 			@include single-transition(all, 1s, ease-out);
 			@include span(6 of 12);
 			padding: 0px $medContainer;
-			height: 650px;
+			height: 670px;
 			color: $textColor;
 
 			.giftsNameContainer {
@@ -826,7 +880,7 @@
 			}
 
 			&.infused {
-				height: 120px;
+				height: 100px;
 			}
 
 			&.specialty {
@@ -841,8 +895,8 @@
 				height: 114px;
 			}
 
-			&.giftlrg {
-				height: 80px;
+			&.gift {
+				height: 130px;
 			}
 
 			&.accessories {
@@ -904,7 +958,7 @@
 			@include single-transition(all, 1s, ease-out);
 			@include span(4 of 12);
 			padding: 0px $lrgContainer 10px;
-			height: 670px;
+			height: 650px;
 			color: $textColor;
 
 			.giftsNameContainer {
@@ -1026,7 +1080,6 @@
 			@include single-transition(all, 1s, ease-out);
 			@include span(3 of 12);
 			padding: 0px $xlrgContainer 10px;
-			height: 690px;
 			color: $textColor;
 
 			.giftsNameContainer {
@@ -1293,6 +1346,12 @@
 		@include transition-duration(0.2s);
 		@include transition-timing-function(ease-in);
 
+		ul:nth-child(-n+4) {
+			.description {
+				height: 70px;
+			}
+		}
+
 		ul:last-of-type {
 			@include transform(translateX(-50%));
 			left: 50%;
@@ -1306,7 +1365,7 @@
 	@include susy-breakpoint($large) {
 		ul:nth-child(-n+4) {
 			.description {
-				height: 90px;
+				height: 70px;
 			}
 		}
 	}
@@ -1314,7 +1373,7 @@
 	@include susy-breakpoint($xlarge) {
 		ul:nth-child(-n+4) {
 			.description {
-				height: 90px;
+				height: 80px;
 			}
 		}
 	}
@@ -1371,7 +1430,6 @@
 .horizontalImage {
 	height: 200px;
 	text-align: center;
-	// @include transform (scale(0.85));
 }
 
 .sizeText {

@@ -101,7 +101,9 @@ body {
 					}
 
 					.slogan {
-						margin-top: 55vh;
+						width: 100%;
+						position: absolute;
+						top: 69vh;
 
 						p {
 							font-family: $page-title;
@@ -312,13 +314,6 @@ body {
 						letter-spacing: 0.04rem;
 					}
 				}
-
-				.slogan {
-					p {
-						font-family: $display-text;
-						text-transform: none;
-					}
-				}
 			}
 
 			.slide1 {
@@ -342,7 +337,7 @@ body {
 					}
 
 					.slogan {
-						margin-top: 62vh;
+						top: 74vh;
 
 						p {
 							font-size: ms(1.7);
@@ -397,7 +392,7 @@ body {
 					}
 
 					.slogan {
-						margin-top: 52vh;
+						top: 66vh;
 
 						p {
 							font-size: ms(2);
@@ -457,26 +452,26 @@ body {
 					top: 10vh;
 
 					.logo {
-						width: 350px;
+						width: 36vw;
 					}
 
 					.logoText {
-						margin-top: ms(0);
+						margin-top: ms(1);
 
 						p {
-							font-size: ms(0);
-							line-height: ms(1);
+							font-size: 1.4vw;
+							line-height: 1.4vw;
 							letter-spacing: 0.07rem;
-							width: 360px;
+							width: 540px;
 							margin: 0 auto;
 						}
 					}
 
 					.slogan {
-						margin-top: 42vh;
+						top: 60vh;
 
 						p {
-							font-size: ms(1);
+							font-size: ms(1.7);
 							letter-spacing: 0.05rem;
 						}
 					}
@@ -564,7 +559,7 @@ body {
 					}
 
 					.slogan {
-						margin-top: 45vh;
+						top: 60vh;
 
 						p {
 							font-size: ms(2);
