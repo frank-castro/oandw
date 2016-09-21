@@ -1,23 +1,5 @@
 [
 	{
-		"name" : "Butternut Squash Seed Oil",
-		"type" : "specialbottle",
-		"pricesmall" : "$12.00",
-		"description" : "Oil from roasted pressed squash seeds, use for sautéing, grilling or roasting vegetables and meats, or as a flavoring oil in prepared dishes. Nutty taste, great replacement for nuts for those with allergies. High in polyunsaturated fats, rich in vitamin E.  Smoke point is 425°.",
-		"decoimage" : "images/specialty/butternut-squash-seed-img.png",
-		"color" : "#957B5A",
-		"smallbottle": "150 ml"
-	},
-	{
-		"name" : "Roasted Pumpkin Seed Oil",
-		"type" : "specialbottle",
-		"pricesmall" : "$12.00",
-		"description" : "All-natural, expeller-pressed unrefined oil made with non-GMO pumpkin seeds. Complements grilled vegetables, roasted fish, sautéed leafy greens. Drizzle on pasta, squash soup. Low smoke point, so best used for finishing.",
-		"decoimage" : "images/specialty/roasted-pumpkin-seed-img.png",
-		"color" : "#D08227",
-		"smallbottle": "150 ml"
-	},
-	{
 		"name" : "Roasted Sweet Almond Oil",
 		"type" : "normalbottle",
 		"pricebig" : "$32.95",
@@ -38,6 +20,24 @@
 		"color" : "#8C5E19",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
+	},
+	{
+		"name" : "Butternut Squash Seed Oil",
+		"type" : "specialbottle",
+		"pricesmall" : "$12.00",
+		"description" : "Oil from roasted pressed squash seeds, use for sautéing, grilling or roasting vegetables and meats, or as a flavoring oil in prepared dishes. Nutty taste, great replacement for nuts for those with allergies. High in polyunsaturated fats, rich in vitamin E.  Smoke point is 425°.",
+		"decoimage" : "images/specialty/butternut-squash-seed-img.png",
+		"color" : "#957B5A",
+		"smallbottle": "150 ml"
+	},
+	{
+		"name" : "Roasted Pumpkin Seed Oil",
+		"type" : "specialbottle",
+		"pricesmall" : "$12.00",
+		"description" : "All-natural, expeller-pressed unrefined oil made with non-GMO pumpkin seeds. Complements grilled vegetables, roasted fish, sautéed leafy greens. Drizzle on pasta, squash soup. Low smoke point, so best used for finishing.",
+		"decoimage" : "images/specialty/roasted-pumpkin-seed-img.png",
+		"color" : "#D08227",
+		"smallbottle": "150 ml"
 	},
 	{
 		"name" : "White Truffle Oil",

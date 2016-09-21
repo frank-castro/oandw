@@ -428,6 +428,7 @@ body {
 				left: 50%;
 				position:relative;
 				max-width: $largeMax;
+				margin: 0px;
 
 				.header {
 					p {
@@ -494,7 +495,7 @@ body {
 
 		.slick-slide {
 			z-index: -1;
-			height: 80vh;
+			height: 85vh;
 		}
 
 		.slick-dots {

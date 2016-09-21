@@ -40,7 +40,7 @@ $secondaryColor: #5E6B59;
 
 $svgLinesOpacity: 0.55;
 
-$motive: #3F5733;
+$motif: #3F5733;
 
 // TYPEFACES
 
@@ -250,7 +250,7 @@ p { font-size: ms(0); line-height: ms(1); }
 		@include single-transition(all, 1s, ease-out);
 		top: 40px;
 		position: fixed;
-		background-color: rgba(31, 34, 15, 0.8);
+		background-color: rgba(27, 29, 14, 0.8);
 		z-index: 1040;
 
 		a {
@@ -261,8 +261,8 @@ p { font-size: ms(0); line-height: ms(1); }
 		}
 
 		.active {
-			border-top: 0px;
-			border-bottom: 1px solid $green;
+			border-bottom: 0px;
+			border-top: 1px solid $green;
 			margin: 0px;
 		}
 

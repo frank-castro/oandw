@@ -78,9 +78,15 @@
 			line-height: ms(0);
 			text-align: center;
 
-			// li:nth-child(2) {
-			// 	height: 84px;
-			// } // product name selected by root position
+			.motif {
+				width: 100%;
+
+				img {
+					width: ms(1);
+					margin: 0 auto;
+					padding-bottom: ms(2);
+				}
+			}
 		}
 
 		.oilsNameImgContainer {
@@ -191,6 +197,7 @@
 		} // container for the svg
 
 		.description {
+			width: 100%;
 			font-family: $desc-font;
 			font-size: ms(0);
 			line-height: ms(0);
@@ -199,7 +206,7 @@
 			opacity: 1;
 			overflow: hidden;
 			border-bottom: none;
-			border-bottom-color: $motive;
+			border-bottom-color: $motif;
 			border-bottom-width: 1px;
 			padding: 0px 0px ms(2);
 			color: $textColor;
@@ -594,7 +601,7 @@
 			@include span(6 of 12);
 			padding: 0px $medContainer;
 			line-height: 1.3em;
-			height: 660px;
+			height: 710px;
 		}
 
 		.buyContainer {
@@ -755,15 +762,7 @@
 			@include span(4 of 12);
 			padding: 0px $lrgContainer;
 			line-height: 1.3em;
-			height: 670px;
-
-			// Product Name (it's being selected by root position)
-			// li:nth-child(2) {
-			// 	font-family: $product-title;
-			// 	font-size: ms(2);
-			// 	padding: 10px 0px;
-			// 	text-align: left;
-			// }
+			height: 720px;
 		}
 
 		.buyContainer p {
@@ -772,7 +771,7 @@
 		}
 
 		.ctrlsContainer {
-			height: 350px;
+			height: 368px;
 
 			.buyCtrlsLeft {
 				padding-left: 2vw;
@@ -783,7 +782,7 @@
 			} // right side div with big bottle, price and buttons
 
 			.buyCtrlsSpecial {
-				top: 94px;
+				top: 82px;
 			}
 		}
 
@@ -813,7 +812,22 @@
 			color: $textColor;
 			opacity: 0.7;
 			height: 150px;
-			margin: 18px 0px;
+
+			&.varietal {
+				height: 110px;
+			}
+
+			&.infused {
+				height: 120px;
+			}
+
+			&.specialty {
+				height: 120px;
+			}
+
+			&.balsamics {
+				height: 120px;
+			}
 		}
 
 		.descOpen {
