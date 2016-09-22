@@ -258,7 +258,7 @@ $xlarge-height: 81px;
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 		@include background($bannerLargeSeasonings);
-		@include bg-pattern;
+		@include banner-properties;
 		width: 100%;
 		height: $xsmall-height;
 		opacity: 0.5;		
@@ -285,7 +285,7 @@ $xlarge-height: 81px;
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 		@include background($bannerLargeGifts);
-		@include bg-pattern;
+		@include banner-properties;
 		width: 100%;
 		height: $xsmall-height;
 		opacity: 0.5;
@@ -312,7 +312,7 @@ $xlarge-height: 81px;
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 		@include background($bannerLargeAccessories);
-		@include bg-pattern;
+		@include banner-properties;
 		width: 100%;
 		height: $xsmall-height;
 		opacity: 0.5;
@@ -339,7 +339,7 @@ $xlarge-height: 81px;
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 		@include background($bannerLargeSpecialty);
-		@include bg-pattern;
+		@include banner-properties;
 		width: 100%;
 		height: $xsmall-height;
 		opacity: 0.5;
@@ -366,7 +366,7 @@ $xlarge-height: 81px;
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 		@include background($bannerLargeBalsamics);
-		@include bg-pattern;
+		@include banner-properties;
 		width: 100%;
 		height: $xsmall-height;
 		opacity: 0.5;
@@ -393,7 +393,7 @@ $xlarge-height: 81px;
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 		@include background($bannerLargeInfuse);
-		@include bg-pattern;
+		@include banner-properties;
 		width: 100%;
 		height: $xsmall-height;
 		opacity: 0.5;

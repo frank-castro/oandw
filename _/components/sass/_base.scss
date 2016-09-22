@@ -72,13 +72,13 @@ $slide3: linear-gradient(to right, rgba($bg01, 0.7), rgba($bg02, 0)), image-url(
 $patternVarietal: image-url('largeBanner/varietal-pattern.gif');
 
 // B A N N E R S
-$bannerLargeVarietal: image-url('largeBanner/varietal2.jpg');
-$bannerLargeInfuse: image-url('largeBanner/varietal-pattern.gif');
-$bannerLargeSpecialty: image-url('largeBanner/varietal-pattern.gif');
-$bannerLargeBalsamics: image-url('largeBanner/balsamics-pattern.gif');
-$bannerLargeSeasonings: image-url('largeBanner/varietal-pattern.jpg');
-$bannerLargeGifts: image-url('largeBanner/varietal-pattern.jpg');
-$bannerLargeAccessories: image-url('largeBanner/varietal-pattern.jpg');
+$bannerLargeVarietal: image-url('largeBanner/oliveandwell-varietal-xlrg.jpg');
+$bannerLargeInfuse: image-url('largeBanner/oliveandwell-infused-xlrg.jpg');
+$bannerLargeSpecialty: image-url('largeBanner/oliveandwell-specialty-xlrg.jpg');
+$bannerLargeBalsamics: image-url('largeBanner/oliveandwell-balsamics-xlrg.jpg');
+$bannerLargeSeasonings: image-url('largeBanner/oliveandwell-salts-xlrg.jpg');
+$bannerLargeGifts: image-url('largeBanner/oliveandwell-gifts-xlrg.jpg');
+$bannerLargeAccessories: image-url('largeBanner/oliveandwell-accessories-xlrg.jpg');
 
 body {
 	@include background(linear-gradient(180deg, $bg01 32%, $bg02 68%));
