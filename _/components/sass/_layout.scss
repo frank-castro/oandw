@@ -448,6 +448,14 @@
 			padding: 10px $smlContainer;
 			line-height: 1.3em;
 			height: 720px;
+
+			&.balsamics {
+				height: 760px;
+			}
+
+			&.specialty {
+				height: 760px;
+			}
 		}
 
 		.ctrlsContainer {
