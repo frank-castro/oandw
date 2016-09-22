@@ -219,22 +219,25 @@ header {
 	}
 }
 
-//header variables
+// H e a d e r s  V a r i a b l e s
+
 $xsmall-height: 44px;
 $small-height: 44px;
 $medium-height: 44px;
 $large-height: 81px;
 $xlarge-height: 81px;
 
+$headersOpacity: 0.4;
+
 .headerVarietal {
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
-		@include background($bannerLargeVarietal);
+		@include background($bannerMedVarietal);
 		// @include bg-pattern;
 		@include banner-properties;
 		width: 100%;
 		height: $xsmall-height;
-		opacity: 0.5;
+		opacity: $headersOpacity;
 	}
 
 	@include susy-breakpoint($small) {
@@ -246,6 +249,7 @@ $xlarge-height: 81px;
 	}
 
 	@include susy-breakpoint($large) {
+		@include background($bannerLargeVarietal);
 		height: $large-height;
 	}
 
@@ -257,11 +261,11 @@ $xlarge-height: 81px;
 .headerSeasonings {
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
-		@include background($bannerLargeSeasonings);
+		@include background($bannerMedSeasonings);
 		@include banner-properties;
 		width: 100%;
 		height: $xsmall-height;
-		opacity: 0.5;		
+		opacity: $headersOpacity	
 	}
 
 	@include susy-breakpoint($small) {
@@ -273,6 +277,7 @@ $xlarge-height: 81px;
 	}
 
 	@include susy-breakpoint($large) {
+		@include background($bannerLargeSeasonings);
 		height: $large-height;
 	}
 
@@ -284,11 +289,11 @@ $xlarge-height: 81px;
 .headerGifts {
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
-		@include background($bannerLargeGifts);
+		@include background($bannerMedGifts);
 		@include banner-properties;
 		width: 100%;
 		height: $xsmall-height;
-		opacity: 0.5;
+		opacity: $headersOpacity;
 	}
 
 	@include susy-breakpoint($small) {
@@ -300,6 +305,7 @@ $xlarge-height: 81px;
 	}
 
 	@include susy-breakpoint($large) {
+		@include background($bannerLargeGifts);
 		height: $large-height;
 	}
 
@@ -311,11 +317,11 @@ $xlarge-height: 81px;
 .headerAccessories {
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
-		@include background($bannerLargeAccessories);
+		@include background($bannerMedAccessories);
 		@include banner-properties;
 		width: 100%;
 		height: $xsmall-height;
-		opacity: 0.5;
+		opacity: $headersOpacity;
 	}
 
 	@include susy-breakpoint($small) {
@@ -327,6 +333,7 @@ $xlarge-height: 81px;
 	}
 
 	@include susy-breakpoint($large) {
+		@include background($bannerLargeAccessories);
 		height: $large-height;
 	}
 
@@ -338,11 +345,11 @@ $xlarge-height: 81px;
 .headerSpecialty {
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
-		@include background($bannerLargeSpecialty);
+		@include background($bannerMedSpecialty);
 		@include banner-properties;
 		width: 100%;
 		height: $xsmall-height;
-		opacity: 0.5;
+		opacity: $headersOpacity;
 	}
 
 	@include susy-breakpoint($small) {
@@ -354,6 +361,7 @@ $xlarge-height: 81px;
 	}
 
 	@include susy-breakpoint($large) {
+		@include background($bannerLargeSpecialty);
 		height: $large-height;
 	}
 
@@ -365,11 +373,11 @@ $xlarge-height: 81px;
 .headerBalsamics {
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
-		@include background($bannerLargeBalsamics);
+		@include background($bannerMedBalsamics);
 		@include banner-properties;
 		width: 100%;
 		height: $xsmall-height;
-		opacity: 0.5;
+		opacity: $headersOpacity;
 	}
 
 	@include susy-breakpoint($small) {
@@ -381,6 +389,7 @@ $xlarge-height: 81px;
 	}
 
 	@include susy-breakpoint($large) {
+		@include background($bannerLargeBalsamics);
 		height: $large-height;
 	}
 
@@ -392,11 +401,11 @@ $xlarge-height: 81px;
 .headerInfuse {
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
-		@include background($bannerLargeInfuse);
+		@include background($bannerMedInfuse);
 		@include banner-properties;
 		width: 100%;
 		height: $xsmall-height;
-		opacity: 0.5;
+		opacity: $headersOpacity;
 	}
 
 	@include susy-breakpoint($small) {
@@ -408,6 +417,7 @@ $xlarge-height: 81px;
 	}
 
 	@include susy-breakpoint($large) {
+		@include background($bannerLargeInfuse);
 		height: $large-height;
 	}
 

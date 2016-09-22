@@ -71,7 +71,16 @@ $slide3: linear-gradient(to right, rgba($bg01, 0.7), rgba($bg02, 0)), image-url(
 // P A T T E R N S
 $patternVarietal: image-url('largeBanner/varietal-pattern.gif');
 
-// B A N N E R S
+// B A N N E R S  M E D I U M
+$bannerMedVarietal: image-url('largeBanner/oliveandwell-varietal-med.jpg');
+$bannerMedInfuse: image-url('largeBanner/oliveandwell-infused-med.jpg');
+$bannerMedSpecialty: image-url('largeBanner/oliveandwell-specialty-med.jpg');
+$bannerMedBalsamics: image-url('largeBanner/oliveandwell-balsamics-med.jpg');
+$bannerMedSeasonings: image-url('largeBanner/oliveandwell-salts-med.jpg');
+$bannerMedGifts: image-url('largeBanner/oliveandwell-gifts-med.jpg');
+$bannerMedAccessories: image-url('largeBanner/oliveandwell-accessories-med.jpg');
+
+// B A N N E R S  L A R G E
 $bannerLargeVarietal: image-url('largeBanner/oliveandwell-varietal-xlrg.jpg');
 $bannerLargeInfuse: image-url('largeBanner/oliveandwell-infused-xlrg.jpg');
 $bannerLargeSpecialty: image-url('largeBanner/oliveandwell-specialty-xlrg.jpg');
