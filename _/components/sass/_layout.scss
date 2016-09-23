@@ -1472,19 +1472,20 @@ footer {
 	@include susy-breakpoint($medium) {
 		@include single-transition(all, 1s, ease-out);
 
-		// p:nth-of-type(3) {
 		p {
-			a {
-				font-size: ms(0.5);
-			}
+			font-size: ms(0);
+			line-height: ms(2);
 		}
 	}
 
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 1s, ease-out);
-		font-size: ms(0);
-		line-height: ms(2);
 		padding: 20px 10% 40px;
+
+		p {
+			font-size: ms(0.2);
+			line-height: ms(2);
+		}
 
 		.about {
 			position: absolute;

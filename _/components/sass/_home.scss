@@ -6,6 +6,11 @@
 		margin-bottom: ms(1);
 		@include single-transition(all, 0.2s, ease-out);
 
+
+		a {
+			@include contact(ms(0), ms(1)); //arguments font size and line height
+		}
+
 		.promo {
 			margin: ms(1) 0px ms(2);
 			
@@ -15,9 +20,7 @@
 				}
 
 				a {
-					@include single-text-shadow;
-					@include links(ms(0), 2rem); //arguments font size and line height
-					letter-spacing: 0.08rem;
+					@include links(ms(0), ms(1)); //arguments font size and line height
 				}
 
 				&.one {

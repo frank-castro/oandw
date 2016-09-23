@@ -62,9 +62,9 @@ $product-price: 'le-monde-livre-classic-std-s';
 $display-text: 'le-monde-livre-classic-std-s';
 
 //HOME SLICK CAROUSEL IMAGES
-$slide1: linear-gradient(to right, rgba($bg01, 0.7), rgba($bg02, 0)), image-url('home/salad-plate-olive-oil-sml.jpg');
-$slide2: linear-gradient(to right, rgba($bg01, 0.7), rgba($bg02, 0)), image-url('home/salad-plate-olive-oil-med.jpg');
-$slide3: linear-gradient(to right, rgba($bg01, 0.7), rgba($bg02, 0)), image-url('home/salad-plate-olive-oil-lrg.jpg');
+$slide1sml: linear-gradient(to right, rgba($bg01, 0.7), rgba($bg02, 0)), image-url('home/salad-plate-olive-oil-sml.jpg');
+$slide1med: linear-gradient(to right, rgba($bg01, 0.7), rgba($bg02, 0)), image-url('home/salad-plate-olive-oil-med.jpg');
+$slide1lrg: linear-gradient(to right, rgba($bg01, 0.7), rgba($bg02, 0)), image-url('home/salad-plate-olive-oil-lrg.jpg');
 // $slide5: image-url('home/hot-pan-olive-oil-lrg.jpg');
 // $slide6: image-url('home/olive-oil-balsamic-bread-lrg.jpg');
 
@@ -143,16 +143,31 @@ $xlargeMax: 1800px;
 p { font-size: ms(0); line-height: ms(1); }
 
 @mixin links ($fsize, $lheight) {
+	@include single-text-shadow;
 	color: white;
 	&:hover {
 		color: $green;
 	}
 	font-family: $primary-font;
 	font-size: $fsize;
+	letter-spacing: 0.08rem;
 	text-transform: uppercase;
 	line-height: $lheight;
 	text-decoration: none;
 	text-align: center;
+}
+
+@mixin contact ($fsize, $lheight) {
+	@include single-text-shadow;
+	color: white;
+	&:hover {
+		color: white;
+	}
+	font-family: $primary-font;
+	font-size: $fsize;
+	line-height: $lheight;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 @mixin bg-properties {

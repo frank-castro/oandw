@@ -76,7 +76,7 @@ body {
 			}
 
 			.slide1 {
-				@include background($slide1);
+				@include background($slide1sml);
 				@include bg-properties;
 
 				.textContainer {
@@ -330,8 +330,8 @@ body {
 						p {
 							width: 500px;
 							margin: 0 auto;
-							font-size: ms(0.7);
-							line-height: ms(1);
+							font-size: ms(1);
+							line-height: ms(2);
 							letter-spacing: 0.08rem;
 						}
 					}
@@ -369,24 +369,24 @@ body {
 			padding: 0px 0px ms(3) 0px;
 
 			.slide1 {
-				@include background($slide2);
+				@include background($slide1med);
 				@include bg-properties;
 
 				.textContainer {
 					top: 16vh;
 
 					.logo {
-						width: 400px;
+						width: 420px;
 					}
 
 					.logoText {
 						margin-top: ms(1);
 
 						p {
-							width: 420px;
+							width: 440px;
 							margin: 0 auto;							
-							font-size: ms(0.3);
-							line-height: ms(1);
+							font-size: ms(1);
+							line-height: ms(2);
 							letter-spacing: 0.08rem;
 						}
 					}
@@ -445,7 +445,7 @@ body {
 			}		
 
 			.slide1 {
-				@include background($slide3);
+				@include background($slide1lrg);
 				@include bg-properties;
 
 				.textContainer {
@@ -459,8 +459,8 @@ body {
 						margin-top: ms(1);
 
 						p {
-							font-size: 1.4vw;
-							line-height: 1.4vw;
+							font-size: 1.5vw;
+							line-height: 2.2vw;
 							letter-spacing: 0.07rem;
 							width: 540px;
 							margin: 0 auto;
@@ -471,7 +471,7 @@ body {
 						top: 60vh;
 
 						p {
-							font-size: ms(1.7);
+							font-size: ms(2);
 							letter-spacing: 0.05rem;
 						}
 					}
@@ -536,11 +536,11 @@ body {
 			}
 
 			.slide1 {
-				@include background($slide3);
+				@include background($slide1lrg);
 				@include bg-properties;
 
 				.textContainer {
-					top: 18vh;
+					top: 15vh;
 
 					.logo {
 						width: 30vw;
@@ -551,7 +551,7 @@ body {
 
 						p {
 							font-size: 1.2vw;
-							line-height: ms(2);
+							line-height: 1.8vw;
 							letter-spacing: 0.05rem;
 							width: 30vw;
 							margin: 0 auto;
