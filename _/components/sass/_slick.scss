@@ -95,7 +95,8 @@ body {
 							margin: 0 auto;
 							font-family: $primary-font;
 							font-size: ms(0);
-							font-variant: small-caps;
+							// font-variant: small-caps;
+							text-transform: uppercase;
 							letter-spacing: 0.06rem;
 						}
 					}
