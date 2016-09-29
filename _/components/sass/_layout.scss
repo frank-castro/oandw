@@ -96,7 +96,7 @@
 				width: 50%;
 				font-family: $primary-fontlight;
 				font-size: ms(1);
-				line-height: ms(1);
+				line-height: ms(1.2);
 				text-align: right;
 				text-transform: uppercase;
 			}
@@ -258,7 +258,7 @@
 			width: 50%;
 			font-family: $primary-fontlight;
 			font-size: ms(1);
-			line-height: ms(1);
+			line-height: ms(1.3);
 			text-align: right;
 			text-transform: uppercase;
 		}
@@ -300,10 +300,9 @@
 				margin-top: ms(2);
 				font-family: $primary-fontlight;
 				font-size: ms(1);
-				line-height: ms(1);
+				line-height: ms(1.3);
 				text-align: left;
-				// text-transform: uppercase;
-				font-variant: small-caps;
+				text-transform: uppercase;
 			}
 		}
 		
@@ -513,7 +512,6 @@
 
 			.oilsName {
 				width: 55%;
-				font-family: $primary-fontlight;
 			}
 
 			.oilsImage {
@@ -572,7 +570,6 @@
 				margin-top: 20px;
 				font-family: $primary-fontlight;
 				font-size: ms(1);
-				line-height: ms(2);
 			}
 		}
 
@@ -901,7 +898,6 @@
 			.oilsName {
 				width: 55%;
 				font-size: ms(1);
-				line-height: ms(1);
 			}
 
 			.oilsImage {
@@ -952,7 +948,6 @@
 				height: 75px;
 				font-family: $primary-fontlight;
 				font-size: ms(1);
-				line-height: ms(1);
 			}
 		}
 
