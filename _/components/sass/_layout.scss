@@ -838,19 +838,18 @@
 
 		.oilsBuyContainerLeft {
 			p {
-				padding: 5px 0px 16px;
+				padding: 5px 0px;
 			}
 		}
 
 		.bottlesContainer {
-			height: 130px;
 			img {
 				@include transform(translateY(-50px) scale(0.8));
 			}
 		} // container for the svg
 
 		.oilsBuyContainer p {
-			padding: 5px 0px 20px;
+			padding: 5px 0px 9px;
 		}
 
 		.description {
