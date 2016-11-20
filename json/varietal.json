@@ -58,15 +58,5 @@
 		"color" : "#88355E",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
-	},
-	{
-		"name" : "Picual",
-		"pricebig" : "$32.95",
-		"pricesmall" : "$17.95",
-		"description" : "Smooth, fruity olive oil for use with and on everything. Complex yet well-balanced, with a lovely aroma and lightly grassy aftertaste. (Chile)",
-		"decoimage" : "images/varietal/picual-img.png",
-		"color" : "#6A612F",
-		"bigbottle": "750 ml",
-		"smallbottle": "375 ml"
 	}
 ]

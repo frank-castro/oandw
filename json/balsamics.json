@@ -110,16 +110,6 @@
 		"smallbottle": "375 ml"
 	},
 	{
-		"name" : "Juniper Berry",
-		"pricebig" : "$32.95",
-		"pricesmall" : "$17.95",
-		"description" : "Starts sweet and finishes tangy, wonderful in salad dressings, on fruit, chicken, pork and wild game.  Pair with Blood Orange olive oil for a citrusy dressing or marinade; or combine it with herbaceous olive oils such as Sweet Basil or Fresh Garlic.",
-		"decoimage" : "images/balsamics/juniper-berry-balsamic.png",
-		"color" : "#5E6C8B",
-		"bigbottle": "750 ml",
-		"smallbottle": "375 ml"
-	},
-	{
 		"name" : "Lavender",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",

@@ -1126,11 +1126,11 @@
 		@include transition-duration(0.2s);
 		@include transition-timing-function(ease-in);
 
-		ul:last-of-type {
-			@include transform(translateX(-50%));
-			left: 50%;
-			position: relative;
-		}
+		// ul:last-of-type {
+		// 	@include transform(translateX(-50%));
+		// 	left: 50%;
+		// 	position: relative;
+		// }
 	}
 
 	@include susy-breakpoint($medium) {
@@ -1143,14 +1143,14 @@
 		@include transition-duration(0.2s);
 		@include transition-timing-function(ease-in);
 
-		ul:last-of-type {
-			@include transform(translateX(0%));
-			left: 0%;
-			position: relative;
-		}
+		// ul:last-of-type {
+		// 	@include transform(translateX(0%));
+		// 	left: 0%;
+		// 	position: relative;
+		// }
 
-		ul:nth-last-child(-n+3) {
-			left: 13%;
+		ul:nth-last-child(-n+2) {
+			left: 25%;
 			position: relative;
 		}
 	}
@@ -1242,14 +1242,18 @@
 		@include transition-duration(0.2s);
 		@include transition-timing-function(ease-in);
 
-		ul:last-of-type {
-			@include transform(translateX(-50%));
-			left: 50%;
-			position: relative;
-		}
+		// ul:last-of-type {
+		// 	@include transform(translateX(-50%));
+		// 	left: 50%;
+		// 	position: relative;
+		// }
 	}
 
 	@include susy-breakpoint($medium) {
+		// ul:last-of-type {
+		// 	@include transform(translateX(0%));
+		// 	left: 0%;
+		// }
 	}
 
 	@include susy-breakpoint($large) {
@@ -1257,15 +1261,15 @@
 		@include transition-duration(0.2s);
 		@include transition-timing-function(ease-in);
 
-		ul:last-of-type {
-			@include transform(translateX(0%));
-			left: 0%;
+		ul:nth-last-child(-n+2) {
+			left: 17%;
+			position: relative;
 		}
 	}
 
 	@include susy-breakpoint($xlarge) {
-		ul:nth-last-child(-n+3) {
-			left: 13%;
+		ul:nth-last-child(-n+2) {
+			left: 25%;
 			position: relative;
 		}
 	}
