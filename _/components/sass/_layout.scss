@@ -1117,45 +1117,6 @@
 	}
 }
 
-.lastVarietal {
-	@include susy-breakpoint($xsmall) {
-	}
-
-	@include susy-breakpoint($small) {
-		@include transition-delay(0.2s);
-		@include transition-duration(0.2s);
-		@include transition-timing-function(ease-in);
-
-		// ul:last-of-type {
-		// 	@include transform(translateX(-50%));
-		// 	left: 50%;
-		// 	position: relative;
-		// }
-	}
-
-	@include susy-breakpoint($medium) {
-	}
-	@include susy-breakpoint($large) {
-	}
-
-	@include susy-breakpoint($xlarge) {
-		@include transition-delay(0.2s);
-		@include transition-duration(0.2s);
-		@include transition-timing-function(ease-in);
-
-		// ul:last-of-type {
-		// 	@include transform(translateX(0%));
-		// 	left: 0%;
-		// 	position: relative;
-		// }
-
-		ul:nth-last-child(-n+2) {
-			left: 25%;
-			position: relative;
-		}
-	}
-}
-
 .lastInfused {
 	@include susy-breakpoint($xsmall) {
 	}
@@ -1169,10 +1130,10 @@
 		@include transition-duration(0.2s);
 		@include transition-timing-function(ease-in);
 
-		ul:nth-last-child(-n+2) {
-			left: 17%;
-			position: relative;
-		}
+		// ul:nth-last-child(-n+2) {
+		// 	left: 17%;
+		// 	position: relative;
+		// }
 	}
 
 	@include susy-breakpoint($xlarge) {
@@ -1180,9 +1141,9 @@
 		@include transition-duration(0.2s);
 		@include transition-timing-function(ease-in);
 
-		ul:nth-last-child(-n+2) {
-			left: 24%;
-		}
+		// ul:nth-last-child(-n+2) {
+		// 	left: 24%;
+		// }
 	}
 }
 
@@ -1192,11 +1153,11 @@
 		@include transition-duration(0.2s);
 		@include transition-timing-function(ease-in);
 
-		ul:last-of-type {
-			@include transform(translateX(-50%));
-			left: 50%;
-			position: relative;
-		}
+		// ul:last-of-type {
+		// 	@include transform(translateX(-50%));
+		// 	left: 50%;
+		// 	position: relative;
+		// }
 	}
 
 	@include susy-breakpoint($small) {
@@ -1209,11 +1170,11 @@
 		@include transition-duration(0.2s);
 		@include transition-timing-function(ease-in);
 
-		ul:nth-last-child(-n+2) {
-			@include transform(translateX(0%));
-			left: 17%;
-			position: relative;
-		}
+		// ul:nth-last-child(-n+2) {
+		// 	@include transform(translateX(0%));
+		// 	left: 17%;
+		// 	position: relative;
+		// }
 	}
 
 	@include susy-breakpoint($xlarge) {
@@ -1221,19 +1182,52 @@
 		@include transition-duration(0.2s);
 		@include transition-timing-function(ease-in);
 
-		ul:nth-last-child(-n+2) {
-			left: 0%;
-		}
+		// ul:nth-last-child(-n+2) {
+		// 	left: 0%;
+		// }
 
-		ul:last-of-type {
-			@include transform(translateX(-50%));
-			left: 50%;
-			position: relative;
-		}
+		// ul:last-of-type {
+		// 	@include transform(translateX(-50%));
+		// 	left: 50%;
+		// 	position: relative;
+		// }
 	}
 }
 
 .lastBalsamics {
+	@include susy-breakpoint($xsmall) {
+	}
+
+	@include susy-breakpoint($small) {
+		@include transition-delay(0.2s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+	}
+
+	@include susy-breakpoint($medium) {
+
+	}
+
+	@include susy-breakpoint($large) {
+		@include transition-delay(0.2s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+
+		// ul:nth-last-child(-n+2) {
+		// 	left: 17%;
+		// 	position: relative;
+		// }
+	}
+
+	@include susy-breakpoint($xlarge) {
+		// ul:nth-last-child(-n+2) {
+		// 	left: 25%;
+		// 	position: relative;
+		// }
+	}
+}
+
+.lastSeasonings {
 	@include susy-breakpoint($xsmall) {
 	}
 
@@ -1250,48 +1244,6 @@
 	}
 
 	@include susy-breakpoint($medium) {
-		// ul:last-of-type {
-		// 	@include transform(translateX(0%));
-		// 	left: 0%;
-		// }
-	}
-
-	@include susy-breakpoint($large) {
-		@include transition-delay(0.2s);
-		@include transition-duration(0.2s);
-		@include transition-timing-function(ease-in);
-
-		ul:nth-last-child(-n+2) {
-			left: 17%;
-			position: relative;
-		}
-	}
-
-	@include susy-breakpoint($xlarge) {
-		ul:nth-last-child(-n+2) {
-			left: 25%;
-			position: relative;
-		}
-	}
-}
-
-.lastSeasonings {
-	@include susy-breakpoint($xsmall) {
-	}
-
-	@include susy-breakpoint($small) {
-		@include transition-delay(0.2s);
-		@include transition-duration(0.2s);
-		@include transition-timing-function(ease-in);
-
-		ul:last-of-type {
-			@include transform(translateX(-50%));
-			left: 50%;
-			position: relative;
-		}
-	}
-
-	@include susy-breakpoint($medium) {
 	}
 
 	@include susy-breakpoint($large) {
@@ -1299,11 +1251,11 @@
 		@include transition-duration(0.2s);
 		@include transition-timing-function(ease-in);
 		
-		ul:nth-last-child(-n+2) {
-			@include transform(translateX(0%));
-			left: 17%;
-			position: relative;
-		}
+		// ul:nth-last-child(-n+2) {
+		// 	@include transform(translateX(0%));
+		// 	left: 17%;
+		// 	position: relative;
+		// }
 	}
 
 	@include susy-breakpoint($xlarge) {
@@ -1311,15 +1263,15 @@
 		@include transition-duration(0.2s);
 		@include transition-timing-function(ease-in);
 
-		ul:nth-last-child(-n+2) {
-			left: 0%;
-		}
+		// ul:nth-last-child(-n+2) {
+		// 	left: 0%;
+		// }
 
-		ul:last-of-type {
-			@include transform(translateX(-50%));
-			left: 50%;
-			position: relative;
-		}
+		// ul:last-of-type {
+		// 	@include transform(translateX(-50%));
+		// 	left: 50%;
+		// 	position: relative;
+		// }
 	}
 }
 
@@ -1332,36 +1284,36 @@
 		@include transition-duration(0.2s);
 		@include transition-timing-function(ease-in);
 
-		ul:nth-child(-n+4) {
-			.description {
-				height: 70px;
-			}
-		}
+		// ul:nth-child(-n+4) {
+		// 	.description {
+		// 		height: 70px;
+		// 	}
+		// }
 
-		ul:last-of-type {
-			@include transform(translateX(-50%));
-			left: 50%;
-			position: relative;
-		}
+		// ul:last-of-type {
+		// 	@include transform(translateX(-50%));
+		// 	left: 50%;
+		// 	position: relative;
+		// }
 	}
 
 	@include susy-breakpoint($medium) {
 	}
 
 	@include susy-breakpoint($large) {
-		ul:nth-child(-n+4) {
-			.description {
-				height: 70px;
-			}
-		}
+		// ul:nth-child(-n+4) {
+		// 	.description {
+		// 		height: 70px;
+		// 	}
+		// }
 	}
 
 	@include susy-breakpoint($xlarge) {
-		ul:nth-child(-n+4) {
-			.description {
-				height: 80px;
-			}
-		}
+		// ul:nth-child(-n+4) {
+		// 	.description {
+		// 		height: 80px;
+		// 	}
+		// }
 	}
 }
 
@@ -1378,11 +1330,11 @@
 		@include transition-duration(0.2s);
 		@include transition-timing-function(ease-in);
 
-		ul:last-of-type {
-			@include transform(translateX(-50%));
-			left: 50%;
-			position: relative;
-		}
+		// ul:last-of-type {
+		// 	@include transform(translateX(-50%));
+		// 	left: 50%;
+		// 	position: relative;
+		// }
 	}
 
 	@include susy-breakpoint($xlarge) {
@@ -1390,10 +1342,10 @@
 		@include transition-duration(0.2s);
 		@include transition-timing-function(ease-in);
 
-		ul:last-of-type {
-			@include transform(translateX(0%));
-			left: 0%;
-		}
+		// ul:last-of-type {
+		// 	@include transform(translateX(0%));
+		// 	left: 0%;
+		// }
 	}
 }
 

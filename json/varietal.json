@@ -20,6 +20,16 @@
 		"smallbottle": "375 ml"
 	},
 	{
+		"name" : "Chiquitita",
+		"pricebig" : "$32.95",
+		"pricesmall" : "$17.95",
+		"description" : "A new, and still rare, cultivar that produces a sweet and delicate oil.  Very mild, with notes of green almond and fresh olives.    Lovely on salads, in light soups, and for stir-frying vegetables.  Pair with any balsamic. (Portugal)",
+		"decoimage" : "images/varietal/chiquitita.png",
+		"color" : "#99b427",
+		"bigbottle": "750 ml",
+		"smallbottle": "375 ml"
+	},
+	{
 		"name" : "Frantoio/Leccino",
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
@@ -56,6 +66,16 @@
 		"description" : "Bold and sassy, displays gradual but lingering notes of citrus blossom and green apple. High in healthy throat-tickling polyphenols. (California)",
 		"decoimage" : "images/varietal/mission-img.png",
 		"color" : "#88355E",
+		"bigbottle": "750 ml",
+		"smallbottle": "375 ml"
+	},
+	{
+		"name" : "Picual",
+		"pricebig" : "$32.95",
+		"pricesmall" : "$17.95",
+		"description" : "Smooth, fruity olive oil for use with and on everything. Complex yet well-balanced, with a lovely aroma and lightly grassy aftertaste. (Chile)",
+		"decoimage" : "images/varietal/picual-img.png",
+		"color" : "#6A612F",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
 	}
