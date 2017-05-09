@@ -9,7 +9,7 @@ angular.module('oandwApp')
 				if ($scope.item.type == "normalbottle")
 					return "templates/directives/normal-bottle.html";
 				if ($scope.item.type == "specialbottle")
-					return "templates/directives/special-bottle.html";
+					return "templates/directives/200mlbottle.html";
 			}
 		}
 	};

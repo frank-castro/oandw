@@ -130,6 +130,10 @@
 				top: 70px;
 				left: 50%;
 				@include transform (translateX(-50%));
+
+				&.twohundredml {
+					top: 102px;
+				}
 				
 				.bottleContainerSpecial {
 					height: 77px;
@@ -140,7 +144,7 @@
 				}
 
 				.bottleContainer200ml {
-					height: 77px;
+					height: 87px;
 					opacity: $svgLinesOpacity;
 					img {
 						@include transform(translateY(-86px) scale(1.8));

@@ -257,7 +257,7 @@
 		"type" : "specialbottle",		
 		"pricesmall" : "$19.95",
 		"description" : "An exquisite and exceedingly rare aged reduced balsamic (1.36 density), boasting flavor notes of cherry wood, dried fruits, and figs, with hints of dark chocolate and malt.  Serve with fine cheeses, drizzle over fruit, use as a finishing glaze when roasting.",
-		"decoimage" : "images/balsamics/18-year-traditional-balsamic.png",
+		"decoimage" : "images/balsamics/denissimo-balsamic.png",
 		"color" : "#949083",
 		"smallbottle": "200 ml"
 	},
