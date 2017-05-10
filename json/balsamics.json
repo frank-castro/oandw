@@ -27,7 +27,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Balsamic blended with fresh black cherries for an outstanding, complex flavor, delicious as a glaze or on salad greens.  Pair with Fresh Garlic olive oil for flank steak.  Try a drizzle on ice cream.",
-		"decoimage" : "images/balsamics/black-cherry-balsamic.png",
+		"decoimage" : "images/balsamics/black-cherry-balsamic2.png",
 		"color" : "#473839",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -38,7 +38,7 @@
 		"pricebig" : "$32.95",
 		"pricesmall" : "$17.95",
 		"description" : "Balsamic and natural black currants blended in perfect proportion, resulting in a new and unique flavor.  Just one taste will explain why this is a store favorite.  Pair with Meyer Lemon olive oil to make salad greens come alive.",
-		"decoimage" : "images/balsamics/black-currant-balsamic.png",
+		"decoimage" : "images/balsamics/black-currant-balsamic2.png",
 		"color" : "#3B383A",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -247,7 +247,7 @@
 		"pricebig" : "$33.95",
 		"pricesmall" : "$17.95",
 		"description" : "Our best seller!  Aged up to 18 years, it compares with much older (and more expensive!) balsamics.  Delicious on and with everything, from appetizers to entrees to desserts.  Try adding a dash to sparkling water for a refreshing low-cal drink.",
-		"decoimage" : "images/balsamics/18-year-traditional-balsamic.png",
+		"decoimage" : "images/balsamics/18-year-traditional-balsamic2.png",
 		"color" : "#949083",
 		"bigbottle": "750 ml",
 		"smallbottle": "375 ml"
@@ -258,7 +258,7 @@
 		"pricesmall" : "$19.95",
 		"description" : "An exquisite and exceedingly rare aged reduced balsamic (1.36 density), boasting flavor notes of cherry wood, dried fruits, and figs, with hints of dark chocolate and malt.  Serve with fine cheeses, drizzle over fruit, use as a finishing glaze when roasting.",
 		"decoimage" : "images/balsamics/denissimo-balsamic.png",
-		"color" : "#949083",
+		"color" : "#d5722e",
 		"smallbottle": "200 ml"
 	},
 	{

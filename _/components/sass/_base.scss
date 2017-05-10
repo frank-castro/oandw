@@ -94,7 +94,7 @@ $bannerLargeGifts: image-url('largeBanner/oliveandwell-gifts-xlrg.jpg');
 $bannerLargeAccessories: image-url('largeBanner/oliveandwell-accessories-xlrg.jpg');
 
 body {
-	@include background(linear-gradient(180deg, $bg01 32%, $bg02 68%));
+	@include background(linear-gradient(180deg, $bg02 32%, $bg01 68%));
 }
 
 // #{headings(1,4)} {
