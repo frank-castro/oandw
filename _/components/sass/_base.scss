@@ -34,7 +34,7 @@ $cartbttnshadow: rgba(black, 0.5) 0px 2px 3px;
 
 // bg gradients
 $bg01: #1F2210;
-$bg01a: rgba(27, 29, 14, 0.8);
+$bg01a: rgba(43, 59, 34, 0.25);
 $bg02: #2B3B22;
 
 //COLORS
@@ -222,7 +222,7 @@ p { font-size: ms(0); line-height: ms(1); }
 		width: 100%;
 		text-align: center;
 		position: fixed;
-		background-color: $bg01;
+		background-color: $bg02;
 		z-index: 1090;
 
 		a {
@@ -297,7 +297,7 @@ p { font-size: ms(0); line-height: ms(1); }
 		@include single-transition(all, 1s, ease-out);
 		top: 40px;
 		position: fixed;
-		background-color: rgba(27, 29, 14, 0.8);
+		background-color: $bg01a;
 		z-index: 1040;
 
 		a {
@@ -308,8 +308,8 @@ p { font-size: ms(0); line-height: ms(1); }
 		}
 
 		.active {
-			border-bottom: 0px;
-			border-top: 1px solid $green;
+			border-bottom: 1px solid $green;
+			border-top: 0px;
 			margin: 0px;
 		}
 

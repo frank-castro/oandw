@@ -32,7 +32,7 @@
 			font-family: $page-title;
 			font-size: ms(1);
 			line-height: ms(2);
-			letter-spacing: 0.1rem;
+			letter-spacing: 0.05rem;
 
 			.search {
 				opacity: 0.8;
@@ -132,7 +132,7 @@
 				@include transform (translateX(-50%));
 
 				&.twohundredml {
-					top: 102px;
+					top: 66px;
 				}
 				
 				.bottleContainerSpecial {
@@ -842,6 +842,10 @@
 
 			.buyCtrlsSpecial {
 				top: 82px;
+
+				&.twohundredml {
+					top: 70px;
+				}
 			}
 		}
 
@@ -1009,8 +1013,8 @@
 			@include transition-duration(0.2s);
 			@include transition-timing-function(ease-out);
 	  		padding: ms(3) 0px ms(2);
-	  		font-size: ms(2);
-			line-height: ms(3);
+	  		font-size: ms(3);
+			line-height: ms(4);
 	  	}
 
 		.productsContainer {
@@ -1025,6 +1029,10 @@
 
 			.buyCtrlsSpecial {
 				top: 122px;
+
+				&.twohundredml {
+					top: 101px;
+				}
 			}
 		}
 
@@ -1421,7 +1429,7 @@ footer {
 				cursor: pointer;
 			}
 
-			.credits {
+			.credits a {
 				font-family: $primary-font;
 			}
 		}
